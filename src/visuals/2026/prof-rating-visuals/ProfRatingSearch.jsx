@@ -4,10 +4,12 @@ import React, {
 import * as d3 from 'd3';
 import { theme } from '../../../styles/theme';
 // Built by scripts/lookup_data.py in the scraping project.
-// professor_ratings.csv: name, department, rating (average quality, 1-5), reviews, rank
-//   (rank orders professors by quality adjusted for how many reviews they have).
-// rating_histogram.csv: score (1.00-5.00 in steps of 0.02), professors (a smoothed
-//   count of professors near that score, so the curve reads as continuous).
+// professor_ratings.csv: name, department, rating (average quality, 1-5), reviews, rank,
+//   weighted (the average as if the professor also had 20 reviews at the campus average,
+//   so ratings from few reviews are pulled to the middle; rank orders by it).
+// rating_histogram.csv: score (1.00-5.00 in steps of 0.02), professors and
+//   professors_weighted (smoothed counts of professors near that score for each kind
+//   of rating, so the curves read as continuous).
 // Imported as URLs (?url), so they're fetched at run time instead of bundled.
 import PROFS_URL from './data/professor_ratings.csv?url';
 import HIST_URL from './data/rating_histogram.csv?url';
@@ -19,6 +21,12 @@ const MARGIN = {
   top: 34, right: 16, bottom: 42, left: 46,
 };
 const MARKER = theme.palette.red;
+
+// The two ways to rate a professor; the toggle picks one.
+const MODES = {
+  average: { label: 'Average rating', value: (p) => p.rating, curve: 'professors' },
+  weighted: { label: 'Weighted by number of ratings', value: (p) => p.weighted, curve: 'professorsWeighted' },
+};
 
 const formatRating = d3.format('.2f');
 const formatCount = d3.format(',');
@@ -37,7 +45,11 @@ const cell = {
   verticalAlign: 'top',
 };
 
-const Histogram = ({ hist, profs, selected }) => {
+// hist: [{ score, professors }] for the chosen kind of rating; value: the selected
+// professor's rating of that kind.
+const Histogram = ({
+  hist, total, selected, value, axisLabel,
+}) => {
   const boxRef = useRef();
   const [width, setWidth] = useState(640);
 
@@ -62,14 +74,14 @@ const Histogram = ({ hist, profs, selected }) => {
   const yTicks = y.ticks(4);
 
   // The part of the curve below the selected rating is shaded darker.
-  const below = hist && selected ? hist.filter((d) => d.score <= selected.rating) : null;
+  const below = hist && selected ? hist.filter((d) => d.score <= value) : null;
   // Height of the curve at the selected rating, for the marker's dot.
   const curveAt = (score) => {
     const i = d3.bisector((d) => d.score).center(hist, score);
     return hist[i].professors;
   };
 
-  const mx = selected ? x(selected.rating) : 0;
+  const mx = selected ? x(value) : 0;
   const labelEnd = selected && mx > width * 0.62;
 
   return (
@@ -79,8 +91,8 @@ const Histogram = ({ hist, profs, selected }) => {
         height={HEIGHT}
         role="img"
         aria-label={selected
-          ? `Distribution of ${formatCount(profs.length)} professors' average ratings, with ${selected.name} marked at ${formatRating(selected.rating)}.`
-          : `Distribution of professors' average ratings, from 1 to 5.`}
+          ? `Distribution of ${formatCount(total)} professors' ratings (${axisLabel.toLowerCase()}), with ${selected.name} marked at ${formatRating(value)}.`
+          : `Distribution of professors' ratings (${axisLabel.toLowerCase()}), from 1 to 5.`}
         style={{ display: 'block', overflow: 'visible', fontFamily: 'Georgia, serif' }}
       >
         {yTicks.map((t) => (
@@ -122,7 +134,7 @@ const Histogram = ({ hist, profs, selected }) => {
           fontSize={13}
           fill={theme.palette.darkGrey}
         >
-          Average rating
+          {axisLabel}
         </text>
         <text
           transform={`translate(12,${(MARGIN.top + HEIGHT - MARGIN.bottom) / 2}) rotate(-90)`}
@@ -135,7 +147,7 @@ const Histogram = ({ hist, profs, selected }) => {
         {hist && selected && (
           <g>
             <line x1={mx} x2={mx} y1={MARGIN.top - 6} y2={y(0)} stroke={MARKER} strokeWidth={2.5} />
-            <circle cx={mx} cy={y(curveAt(selected.rating))} r={5} fill={MARKER} stroke="#fff" strokeWidth={2} />
+            <circle cx={mx} cy={y(curveAt(value))} r={5} fill={MARKER} stroke="#fff" strokeWidth={2} />
             <text
               x={mx + (labelEnd ? -8 : 8)}
               y={MARGIN.top - 14}
@@ -144,7 +156,7 @@ const Histogram = ({ hist, profs, selected }) => {
               fontWeight="bold"
               fill={theme.palette.black}
             >
-              {`${selected.name}: ${formatRating(selected.rating)}`}
+              {`${selected.name}: ${formatRating(value)}`}
             </text>
           </g>
         )}
@@ -160,17 +172,24 @@ const ProfRatingSearch = () => {
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState(0);
   const [selected, setSelected] = useState(null);
+  const [mode, setMode] = useState('average');
+  const { value, curve, label: modeLabel } = MODES[mode];
 
-  // Both files are small (about 50KB gzipped together), so they load right away:
+  // Both files are small (about 60KB gzipped together), so they load right away:
   // the histogram is shown before anyone searches.
   useEffect(() => {
-    d3.csv(HIST_URL, (r) => ({ score: +r.score, professors: +r.professors })).then(setHist);
+    d3.csv(HIST_URL, (r) => ({
+      score: +r.score,
+      professors: +r.professors,
+      professorsWeighted: +r.professors_weighted,
+    })).then(setHist);
     d3.csv(PROFS_URL, (r) => ({
       name: r.name,
       department: r.department,
       rating: +r.rating,
       reviews: +r.reviews,
       rank: +r.rank,
+      weighted: +r.weighted,
       tokens: tokenize(r.name),
     })).then((rows) => {
       // Most-reviewed professors are suggested first.
@@ -179,10 +198,14 @@ const ProfRatingSearch = () => {
     });
   }, []);
 
-  // Ratings sorted low to high, to find the share of professors below a rating.
+  // Ratings of the chosen kind sorted low to high, to find the share of professors below one.
   const sortedRatings = useMemo(
-    () => (profs ? profs.map((p) => p.rating).sort(d3.ascending) : []),
-    [profs],
+    () => (profs ? profs.map(value).sort(d3.ascending) : []),
+    [profs, value],
+  );
+  const curvePoints = useMemo(
+    () => (hist ? hist.map((d) => ({ score: d.score, professors: d[curve] })) : null),
+    [hist, curve],
   );
 
   // A name matches when every typed word starts one of its words, so "toni mar",
@@ -224,8 +247,15 @@ const ProfRatingSearch = () => {
   const showList = open && query.trim() !== '';
   const total = profs ? profs.length : 0;
   const pctBelow = selected
-    ? Math.round((100 * d3.bisectLeft(sortedRatings, selected.rating)) / total)
+    ? Math.round((100 * d3.bisectLeft(sortedRatings, value(selected))) / total)
     : null;
+  const rankText = (
+    <>
+      {'They rank '}
+      <strong>{`No. ${formatCount(selected?.rank ?? 0)}`}</strong>
+      {` of ${formatCount(total)}`}
+    </>
+  );
 
   return (
     <figure style={{ margin: '2rem 0', fontFamily: 'Georgia, serif' }}>
@@ -319,7 +349,7 @@ const ProfRatingSearch = () => {
                   </span>
                 </span>
                 <span style={{ color: theme.palette.darkGrey, whiteSpace: 'nowrap' }}>
-                  {formatRating(p.rating)}
+                  {formatRating(value(p))}
                 </span>
               </li>
             ))}
@@ -327,26 +357,73 @@ const ProfRatingSearch = () => {
         )}
       </div>
 
-      <div style={{ marginTop: '1rem', minHeight: '3em' }}>
-        {selected ? (
+      <div
+        role="group"
+        aria-label="Rating to show"
+        style={{
+          display: 'flex', flexWrap: 'wrap', gap: 6, marginTop: '0.75rem',
+        }}
+      >
+        {Object.entries(MODES).map(([key, m]) => (
+          <button
+            key={key}
+            type="button"
+            aria-pressed={mode === key}
+            onClick={() => setMode(key)}
+            style={{
+              padding: '5px 12px',
+              fontSize: 14,
+              fontFamily: 'inherit',
+              borderRadius: 16,
+              cursor: 'pointer',
+              border: `1px solid ${mode === key ? theme.palette.darkBlue : theme.palette.grey}`,
+              background: mode === key ? theme.palette.darkBlue : '#fff',
+              color: mode === key ? '#fff' : theme.palette.black,
+            }}
+          >
+            {m.label}
+          </button>
+        ))}
+      </div>
+
+      <div style={{ marginTop: '0.75rem', minHeight: '3em' }}>
+        {selected && mode === 'average' && (
           <p style={{ margin: 0 }}>
             <strong>{selected.name}</strong>
             {` (${selected.department}) has an average rating of `}
             <strong>{formatRating(selected.rating)}</strong>
             {` out of 5 from ${plural(selected.reviews, 'review')}, higher than ${pctBelow}% of rated professors. `}
-            {'They rank '}
-            <strong>{`No. ${formatCount(selected.rank)}`}</strong>
-            {` of ${formatCount(total)} once the number of reviews is taken into account.`}
+            {rankText}
+            {' once the number of reviews is taken into account.'}
           </p>
-        ) : (
+        )}
+        {selected && mode === 'weighted' && (
+          <p style={{ margin: 0 }}>
+            <strong>{selected.name}</strong>
+            {` (${selected.department}) has a weighted rating of `}
+            <strong>{formatRating(selected.weighted)}</strong>
+            {` (an average of ${formatRating(selected.rating)} from ${plural(selected.reviews, 'review')}), higher than ${pctBelow}% of rated professors. `}
+            {rankText}
+            .
+          </p>
+        )}
+        {!selected && (
           <p style={{ margin: 0, color: theme.palette.darkGrey }}>
-            The curve shows how professors’ average ratings are spread from 1 to 5.
+            {mode === 'average'
+              ? 'The curve shows how professors’ average ratings are spread from 1 to 5.'
+              : 'Weighted ratings pull professors with few reviews toward the campus average, so the curve bunches up near 3.74.'}
           </p>
         )}
       </div>
 
       <div style={{ marginTop: '0.75rem' }}>
-        <Histogram hist={hist} profs={profs || []} selected={selected} />
+        <Histogram
+          hist={curvePoints}
+          total={total}
+          selected={selected}
+          value={selected ? value(selected) : 0}
+          axisLabel={mode === 'average' ? 'Average rating' : 'Weighted rating'}
+        />
       </div>
 
       <figcaption style={{ fontSize: 14, color: theme.palette.darkGrey, marginTop: '0.75rem' }}>
@@ -354,9 +431,9 @@ const ProfRatingSearch = () => {
           Ratings are each professor’s average quality score across all of their RateMyProfessors
           reviews as of Nov. 5, 2026; professors without reviews aren’t included. The curve is a
           smoothed histogram: its height shows how many professors have ratings near each score.
-          The ranking counts every professor as if they also had 20 reviews at the campus average
-          of 3.74, so a perfect score from a handful of reviews doesn’t outrank a near-perfect
-          score from hundreds.
+          The weighted rating, which the ranking uses, counts every professor as if they also had
+          20 reviews at the campus average of 3.74, so a perfect score from a handful of reviews
+          doesn’t outrank a near-perfect score from hundreds.
         </p>
         Source: The Daily Californian analysis of RateMyProfessors reviews
       </figcaption>
