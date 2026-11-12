@@ -7,9 +7,44 @@ byline:
 featuredImage: "../../../assets/images/2026/prof-rating/prof-rating-curve.png"
 featuredImageAlt: "A curve showing how UC Berkeley professors' average RateMyProfessors ratings are spread from 1 to 5"
 hideHeroImage: true
-keywords: ["RateMyProfessors", "professor ratings", "UC Berkeley"]
 ---
 
-import ProfRatingSearch from "../../../visuals/2026/prof-rating-visuals/ProfRatingSearch";
+import RatingCountsByYear from "../../../visuals/2026/prof-rating/RatingCountsByYear";
+import DepartmentRankBump from "../../../visuals/2026/prof-rating/DepartmentRankBump";
+import ProfRatingSearch from "../../../visuals/2026/prof-rating/ProfRatingSearch";
+
+Over the past 25 years, UC Berkeley students have posted more than 60,000 reviews of nearly 3,900 professors to [RateMyProfessors](https://www.ratemyprofessors.com/search/professors/1072?q=*). In the past year, those reviews have been the harshest on record.
+
+The Daily Californian analyzed every public review of a UC Berkeley professor posted to the site from 2001 to November 2026 to see how students rate their instructors, and how that has changed over time.
+
+Across all reviews, the average professor rating was 3.74 out of 5. Nearly half of all reviews, 47.7%, gave a professor a perfect 5, while 14.3% gave the lowest possible score of 1. But since 2020, average ratings have fallen every year, dropping from 3.81 in 2020 to 3.42 in both 2025 and 2026.
+
+<RatingCountsByYear client:load />
+
+The share of 1-star reviews has nearly doubled. From 2015 to 2019, 12.5% of reviews gave a professor the lowest score. Since the start of 2025, 24.2% have.
+
+The decline comes as more students are using the site than ever before. Students posted 5,549 reviews of Berkeley professors in 2025, the most of any year, and more than double the 2,621 posted in 2021.
+
+Rankings among Berkeley's largest departments shift from semester to semester. Among the 13 departments with at least 1,500 reviews, sociology finished first more often than any other, topping the list in seven of the 23 spring and fall semesters from 2015 to spring 2026, including four in a row from spring 2020 through fall 2021. History was first five times, and English was first four times.
+
+The bottom of the list has been more consistent. Statistics ranked last in seven semesters, and math and economics each ranked last in five. Math finished in the bottom three in 16 of the 23 semesters and in the top half only twice.
+
+Some departments swung widely. Political science ranked first in fall 2023 and last in fall 2025. Computer science was first in spring 2023 and 12th of 13 in spring 2026.
+
+<DepartmentRankBump client:load />
+
+Mathematics is the most reviewed department on campus by a wide margin, with 6,549 reviews across 228 professors — nearly twice as many as chemistry, the next highest. It is also the lowest rated among departments with at least 500 reviews, averaging 3.19. In the past year, math reviews averaged 2.58, and math professors account for five of the 10 lowest-ranked professors with enough reviews to be ranked fairly.
+
+Economics and statistics followed math at the bottom, with averages of 3.30 and 3.33. At the top were art history, astronomy and geography, each averaging above 4.15.
+
+Physical education instructor Toni Mar is the highest-rated professor at UC Berkeley. Across 626 reviews — the most of any professor on campus — Mar averaged a 4.88, and 98% of students who answered said they would take Mar's class again.
+
+Rounding out the top five are sociology lecturer Laleh Behbehanian, psychology lecturer Arman Catterson, theater and dance lecturer Chris Herold and art practice lecturer Purin Phanichphant, each with an adjusted rating above 4.67. Computer science lecturer Peyrin Kao and Josh Hug, who teaches CS 61B, also ranked in the top 10.
+
+Howard D'Abrera of statistics, Zvezdelina Stankova of mathematics and Alex Filippenko of astronomy are the next most reviewed, with 452, 440 and 361 reviews respectively. Filippenko, who teaches the popular introductory astronomy course, averaged 4.55.
+
+While some professors have hundreds of reviews, most have only a few. The median professor has seven reviews, and 530 professors have just one. Only 68 have 100 or more.
+
+Below, search any UC Berkeley professor with at least one review to see their average rating, how it has changed semester by semester and where they rank in their department.
 
 <ProfRatingSearch client:load />

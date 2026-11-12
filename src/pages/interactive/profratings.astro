@@ -1,0 +1,13 @@
+---
+// A UC Berkeley professor's RateMyProfessors report, at /interactive/profratings?prof=<name>.
+// The page itself is src/visuals/2026/prof-rating/ProfReport.jsx.
+import PageLayout from "../../layouts/PageLayout.astro";
+import ProfReport from "../../visuals/2026/prof-rating/ProfReport";
+---
+
+<PageLayout
+  title="Professor ratings"
+  description="Look up any UC Berkeley professor's RateMyProfessors ratings, how they've changed by semester and how they rank in their department."
+>
+  <ProfReport client:load />
+</PageLayout>

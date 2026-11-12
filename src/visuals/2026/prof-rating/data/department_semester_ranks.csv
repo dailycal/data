@@ -1,0 +1,111 @@
+term,semester,previous,department,reviews,professors,score,rank
+2021S,Spring 2021,Fall 2020,Mathematics,291,54,3.072,10
+2021S,Spring 2021,Fall 2020,Chemistry,181,22,3.547,7
+2021S,Spring 2021,Fall 2020,Economics,123,43,3.423,9
+2021S,Spring 2021,Fall 2020,Political Science,166,41,3.602,5
+2021S,Spring 2021,Fall 2020,Computer Science,92,20,3.554,6
+2021S,Spring 2021,Fall 2020,English,98,47,4.184,2
+2021S,Spring 2021,Fall 2020,Biology,109,39,3.798,4
+2021S,Spring 2021,Fall 2020,Business Administration,70,29,3.429,8
+2021S,Spring 2021,Fall 2020,History,127,41,4.315,1
+2021S,Spring 2021,Fall 2020,Physics,67,29,4.075,3
+2021F,Fall 2021,Spring 2021,Mathematics,301,56,2.794,10
+2021F,Fall 2021,Spring 2021,Chemistry,140,23,3.507,7
+2021F,Fall 2021,Spring 2021,Economics,135,44,3.244,9
+2021F,Fall 2021,Spring 2021,Political Science,152,44,3.645,5
+2021F,Fall 2021,Spring 2021,Computer Science,72,21,3.75,3
+2021F,Fall 2021,Spring 2021,English,70,41,3.814,2
+2021F,Fall 2021,Spring 2021,Biology,96,40,3.656,4
+2021F,Fall 2021,Spring 2021,Business Administration,44,25,3.386,8
+2021F,Fall 2021,Spring 2021,History,108,39,4.231,1
+2021F,Fall 2021,Spring 2021,Physics,62,30,3.629,6
+2022S,Spring 2022,Fall 2021,Mathematics,329,53,2.72,10
+2022S,Spring 2022,Fall 2021,Chemistry,154,22,3.214,8
+2022S,Spring 2022,Fall 2021,Economics,138,34,3.326,7
+2022S,Spring 2022,Fall 2021,Political Science,115,38,3.609,5
+2022S,Spring 2022,Fall 2021,Computer Science,86,24,3.779,2
+2022S,Spring 2022,Fall 2021,English,90,52,3.722,3
+2022S,Spring 2022,Fall 2021,Biology,95,41,3.663,4
+2022S,Spring 2022,Fall 2021,Business Administration,56,31,3.161,9
+2022S,Spring 2022,Fall 2021,History,84,31,3.964,1
+2022S,Spring 2022,Fall 2021,Physics,64,27,3.562,6
+2022F,Fall 2022,Spring 2022,Mathematics,357,53,2.952,10
+2022F,Fall 2022,Spring 2022,Chemistry,169,20,3.391,9
+2022F,Fall 2022,Spring 2022,Economics,128,32,3.43,8
+2022F,Fall 2022,Spring 2022,Political Science,116,34,3.793,3
+2022F,Fall 2022,Spring 2022,Computer Science,90,26,3.844,2
+2022F,Fall 2022,Spring 2022,English,104,61,3.721,5
+2022F,Fall 2022,Spring 2022,Biology,98,45,3.684,6
+2022F,Fall 2022,Spring 2022,Business Administration,98,38,3.469,7
+2022F,Fall 2022,Spring 2022,History,77,36,4.078,1
+2022F,Fall 2022,Spring 2022,Physics,72,28,3.792,4
+2023S,Spring 2023,Fall 2022,Mathematics,341,51,3.07,10
+2023S,Spring 2023,Fall 2022,Chemistry,149,21,3.832,5
+2023S,Spring 2023,Fall 2022,Economics,113,31,3.46,8
+2023S,Spring 2023,Fall 2022,Political Science,97,34,3.856,4
+2023S,Spring 2023,Fall 2022,Computer Science,115,29,4.217,1
+2023S,Spring 2023,Fall 2022,English,118,55,4.085,3
+2023S,Spring 2023,Fall 2022,Biology,110,48,3.8,6
+2023S,Spring 2023,Fall 2022,Business Administration,120,39,3.417,9
+2023S,Spring 2023,Fall 2022,History,81,34,4.185,2
+2023S,Spring 2023,Fall 2022,Physics,79,23,3.481,7
+2023F,Fall 2023,Spring 2023,Mathematics,437,46,2.751,10
+2023F,Fall 2023,Spring 2023,Chemistry,199,23,3.693,5
+2023F,Fall 2023,Spring 2023,Economics,121,32,3.405,8
+2023F,Fall 2023,Spring 2023,Political Science,96,33,3.938,4
+2023F,Fall 2023,Spring 2023,Computer Science,163,30,4.104,2
+2023F,Fall 2023,Spring 2023,English,151,60,4.073,3
+2023F,Fall 2023,Spring 2023,Biology,136,54,3.64,6
+2023F,Fall 2023,Spring 2023,Business Administration,177,40,3.136,9
+2023F,Fall 2023,Spring 2023,History,103,43,4.175,1
+2023F,Fall 2023,Spring 2023,Physics,88,28,3.5,7
+2024S,Spring 2024,Fall 2023,Mathematics,480,41,2.962,9
+2024S,Spring 2024,Fall 2023,Chemistry,205,24,3.854,4
+2024S,Spring 2024,Fall 2023,Economics,156,31,2.936,10
+2024S,Spring 2024,Fall 2023,Political Science,104,33,3.962,2
+2024S,Spring 2024,Fall 2023,Computer Science,186,27,3.704,6
+2024S,Spring 2024,Fall 2023,English,177,63,3.921,3
+2024S,Spring 2024,Fall 2023,Biology,132,46,3.53,7
+2024S,Spring 2024,Fall 2023,Business Administration,220,45,3.341,8
+2024S,Spring 2024,Fall 2023,History,114,45,4.158,1
+2024S,Spring 2024,Fall 2023,Physics,98,31,3.765,5
+2024F,Fall 2024,Spring 2024,Mathematics,481,49,3.143,9
+2024F,Fall 2024,Spring 2024,Chemistry,251,27,3.402,6
+2024F,Fall 2024,Spring 2024,Economics,164,38,3.018,10
+2024F,Fall 2024,Spring 2024,Political Science,128,33,3.508,4
+2024F,Fall 2024,Spring 2024,Computer Science,170,30,3.624,3
+2024F,Fall 2024,Spring 2024,English,199,71,4.005,2
+2024F,Fall 2024,Spring 2024,Biology,139,48,3.338,7
+2024F,Fall 2024,Spring 2024,Business Administration,193,48,3.285,8
+2024F,Fall 2024,Spring 2024,History,143,51,4.028,1
+2024F,Fall 2024,Spring 2024,Physics,123,35,3.423,5
+2025S,Spring 2025,Fall 2024,Mathematics,490,55,3.186,8
+2025S,Spring 2025,Fall 2024,Chemistry,320,28,3.294,5
+2025S,Spring 2025,Fall 2024,Economics,191,42,2.969,9
+2025S,Spring 2025,Fall 2024,Political Science,161,37,3.646,4
+2025S,Spring 2025,Fall 2024,Computer Science,192,35,3.828,3
+2025S,Spring 2025,Fall 2024,English,193,72,3.974,2
+2025S,Spring 2025,Fall 2024,Biology,166,47,3.193,7
+2025S,Spring 2025,Fall 2024,Business Administration,170,42,3.224,6
+2025S,Spring 2025,Fall 2024,History,167,42,4.114,1
+2025S,Spring 2025,Fall 2024,Physics,201,34,2.836,10
+2025F,Fall 2025,Spring 2025,Mathematics,648,60,2.804,9
+2025F,Fall 2025,Spring 2025,Chemistry,339,27,3.696,4
+2025F,Fall 2025,Spring 2025,Economics,219,43,2.968,7
+2025F,Fall 2025,Spring 2025,Political Science,293,47,2.662,10
+2025F,Fall 2025,Spring 2025,Computer Science,229,36,3.799,2
+2025F,Fall 2025,Spring 2025,English,191,68,4.12,1
+2025F,Fall 2025,Spring 2025,Biology,199,62,3.236,5
+2025F,Fall 2025,Spring 2025,Business Administration,157,43,3.223,6
+2025F,Fall 2025,Spring 2025,History,178,42,3.713,3
+2025F,Fall 2025,Spring 2025,Physics,227,33,2.859,8
+2026S,Spring 2026,Fall 2025,Mathematics,663,47,2.501,9
+2026S,Spring 2026,Fall 2025,Chemistry,285,24,3.737,2
+2026S,Spring 2026,Fall 2025,Economics,204,37,3.25,6
+2026S,Spring 2026,Fall 2025,Political Science,270,48,2.485,10
+2026S,Spring 2026,Fall 2025,Computer Science,216,31,3.222,7
+2026S,Spring 2026,Fall 2025,English,163,61,4.049,1
+2026S,Spring 2026,Fall 2025,Biology,163,52,3.46,3
+2026S,Spring 2026,Fall 2025,Business Administration,136,34,3.338,4
+2026S,Spring 2026,Fall 2025,History,179,40,3.324,5
+2026S,Spring 2026,Fall 2025,Physics,176,32,2.96,8
