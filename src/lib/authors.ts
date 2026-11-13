@@ -215,18 +215,20 @@ export function currentTeam(authors: Author[]): Author[] {
 }
 
 /**
- * Everyone who isn't on the team now, grouped by the year of their latest article, newest first,
- * and in each year by their latest article, newest first. Those with no articles come last, in a
+ * Everyone who isn't on the team now, grouped by the year of their first article, newest first,
+ * and in each year by their first article, newest first. Those with no articles come last, in a
  * group with no year, by last name.
  */
 export function pastTeam(authors: Author[]): { year?: number; authors: Author[] }[] {
-  const latest = (author: Author) => author.articles[0]?.data.date.valueOf() ?? -Infinity;
+  // Their articles are newest first, so their first article is the last one
+  const first = (author: Author) => author.articles.at(-1)?.data.date;
+  const firstTime = (author: Author) => first(author)?.valueOf() ?? -Infinity;
   const groups: { year?: number; authors: Author[] }[] = [];
   for (const author of authors
     .filter((author) => !author.teamRole)
-    .sort((a, b) => latest(b) - latest(a) || byLastName(a, b))) {
+    .sort((a, b) => firstTime(b) - firstTime(a) || byLastName(a, b))) {
     // In UTC, like the dates the site shows
-    const year = author.articles[0]?.data.date.getUTCFullYear();
+    const year = first(author)?.getUTCFullYear();
     let group = groups.at(-1);
     if (!group || group.year !== year) groups.push((group = { year, authors: [] }));
     group.authors.push(author);
