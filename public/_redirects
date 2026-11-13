@@ -5,13 +5,8 @@
 /article/ / 301
 
 # The old site's "Meet The Team" page
-/about /staff 301
-/about/ /staff 301
-
-# The staff pages were at /team
-/team /staff 301
-/team/ /staff 301
-/team/* /staff/:splat 301
+/about /team 301
+/about/ /team 301
 
 # Pages the old site served from static/
 /2026-09-3-ai /article/2026-09-03-ai 301
