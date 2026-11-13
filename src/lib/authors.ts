@@ -33,7 +33,7 @@ export interface Author {
 /** Bylines that credit a group rather than a person: they don't link anywhere or get a page. */
 const GROUP_BYLINES = new Set(["Daily Cal Staff", "Editorial Board"]);
 
-/** Pages in /team/ that aren't an author's, so their names can't be an author's slug. */
+/** Pages in /staff/ that aren't an author's, so their names can't be an author's slug. */
 const RESERVED_SLUGS = new Set(["past"]);
 
 /** src/config/team.json: who's on the team now, by name, spelled as in their bylines. */
@@ -56,7 +56,7 @@ function authorSlug(name: string): string {
     .replace(/^-|-$/g, "");
 }
 
-export const authorPath = (slug: string) => `/team/${slug}`;
+export const authorPath = (slug: string) => `/staff/${slug}`;
 
 /** Where a byline name links: the author's page, or nowhere for a group (e.g. "Editorial Board"). */
 export function bylinePath(name: string): string | undefined {
@@ -112,7 +112,7 @@ export async function getAuthors(): Promise<Author[]> {
       problems.push(`${file}: the file must be named after the author's name: ${slug}.mdx.`);
     }
     if (RESERVED_SLUGS.has(slug)) {
-      problems.push(`${file}: /team/${slug} is already a page, so it can't be an author's.`);
+      problems.push(`${file}: /staff/${slug} is already a page, so it can't be an author's.`);
     }
     if (image) {
       const imageName = imageFile(image)
@@ -139,7 +139,7 @@ export async function getAuthors(): Promise<Author[]> {
       }
       const slug = authorSlug(name);
       if (RESERVED_SLUGS.has(slug)) {
-        problems.push(`${file}: /team/${slug} is already a page, so it can't be an author's.`);
+        problems.push(`${file}: /staff/${slug} is already a page, so it can't be an author's.`);
       }
       let author = authors.get(slug);
       if (!author) {
@@ -170,7 +170,7 @@ export async function getAuthors(): Promise<Author[]> {
         const slug = authorSlug(name);
         if (RESERVED_SLUGS.has(slug)) {
           problems.push(
-            `src/config/team.json: /team/${slug} is already a page, so it can't be an author's.`,
+            `src/config/team.json: /staff/${slug} is already a page, so it can't be an author's.`,
           );
         }
         // Someone with no author file or byline yet gets a page with just their name

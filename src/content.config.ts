@@ -57,7 +57,7 @@ const articles = defineCollection({
       }),
 });
 
-/** The longest an author's role can be, so it fits on one line of their card on /team. */
+/** The longest an author's role can be, so it fits on one line of their card on /staff. */
 const ROLE_MAX_LENGTH = 40;
 
 /**

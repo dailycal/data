@@ -1,5 +1,5 @@
 ---
-/** The layout of /team and /team/past: a title, an intro, rows of author cards and a footer. */
+/** The layout of /staff and /staff/past: a title, an intro, rows of author cards and a footer. */
 import PageLayout from "./PageLayout.astro";
 
 interface Props {
@@ -13,7 +13,7 @@ const { title, description, heading = true } = Astro.props;
 ---
 
 <PageLayout title={title} description={description}>
-  <div class:list={["team", { headless: !heading }]}>
+  <div class:list={["staff", { headless: !heading }]}>
     <h1 class:list={{ hidden: !heading }}>{title}</h1>
     {heading && Astro.slots.has("intro") && (
       <p class="intro">
@@ -28,7 +28,7 @@ const { title, description, heading = true } = Astro.props;
 </PageLayout>
 
 <style>
-  .team {
+  .staff {
     display: flex;
     flex-direction: column;
     align-items: center;

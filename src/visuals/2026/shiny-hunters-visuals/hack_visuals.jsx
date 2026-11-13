@@ -157,7 +157,7 @@ const HackVisuals = ({ intro, credits, note }) => {
               By
               {' '}
               <a
-                href="/team/ajith-araiza-singh"
+                href="/staff/ajith-araiza-singh"
                 style={{ color: '#00529B', textDecoration: 'underline' }}
               >
                 Ajith Araiza-Singh
@@ -166,7 +166,7 @@ const HackVisuals = ({ intro, credits, note }) => {
               &
               {' '}
               <a
-                href="/team/luca-vicisano"
+                href="/staff/luca-vicisano"
                 style={{ color: '#00529B', textDecoration: 'underline' }}
               >
                 Luca Vicisano

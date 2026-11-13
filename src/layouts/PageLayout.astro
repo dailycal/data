@@ -1,7 +1,7 @@
 ---
 /**
  * The layout every page renders into: <head> (see src/components/Head.astro), the fixed
- * header (a link to the team, the logo, and a link to search), and the page content.
+ * header (a link to the staff page, the logo, and a link to search), and the page content.
  */
 import { Image } from "astro:assets";
 import wordmark from "../assets/site/dclogoblack.webp";
@@ -19,8 +19,8 @@ type Props = HeadProps;
   <body>
     {/* Header */}
     <header class="header">
-      <a href="/team" class="teamLink">
-        Team
+      <a href="/staff" class="staffLink">
+        Staff
       </a>
       <a href="/" class="logoLink" aria-label="The Daily Californian: Data home">
         <Image
@@ -103,7 +103,7 @@ type Props = HeadProps;
     padding: 6px;
     color: var(--palette-black);
   }
-  .teamLink {
+  .staffLink {
     position: absolute;
     left: 16px;
     padding: 6px;
@@ -113,10 +113,10 @@ type Props = HeadProps;
     text-decoration: none;
   }
   .searchLink:hover,
-  .teamLink:hover {
+  .staffLink:hover {
     color: var(--palette-dark-blue);
   }
-  /* Leaves room for the team and search links on narrow phones */
+  /* Leaves room for the staff and search links on narrow phones */
   @media (max-width: 440px) {
     .logo {
       height: 16px;
@@ -124,7 +124,7 @@ type Props = HeadProps;
     .searchLink {
       right: 6px;
     }
-    .teamLink {
+    .staffLink {
       left: 6px;
       font-size: 14px;
     }

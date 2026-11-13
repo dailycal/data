@@ -1,17 +1,17 @@
 ---
 /**
- * /team/past: everyone with an author file or a byline who isn't on the team now, grouped by the
+ * /staff/past: everyone with an author file or a byline who isn't on the team now, grouped by the
  * year of their latest article.
  */
 import AuthorCard from "../../components/AuthorCard.astro";
 import AuthorGroup from "../../components/AuthorGroup.astro";
-import TeamLayout from "../../layouts/TeamLayout.astro";
+import StaffLayout from "../../layouts/StaffLayout.astro";
 import { getAuthors, pastTeam } from "../../lib/authors";
 
 const groups = pastTeam(await getAuthors());
 ---
 
-<TeamLayout
+<StaffLayout
   title="Past Contributors"
   description="The Daily Californian Data Team's past members and contributors."
 >
@@ -23,6 +23,6 @@ const groups = pastTeam(await getAuthors());
     </AuthorGroup>
   ))}
   <Fragment slot="footer">
-    <a href="/team">The team now</a>
+    <a href="/staff">Current staff</a>
   </Fragment>
-</TeamLayout>
+</StaffLayout>
