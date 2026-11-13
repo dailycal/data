@@ -1,7 +1,8 @@
 /**
- * `npm run build`: runs `astro build`, showing its output as it goes, and saves that output as a page,
- * dist/editors/build.html, which the site serves at /editors/build. So the deployed site shows the
- * log of the build that made it, warnings included, as it looked in the console.
+ * `npm run build`: checks public/_redirects (see check-redirects.mjs), then runs `astro build`,
+ * showing its output as it goes, and saves that output as a page, dist/editors/build.html, which the
+ * site serves at /editors/build. So the deployed site shows the log of the build that made it,
+ * warnings included, as it looked in the console.
  *
  * Arguments are passed on to `astro build`.
  */
@@ -9,6 +10,15 @@ import { spawn } from "node:child_process";
 import { mkdirSync, writeFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { stripVTControlCharacters } from "node:util";
+import { assertRedirects } from "./check-redirects.mjs";
+
+// Fails the build, rather than the deploy, if Cloudflare wouldn't read every redirect
+try {
+  assertRedirects(fileURLToPath(new URL("../public/_redirects", import.meta.url)));
+} catch (error) {
+  console.error(error.message);
+  process.exit(1);
+}
 
 const PAGE = "dist/editors/build.html";
 // Astro's command, run with this Node (so it works outside `npm run` too)

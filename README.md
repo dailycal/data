@@ -21,7 +21,7 @@ Always run `npm run build` and `npm run lint` before pushing. GitHub Actions als
 
 **Deploying:** the site is entirely static, with nothing running on a server. It's hosted on Cloudflare as a Worker named `data` that only serves static assets (configured in [`wrangler.jsonc`](wrangler.jsonc)), so hosting it costs nothing. `npm run deploy` builds the site and uploads `dist/` with `wrangler deploy` (run `npx wrangler login` first).
 
-**Redirects** are real HTTP 301s, listed in [`public/_redirects`](public/_redirects), which Cloudflare reads.
+**Redirects** are real HTTP 301s, listed in [`public/_redirects`](public/_redirects), which Cloudflare reads. Cloudflare allows 2,000 static rules and 100 dynamic ones (with a `*` or `:placeholder` in the source), but every rule after the first dynamic one counts as dynamic, so keep dynamic rules at the end of the file. `npm run build` reads the file the way Cloudflare does and fails, saying which lines to fix, if Cloudflare would skip any rule ([`scripts/check-redirects.mjs`](scripts/check-redirects.mjs)).
 
 **Previews:** every pull request from a branch in this repository gets its own copy of the site at `https://pr<number>.datadev.dailycal.org` (e.g. `pr131.datadev.dailycal.org`), updated on every push and deleted when the pull request is closed or merged ([`.github/workflows/preview.yml`](.github/workflows/preview.yml)). The workflow comments the address on the pull request. Previews are [Cloudflare Workers Previews](https://developers.cloudflare.com/workers/previews/) of the `data` Worker, so they're served exactly like the real site, redirects included, but kept out of search engines. Pull requests from forks aren't previewed, since GitHub doesn't give them the repository's secrets; push the branch to this repository instead. To preview a branch from your own machine: `npm run build && npx wrangler preview --name <name>`, which serves it at `https://<name>.datadev.dailycal.org`.
 
@@ -48,7 +48,8 @@ src/
   styles/             Global and article CSS
   visuals/            Articles' visuals (React components), one folder per project, in a folder for
                       its article's year (e.g. 2026/nobel-visuals/; see "Visuals")
-scripts/              optimize-image.mjs: the command-line image optimizer
+scripts/              optimize-image.mjs: the command-line image optimizer; build.mjs: npm run build;
+                      check-redirects.mjs: checks public/_redirects before the build
 public/               Static files served as-is: the favicon, fonts, the data files visuals fetch
                       (data/<short slug>/) and interactives built elsewhere (interactive/<name>/)
 ```
