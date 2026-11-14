@@ -1,12 +1,14 @@
 // The professor report page at /interactive/profratings (src/pages/interactive/profratings.astro).
 // /interactive/profratings?prof=Toni%20Mar shows that professor's report; when two professors
 // share a name, &dept=<department> picks one. Without ?prof it shows the campus-wide top 10.
-import React, { useEffect, useMemo, useState } from 'react';
+import {
+  useEffect, useLayoutEffect, useMemo, useRef, useState,
+} from 'react';
 import * as d3 from 'd3';
 import { theme } from '../../../styles/theme';
 import {
-  Histogram, PARTIAL_NOTE, PARTIAL_YEAR, ProfSearchBox, RatingBars,
-  fillYears, formatCount, formatRating, parseRatingYear, plural, tokenize,
+  HIGHLIGHT_BG, Histogram, PARTIAL_NOTE, PARTIAL_YEAR, ProfSearchBox, RatingBars,
+  formatCount, formatRating, nameKey, parseHist, parseRatingYear, plural, tokenize, useReportHref,
 } from './shared';
 // Built by scripts/profratings_data.py and scripts/lookup_data.py in the scraping project.
 // profratings_index.csv: id, name, department, rating, weighted, rank, reviews, difficulty,
@@ -19,11 +21,8 @@ import INDEX_URL from './data/profratings_index.csv?url';
 import YEARS_URL from './data/profratings_years.csv?url';
 import HIST_URL from './data/rating_histogram.csv?url';
 
-const ARTICLE_URL = '/article/2026-11-10-prof-rating';
-const HIGHLIGHT = '#eef4fa';
 const RULE = '1px solid #e3e3e3';
 
-const nameKey = (text) => tokenize(text).join(' ');
 const capitalize = (s) => s.charAt(0).toUpperCase() + s.slice(1);
 
 const parseProf = (r) => ({
@@ -44,6 +43,17 @@ const parseProf = (r) => ({
   key: nameKey(r.name),
   tokens: tokenize(r.name),
 });
+
+// A professor's years in order, from their first review to their latest, with years they got
+// no reviews filled in as empty bars.
+const fillYears = (rows) => {
+  if (!rows.length) return [];
+  const byYear = new Map(rows.map((r) => [r.year, r]));
+  const [y0, y1] = d3.extent(rows, (r) => r.year);
+  return d3.range(y0, y1 + 1).map((year) => byYear.get(year) || {
+    year, total: 0, 1: 0, 2: 0, 3: 0, 4: 0, 5: 0,
+  });
+};
 
 // ---------- small building blocks ----------
 
@@ -95,63 +105,114 @@ const ProfLink = ({ prof, href, go, children }) => (
 );
 
 // Ranked rows: position, name, review count, weighted rating. `rows` is [{ pos, prof }] or
-// { gap: true } for the "…" between the top and the selected professor.
+// { gap: true } for a "…" standing in for professors not shown, which calls onExpand when clicked.
+// With maxHeight, the table scrolls inside a box that tall (header pinned at the top), starting
+// with the selected professor's row in the middle.
+const headCell = {
+  padding: '8px 10px',
+  fontWeight: 400,
+  position: 'sticky',
+  top: 0,
+  zIndex: 1,
+  background: '#fff',
+  boxShadow: 'inset 0 -1px 0 #e3e3e3', // a rule under the header that stays with it while scrolling
+};
 const RankTable = ({
-  rows, selectedId, href, go, showDept = false,
-}) => (
-  <table style={{
-    width: '100%', borderCollapse: 'collapse', background: '#fff', border: RULE, fontSize: 16,
-  }}
-  >
-    <thead>
-      <tr style={{ fontSize: 13, ...muted, textAlign: 'left' }}>
-        <th style={{ padding: '8px 10px', fontWeight: 400, width: 44 }}>No.</th>
-        <th style={{ padding: '8px 10px', fontWeight: 400 }}>Professor</th>
-        <th style={{ padding: '8px 10px', fontWeight: 400, textAlign: 'right' }}>Weighted rating</th>
-      </tr>
-    </thead>
-    <tbody>
-      {rows.map((row) => (row.gap ? (
-        <tr key="gap">
-          <td colSpan={3} style={{
-            padding: '2px 10px', borderTop: RULE, ...muted, letterSpacing: 2,
-          }}
-          >
-            …
-          </td>
+  rows, selectedId, href, go, showDept = false, onExpand, expandLabel, maxHeight,
+}) => {
+  const boxRef = useRef();
+  useLayoutEffect(() => {
+    const box = boxRef.current;
+    const row = box && box.querySelector('[data-selected="true"]');
+    if (row) box.scrollTop = row.offsetTop - (box.clientHeight - row.offsetHeight) / 2;
+  }, [maxHeight, selectedId]);
+
+  const table = (
+    <table style={{
+      width: '100%', borderCollapse: 'collapse', background: '#fff', border: maxHeight ? 'none' : RULE, fontSize: 16,
+    }}
+    >
+      <thead>
+        <tr style={{ fontSize: 13, ...muted, textAlign: 'left' }}>
+          <th style={{ ...headCell, width: 44 }}>No.</th>
+          <th style={headCell}>Professor</th>
+          <th style={{ ...headCell, textAlign: 'right' }}>Weighted rating</th>
         </tr>
-      ) : (
-        <tr
-          key={row.prof.id}
-          style={{
-            borderTop: RULE,
-            background: row.prof.id === selectedId ? HIGHLIGHT : 'transparent',
-            fontWeight: row.prof.id === selectedId ? 700 : 400,
-          }}
-        >
-          <td style={{ padding: '8px 10px', fontVariantNumeric: 'tabular-nums' }}>{row.pos}</td>
-          <td style={{ padding: '8px 10px' }}>
-            <ProfLink prof={row.prof} href={href} go={go} />
-            <span style={{
-              display: 'block', fontSize: 13, fontWeight: 400, ...muted,
+      </thead>
+      <tbody>
+        {rows.map((row, i) => (row.gap ? (
+          <tr key={`gap-${i}`}>
+            <td colSpan={3} style={{ padding: 0, borderTop: RULE }}>
+              <button
+                type="button"
+                onClick={onExpand}
+                aria-label={expandLabel}
+                style={{
+                  display: 'block',
+                  width: '100%',
+                  padding: '2px 10px',
+                  border: 'none',
+                  background: 'none',
+                  font: 'inherit',
+                  textAlign: 'left',
+                  letterSpacing: 2,
+                  cursor: 'pointer',
+                  ...muted,
+                }}
+              >
+                …
+              </button>
+            </td>
+          </tr>
+        ) : (
+          <tr
+            key={row.prof.id}
+            data-selected={row.prof.id === selectedId}
+            style={{
+              borderTop: RULE,
+              background: row.prof.id === selectedId ? HIGHLIGHT_BG : 'transparent',
+              fontWeight: row.prof.id === selectedId ? 700 : 400,
             }}
-            >
-              {showDept ? `${row.prof.department} · ` : ''}
-              {plural(row.prof.reviews, 'review')}
-            </span>
-          </td>
-          <td style={{ padding: '8px 10px', textAlign: 'right', fontVariantNumeric: 'tabular-nums' }}>
-            {formatRating(row.prof.weighted)}
-          </td>
-        </tr>
-      )))}
-    </tbody>
-  </table>
-);
+          >
+            <td style={{ padding: '8px 10px', fontVariantNumeric: 'tabular-nums' }}>{row.pos}</td>
+            <td style={{ padding: '8px 10px' }}>
+              <ProfLink prof={row.prof} href={href} go={go} />
+              <span style={{
+                display: 'block', fontSize: 13, fontWeight: 400, ...muted,
+              }}
+              >
+                {showDept ? `${row.prof.department} · ` : ''}
+                {plural(row.prof.reviews, 'review')}
+              </span>
+            </td>
+            <td style={{ padding: '8px 10px', textAlign: 'right', fontVariantNumeric: 'tabular-nums' }}>
+              {formatRating(row.prof.weighted)}
+            </td>
+          </tr>
+        )))}
+      </tbody>
+    </table>
+  );
+
+  if (!maxHeight) return table;
+  // position: relative makes the box the rows' offsetParent, for scrolling to the selected one.
+  return (
+    <div
+      ref={boxRef}
+      style={{
+        position: 'relative', maxHeight, overflowY: 'auto', border: RULE, background: '#fff',
+      }}
+    >
+      {table}
+    </div>
+  );
+};
 
 // ---------- the page ----------
 
-const ProfReport = () => {
+// articleUrl: the prof-rating article's, passed in by src/pages/interactive/profratings.astro so
+// "Back to the article" follows the article if it's renamed.
+const ProfReport = ({ articleUrl }) => {
   const [profs, setProfs] = useState(null);
   const [yearsById, setYearsById] = useState(null);
   const [hist, setHist] = useState(null);
@@ -160,7 +221,7 @@ const ProfReport = () => {
   useEffect(() => {
     d3.csv(INDEX_URL, parseProf).then(setProfs);
     d3.csv(YEARS_URL, parseRatingYear).then((rows) => setYearsById(d3.group(rows, (r) => r.id)));
-    d3.csv(HIST_URL, (r) => ({ score: +r.score, professors: +r.professors_weighted })).then(setHist);
+    d3.csv(HIST_URL, parseHist).then(setHist);
     const read = () => setParams(new URLSearchParams(window.location.search));
     read();
     window.addEventListener('popstate', read);
@@ -172,13 +233,8 @@ const ProfReport = () => {
     () => (profs ? [...profs].sort((a, b) => b.reviews - a.reviews || a.rank - b.rank) : null),
     [profs],
   );
-  const nameCounts = useMemo(() => (profs ? d3.rollup(profs, (v) => v.length, (p) => p.key) : null), [profs]);
-
-  const href = (prof) => {
-    const q = new URLSearchParams({ prof: prof.name });
-    if (nameCounts && nameCounts.get(prof.key) > 1) q.set('dept', prof.department);
-    return `/interactive/profratings?${q}`;
-  };
+  const href = useReportHref(profs);
+  // Switches to another professor's report without reloading the page.
   const go = (prof) => {
     const url = href(prof);
     window.history.pushState(null, '', url);
@@ -219,19 +275,28 @@ const ProfReport = () => {
     return Math.floor((100 * d3.bisectLeft(sorted, prof.weighted)) / total);
   }, [prof, profs, total]);
 
-  // The department's professors in rank order, and the rows to show: the top 5, then "…"
-  // and this professor if they're further down.
+  // Which professor's department table is expanded to every professor (by id), so moving to
+  // another professor starts collapsed again.
+  const [expandedFor, setExpandedFor] = useState(null);
+  const expanded = !!prof && expandedFor === prof.id;
+
+  // The department's professors in rank order, and the rows to show. Collapsed: the top 5, then
+  // this professor if they're further down, with a "…" (click to show everyone) wherever
+  // professors are skipped, including after the last row shown.
   const dept = useMemo(() => {
     if (!prof) return null;
     const list = profs.filter((p) => p.department === prof.department).sort((a, b) => a.rank - b.rank);
     const pos = list.indexOf(prof) + 1;
-    const rows = list.slice(0, 5).map((p, i) => ({ pos: i + 1, prof: p }));
+    const all = list.map((p, i) => ({ pos: i + 1, prof: p }));
+    if (expanded) return { size: list.length, pos, rows: all };
+    const rows = all.slice(0, 5);
     if (pos > 5) {
       if (pos > 6) rows.push({ gap: true });
-      rows.push({ pos, prof });
+      rows.push(all[pos - 1]);
     }
+    if (rows[rows.length - 1].pos < list.length) rows.push({ gap: true });
     return { size: list.length, pos, rows };
-  }, [prof, profs]);
+  }, [prof, profs, expanded]);
 
   // This professor's reviews by rating for every year from their first review to their latest.
   const profYears = prof && yearsById ? fillYears(yearsById.get(prof.id) || []) : null;
@@ -242,7 +307,7 @@ const ProfReport = () => {
     }}
     >
       <a
-        href={ARTICLE_URL}
+        href={articleUrl}
         style={{
           display: 'inline-block',
           margin: '0 0 18px',
@@ -254,14 +319,8 @@ const ProfReport = () => {
           background: '#fff',
         }}
       >
-        ← Back to the story
+        ← Back to the article
       </a>
-      <p style={{
-        margin: '0 0 10px', fontSize: 14, fontWeight: 700, letterSpacing: 0.5, textTransform: 'uppercase', color: theme.palette.darkBlue,
-      }}
-      >
-        UC Berkeley professor ratings
-      </p>
       <ProfSearchBox
         profs={byReviews}
         onChoose={go}
@@ -395,27 +454,16 @@ const ProfReport = () => {
           <p style={{ fontSize: 17, lineHeight: 1.45, margin: '0 0 0.75rem' }}>
             {`${prof.name} ranks No. ${dept.pos} of ${plural(dept.size, 'rated professor')} in ${prof.department}.`}
           </p>
-          <RankTable rows={dept.rows} selectedId={prof.id} href={href} go={go} />
+          <RankTable
+            rows={dept.rows}
+            selectedId={prof.id}
+            href={href}
+            go={go}
+            onExpand={() => setExpandedFor(prof.id)}
+            expandLabel={`Show all ${dept.size} professors in ${prof.department}`}
+            maxHeight={expanded ? 520 : undefined}
+          />
         </>
-      )}
-
-      {profs && (
-        <div style={{
-          marginTop: '2.5rem', paddingTop: '1rem', borderTop: RULE, fontSize: 14, lineHeight: 1.5, ...muted,
-        }}
-        >
-          <p style={{ margin: '0 0 0.5rem' }}>
-            Ratings come from every RateMyProfessors review of UC Berkeley professors as of Nov. 5,
-            2026. The weighted rating, which the rankings use, counts every professor as if they also
-            had 20 reviews at the campus average of 3.74, so a perfect score from a handful of
-            reviews doesn’t outrank a near-perfect score from hundreds. Reviews are counted in the
-            year they were posted.
-          </p>
-          <p style={{ margin: 0 }}>
-            {'Source: Brendan Raykoff/The Daily Californian analysis of RateMyProfessors reviews. '}
-            <a href={ARTICLE_URL} style={{ color: theme.palette.darkBlue }}>How does your professor rate?</a>
-          </p>
-        </div>
       )}
     </div>
   );

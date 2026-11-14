@@ -2,12 +2,34 @@
 // A UC Berkeley professor's RateMyProfessors report, at /interactive/profratings?prof=<name>.
 // The page itself is src/visuals/2026/prof-rating/ProfReport.jsx.
 import PageLayout from "../../layouts/PageLayout.astro";
+import StoryFooter from "../../components/StoryFooter.astro";
+import { articlePath, getArticles } from "../../lib/articles";
 import ProfReport from "../../visuals/2026/prof-rating/ProfReport";
+
+// The prof-rating article, for the report's "Back to the article" link and the footer's "About
+// this Story". Found by its slug so both still match if the article's date (and file name) changes.
+const article = (await getArticles()).find((a) => a.id.endsWith("-prof-rating"));
+if (!article) {
+  throw new Error("profratings.astro: no article with the slug prof-rating (for the back link and footer)");
+}
 ---
 
 <PageLayout
   title="Professor ratings"
-  description="Look up any UC Berkeley professor's RateMyProfessors ratings, how they've changed by semester and how they rank in their department."
+  description="Look up any UC Berkeley professor's RateMyProfessors ratings, how they've changed year by year and how they rank in their department."
 >
-  <ProfReport client:load />
+  <ProfReport client:load articleUrl={articlePath(article)} />
+  {/* The same width as the report's column (maxWidth 760, 8px padding) */}
+  <div class="footer">
+    <StoryFooter aboutStory={article.data.aboutStory} jointDept={article.data.jointDept} />
+  </div>
 </PageLayout>
+
+<style>
+  .footer {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 8px 30px;
+    font-family: Georgia, sans-serif;
+  }
+</style>

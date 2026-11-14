@@ -10,22 +10,22 @@ id,name,department,rating,weighted,rank,reviews,difficulty,first,last,tags
 2804069,Peyrin Kao,Computer Science,4.85,4.62,9,79,3.11,2022-07,2026-08,amazing lectures:37|caring:27|inspirational:18
 667663,Josh Hug,Engineering,4.78,4.59,10,94,3.47,2005-08,2026-10,respected:34|amazing lectures:31|inspirational:26
 763525,Justin Underhill,Art History,4.85,4.58,11,61,2.82,2005-11,2026-05,caring:3|respected:3|hilarious:2
-2335479,Alexander Paulin,Mathematics,4.62,4.57,12,361,3.29,2008-11,2026-10,amazing lectures:163|respected:118|accessible outside class:117
+2335479,Alexander Paulin,Mathematics,4.61,4.57,12,361,3.29,2008-11,2026-10,amazing lectures:163|respected:118|accessible outside class:117
 455760,Kent Lightfoot,Anthropology,4.78,4.57,13,80,1.66,2004-09,2024-05,hilarious:12|respected:9|caring:8
-727573,David Wetzel,History,4.84,4.57,14,61,2.46,2005-10,2024-01,amazing lectures:13|caring:7|graded by few things:6
+727573,David Wetzel,History,4.84,4.56,14,61,2.46,2005-10,2024-01,amazing lectures:13|caring:7|graded by few things:6
 7746,Mary Kelsey,Sociology,4.72,4.56,15,101,1.79,2002-09,2025-02,caring:22|amazing lectures:16|accessible outside class:13
-136169,Jon Ellman,Chemistry,4.82,4.56,16,62,2.86,2003-02,2011-12,
+136169,Jon Ellman,Chemistry,4.82,4.56,16,62,2.85,2003-02,2011-12,
 834300,Anna Maria Bellezza,Italian,5,4.56,17,37,2.7,2006-04,2026-07,caring:20|participation matters:13|amazing lectures:10
 588154,Ron Hassner,Political Science,4.77,4.55,18,77,2.84,2005-03,2026-03,get ready to read:13|amazing lectures:13|accessible outside class:9
 2940405,Mohamad Hallal,Civil Engineering,4.85,4.54,19,53,3.04,2023-10,2026-07,clear grading criteria:24|amazing lectures:22|caring:19
 2805419,Mohammed Nadeem,Business Administration,4.64,4.54,20,160,2.41,2022-06,2026-06,group projects:80|participation matters:74|caring:56
 1042728,Jeroen Dewulf,German,4.79,4.53,21,62,2.23,2007-10,2026-08,caring:18|participation matters:16|amazing lectures:14
-375627,Michael Burawoy,Sociology,4.82,4.53,22,55,3.46,2004-04,2023-12,amazing lectures:10|respected:8|inspirational:7
+375627,Michael Burawoy,Sociology,4.82,4.53,22,55,3.45,2004-04,2023-12,amazing lectures:10|respected:8|inspirational:7
 244347,Gary Firestone,Biology,4.78,4.52,23,59,2.15,2003-09,2026-11,amazing lectures:12|accessible outside class:10|caring:10
 641742,Ron Gronsky,Engineering,5,4.51,24,32,2.97,2005-09,2015-01,
 413320,Michael Larkin,Writing,4.92,4.51,25,38,2.79,2004-05,2026-01,gives good feedback:12|caring:12|clear grading criteria:5
 16984,Alex Filippenko,Astronomy,4.55,4.51,26,361,2.9,2001-10,2026-06,amazing lectures:90|inspirational:68|respected:53
-528461,Robin Einhorn,History,4.63,4.5,27,124,2.82,2004-12,2020-04,amazing lectures:7|hilarious:5|get ready to read:4
+528461,Robin Einhorn,History,4.63,4.51,27,124,2.81,2004-12,2020-04,amazing lectures:7|hilarious:5|get ready to read:4
 389750,Mitchell Breitwieser,English,4.83,4.5,28,47,2.6,2004-04,2016-12,amazing lectures:2|gives good feedback:1|inspirational:1
 2410171,Alexis Shusterman,Chemistry,4.56,4.5,29,250,3.14,2019-05,2026-09,amazing lectures:141|caring:117|accessible outside class:77
 124596,Ani Adhikari,Statistics,4.6,4.5,30,148,3.32,2003-02,2026-05,amazing lectures:36|respected:32|inspirational:16
@@ -34,19 +34,19 @@ id,name,department,rating,weighted,rank,reviews,difficulty,first,last,tags
 1034035,Terry Johnson,Engineering,4.97,4.5,33,32,2.19,2007-10,2022-06,respected:8|amazing lectures:7|accessible outside class:5
 1094670,Catherine Hollis,English,4.97,4.5,34,32,2.59,2008-01,2025-12,gives good feedback:8|caring:7|accessible outside class:7
 2861328,Brooke lober,Women's Studies,4.87,4.48,35,38,2.26,2022-12,2026-01,get ready to read:19|inspirational:18|amazing lectures:17
-895703,Robb Willer,Sociology,4.76,4.47,36,51,1.37,2006-09,2013-03,
+895703,Robb Willer,Sociology,4.76,4.48,36,51,1.37,2006-09,2013-03,
 1036436,Alani Hicks Bartlett,Italian,5,4.47,37,28,3.46,2007-09,2023-09,gives good feedback:2|amazing lectures:1|inspirational:1
 1130665,Nicholas Mathew,Music,4.81,4.47,38,43,1.95,2008-05,2026-06,amazing lectures:7|hilarious:6|inspirational:5
 1338031,Brian Delay,History,4.68,4.47,39,71,3,2010-04,2026-01,amazing lectures:36|get ready to read:26|inspirational:20
 1521018,Oliver Arnold,English,4.89,4.47,40,35,2.91,2010-12,2026-04,get ready to read:16|amazing lectures:13|inspirational:8
-1113561,Ethan Shagan,History,4.71,4.46,41,59,3.07,2008-05,2026-04,get ready to read:28|amazing lectures:27|lecture heavy:9
+1113561,Ethan Shagan,History,4.71,4.47,41,59,3.07,2008-05,2026-04,get ready to read:28|amazing lectures:27|lecture heavy:9
 265432,L.J. Feldman,Biology,4.65,4.46,42,77,3.1,2003-11,2025-12,caring:3|respected:2|accessible outside class:2
 2492784,Nathan Lowhorn,Physics,4.72,4.45,43,53,3.09,2019-05,2026-05,amazing lectures:27|hilarious:27|caring:19
 22049,Darcy Grigsby,Art History,4.68,4.45,44,62,3.34,2003-02,2026-09,get ready to read:15|amazing lectures:12|lecture heavy:7
 2848463,Marina Romani,Sociology,4.88,4.45,45,33,1.88,2022-12,2026-07,caring:23|amazing lectures:15|accessible outside class:11
 1677765,Charles Marshall,Biology,4.9,4.45,46,31,2.55,2012-01,2026-10,amazing lectures:18|caring:13|accessible outside class:10
 784120,Munis Faruqui,Asian Studies,4.85,4.44,47,34,3.06,2005-12,2026-07,amazing lectures:10|get ready to read:5|inspirational:4
-9281,Jean Frechet,Chemistry,4.53,4.43,48,143,3.32,2002-08,2011-06,
+9281,Jean Frechet,Chemistry,4.53,4.43,48,143,3.31,2002-08,2011-06,
 456421,Kaya Oakes,Writing,4.93,4.43,49,28,2.57,2004-09,2026-01,gives good feedback:7|get ready to read:4|participation matters:4
 2672133,Benjamin Blonder,Earth Science,4.83,4.43,50,35,2.51,2021-02,2026-05,amazing lectures:19|caring:14|accessible outside class:8
 252150,Steven Pedersen,Chemistry,4.49,4.42,51,199,3.35,2003-10,2018-05,skip class? you won't pass.:7|respected:6|amazing lectures:5
@@ -59,9 +59,9 @@ id,name,department,rating,weighted,rank,reviews,difficulty,first,last,tags
 235559,Oliver P John,Psychology,4.59,4.4,58,69,2,2003-08,2025-12,extra credit:6|amazing lectures:6|caring:6
 1140852,David Wagner,Computer Science,4.76,4.4,59,37,2.92,2008-09,2026-02,caring:17|amazing lectures:15|respected:11
 1569175,Thomas Fleming,Ethnic Studies,4.89,4.4,60,27,1.63,2008-12,2016-05,
-2549976,Becky Hsu,Writing,5,4.4,61,22,2.46,2020-04,2026-04,gives good feedback:16|caring:11|inspirational:7
+2549976,Becky Hsu,Writing,5,4.4,61,22,2.45,2020-04,2026-04,gives good feedback:16|caring:11|inspirational:7
 101785,Martha Olney,Economics,4.47,4.39,62,172,3.45,2002-12,2021-10,respected:17|amazing lectures:17|inspirational:9
-2245792,Alan Pomerantz,Legal Studies,4.96,4.39,63,23,3.56,2017-04,2026-10,gives good feedback:12|amazing lectures:10|inspirational:9
+2245792,Alan Pomerantz,Legal Studies,4.96,4.39,63,23,3.57,2017-04,2026-10,gives good feedback:12|amazing lectures:10|inspirational:9
 2619928,Christopher Lowman,Anthropology,4.96,4.39,64,23,1.78,2020-09,2024-04,amazing lectures:14|caring:12|clear grading criteria:7
 618991,Bryan Wagner,English,4.75,4.39,65,36,2.64,2005-06,2026-02,get ready to read:6|amazing lectures:6|participation matters:4
 1127029,Eric Schickler,Political Science,4.75,4.39,66,36,2.25,2008-05,2026-05,amazing lectures:10|clear grading criteria:5|inspirational:3
@@ -73,8 +73,8 @@ id,name,department,rating,weighted,rank,reviews,difficulty,first,last,tags
 211948,Alex Zettl,Physics,4.54,4.38,72,82,3.46,2003-05,2021-05,amazing lectures:7|respected:5|caring:3
 2386445,Richie Kim,Philosophy,4.7,4.38,73,40,3.35,2018-06,2026-06,amazing lectures:26|hilarious:15|get ready to read:14
 1135949,Mont Allen,Art History,4.85,4.38,74,27,2.85,2008-05,2014-01,
-631212,Leslie Martin,French,4.96,4.38,75,22,1.96,2005-06,2015-12,
-1295204,Karina Palau,Literature,4.71,4.38,76,38,2.6,2009-06,2025-05,caring:23|gives good feedback:16|accessible outside class:11
+631212,Leslie Martin,French,4.95,4.38,75,22,1.95,2005-06,2015-12,
+1295204,Karina Palau,Literature,4.71,4.38,76,38,2.61,2009-06,2025-05,caring:23|gives good feedback:16|accessible outside class:11
 154395,Darren Zook,Political Science,4.42,4.37,77,247,2.52,2003-02,2026-01,amazing lectures:62|hilarious:44|inspirational:30
 1715352,Hsinyu Lin,Chinese,5,4.37,78,20,2.95,2012-04,2026-09,caring:9|participation matters:6|gives good feedback:5
 566698,Dave Walter,Comparative Literature,4.91,4.37,79,23,2.04,2005-02,2026-08,gives good feedback:6|caring:6|accessible outside class:6
@@ -95,8 +95,8 @@ id,name,department,rating,weighted,rank,reviews,difficulty,first,last,tags
 896022,Suneel Udpa,Business Administration,4.9,4.34,94,21,2.62,2006-10,2019-05,hilarious:3|amazing lectures:3|participation matters:1
 2856129,Alexandra Pfiffner,Linguistics,4.9,4.34,95,21,2.9,2022-12,2026-03,amazing lectures:13|caring:13|group projects:9
 2257953,John Kaiser,Sociology,4.73,4.34,96,30,2.3,2018-07,2026-05,caring:17|hilarious:9|amazing lectures:9
-274932,Raka Ray,Sociology,4.64,4.34,97,39,2.28,2003-11,2017-09,inspirational:5|respected:3|amazing lectures:3
-241470,John McNamara,Art,4.86,4.33,98,22,2.04,2003-08,2021-03,gives good feedback:1|inspirational:1|caring:1
+274932,Raka Ray,Sociology,4.64,4.33,97,39,2.28,2003-11,2017-09,inspirational:5|respected:3|amazing lectures:3
+241470,John McNamara,Art,4.86,4.33,98,22,2.05,2003-08,2021-03,gives good feedback:1|inspirational:1|caring:1
 324555,John Latto,Biology,4.95,4.33,99,19,2,2004-02,2014-03,
 590244,John Campbell,Philosophy,4.52,4.33,100,62,2.81,2005-04,2026-04,graded by few things:13|amazing lectures:12|caring:10
 95710,Kevis Goodman,English,4.63,4.32,101,38,3.47,2002-12,2025-06,get ready to read:7|accessible outside class:6|amazing lectures:6
@@ -115,7 +115,7 @@ id,name,department,rating,weighted,rank,reviews,difficulty,first,last,tags
 526095,John Efron,History,4.63,4.3,114,35,3.11,2004-12,2025-12,inspirational:6|respected:5|amazing lectures:5
 505687,Claire Kramsch,German,4.82,4.3,115,22,3.09,2004-11,2015-05,
 2599285,Jesse Nathan,English,4.82,4.3,116,22,2.14,2020-05,2026-10,caring:14|participation matters:9|inspirational:6
-579485,Ying Yang,Chinese,4.89,4.3,117,19,2.9,2005-03,2010-05,
+579485,Ying Yang,Chinese,4.89,4.3,117,19,2.89,2005-03,2010-05,
 613803,Ryan Steele,Chemistry,4.89,4.3,118,19,2.53,2005-05,2019-12,gives good feedback:1|respected:1|caring:1
 699439,Kurt Cuffey,Geography,4.89,4.3,119,19,3.05,2005-10,2023-05,respected:3|amazing lectures:3|hilarious:2
 2261864,Iris Mauss,Psychology,4.89,4.3,120,19,1.47,2017-05,2026-05,caring:11|respected:10|accessible outside class:7
@@ -132,7 +132,7 @@ id,name,department,rating,weighted,rank,reviews,difficulty,first,last,tags
 324551,L. Craig Evans,Mathematics,4.56,4.29,131,41,3.12,2004-03,2019-05,lots of homework:4|lecture heavy:4|accessible outside class:2
 1280566,Juana Maria Rodriguez,Women's Studies,4.94,4.29,132,17,2.65,2009-05,2023-08,respected:5|inspirational:4|gives good feedback:3
 38534,Christina Romer,Economics,4.43,4.29,133,79,3.47,2002-03,2023-05,amazing lectures:13|respected:11|tough grader:9
-1335219,Lisa Pieraccini,Art History,4.64,4.29,134,31,2.84,2011-01,2026-06,get ready to read:10|amazing lectures:7|caring:6
+1335219,Lisa Pieraccini,Art History,4.65,4.29,134,31,2.84,2011-01,2026-06,get ready to read:10|amazing lectures:7|caring:6
 2038999,Edwin Lin,Sociology,4.42,4.29,135,80,2.41,2015-10,2026-07,amazing lectures:29|clear grading criteria:28|caring:18
 1981097,Atul Singh,International Studies,4.81,4.29,136,21,2.52,2015-01,2018-05,
 835789,Leslie Kurke,Classics,4.68,4.29,137,28,3.07,2005-04,2026-08,get ready to read:9|amazing lectures:8|graded by few things:5
@@ -169,9 +169,9 @@ id,name,department,rating,weighted,rank,reviews,difficulty,first,last,tags
 1094484,Russell Vance,Biology,4.79,4.25,168,19,2.68,2008-01,2026-08,respected:4|graded by few things:2|amazing lectures:2
 1785674,Peter Jenks,Linguistics,4.7,4.25,169,23,3.39,2012-12,2025-10,caring:10|amazing lectures:6|group projects:6
 2027456,Ben Spanbock,Writing,4.54,4.25,170,35,2.83,2015-07,2025-12,gives good feedback:19|caring:19|participation matters:16
-716770,Margi Wald,Writing,4.56,4.24,171,32,2.47,2005-12,2026-09,caring:11|group projects:10|clear grading criteria:6
-1649496,David Marno,English,4.56,4.24,172,32,2.81,2011-11,2024-12,amazing lectures:9|get ready to read:6|graded by few things:5
-473591,Steven Fish,Political Science,4.32,4.24,173,143,3.06,2004-10,2026-05,get ready to read:55|amazing lectures:29|respected:17
+716770,Margi Wald,Writing,4.56,4.25,171,32,2.47,2005-12,2026-09,caring:11|group projects:10|clear grading criteria:6
+1649496,David Marno,English,4.56,4.25,172,32,2.81,2011-11,2024-12,amazing lectures:9|get ready to read:6|graded by few things:5
+473591,Steven Fish,Political Science,4.31,4.24,173,143,3.06,2004-10,2026-05,get ready to read:55|amazing lectures:29|respected:17
 1112032,Alastair Iles,Environ. Sci. Policy & Mgmt.,4.75,4.24,174,20,2.9,2008-07,2026-02,amazing lectures:7|get ready to read:5|participation matters:4
 444798,Mark D'Esposito,Psychology,4.88,4.24,175,16,2.5,2004-08,2025-05,amazing lectures:4|graded by few things:4|test heavy:2
 433330,Lisa Regan,Art History,4.45,4.24,176,49,2.86,2004-10,2016-12,get ready to read:2|skip class? you won't pass.:2|lecture heavy:1
@@ -181,7 +181,7 @@ id,name,department,rating,weighted,rank,reviews,difficulty,first,last,tags
 647776,Alex Diesl,Mathematics,4.82,4.24,180,17,2.18,2005-08,2022-12,group projects:2|amazing lectures:1|gives good feedback:1
 1192874,Joni Spigler,Art History,4.82,4.24,181,17,2.94,2009-03,2014-02,
 2146996,Laxmi Kumaran,Theatre & Dance,5,4.24,182,13,1.38,2018-05,2025-05,caring:8|clear grading criteria:5|respected:4
-2857875,Joseph Klett,Sociology,4.68,4.23,183,22,2.54,2023-04,2026-07,amazing lectures:11|clear grading criteria:9|graded by few things:6
+2857875,Joseph Klett,Sociology,4.68,4.23,183,22,2.55,2023-04,2026-07,amazing lectures:11|clear grading criteria:9|graded by few things:6
 246891,Marian Diamond,Biology,4.4,4.23,184,57,1.77,2003-09,2025-01,amazing lectures:3|lots of homework:2|lecture heavy:2
 752733,Darlene Francis,Psychology,4.55,4.23,185,31,2.48,2005-11,2015-02,
 2327024,Shari Paladino,Art Media & Design,4.78,4.23,186,18,2.78,2017-12,2019-06,inspirational:9|gives good feedback:8|caring:8
@@ -237,13 +237,13 @@ id,name,department,rating,weighted,rank,reviews,difficulty,first,last,tags
 2789656,Johann Frick,Philosophy,4.8,4.19,236,15,3.13,2022-05,2026-05,amazing lectures:11|get ready to read:10|inspirational:4
 522880,Charis Thompson,Women's Studies,4.75,4.19,237,16,2.62,2004-12,2018-05,gives good feedback:1|respected:1|inspirational:1
 2367541,Lev Michael,Linguistics,4.52,4.19,238,27,2.96,2008-12,2026-05,amazing lectures:10|caring:5|hilarious:5
-105302,Mira Kopell,Film,5,4.19,239,11,2.54,2005-08,2022-08,caring:3|participation matters:2|gives good feedback:2
-774096,Georgina Kleege,English,5,4.19,240,11,2.46,2005-12,2021-12,accessible outside class:3|inspirational:3|gives good feedback:3
+105302,Mira Kopell,Film,5,4.19,239,11,2.55,2005-08,2022-08,caring:3|participation matters:2|gives good feedback:2
+774096,Georgina Kleege,English,5,4.19,240,11,2.45,2005-12,2021-12,accessible outside class:3|inspirational:3|gives good feedback:3
 887380,Santiago Canez,Mathematics,5,4.19,241,11,2.82,2006-09,2012-09,
 1447348,Daniel Hoffman,French,5,4.19,242,11,2.18,2010-08,2025-04,participation matters:5|inspirational:4|accessible outside class:4
 2622878,Fuifuilupe Niumeitolu,Women's Studies,5,4.19,243,11,2,2020-09,2022-01,caring:8|inspirational:7|amazing lectures:5
 3065334,Russell Weber,History,5,4.19,244,11,3.09,2024-12,2026-05,amazing lectures:7|caring:6|participation matters:5
-2496386,Robert Braun,Sociology,4.42,4.18,245,38,3.16,2019-05,2026-07,amazing lectures:17|get ready to read:13|tough grader:7
+2496386,Robert Braun,Sociology,4.42,4.19,245,38,3.16,2019-05,2026-07,amazing lectures:17|get ready to read:13|tough grader:7
 2880221,Katie Blackford,Chemistry,4.41,4.18,246,39,2.28,2023-05,2026-08,caring:16|accessible outside class:12|clear grading criteria:10
 2761539,Bonnie Morris,History,4.44,4.18,247,34,2,2021-12,2026-05,amazing lectures:14|graded by few things:12|hilarious:8
 618974,Tarek Zohdi,Mechanical Engineering,4.67,4.18,248,18,3.17,2005-05,2022-05,amazing lectures:3|inspirational:3|clear grading criteria:2
@@ -260,9 +260,9 @@ id,name,department,rating,weighted,rank,reviews,difficulty,first,last,tags
 468441,Sam Mchombo,Linguistics,4.44,4.17,259,32,1.53,2004-10,2021-04,respected:1|inspirational:1|amazing lectures:1
 2663773,Ryan Edwards,Economics,4.44,4.17,260,32,2.25,2021-04,2026-03,caring:22|clear grading criteria:14|hilarious:7
 538049,Claudia Carr,Environmental Science,4.32,4.17,261,57,3.6,2005-04,2023-10,amazing lectures:19|inspirational:17|participation matters:11
-2617150,James Campbell,Economics,4.22,4.16,262,172,3.24,2020-08,2026-09,amazing lectures:57|hilarious:52|test heavy:42
-444197,Terry Buehler,Physics,4.38,4.16,263,39,3.1,2004-08,2025-06,amazing lectures:6|accessible outside class:4|caring:4
-2050708,Srijani Ghosh,Theatre & Dance,4.48,4.16,264,27,2.82,2016-12,2026-08,participation matters:18|gives good feedback:13|clear grading criteria:7
+2617150,James Campbell,Economics,4.22,4.17,262,172,3.24,2020-08,2026-09,amazing lectures:57|hilarious:52|test heavy:42
+444197,Terry Buehler,Physics,4.38,4.17,263,39,3.1,2004-08,2025-06,amazing lectures:6|accessible outside class:4|caring:4
+2050708,Srijani Ghosh,Theatre & Dance,4.48,4.17,264,27,2.81,2016-12,2026-08,participation matters:18|gives good feedback:13|clear grading criteria:7
 487087,Chris Knaus,African-American Studies,4.57,4.16,265,21,3,2004-11,2010-11,
 598121,Yuri Slezkine,History,4.57,4.16,266,21,2.9,2005-04,2017-04,respected:1|hilarious:1|amazing lectures:1
 487946,John Lindow,Scandinavian,4.73,4.16,267,15,2.8,2004-11,2015-05,
@@ -286,7 +286,7 @@ id,name,department,rating,weighted,rank,reviews,difficulty,first,last,tags
 564831,David Winickoff,Environmental Science,4.65,4.16,285,17,2.94,2005-03,2013-08,
 616557,Suzanne Guerlac,French,4.65,4.16,286,17,3.94,2005-05,2016-05,
 12105,William Hanks,Anthropology,4.43,4.16,287,30,2.3,2003-03,2024-05,lecture heavy:3|amazing lectures:2|participation matters:2
-1780565,David Nadler,Mathematics,4.35,4.16,288,43,3.42,2012-12,2025-02,caring:15|amazing lectures:14|test heavy:10
+1780565,David Nadler,Mathematics,4.35,4.15,288,43,3.42,2012-12,2025-02,caring:15|amazing lectures:14|test heavy:10
 38538,Michael Omi,Ethnic Studies,4.5,4.15,289,24,2.46,2002-03,2020-05,clear grading criteria:2|respected:1|inspirational:1
 487604,Linda H Rugg,Scandinavian,4.91,4.15,290,11,2.82,2005-06,2024-04,gives good feedback:1|respected:1|graded by few things:1
 719693,Michael Tuncap,Ethnic Studies,4.91,4.15,291,11,4,2005-12,2020-03,inspirational:4|tough grader:3|lots of homework:3
@@ -341,16 +341,16 @@ id,name,department,rating,weighted,rank,reviews,difficulty,first,last,tags
 876887,Shahwali Ahmadi,Near Eastern Studies,4.59,4.13,340,17,2.29,2006-08,2020-05,caring:4|respected:3|accessible outside class:1
 1652054,Robert Yamasato,Music,4.59,4.13,341,17,2.88,2011-11,2026-10,gives good feedback:5|caring:4|amazing lectures:4
 1009294,Rakesh Bhandari,Interdisciplinary Studies,4.26,4.13,342,57,2.7,2007-05,2025-06,get ready to read:19|respected:13|caring:12
-717051,Mark Stacey,Engineering,4.9,4.12,343,10,2.4,2005-12,2025-01,group projects:3|amazing lectures:3|inspirational:2
-976219,Vesna Rodic,French,4.9,4.12,344,10,2.9,2008-10,2025-01,get ready to read:2|caring:2|gives good feedback:2
-1166547,Amanda Reiman,Social Welfare,4.9,4.12,345,10,1.9,2008-08,2016-03,
-2021788,Daniel Kasen,Physics,4.9,4.12,346,10,2.5,2015-06,2026-07,amazing lectures:7|inspirational:7|caring:5
-2393114,Gerald Benoit,Computer Science,4.9,4.12,347,10,3.4,2018-07,2023-08,caring:5|respected:5|amazing lectures:5
-2510136,Chisako Cole,Writing,4.56,4.12,348,18,2.78,2021-04,2026-06,caring:11|accessible outside class:9|gives good feedback:9
-2259194,Dolores McElroy,Film,4.42,4.12,349,26,3.08,2019-12,2025-07,caring:12|amazing lectures:11|gives good feedback:10
+717051,Mark Stacey,Engineering,4.9,4.13,343,10,2.4,2005-12,2025-01,group projects:3|amazing lectures:3|inspirational:2
+976219,Vesna Rodic,French,4.9,4.13,344,10,2.9,2008-10,2025-01,get ready to read:2|caring:2|gives good feedback:2
+1166547,Amanda Reiman,Social Welfare,4.9,4.13,345,10,1.9,2008-08,2016-03,
+2021788,Daniel Kasen,Physics,4.9,4.13,346,10,2.5,2015-06,2026-07,amazing lectures:7|inspirational:7|caring:5
+2393114,Gerald Benoit,Computer Science,4.9,4.13,347,10,3.4,2018-07,2023-08,caring:5|respected:5|amazing lectures:5
+2510136,Chisako Cole,Writing,4.56,4.13,348,18,2.78,2021-04,2026-06,caring:11|accessible outside class:9|gives good feedback:9
+2259194,Dolores McElroy,Film,4.42,4.13,349,26,3.08,2019-12,2025-07,caring:12|amazing lectures:11|gives good feedback:10
 414474,David Henkin,History,4.22,4.12,350,76,2.88,2004-05,2026-10,get ready to read:12|amazing lectures:10|graded by few things:8
 2275312,Richard Huntsinger,Business Administration,4.53,4.12,351,19,2.95,2017-08,2026-01,caring:9|accessible outside class:8|amazing lectures:5
-621043,Marian Feldman,Near Eastern Studies,4.82,4.12,352,11,2.46,2005-05,2012-12,
+621043,Marian Feldman,Near Eastern Studies,4.82,4.12,352,11,2.45,2005-05,2012-12,
 1871151,Felicia Viator,History,4.82,4.12,353,11,2.91,2014-04,2016-06,
 3088428,Christian Gaetz,Mathematics,4.82,4.12,354,11,2.91,2025-12,2026-02,amazing lectures:4|hilarious:4|respected:3
 544463,Harley Shaiken,Latin American Studies,4.39,4.12,355,28,3.04,2004-12,2019-12,amazing lectures:3|graded by few things:1|caring:1
@@ -366,8 +366,8 @@ id,name,department,rating,weighted,rank,reviews,difficulty,first,last,tags
 2719180,Chelsea Gregory,Theatre & Dance,4.69,4.11,365,13,1.69,2022-04,2026-08,inspirational:8|participation matters:5|amazing lectures:4
 3066497,Ross Doll,Geography,4.69,4.11,366,13,3.23,2024-12,2026-11,caring:6|get ready to read:5|amazing lectures:3
 215703,Ole Hald,Mathematics,4.19,4.11,367,101,3.65,2004-10,2023-04,amazing lectures:8|hilarious:4|caring:4
-318112,David Romer,Economics,4.46,4.11,368,22,3.5,2003-12,2023-07,respected:8|amazing lectures:7|caring:4
-1889210,Emily Carpenter,Film,4.46,4.11,369,22,2.41,2014-04,2024-10,participation matters:8|gives good feedback:8|caring:8
+318112,David Romer,Economics,4.45,4.11,368,22,3.5,2003-12,2023-07,respected:8|amazing lectures:7|caring:4
+1889210,Emily Carpenter,Film,4.45,4.11,369,22,2.41,2014-04,2024-10,participation matters:8|gives good feedback:8|caring:8
 326860,Kipling Will,Biology,4.3,4.11,370,40,2.42,2003-12,2026-01,test heavy:7|lecture heavy:6|clear grading criteria:5
 208049,Bruce Cain,Political Science,4.64,4.11,371,14,2.71,2003-11,2013-02,
 388545,John Lesch,History,4.64,4.11,372,14,2.21,2004-04,2013-11,
@@ -418,22 +418,22 @@ id,name,department,rating,weighted,rank,reviews,difficulty,first,last,tags
 1370440,Mairi McLaughlin,French,4.8,4.09,417,10,3.1,2010-05,2026-03,clear grading criteria:4|gives good feedback:3|amazing lectures:3
 1794768,Gholam-Reza Ghahramani,Near Eastern Studies,4.8,4.09,418,10,2,2013-01,2025-02,caring:8|accessible outside class:5|respected:4
 484443,Richmond Sarpong,Chemistry,4.43,4.09,419,21,4.14,2006-04,2015-10,
-287581,Marilyn Fabe,Film,4.41,4.09,420,22,2.54,2003-11,2010-05,
+287581,Marilyn Fabe,Film,4.41,4.09,420,22,2.55,2003-11,2010-05,
 164816,Jeffrey Hadler,Asian Studies,4.73,4.09,421,11,2,2003-05,2015-05,
 479855,Amy Rust,Film,4.73,4.09,422,11,2.91,2004-12,2009-12,
 894739,Luba Golburt,Languages,4.73,4.09,423,11,2.73,2006-09,2026-06,get ready to read:2|participation matters:1|extra credit:1
-1881686,Terry Regier,Cognitive Science,4.73,4.09,424,11,2.46,2014-02,2026-05,get ready to read:4|participation matters:4|amazing lectures:4
+1881686,Terry Regier,Cognitive Science,4.73,4.09,424,11,2.45,2014-02,2026-05,get ready to read:4|participation matters:4|amazing lectures:4
 1965274,Abhishek Kaicker,History,4.73,4.09,425,11,2.91,2017-04,2026-06,get ready to read:8|amazing lectures:7|caring:3
-2041912,Shawn Shadden,Mechanical Engineering,4.73,4.09,426,11,3.54,2015-09,2026-04,amazing lectures:4|caring:2|accessible outside class:2
+2041912,Shawn Shadden,Mechanical Engineering,4.73,4.09,426,11,3.55,2015-09,2026-04,amazing lectures:4|caring:2|accessible outside class:2
 2367364,Maya Sidhu,French,4.73,4.09,427,11,2,2018-05,2025-08,caring:7|participation matters:6|clear grading criteria:3
-2567847,Eric Stanley,Women's Studies,4.73,4.09,428,11,2.46,2020-01,2025-02,get ready to read:9|caring:4|accessible outside class:4
+2567847,Eric Stanley,Women's Studies,4.73,4.09,428,11,2.45,2020-01,2025-02,get ready to read:9|caring:4|accessible outside class:4
 267699,Marina Ratner,Mathematics,4.17,4.09,429,90,3.74,2004-02,2016-12,gives good feedback:1|respected:1
 663161,James Vernon,History,4.39,4.09,430,23,2.65,2005-11,2023-05,amazing lectures:5|accessible outside class:5|clear grading criteria:3
 688708,Gregory Feist,Psychology,4.67,4.09,431,12,2.42,2005-12,2023-11,participation matters:1|amazing lectures:1|gives good feedback:1
 1382353,Cybelle Fox,Sociology,4.67,4.09,432,12,3.08,2011-11,2026-07,amazing lectures:6|get ready to read:3|inspirational:2
 1506076,Jasenka Rakas,Civil Engineering,4.67,4.09,433,12,2.67,2010-12,2026-05,group projects:6|gives good feedback:4|caring:3
 377586,Trevor Murphy,Classics,4.2,4.09,434,59,2.85,2004-04,2026-01,get ready to read:17|lecture heavy:8|participation matters:7
-345011,Oliver O'Reilly,Engineering,4.38,4.08,435,24,4.17,2004-05,2021-04,amazing lectures:1|would take again:1
+345011,Oliver O'Reilly,Engineering,4.38,4.09,435,24,4.17,2004-05,2021-04,amazing lectures:1|would take again:1
 1347537,Alexander Cook,History,4.62,4.08,436,13,2.46,2010-03,2017-10,skip class? you won't pass.:1|so many papers:1|lecture heavy:1
 2163063,Sean Freeder,Political Science,4.62,4.08,437,13,3.38,2016-08,2020-10,amazing lectures:6|accessible outside class:5|gives good feedback:5
 1904978,Thomas Courtade,Electrical Engineering,4.36,4.08,438,25,3.6,2014-05,2026-05,amazing lectures:16|lots of homework:8|inspirational:6
@@ -512,25 +512,25 @@ id,name,department,rating,weighted,rank,reviews,difficulty,first,last,tags
 2264430,Lanchih Po,East Asian Studies,4.64,4.06,511,11,2.82,2017-06,2024-08,get ready to read:6|inspirational:4|caring:4
 2335353,Semyon Dyatlov,Mathematics,4.64,4.06,512,11,3.36,2018-04,2019-09,hilarious:10|amazing lectures:9|caring:3
 252922,Nadesan Permaul,Rhetoric,4.19,4.06,513,48,3.12,2003-09,2025-01,get ready to read:9|participation matters:8|accessible outside class:7
-2383556,Mary Grover,English,4.58,4.06,514,12,2.75,2018-10,2026-07,gives good feedback:5|caring:4|amazing lectures:4
+2383556,Mary Grover,English,4.58,4.05,514,12,2.75,2018-10,2026-07,gives good feedback:5|caring:4|amazing lectures:4
 399850,Thomas Gold,Sociology,4.18,4.05,515,50,2.18,2004-05,2025-11,hilarious:5|graded by few things:3|accessible outside class:3
 2137773,Nikhil Srivastava,Mathematics,4.14,4.05,516,69,3.49,2016-05,2026-07,caring:18|lots of homework:16|respected:16
 2094344,Damon Young,Film,4.54,4.05,517,13,2.69,2015-12,2026-01,get ready to read:5|participation matters:5|amazing lectures:5
 959212,Jerome Baggett,Sociology,4.47,4.05,518,15,2.87,2007-08,2024-07,amazing lectures:2|gives good feedback:1|inspirational:1
 407368,Andrew Garrett,Linguistics,4.22,4.05,519,37,3.38,2004-05,2025-10,get ready to read:6|tough grader:4|amazing lectures:3
 2731501,Anna Eng,Women's Studies,4.2,4.05,520,40,2.4,2021-11,2026-10,get ready to read:30|amazing lectures:15|inspirational:11
-521451,Elena Conis,Environmental Science,4.37,4.04,521,19,2.26,2004-12,2013-03,
-3106655,Josh Grossman,Data Science,4.37,4.04,522,19,2.95,2025-10,2026-11,amazing lectures:8|caring:6|respected:5
+521451,Elena Conis,Environmental Science,4.37,4.05,521,19,2.26,2004-12,2013-03,
+3106655,Josh Grossman,Data Science,4.37,4.05,522,19,2.95,2025-10,2026-11,amazing lectures:8|caring:6|respected:5
 1835732,Alexander Coward,Mathematics,4.14,4.04,523,65,2.52,2013-09,2016-06,
 634216,Greg Choy,Ethnic Studies,4.35,4.04,524,20,2.1,2005-09,2024-09,get ready to read:4|inspirational:4|participation matters:3
 1063194,Jonathan Sheehan,History,4.32,4.04,525,22,3,2007-11,2025-12,get ready to read:10|lecture heavy:5|participation matters:4
-1422898,John Lott,Mathematics,4.32,4.04,526,22,2.54,2010-03,2023-09,test heavy:5|hilarious:5|amazing lectures:4
-2786111,Eric Longfellow,English,4.3,4.04,527,23,3.56,2022-05,2026-08,participation matters:11|gives good feedback:10|caring:8
+1422898,John Lott,Mathematics,4.32,4.04,526,22,2.55,2010-03,2023-09,test heavy:5|hilarious:5|amazing lectures:4
+2786111,Eric Longfellow,English,4.3,4.04,527,23,3.57,2022-05,2026-08,participation matters:11|gives good feedback:10|caring:8
 12110,Rosemary Joyce,Anthropology,4.29,4.04,528,24,2.58,2003-03,2023-01,respected:2|accessible outside class:2|clear grading criteria:1
 1746733,Natalia Caporale,Molecular/Cellular Biology,4.28,4.04,529,25,3.32,2013-01,2018-08,respected:1|hilarious:1|caring:1
 712490,Daniel Blanton,English,4.27,4.04,530,26,3.04,2005-09,2023-01,amazing lectures:2|lecture heavy:2|gives good feedback:1
 608124,Ula Taylor,African-American Studies,4.25,4.04,531,28,3,2005-04,2026-08,get ready to read:8|graded by few things:6|amazing lectures:4
-2283724,David Romps,Earth & Planetary Sciences,4.09,4.04,532,116,2.1,2017-10,2026-07,amazing lectures:50|hilarious:27|clear grading criteria:25
+2283724,David Romps,Earth & Planetary Sciences,4.09,4.03,532,116,2.1,2017-10,2026-07,amazing lectures:50|hilarious:27|clear grading criteria:25
 406472,James Casey,Engineering,4.22,4.03,533,32,2.62,2004-05,2024-12,respected:5|caring:4|inspirational:3
 606309,John Ferrari,Classics,4.22,4.03,534,32,2.84,2005-04,2025-06,get ready to read:13|lecture heavy:6|amazing lectures:6
 458295,Margaret Anderson,History,4.19,4.03,535,36,2.92,2004-09,2013-04,
@@ -594,14 +594,14 @@ id,name,department,rating,weighted,rank,reviews,difficulty,first,last,tags
 2875953,Joan McQuade,English,4.6,4.03,593,10,1.4,2023-04,2025-12,graded by few things:4|inspirational:3|caring:3
 2903387,John Wright,Computer Science,4.6,4.03,594,10,3.5,2023-04,2025-12,amazing lectures:6|respected:6|caring:4
 2911912,Michael Rodriguez-Muniz,Sociology,4.6,4.03,595,10,2.2,2023-05,2026-08,extra credit:8|get ready to read:3|amazing lectures:3
-458129,Leonard Bjeldanes,Nutrition,4.54,4.02,596,11,2.18,2004-10,2011-05,
-965959,Tom Griffiths,Cognitive Science,4.54,4.02,597,11,2.09,2007-03,2015-09,
-1213276,Elisa Tamarkin,English,4.54,4.02,598,11,2.91,2008-11,2025-03,amazing lectures:5|caring:3|accessible outside class:2
-2367683,John Elrick,Geography,4.54,4.02,599,11,3.09,2018-04,2022-08,amazing lectures:5|caring:4|lecture heavy:3
-2383570,Abhijeet Paul,East Asian Studies,4.54,4.02,600,11,1.91,2018-06,2025-12,caring:4|group projects:3|respected:3
-2395951,Rita Lucarelli,Near Eastern Studies,4.54,4.02,601,11,1.82,2018-08,2026-02,caring:6|amazing lectures:4|inspirational:4
-2508761,Charles Huang,Arts & Humanities,4.54,4.02,602,11,1.73,2020-05,2026-05,inspirational:7|gives good feedback:6|respected:5
-3000389,Kunal Cholera,Business Administration,4.54,4.02,603,11,2.91,2024-04,2026-08,inspirational:5|amazing lectures:5|caring:4
+458129,Leonard Bjeldanes,Nutrition,4.55,4.02,596,11,2.18,2004-10,2011-05,
+965959,Tom Griffiths,Cognitive Science,4.55,4.02,597,11,2.09,2007-03,2015-09,
+1213276,Elisa Tamarkin,English,4.55,4.02,598,11,2.91,2008-11,2025-03,amazing lectures:5|caring:3|accessible outside class:2
+2367683,John Elrick,Geography,4.55,4.02,599,11,3.09,2018-04,2022-08,amazing lectures:5|caring:4|lecture heavy:3
+2383570,Abhijeet Paul,East Asian Studies,4.55,4.02,600,11,1.91,2018-06,2025-12,caring:4|group projects:3|respected:3
+2395951,Rita Lucarelli,Near Eastern Studies,4.55,4.02,601,11,1.82,2018-08,2026-02,caring:6|amazing lectures:4|inspirational:4
+2508761,Charles Huang,Arts & Humanities,4.55,4.02,602,11,1.73,2020-05,2026-05,inspirational:7|gives good feedback:6|respected:5
+3000389,Kunal Cholera,Business Administration,4.55,4.02,603,11,2.91,2024-04,2026-08,inspirational:5|amazing lectures:5|caring:4
 418025,Nusrat Rabbee,Statistics,4.5,4.02,604,12,2.67,2012-08,2014-08,
 2380790,Maria Barrios-Leblanc,Asian Studies,4.5,4.02,605,12,1.42,2018-05,2025-04,hilarious:8|caring:6|participation matters:3
 2854425,Julia Fawcett,Theatre & Dance,4.5,4.02,606,12,2.5,2023-01,2026-01,participation matters:8|caring:7|amazing lectures:4
@@ -620,24 +620,24 @@ id,name,department,rating,weighted,rank,reviews,difficulty,first,last,tags
 913752,Kirsten Schwartz,Rhetoric,4.3,4.02,619,20,3.55,2006-11,2020-12,accessible outside class:2|get ready to read:2|gives good feedback:2
 2252209,Duncan Macrae,Classics,4.3,4.02,620,20,2.35,2017-04,2026-05,get ready to read:10|lecture heavy:7|accessible outside class:6
 1418405,Nadia Ellis,English,4.29,4.02,621,21,3.9,2010-03,2025-03,amazing lectures:7|participation matters:6|inspirational:5
-643907,Leslea Hlusko,Biology,4.08,4.02,622,82,2.7,2005-09,2021-05,amazing lectures:13|caring:7|clear grading criteria:6
+643907,Leslea Hlusko,Biology,4.09,4.02,622,82,2.7,2005-09,2021-05,amazing lectures:13|caring:7|clear grading criteria:6
 467924,Elizabeth Abel,English,4.25,4.02,623,24,2.92,2004-10,2018-05,get ready to read:3|accessible outside class:2|lecture heavy:2
 242104,Emiliana Simon-Thomas,Psychology,4.24,4.02,624,25,2.28,2003-12,2010-10,
 2985425,Jordan Mursinna,History,4.24,4.02,625,25,2.76,2024-10,2026-04,get ready to read:21|amazing lectures:8|graded by few things:7
 1080192,Janet Sorensen,English,4.22,4.02,626,27,2.44,2007-12,2025-03,get ready to read:8|caring:6|amazing lectures:4
-241472,Mark Griffith,Classics,4.21,4.01,627,29,2.55,2003-08,2020-05,get ready to read:3|respected:2|graded by few things:2
-244356,Fred Wilt,Biology,4.21,4.01,628,29,2.1,2003-09,2014-05,
-1077801,Ryan Sloan,Writing,4.2,4.01,629,30,3.27,2007-12,2025-07,tough grader:8|gives good feedback:8|accessible outside class:8
+241472,Mark Griffith,Classics,4.21,4.02,627,29,2.55,2003-08,2020-05,get ready to read:3|respected:2|graded by few things:2
+244356,Fred Wilt,Biology,4.21,4.02,628,29,2.1,2003-09,2014-05,
+1077801,Ryan Sloan,Writing,4.2,4.02,629,30,3.27,2007-12,2025-07,tough grader:8|gives good feedback:8|accessible outside class:8
 808954,Richard Perry,Legal Studies,4.18,4.01,630,34,2.53,2007-06,2023-07,respected:6|get ready to read:4|hilarious:4
 1784034,Karenjot Bhangoo Randhawa,Peace & Conflict Studies,4.14,4.01,631,43,3.09,2012-12,2026-02,get ready to read:16|group projects:12|caring:10
 1710377,Josh Jackson,Mass Communications,4.09,4.01,632,64,3.08,2012-04,2026-08,amazing lectures:19|hilarious:14|get ready to read:12
-313931,Victoria Robinson,Ethnic Studies,4.06,4.01,633,109,2.62,2003-12,2025-12,inspirational:12|amazing lectures:12|get ready to read:8
+313931,Victoria Robinson,Ethnic Studies,4.06,4.01,633,109,2.61,2003-12,2025-12,inspirational:12|amazing lectures:12|get ready to read:8
 350459,Michael Hutchings,Mathematics,4.07,4,634,73,2.96,2004-02,2026-01,lots of homework:10|respected:6|graded by few things:4
 13904,John Bishop,English,4.11,4,635,47,2.77,2001-09,2008-12,
 2130548,Christoph Hermann,Sociology,4.12,4,636,43,2.49,2017-10,2026-01,graded by few things:15|amazing lectures:14|caring:12
 196465,Hans Sluga,Philosophy,4.16,4,637,31,2.97,2003-04,2025-12,get ready to read:11|graded by few things:8|lecture heavy:7
 809529,John Wallace,Japanese,4.16,4,638,31,2.71,2006-02,2021-01,skip class? you won't pass.:5|inspirational:4|gives good feedback:3
-2310254,Daniel Kelly,History,4.18,4,639,28,3.07,2017-12,2024-12,get ready to read:16|graded by few things:12|amazing lectures:11
+2310254,Daniel Kelly,History,4.18,3.99,639,28,3.07,2017-12,2024-12,get ready to read:16|graded by few things:12|amazing lectures:11
 2071904,Zehlia Babaci-Wilhite,Education,4.23,3.99,640,22,2.73,2017-12,2026-01,inspirational:9|group projects:9|gives good feedback:8
 2630233,Biwen Zhang,Business Administration,4.23,3.99,641,22,2.27,2020-10,2024-12,caring:11|amazing lectures:9|graded by few things:8
 483417,Scott Hassler,Earth Science,4.24,3.99,642,21,2.57,2005-02,2020-12,tough grader:5|group projects:4|hilarious:3
@@ -661,8 +661,8 @@ id,name,department,rating,weighted,rank,reviews,difficulty,first,last,tags
 335974,Steve Lindow,Biology,4.42,3.99,660,12,2.5,2004-12,2017-12,beware of pop quizzes:1|tests? not many:1|lecture heavy:1
 620576,Ehud Isacoff,Biology,4.42,3.99,661,12,2.42,2005-05,2025-10,get ready to read:2|hilarious:2|inspirational:1
 2648892,Olivia Bailey,Philosophy,4.42,3.99,662,12,3.08,2021-05,2026-05,accessible outside class:5|amazing lectures:5|caring:4
-716662,Ken Jowitt,Political Science,4.46,3.99,663,11,3.54,2005-11,2026-07,amazing lectures:2|inspirational:2|respected:1
-961739,Neil Fligstein,Sociology,4.46,3.99,664,11,2.27,2009-11,2023-04,amazing lectures:2|clear grading criteria:2|hilarious:2
+716662,Ken Jowitt,Political Science,4.45,3.99,663,11,3.55,2005-11,2026-07,amazing lectures:2|inspirational:2|respected:1
+961739,Neil Fligstein,Sociology,4.45,3.99,664,11,2.27,2009-11,2023-04,amazing lectures:2|clear grading criteria:2|hilarious:2
 543475,Aurelie Vialette,Spanish,4.5,3.99,665,10,3.4,2004-12,2022-04,amazing lectures:1|inspirational:1|caring:1
 2196333,Kathryn De Master,Environ. Sci. Policy & Mgmt.,4.5,3.99,666,10,2.3,2016-11,2023-05,caring:5|inspirational:4|amazing lectures:4
 2257977,Michael Nachman,Biology,4.5,3.99,667,10,2.9,2017-05,2026-05,respected:4|inspirational:3|hilarious:3
@@ -748,7 +748,7 @@ id,name,department,rating,weighted,rank,reviews,difficulty,first,last,tags
 3055290,Riley Vanmeter,Languages,5,3.99,747,5,2.2,2024-12,2026-07,caring:3|amazing lectures:2|gives good feedback:2
 3056315,Manar Shami,Civil & Environmental Engineering,5,3.99,748,5,2.6,2024-12,2026-04,caring:3|accessible outside class:2|amazing lectures:2
 3634876,Akash Kumar,Italian,5,3.99,749,5,2.6,2026-05,2026-06,amazing lectures:4|inspirational:2|caring:1
-25992,Alan Karras,History,4.06,3.98,750,63,3.13,2003-02,2026-10,get ready to read:10|lecture heavy:4|participation matters:3
+25992,Alan Karras,History,4.06,3.99,750,63,3.13,2003-02,2026-10,get ready to read:10|lecture heavy:4|participation matters:3
 519815,Andrew Barshay,History,4.1,3.98,751,40,3.12,2004-12,2026-11,get ready to read:12|lecture heavy:5|respected:5
 2599965,Desmond Jagmohan,Political Science,4.12,3.98,752,34,3.74,2020-05,2026-05,get ready to read:24|amazing lectures:18|gives good feedback:8
 247666,Gillian Hart,Geography,4.12,3.98,753,32,4.16,2003-09,2021-04,get ready to read:3|caring:2|lecture heavy:2
@@ -757,7 +757,7 @@ id,name,department,rating,weighted,rank,reviews,difficulty,first,last,tags
 2608969,Christine Gehrig-Downie,Environ. Sci. Policy & Mgmt.,4.15,3.97,756,27,2.41,2020-07,2025-12,extra credit:13|caring:13|group projects:10
 822273,Tom Laqueur,History,4.16,3.97,757,25,2.72,2006-03,2023-12,gives good feedback:1|inspirational:1|accessible outside class:1
 2700201,Benjamin Schoefer,Economics,4.17,3.97,758,24,3.88,2021-05,2026-09,amazing lectures:9|lecture heavy:9|inspirational:6
-608088,Zi Qiang Qiu,Physics,4.18,3.97,759,22,2.46,2005-04,2026-09,amazing lectures:7|respected:4|inspirational:3
+608088,Zi Qiang Qiu,Physics,4.18,3.97,759,22,2.45,2005-04,2026-09,amazing lectures:7|respected:4|inspirational:3
 2701686,Pamela Fox,Computer Science,4.18,3.97,760,22,3.86,2021-05,2023-05,amazing lectures:7|test heavy:7|inspirational:6
 2824024,Brooks Abel,Chemistry,4.18,3.97,761,22,3.5,2022-12,2026-10,accessible outside class:7|caring:4|lots of homework:4
 187573,Michael Parayno,Ethnic Studies,4.19,3.97,762,21,1.86,2003-04,2014-11,
@@ -828,7 +828,7 @@ id,name,department,rating,weighted,rank,reviews,difficulty,first,last,tags
 767287,Nick Ziegler,Political Science,4.57,3.95,827,7,2.71,2005-11,2010-07,
 930868,Frank Schultz,Business Administration,4.57,3.95,828,7,2.86,2006-12,2016-04,
 932566,Awwab Bukhari,Political Science,4.57,3.95,829,7,2.57,2006-12,2009-11,
-414403,Amy Gurowitz,Political Science,3.98,3.95,830,136,3.43,2004-05,2026-10,get ready to read:44|amazing lectures:32|graded by few things:24
+414403,Amy Gurowitz,Political Science,3.99,3.95,830,136,3.43,2004-05,2026-10,get ready to read:44|amazing lectures:32|graded by few things:24
 742927,Estelle Tarica,Spanish,4.67,3.95,831,6,3.67,2005-11,2024-02,participation matters:1|gives good feedback:1|get ready to read:1
 897458,Adam Szeidl,Economics,4.67,3.95,832,6,1.83,2006-12,2010-05,
 948931,Abena Osseo-Assare,History,4.67,3.95,833,6,1.17,2007-01,2014-02,
@@ -905,8 +905,8 @@ id,name,department,rating,weighted,rank,reviews,difficulty,first,last,tags
 3154857,Dana Miller-Cotto,Education,5,3.95,904,4,2,2025-12,2026-07,gives good feedback:1|caring:1|accessible outside class:1
 205405,Bob Knight,Psychology,4.14,3.95,905,22,3.27,2003-05,2020-10,amazing lectures:4|respected:3|skip class? you won't pass.:2
 483415,Robert Acker,Geography,4.05,3.95,906,40,2.68,2004-11,2014-07,
-469905,Tim White,Biology,4.14,3.94,907,21,3.86,2004-10,2020-10,respected:1|hilarious:1|amazing lectures:1
-1294058,Rasmus Nielsen,Biology,4.14,3.94,908,21,2.24,2009-06,2026-10,lecture heavy:5|respected:4|participation matters:3
+469905,Tim White,Biology,4.14,3.95,907,21,3.86,2004-10,2020-10,respected:1|hilarious:1|amazing lectures:1
+1294058,Rasmus Nielsen,Biology,4.14,3.95,908,21,2.24,2009-06,2026-10,lecture heavy:5|respected:4|participation matters:3
 303636,John Arnold,Chemistry,4.05,3.94,909,38,3.55,2005-08,2024-05,get ready to read:3|amazing lectures:2|caring:2
 287582,Susanna Elm,Religious Studies,4.17,3.94,910,18,3.5,2003-11,2024-04,amazing lectures:3|respected:2|lecture heavy:2
 422757,Stefano Dellavigna,Economics,4.17,3.94,911,18,3,2004-08,2024-12,participation matters:1|lots of homework:1|lecture heavy:1
@@ -936,11 +936,11 @@ id,name,department,rating,weighted,rank,reviews,difficulty,first,last,tags
 641005,Dan Schnur,Political Science,4.08,3.93,935,25,2.88,2005-10,2026-05,amazing lectures:3|participation matters:3|accessible outside class:3
 772244,Crawford Greenwalt,Classics,4.27,3.93,936,11,2.64,2005-12,2011-12,
 864097,Marshall Foletta,History,4.27,3.93,937,11,3.18,2006-07,2025-07,get ready to read:1|participation matters:1|amazing lectures:1
-947800,Meir Karlinsky,Business Administration,4.27,3.93,938,11,2.54,2007-01,2017-08,gives good feedback:1|participation matters:1|group projects:1
+947800,Meir Karlinsky,Business Administration,4.27,3.93,938,11,2.55,2007-01,2017-08,gives good feedback:1|participation matters:1|group projects:1
 1184764,Ivo Plsek,Political Science,4.27,3.93,939,11,3.27,2008-11,2025-02,tough grader:2|amazing lectures:1|inspirational:1
 51780,Jeffrey Perloff,Economics,4.03,3.93,940,38,2.95,2002-05,2021-05,accessible outside class:4|respected:3|hilarious:3
 749508,Amy Jamgochian,Rhetoric,4.08,3.93,941,24,3.71,2005-11,2015-01,
-558873,Wakae Kambara,Japanese,4.3,3.92,942,10,2.9,2005-01,2017-11,lots of homework:1|test heavy:1|graded by few things:1
+558873,Wakae Kambara,Japanese,4.3,3.93,942,10,2.9,2005-01,2017-11,lots of homework:1|test heavy:1|graded by few things:1
 227901,Bill Sonnenschein,Business Administration,4.33,3.92,943,9,2.22,2003-07,2009-10,
 821673,Karen Feldman,German,4.33,3.92,944,9,3.11,2006-04,2025-05,amazing lectures:3|caring:2|gives good feedback:1
 833571,Mark Tanouye,Environmental Science,4.33,3.92,945,9,1.56,2006-04,2024-05,graded by few things:1|lecture heavy:1|caring:1
@@ -976,7 +976,7 @@ id,name,department,rating,weighted,rank,reviews,difficulty,first,last,tags
 757938,Andrew Jones,Chinese,4.11,3.92,975,19,3.42,2005-11,2026-07,caring:5|amazing lectures:4|respected:3
 293004,Michael Watts,Geography,3.98,3.92,976,54,3.3,2005-09,2024-01,amazing lectures:8|get ready to read:8|hilarious:4
 204693,Robert Hass,English,4.03,3.92,977,30,2.63,2003-05,2018-02,hilarious:1|amazing lectures:1|caring:1
-790412,Peter Zinoman,History,4.11,3.92,978,18,3,2005-12,2024-06,amazing lectures:2|accessible outside class:2|tough grader:1
+790412,Peter Zinoman,History,4.11,3.91,978,18,3,2005-12,2024-06,amazing lectures:2|accessible outside class:2|tough grader:1
 507219,Thomas Shannon,German,4.5,3.91,979,6,2.33,2004-11,2022-09,participation matters:1|amazing lectures:1|caring:1
 800631,Nicole Johnson,Business Administration,4.5,3.91,980,6,3.17,2006-01,2014-06,
 1037783,Donald McQuade,English,4.5,3.91,981,6,2.33,2009-10,2013-07,
@@ -1150,9 +1150,9 @@ id,name,department,rating,weighted,rank,reviews,difficulty,first,last,tags
 342682,D.A. Miller,English,4.04,3.9,1149,23,4,2004-05,2024-09,participation matters:1|graded by few things:1
 1155520,Marcus Opp,Business Administration,4.04,3.9,1150,23,3.3,2008-10,2012-05,
 240214,Anthony Bulloch,Classics,3.95,3.9,1151,63,1.76,2003-08,2013-04,
-472367,Anthony Long,Classics,4.04,3.9,1152,22,2.86,2004-10,2024-01,get ready to read:2|amazing lectures:1|clear grading criteria:1
-2056395,Ricardo Nino,City & Regional Planning,4.04,3.9,1153,22,3.59,2015-11,2025-02,get ready to read:13|inspirational:8|amazing lectures:7
-2125793,Melissa Bayne,Psychology,4.04,3.9,1154,22,2.59,2016-04,2020-06,tough grader:6|inspirational:5|amazing lectures:5
+472367,Anthony Long,Classics,4.05,3.9,1152,22,2.86,2004-10,2024-01,get ready to read:2|amazing lectures:1|clear grading criteria:1
+2056395,Ricardo Nino,City & Regional Planning,4.05,3.9,1153,22,3.59,2015-11,2025-02,get ready to read:13|inspirational:8|amazing lectures:7
+2125793,Melissa Bayne,Psychology,4.05,3.9,1154,22,2.59,2016-04,2020-06,tough grader:6|inspirational:5|amazing lectures:5
 322279,Jean Retzinger,Mass Communications,3.95,3.9,1155,61,3.87,2003-12,2019-05,gives good feedback:1|accessible outside class:1|caring:1
 2748788,David Broockman,Political Science,3.98,3.9,1156,41,3.07,2021-12,2025-12,group projects:19|online savvy:13|respected:11
 224220,Victor Stanton,Business Administration,4,3.9,1157,31,2.77,2003-09,2024-04,caring:4|clear grading criteria:3|respected:3
@@ -1166,7 +1166,7 @@ id,name,department,rating,weighted,rank,reviews,difficulty,first,last,tags
 1806410,Joseph Bohling,History,4.2,3.89,1165,10,2.7,2013-04,2014-11,
 2602117,Kimberly Freeman,English,4.2,3.89,1166,10,2.9,2020-05,2026-07,gives good feedback:5|caring:4|accessible outside class:3
 2733777,Carla Hesse,History,4.2,3.89,1167,10,2.9,2021-11,2026-01,get ready to read:5|amazing lectures:4|graded by few things:4
-2251016,Fang Xu,Interdisciplinary Studies,4.05,3.89,1168,19,2.9,2018-10,2026-10,clear grading criteria:7|participation matters:6|lecture heavy:5
+2251016,Fang Xu,Interdisciplinary Studies,4.05,3.89,1168,19,2.89,2018-10,2026-10,clear grading criteria:7|participation matters:6|lecture heavy:5
 864534,Botond Koszegi,Economics,4.06,3.89,1169,18,3.33,2006-07,2010-07,
 421539,Alfred Arteaga,Ethnic Studies,4.22,3.89,1170,9,2.89,2004-06,2007-04,
 599250,Michael Johns,Geography,4.22,3.89,1171,9,2.78,2005-04,2015-01,
@@ -1174,8 +1174,8 @@ id,name,department,rating,weighted,rank,reviews,difficulty,first,last,tags
 2228657,Glynda Hull,Education,4.22,3.89,1173,9,2.67,2019-05,2026-01,participation matters:6|get ready to read:4|group projects:2
 2701245,Puck Engman,History,4.22,3.89,1174,9,3.33,2022-01,2026-05,lecture heavy:4|graded by few things:4|amazing lectures:3
 2763004,Krishna Niyogi,Biology,4.22,3.89,1175,9,3.44,2022-01,2026-02,lecture heavy:3|test heavy:3|participation matters:1
-497601,Natalia Brizuela,Spanish,4.06,3.88,1176,17,2.88,2004-11,2026-04,get ready to read:3|lecture heavy:2|group projects:2
-2333320,Shamik Dasgupta,Philosophy,4.06,3.88,1177,17,2.82,2018-10,2026-06,amazing lectures:8|graded by few things:7|inspirational:4
+497601,Natalia Brizuela,Spanish,4.06,3.89,1176,17,2.88,2004-11,2026-04,get ready to read:3|lecture heavy:2|group projects:2
+2333320,Shamik Dasgupta,Philosophy,4.06,3.89,1177,17,2.82,2018-10,2026-06,amazing lectures:8|graded by few things:7|inspirational:4
 884771,Giulio Caviglia,Mathematics,4.25,3.88,1178,8,3,2006-09,2022-12,gives good feedback:2|get ready to read:1|test heavy:1
 1727757,Ray Telles,Chicano Studies,4.25,3.88,1179,8,2,2013-07,2025-07,graded by few things:3|participation matters:2|caring:2
 2016067,Isabelle Le Blanc,MolecularCellular Biology,4.25,3.88,1180,8,3.38,2018-10,2025-10,participation matters:4|inspirational:4|caring:3
@@ -1289,7 +1289,7 @@ id,name,department,rating,weighted,rank,reviews,difficulty,first,last,tags
 470363,Irene Bloemraad,Sociology,3.96,3.86,1288,26,3.38,2004-10,2023-11,get ready to read:3|graded by few things:2|accessible outside class:2
 779777,Gregory La Blanc,Business Administration,3.94,3.86,1289,33,4.24,2005-12,2019-10,accessible outside class:1|inspirational:1|hilarious:1
 774140,Gavriel Moses,Film,4.09,3.86,1290,11,2.36,2005-12,2011-09,
-686476,Edward Frenkel,Mathematics,3.89,3.86,1291,91,2.94,2005-09,2026-07,lots of homework:14|graded by few things:13|respected:12
+686476,Edward Frenkel,Mathematics,3.89,3.86,1291,91,2.95,2005-09,2026-07,lots of homework:14|graded by few things:13|respected:12
 34516,Kai Ping Peng,Psychology,4,3.86,1292,18,1.83,2004-11,2013-06,
 2379143,Tom McEnaney,Spanish,4,3.86,1293,18,2.39,2018-05,2025-04,get ready to read:12|group projects:6|graded by few things:5
 2198247,Kenneth Worthy,Earth Science,3.94,3.86,1294,32,2.22,2016-11,2025-12,clear grading criteria:15|participation matters:13|get ready to read:12
@@ -1338,8 +1338,8 @@ id,name,department,rating,weighted,rank,reviews,difficulty,first,last,tags
 293006,Beatriz Manz,Geography,4,3.86,1337,17,2.59,2004-08,2012-01,
 1012862,Peter Bartu,Peace & Conflict Studies,4,3.86,1338,17,3.35,2007-08,2025-07,tough grader:7|participation matters:7|accessible outside class:6
 452198,Stephen Small,African-American Studies,3.96,3.86,1339,24,1.96,2004-11,2022-08,get ready to read:3|graded by few things:3|accessible outside class:2
-359525,A.J Gregor,Political Science,3.88,3.86,1340,92,2.47,2004-02,2013-12,
-1234632,Erin Murphy-Graham,Education,3.96,3.86,1341,23,2.74,2009-01,2025-07,get ready to read:8|caring:6|gives good feedback:6
+359525,A.J Gregor,Political Science,3.88,3.85,1340,92,2.47,2004-02,2013-12,
+1234632,Erin Murphy-Graham,Education,3.96,3.85,1341,23,2.74,2009-01,2025-07,get ready to read:8|caring:6|gives good feedback:6
 2778114,Kwabena Bediako,Chemistry,3.9,3.85,1342,50,3.5,2022-03,2025-12,amazing lectures:20|caring:9|inspirational:8
 844603,Tina Chow,Civil Engineering,4.11,3.85,1343,9,2.78,2006-05,2018-12,tough grader:1|lots of homework:1|respected:1
 921080,Jeffrey Weiner,Comparative Literature,4.11,3.85,1344,9,3.78,2007-01,2015-12,
@@ -1530,8 +1530,8 @@ id,name,department,rating,weighted,rank,reviews,difficulty,first,last,tags
 3160467,Jiahe Mei,East Asian Studies,5,3.85,1529,2,2.5,2026-02,2026-08,gives good feedback:2|inspirational:1|caring:1
 3860392,Aarti Sethi,Anthropology,5,3.85,1530,2,2,2026-05,2026-05,group projects:2|participation matters:1|caring:1
 5054291,Dmitri Brown,History,5,3.85,1531,2,2.5,2026-07,2026-07,extra credit:1|caring:1|accessible outside class:1
-307125,Michael D. Rubenstein,English,3.96,3.85,1532,22,3.36,2003-12,2012-01,
-386314,Paulo Monteiro,Civil Engineering,3.96,3.85,1533,22,3.04,2004-10,2021-04,accessible outside class:3|lots of homework:2|caring:1
+307125,Michael D. Rubenstein,English,3.95,3.85,1532,22,3.36,2003-12,2012-01,
+386314,Paulo Monteiro,Civil Engineering,3.95,3.85,1533,22,3.05,2004-10,2021-04,accessible outside class:3|lots of homework:2|caring:1
 2246792,Seema Saharan,Statistics,3.88,3.85,1534,68,2.68,2017-10,2024-01,caring:33|accessible outside class:25|inspirational:15
 217858,Richard Walker,Geography,3.93,3.85,1535,28,2.64,2003-05,2011-12,
 442503,Carol Redmount,Near Eastern Studies,3.9,3.85,1536,41,1.88,2004-08,2025-11,lecture heavy:6|graded by few things:4|caring:4
@@ -1598,7 +1598,7 @@ id,name,department,rating,weighted,rank,reviews,difficulty,first,last,tags
 241462,Randy Hussong,Art,4,3.83,1597,11,3,2003-08,2022-05,hilarious:2|online savvy:1|skip class? you won't pass.:1
 938147,Margaret Weir,Sociology,4,3.83,1598,11,2.73,2006-12,2014-08,
 983690,Minoo Moallem,Women's Studies,4,3.83,1599,11,2.64,2007-04,2025-05,participation matters:2|inspirational:2|get ready to read:2
-2052166,Kurt Organista,Social Welfare,4,3.83,1600,11,2.54,2017-12,2025-01,get ready to read:7|participation matters:4|gives good feedback:3
+2052166,Kurt Organista,Social Welfare,4,3.83,1600,11,2.55,2017-12,2025-01,get ready to read:7|participation matters:4|gives good feedback:3
 454852,Mahiko Suzuki,Physics,4.2,3.83,1601,5,3.6,2004-09,2009-07,
 476753,Hertha Wong,American Studies,4.2,3.83,1602,5,2.4,2004-10,2018-05,get ready to read:1|accessible outside class:1|caring:1
 505712,Francoise Sorgen-Goldschmidt,French,4.2,3.83,1603,5,3.2,2005-02,2026-02,
@@ -1616,14 +1616,14 @@ id,name,department,rating,weighted,rank,reviews,difficulty,first,last,tags
 2821320,Theresa Honein,Mathematics,4.2,3.83,1615,5,3.8,2022-09,2023-01,inspirational:2|caring:2|accessible outside class:2
 2934880,Daena Funahashi,Anthropology,4.2,3.83,1616,5,3.2,2023-10,2025-11,inspirational:2|gives good feedback:1|amazing lectures:1
 2964213,Alexis Kaminski,Mechanical Engineering,4.2,3.83,1617,5,3.2,2024-05,2026-01,tough grader:2|amazing lectures:2|test heavy:2
-298062,Wendy Brown,Political Science,3.86,3.83,1618,52,3.54,2003-11,2024-05,amazing lectures:8|inspirational:6|respected:6
+298062,Wendy Brown,Political Science,3.87,3.83,1618,52,3.54,2003-11,2024-05,amazing lectures:8|inspirational:6|respected:6
 2927920,Lester Hu,Music,3.89,3.83,1619,28,2.96,2023-12,2026-10,get ready to read:8|participation matters:7|group projects:5
 506315,Qiang Zhou,Biology,3.94,3.83,1620,16,3.75,2004-11,2020-12,accessible outside class:1|skip class? you won't pass.:1|lecture heavy:1
 959084,Lousie Mozingo,Landscape Architecture & Regional Planning,3.94,3.83,1621,16,3.31,2007-02,2025-12,lecture heavy:5|graded by few things:4|tough grader:4
 476689,Larry Hyman,Linguistics,3.88,3.83,1622,33,2.39,2005-03,2022-04,hilarious:4|accessible outside class:3|respected:3
-359718,Ed McLaughlin,Biology,4,3.82,1623,10,3,2004-02,2015-08,
-2178675,Dana Carney,Business Administration,4,3.82,1624,10,2.7,2017-04,2023-01,amazing lectures:3|extra credit:2|inspirational:2
-2260701,Christian Paiz,Ethnic Studies,4,3.82,1625,10,2.8,2017-05,2026-05,get ready to read:7|participation matters:6|caring:3
+359718,Ed McLaughlin,Biology,4,3.83,1623,10,3,2004-02,2015-08,
+2178675,Dana Carney,Business Administration,4,3.83,1624,10,2.7,2017-04,2023-01,amazing lectures:3|extra credit:2|inspirational:2
+2260701,Christian Paiz,Ethnic Studies,4,3.83,1625,10,2.8,2017-05,2026-05,get ready to read:7|participation matters:6|caring:3
 631993,Candace Yano,Industrial Engineering,4.25,3.82,1626,4,3,2014-12,2020-12,gives good feedback:1|accessible outside class:1|participation matters:1
 714959,David Palaita,Ethnic Studies,4.25,3.82,1627,4,3.25,2005-10,2009-06,
 836739,Jesus Rodriguez-Velasco,Spanish,4.25,3.82,1628,4,2,2006-05,2006-11,
@@ -1770,7 +1770,7 @@ id,name,department,rating,weighted,rank,reviews,difficulty,first,last,tags
 2728757,Arianne Eason,Psychology,4,3.81,1769,7,2.29,2022-01,2025-07,respected:3|group projects:2|amazing lectures:2
 3015940,Joel Wanek,Geography,4,3.81,1770,7,2.29,2024-05,2026-03,caring:4|participation matters:2|gives good feedback:2
 238309,Martin Head-Gordon,Chemistry,3.82,3.8,1771,94,3.82,2003-09,2019-06,tough grader:10|test heavy:8|respected:5
-1100224,Jon Wilkening,Mathematics,3.83,3.8,1772,53,3.76,2008-03,2025-05,caring:12|accessible outside class:6|clear grading criteria:6
+1100224,Jon Wilkening,Mathematics,3.83,3.8,1772,53,3.75,2008-03,2025-05,caring:12|accessible outside class:6|clear grading criteria:6
 359714,Steve Lehman,Biology,3.92,3.8,1773,12,3.17,2004-02,2021-04,
 717478,Peter Sahlins,History,3.92,3.8,1774,12,3.92,2005-10,2017-02,amazing lectures:2|lecture heavy:2|hilarious:1
 996273,Todd Olson,Art History,3.92,3.8,1775,12,3.17,2007-05,2024-05,gives good feedback:2|hilarious:2|amazing lectures:1
@@ -1779,7 +1779,7 @@ id,name,department,rating,weighted,rank,reviews,difficulty,first,last,tags
 95708,Mary Ann Koory,English,3.88,3.8,1778,17,2.65,2002-12,2013-05,
 1049495,Keiko Yamanaka,Asian Studies,3.88,3.8,1779,17,2.47,2007-11,2019-01,tough grader:1
 1574342,Massimo Mazzotti,History,3.88,3.8,1780,17,2.29,2011-05,2025-12,get ready to read:9|lecture heavy:6|participation matters:3
-820839,Geoffrey Koziol,History,3.86,3.8,1781,22,2.96,2006-03,2021-06,get ready to read:2|clear grading criteria:2|hilarious:1
+820839,Geoffrey Koziol,History,3.86,3.8,1781,22,2.95,2006-03,2021-06,get ready to read:2|clear grading criteria:2|hilarious:1
 654882,Bernd Sturmfels,Mathematics,3.85,3.8,1782,27,3,2005-08,2016-08,
 278068,Terrence Deacon,Anthropology,3.82,3.8,1783,87,3.13,2003-11,2023-01,lecture heavy:14|graded by few things:14|respected:14
 430465,Chris Ansell,Political Science,3.83,3.8,1784,36,2.58,2004-07,2026-01,get ready to read:9|participation matters:6|lots of homework:4
@@ -2107,7 +2107,7 @@ id,name,department,rating,weighted,rank,reviews,difficulty,first,last,tags
 3911694,Patrice Douglass,Women's Studies,5,3.8,2106,1,3,2026-10,2026-10,amazing lectures:1|gives good feedback:1|inspirational:1
 4508025,Joshua Apte,Civil Engineering,5,3.8,2107,1,4,2026-06,2026-06,participation matters:1|gives good feedback:1|caring:1
 736039,Emily MacKil,History,3.83,3.8,2108,30,3.4,2005-10,2025-08,get ready to read:13|caring:6|graded by few things:4
-1010357,Maki Takata,Japanese,3.84,3.8,2109,25,3.08,2007-12,2025-11,tough grader:6|lots of homework:5|participation matters:4
+1010357,Maki Takata,Japanese,3.84,3.79,2109,25,3.08,2007-12,2025-11,tough grader:6|lots of homework:5|participation matters:4
 382394,Malcolm Potts,Public Health,3.87,3.79,2110,15,2.07,2004-04,2014-12,
 1810854,George Roderick,Biology,3.87,3.79,2111,15,2.33,2013-04,2020-05,caring:4|amazing lectures:2|clear grading criteria:2
 2876880,Aditi Krishnapriyan,Chemical Engineering,3.87,3.79,2112,15,3.67,2023-05,2026-03,amazing lectures:6|respected:6|test heavy:5
@@ -2179,7 +2179,7 @@ id,name,department,rating,weighted,rank,reviews,difficulty,first,last,tags
 2768944,Fatemeh Montazeri,Near Eastern Studies,3.88,3.78,2178,8,2.5,2022-01,2024-09,caring:2|gives good feedback:2|inspirational:1
 2875507,Valerie Zhang,Business Administration,3.88,3.78,2179,8,2.88,2023-01,2026-03,caring:3|graded by few things:2|lecture heavy:2
 3013346,Lorenzo Lones,Molecular/Cellular Biology,3.78,3.78,2180,88,3.23,2024-05,2026-10,amazing lectures:38|tough grader:24|lecture heavy:14
-1259651,Bruce Baldwin,Biology,3.81,3.78,2181,21,3.38,2009-03,2022-06,lecture heavy:7|caring:5|get ready to read:4
+1259651,Bruce Baldwin,Biology,3.81,3.77,2181,21,3.38,2009-03,2022-06,lecture heavy:7|caring:5|get ready to read:4
 414857,JW Morris,Engineering,3.83,3.77,2182,12,2.5,2004-05,2010-04,
 659189,Roger Byrne,Geography,3.83,3.77,2183,12,2.92,2005-10,2013-07,
 2567565,Courtney Morris,Women's Studies,3.83,3.77,2184,12,2.42,2020-07,2026-04,amazing lectures:8|get ready to read:5|inspirational:4
@@ -2292,7 +2292,7 @@ id,name,department,rating,weighted,rank,reviews,difficulty,first,last,tags
 1990801,Andrej Milivojevic,History,3.8,3.76,2291,10,3.6,2015-03,2018-12,accessible outside class:2|lecture heavy:2|hilarious:1
 2165478,Javad Lavaei,Industrial Engineering,3.8,3.76,2292,10,3.4,2017-01,2026-07,accessible outside class:3|amazing lectures:3|skip class? you won't pass.:3
 2725323,Kijoo Ko,Languages,3.8,3.76,2293,10,3.4,2021-11,2026-04,participation matters:6|lots of homework:4|tough grader:3
-8307,John Searle,Philosophy,3.77,3.76,2294,47,3.08,2001-05,2016-11,respected:1|inspirational:1|hilarious:1
+8307,John Searle,Philosophy,3.77,3.76,2294,47,3.09,2001-05,2016-11,respected:1|inspirational:1|hilarious:1
 346316,Mel Gordon,Theatre & Dance,3.79,3.76,2295,14,2.43,2004-02,2013-06,
 602923,Christopher Hallett,Art History,3.79,3.76,2296,14,2.36,2005-04,2022-05,get ready to read:6|participation matters:2|graded by few things:1
 666447,Annalee Rejhon,Languages,3.79,3.76,2297,14,3.79,2005-09,2021-07,graded by few things:3|skip class? you won't pass.:3|lecture heavy:2
@@ -2491,11 +2491,11 @@ id,name,department,rating,weighted,rank,reviews,difficulty,first,last,tags
 835149,Paula Varsano,Chinese,3.71,3.73,2490,14,3.86,2006-04,2025-09,tough grader:4|graded by few things:3|participation matters:1
 895013,Jason Britton,Physical Education,3.71,3.73,2491,14,1.64,2006-10,2026-09,caring:4|inspirational:3|skip class? you won't pass.:2
 2038799,Joshua Gang,English,3.72,3.73,2492,25,3.8,2015-12,2026-07,get ready to read:12|tough grader:7|amazing lectures:6
-376091,Jyh-Yuan Chen,Engineering,3.7,3.72,2493,10,3.1,2004-04,2019-07,graded by few things:2|accessible outside class:1|tough grader:1
-423655,Abolhassan Astaneh-Asl,Engineering,3.7,3.72,2494,10,1.9,2004-06,2010-12,
-791059,Lisa Wymore,Theatre & Dance,3.7,3.72,2495,10,1.9,2005-12,2022-08,
-1250376,Song Li,Bioengineering,3.7,3.72,2496,10,1.8,2009-04,2016-02,
-1943551,Susan Lin,Linguistics,3.7,3.72,2497,10,3.4,2014-11,2017-11,gives good feedback:3|inspirational:2|caring:2
+376091,Jyh-Yuan Chen,Engineering,3.7,3.73,2493,10,3.1,2004-04,2019-07,graded by few things:2|accessible outside class:1|tough grader:1
+423655,Abolhassan Astaneh-Asl,Engineering,3.7,3.73,2494,10,1.9,2004-06,2010-12,
+791059,Lisa Wymore,Theatre & Dance,3.7,3.73,2495,10,1.9,2005-12,2022-08,
+1250376,Song Li,Bioengineering,3.7,3.73,2496,10,1.8,2009-04,2016-02,
+1943551,Susan Lin,Linguistics,3.7,3.73,2497,10,3.4,2014-11,2017-11,gives good feedback:3|inspirational:2|caring:2
 560913,Van Carey,Engineering,3.71,3.72,2498,17,2.76,2005-01,2025-05,caring:3|get ready to read:2|group projects:2
 2996852,Shawn Kim,Business Administration,3.71,3.72,2499,17,3.59,2024-04,2026-05,test heavy:8|graded by few things:7|caring:4
 177400,Steven Stahler,Physics,3.71,3.72,2500,35,3.23,2003-04,2022-01,test heavy:3|skip class? you won't pass.:2|lecture heavy:2
@@ -2575,7 +2575,7 @@ id,name,department,rating,weighted,rank,reviews,difficulty,first,last,tags
 2759983,Saikat Chaudhuri,Business Administration,3.62,3.71,2574,8,2.88,2022-01,2025-08,accessible outside class:3|participation matters:2|amazing lectures:2
 3094707,Tomer Altman,Chemistry,3.62,3.71,2575,8,2.62,2025-04,2026-05,extra credit:3|caring:3|respected:2
 142865,Dan Garcia,Computer Science,3.7,3.7,2576,201,3.47,2003-03,2026-10,amazing lectures:37|inspirational:34|tough grader:30
-473688,Fraydoun Rezakhanlou,Mathematics,3.68,3.7,2577,38,3.9,2004-10,2022-12,tough grader:2|graded by few things:1
+473688,Fraydoun Rezakhanlou,Mathematics,3.68,3.7,2577,38,3.89,2004-10,2022-12,tough grader:2|graded by few things:1
 335985,Sidney Kustu,Biology,3,3.7,2578,1,4,2009-07,2009-07,
 1186041,Oscar Dubon,Materials Science,3,3.7,2579,1,4,2014-01,2014-01,
 1298878,M Fish,Political Science,3,3.7,2580,1,3,2011-03,2011-03,
@@ -2640,36 +2640,36 @@ id,name,department,rating,weighted,rank,reviews,difficulty,first,last,tags
 3110458,Moriel Vandsburger,Bioengineering,3.5,3.7,2639,4,3.5,2025-07,2025-12,graded by few things:3|group projects:2|gives good feedback:1
 1583684,Joanna Reed,Sociology,3.68,3.7,2640,47,2.74,2011-07,2025-12,get ready to read:22|tough grader:8|participation matters:6
 225337,Jack Citrin,Political Science,3.69,3.7,2641,70,2.77,2003-06,2025-12,
-650584,Manuel Vargas,Philosophy,3.57,3.7,2642,7,3.86,2005-08,2016-05,
-1089110,Carlos Fernandez-Pello,Mechanical Engineering,3.57,3.7,2643,7,1.86,2008-01,2019-04,clear grading criteria:1
-1208376,Jan Devries,History,3.57,3.7,2644,7,3,2009-01,2014-03,
+650584,Manuel Vargas,Philosophy,3.57,3.69,2642,7,3.86,2005-08,2016-05,
+1089110,Carlos Fernandez-Pello,Mechanical Engineering,3.57,3.69,2643,7,1.86,2008-01,2019-04,clear grading criteria:1
+1208376,Jan Devries,History,3.57,3.69,2644,7,3,2009-01,2014-03,
 538047,Miguel Altieri,Environmental Science,3.6,3.69,2645,10,3.1,2005-09,2010-11,
 1733435,Sam Olesky,Business Administration,3.6,3.69,2646,10,3.2,2012-07,2024-12,amazing lectures:2|respected:2|graded by few things:2
 2363124,Aaron Parsons,Astronomy,3.6,3.69,2647,10,4.2,2018-04,2026-07,participation matters:4|caring:3|graded by few things:3
 2815981,Jeremy Sanchez,Statistics,3.68,3.69,2648,136,3.04,2022-08,2026-11,lots of homework:31|caring:31|amazing lectures:31
 1256109,Sonia Bishop,Psychology,3.62,3.69,2649,13,3.23,2009-02,2021-12,lecture heavy:3|test heavy:1|tough grader:1
 586811,Mark Healey,History,3.62,3.69,2650,16,3.5,2005-03,2011-03,
-536608,Laurie Wilkie,Anthropology,3.66,3.68,2651,38,2.08,2004-12,2024-12,extra credit:3|group projects:3|graded by few things:3
-631998,Shmuel Oren,Industrial Engineering,3.33,3.68,2652,3,1.67,2006-01,2016-07,
-867309,John Drabble,International Studies,3.33,3.68,2653,3,3,2006-08,2010-04,
-945988,Xiao-Jun Zhang,Business Administration,3.33,3.68,2654,3,3.33,2012-04,2023-02,tough grader:1|graded by few things:1
-982840,Veronica De Jesus,Art,3.33,3.68,2655,3,1.67,2007-04,2009-12,
-1181469,David Nasatir,Sociology,3.33,3.68,2656,3,3,2008-12,2010-09,
-1214818,Laura Tyson,Business Administration,3.33,3.68,2657,3,3.33,2008-11,2012-07,
-1251794,Max Weintraub,Environ. Sci. Policy & Mgmt.,3.33,3.68,2658,3,2.67,2009-02,2013-02,
-1472686,Amy Kim,Art,3.33,3.68,2659,3,4.67,2013-01,2017-12,skip class? you won't pass.:1|tests are tough:1|lecture heavy:1
-1833201,Lisa Barcellos,Psychology,3.33,3.68,2660,3,4,2014-05,2023-06,
-1881116,Krste Asanovic,Computer Science,3.33,3.68,2661,3,3.67,2017-11,2022-08,lots of homework:2|inspirational:1|respected:1
-2257189,Jeana Jorgensen,Anthropology,3.33,3.68,2662,3,3.67,2017-05,2017-07,get ready to read:2|hilarious:1|participation matters:1
-2278995,Matt Kondolf,Landscape Architecture & Regional Planning,3.33,3.68,2663,3,2.67,2017-09,2025-12,participation matters:2|group projects:2|tough grader:1
-2395088,Paolo D'Odorico,Environ. Sci. Policy & Mgmt.,3.33,3.68,2664,3,3,2018-08,2025-04,gives good feedback:2|inspirational:1|caring:1
-2451536,Marcus Owens,Architecture,3.33,3.68,2665,3,2.67,2018-12,2020-01,accessible outside class:1|skip class? you won't pass.:1|lecture heavy:1
-2602087,Rudabeh Pakravan,Architecture,3.33,3.68,2666,3,3.33,2020-05,2025-12,gives good feedback:2|respected:2|lots of homework:2
-2659717,Joeva Rock,Interdisciplinary Studies,3.33,3.68,2667,3,3.33,2020-12,2021-07,get ready to read:2|graded by few things:1|caring:1
-2700540,Vira Semenova,Economics,3.33,3.68,2668,3,2.67,2021-05,2025-02,test heavy:2|clear grading criteria:1|lots of homework:1
-2866778,Kate Heslop,Scandinavian,3.33,3.68,2669,3,3,2023-04,2025-03,caring:2|accessible outside class:2|get ready to read:1
-2917108,Ramon De Santiago,Art History,3.33,3.68,2670,3,2,2024-03,2024-03,graded by few things:2|hilarious:2|participation matters:1
-3027974,Christopher Fletcher,Computer Science,3.33,3.68,2671,3,3,2024-09,2026-04,tough grader:1|group projects:1|lots of homework:1
+536608,Laurie Wilkie,Anthropology,3.66,3.69,2651,38,2.08,2004-12,2024-12,extra credit:3|group projects:3|graded by few things:3
+631998,Shmuel Oren,Industrial Engineering,3.33,3.69,2652,3,1.67,2006-01,2016-07,
+867309,John Drabble,International Studies,3.33,3.69,2653,3,3,2006-08,2010-04,
+945988,Xiao-Jun Zhang,Business Administration,3.33,3.69,2654,3,3.33,2012-04,2023-02,tough grader:1|graded by few things:1
+982840,Veronica De Jesus,Art,3.33,3.69,2655,3,1.67,2007-04,2009-12,
+1181469,David Nasatir,Sociology,3.33,3.69,2656,3,3,2008-12,2010-09,
+1214818,Laura Tyson,Business Administration,3.33,3.69,2657,3,3.33,2008-11,2012-07,
+1251794,Max Weintraub,Environ. Sci. Policy & Mgmt.,3.33,3.69,2658,3,2.67,2009-02,2013-02,
+1472686,Amy Kim,Art,3.33,3.69,2659,3,4.67,2013-01,2017-12,skip class? you won't pass.:1|tests are tough:1|lecture heavy:1
+1833201,Lisa Barcellos,Psychology,3.33,3.69,2660,3,4,2014-05,2023-06,
+1881116,Krste Asanovic,Computer Science,3.33,3.69,2661,3,3.67,2017-11,2022-08,lots of homework:2|inspirational:1|respected:1
+2257189,Jeana Jorgensen,Anthropology,3.33,3.69,2662,3,3.67,2017-05,2017-07,get ready to read:2|hilarious:1|participation matters:1
+2278995,Matt Kondolf,Landscape Architecture & Regional Planning,3.33,3.69,2663,3,2.67,2017-09,2025-12,participation matters:2|group projects:2|tough grader:1
+2395088,Paolo D'Odorico,Environ. Sci. Policy & Mgmt.,3.33,3.69,2664,3,3,2018-08,2025-04,gives good feedback:2|inspirational:1|caring:1
+2451536,Marcus Owens,Architecture,3.33,3.69,2665,3,2.67,2018-12,2020-01,accessible outside class:1|skip class? you won't pass.:1|lecture heavy:1
+2602087,Rudabeh Pakravan,Architecture,3.33,3.69,2666,3,3.33,2020-05,2025-12,gives good feedback:2|respected:2|lots of homework:2
+2659717,Joeva Rock,Interdisciplinary Studies,3.33,3.69,2667,3,3.33,2020-12,2021-07,get ready to read:2|graded by few things:1|caring:1
+2700540,Vira Semenova,Economics,3.33,3.69,2668,3,2.67,2021-05,2025-02,test heavy:2|clear grading criteria:1|lots of homework:1
+2866778,Kate Heslop,Scandinavian,3.33,3.69,2669,3,3,2023-04,2025-03,caring:2|accessible outside class:2|get ready to read:1
+2917108,Ramon De Santiago,Art History,3.33,3.69,2670,3,2,2024-03,2024-03,graded by few things:2|hilarious:2|participation matters:1
+3027974,Christopher Fletcher,Computer Science,3.33,3.69,2671,3,3,2024-09,2026-04,tough grader:1|group projects:1|lots of homework:1
 420181,Richard Ivry,Psychology,3.64,3.68,2672,25,3.84,2004-11,2026-08,lecture heavy:10|tough grader:4|test heavy:4
 223740,Louise Glass,Biology,3.5,3.68,2673,6,3.33,2003-06,2017-05,test heavy:1
 563143,Margaret Larkin,Near Eastern Studies,3.5,3.68,2674,6,3.67,2005-01,2020-01,lots of homework:1|get ready to read:1|graded by few things:1
@@ -2739,9 +2739,9 @@ id,name,department,rating,weighted,rank,reviews,difficulty,first,last,tags
 721660,Rebecca Falkoff,Italian,3.5,3.67,2738,8,4,2005-12,2011-08,
 835259,Dan Chatman,Urban Studies,3.5,3.67,2739,8,3.75,2006-04,2024-08,get ready to read:3|lecture heavy:1|extra credit:1
 1997112,Bruce Newsome,International Studies,3.5,3.67,2740,8,2.88,2015-04,2018-02,participation matters:1
-406341,Cathryn Carson,History,3.54,3.67,2741,11,3.18,2004-05,2024-11,accessible outside class:1|tough grader:1|lots of homework:1
-1123532,Jill Banfield,Environmental Science,3.54,3.67,2742,11,3.46,2008-04,2025-01,so many papers:1
-1210530,Michel Maharbiz,Electrical Engineering,3.54,3.67,2743,11,3.09,2009-01,2018-05,tough grader:1|amazing lectures:1|lecture heavy:1
+406341,Cathryn Carson,History,3.55,3.67,2741,11,3.18,2004-05,2024-11,accessible outside class:1|tough grader:1|lots of homework:1
+1123532,Jill Banfield,Environmental Science,3.55,3.67,2742,11,3.45,2008-04,2025-01,so many papers:1
+1210530,Michel Maharbiz,Electrical Engineering,3.55,3.67,2743,11,3.09,2009-01,2018-05,tough grader:1|amazing lectures:1|lecture heavy:1
 2586040,Samuel (Sam) Pimentel,Statistics,3.57,3.67,2744,14,3.57,2020-04,2026-04,caring:6|amazing lectures:5|accessible outside class:4
 854861,Theodore (Ted) Slaman,Mathematics,3.62,3.67,2745,26,2.92,2006-06,2021-05,caring:8|respected:6|accessible outside class:4
 614300,Katherine Snyder,English,3.61,3.66,2746,28,3.07,2005-07,2026-05,get ready to read:6|tough grader:5|accessible outside class:5
@@ -2839,7 +2839,7 @@ id,name,department,rating,weighted,rank,reviews,difficulty,first,last,tags
 2814263,Noha Farghal,Earth & Planetary Sciences,3.44,3.65,2838,9,2.56,2022-08,2026-09,lots of homework:3|lecture heavy:3|clear grading criteria:2
 2938596,Sharon Coleman,English,3.44,3.65,2839,9,1.89,2024-09,2026-01,group projects:6|gives good feedback:4|caring:3
 863992,Alexander Pines,Chemistry,3.6,3.65,2840,40,3.12,2003-03,2013-10,
-407158,Terry MacHen,Biology,3.6,3.64,2841,37,3.11,2004-05,2025-02,tough grader:1|amazing lectures:1|inspirational:1
+407158,Terry MacHen,Biology,3.59,3.64,2841,37,3.11,2004-05,2025-02,tough grader:1|amazing lectures:1|inspirational:1
 644344,T.J. Clark,Art History,3.33,3.64,2842,6,3.67,2005-07,2010-01,
 795726,Reginald Barrett,Environmental Science,3.33,3.64,2843,6,3.83,2006-02,2014-06,
 1225663,David Nelson,Business Administration,3.33,3.64,2844,6,3.67,2009-04,2016-05,
@@ -2868,11 +2868,11 @@ id,name,department,rating,weighted,rank,reviews,difficulty,first,last,tags
 2826852,Marc Hellerstein,Nutrition,3.57,3.64,2867,28,2.29,2023-01,2026-05,clear grading criteria:6|amazing lectures:5|lecture heavy:4
 1199734,Daniel Immerwahr,History,3.5,3.64,2868,14,3.93,2008-12,2010-12,
 722836,Avril Angevine,English,3.56,3.64,2869,25,3.36,2005-10,2023-06,tough grader:5|participation matters:4|get ready to read:3
-2033349,Mark Barnby,Biology,3.46,3.64,2870,11,3.91,2020-07,2026-08,lecture heavy:3|test heavy:3|tough grader:2
-2075597,Hannah Michell,Asian Studies,3.46,3.64,2871,11,3.09,2015-12,2026-07,participation matters:4|get ready to read:3|group projects:2
-257010,Barry Stroud,Philosophy,3.53,3.64,2872,19,3.68,2003-10,2016-11,
-765366,Geoffrey O'Brien,English,3.53,3.64,2873,19,3.05,2005-12,2025-05,graded by few things:7|lecture heavy:7|accessible outside class:2
-808175,Jennifer Hudin,Philosophy,3.53,3.64,2874,19,2.74,2006-02,2025-03,
+2033349,Mark Barnby,Biology,3.45,3.64,2870,11,3.91,2020-07,2026-08,lecture heavy:3|test heavy:3|tough grader:2
+2075597,Hannah Michell,Asian Studies,3.45,3.64,2871,11,3.09,2015-12,2026-07,participation matters:4|get ready to read:3|group projects:2
+257010,Barry Stroud,Philosophy,3.53,3.63,2872,19,3.68,2003-10,2016-11,
+765366,Geoffrey O'Brien,English,3.53,3.63,2873,19,3.05,2005-12,2025-05,graded by few things:7|lecture heavy:7|accessible outside class:2
+808175,Jennifer Hudin,Philosophy,3.53,3.63,2874,19,2.74,2006-02,2025-03,
 759171,Tai Melcher,Statistics,3.38,3.63,2875,8,3.62,2005-11,2025-02,get ready to read:1|gives good feedback:1|accessible outside class:1
 1032342,Lila Huettemann,Languages,3.38,3.63,2876,8,4.12,2008-02,2012-09,
 2330004,Fernando Perez,Statistics,3.38,3.63,2877,8,3.62,2017-12,2023-12,respected:4|lots of homework:3|caring:3
@@ -2898,25 +2898,25 @@ id,name,department,rating,weighted,rank,reviews,difficulty,first,last,tags
 244359,Gian Garriga,Biology,3.52,3.63,2897,21,3,2003-09,2024-05,participation matters:1|group projects:1|respected:1
 413001,Mike Clancy,Computer Science,3.52,3.63,2898,21,3.52,2004-12,2010-05,
 732262,Alex Von Rospatt,Asian Studies,3.52,3.63,2899,21,3.05,2005-10,2026-03,get ready to read:9|tough grader:3|respected:3
-890888,Sam Berde,Business Administration,2.5,3.62,2900,2,4.5,2009-11,2010-01,
-933556,Natalia Belfiore,Biology,2.5,3.62,2901,2,4.5,2006-12,2013-04,
-1461121,Yes Duffy,Architecture,2.5,3.62,2902,2,4.5,2010-07,2018-11,
-1492562,Brenda Fellows,Business Administration,2.5,3.62,2903,2,4,2015-07,2015-10,
-2140360,Fontini Katapodes Chow,Engineering,2.5,3.62,2904,2,2.5,2016-05,2025-04,
-2378634,Arpy Khatchirian,Philosophy,2.5,3.62,2905,2,3.5,2018-05,2025-12,tough grader:1|participation matters:1|get ready to read:1
-2503187,Raymond Jeanloz,Earth & Planetary Sciences,2.5,3.62,2906,2,2,2019-06,2022-05,lots of homework:2|extra credit:1|online savvy:1
-2582105,Alexander Katz,Chemical Engineering,2.5,3.62,2907,2,4,2020-04,2026-09,lots of homework:1|test heavy:1|graded by few things:1
-2626686,Michel DuPage,MolecularCellular Biology,2.5,3.62,2908,2,4.5,2020-10,2022-04,respected:1|skip class? you won't pass.:1|lecture heavy:1
-2734612,Ndola Prata,Public Health,2.5,3.62,2909,2,1.5,2025-12,2025-12,participation matters:2|group projects:2|extra credit:1
-2818210,Masayoshi Tomizuka,Mechanical Engineering,2.5,3.62,2910,2,5,2023-05,2026-10,get ready to read:1|respected:1|test heavy:1
-2823634,Jelani Nelson,Electrical Engineering & Computer Science,2.5,3.62,2911,2,2,2024-09,2026-08,
-2883624,Bernadette Perez,History,2.5,3.62,2912,2,3,2024-12,2026-05,tough grader:2|lecture heavy:2|test heavy:1
-2948402,Aditya Parameswaran,Information Systems,2.5,3.62,2913,2,2.5,2026-01,2026-06,lecture heavy:1
-2974939,Federico Echenique,Economics,2.5,3.62,2914,2,4,2025-11,2026-04,lecture heavy:2|group projects:1|tough grader:1
-3148879,Hunter Rendleman,Political Science,2.5,3.62,2915,2,4,2026-01,2026-01,tough grader:2|beware of pop quizzes:1
-3151542,Rebecca Tarvin,Biology,2.5,3.62,2916,2,4,2025-12,2025-12,amazing lectures:1|lecture heavy:1
-2143688,Laurel Larsen,Geography,3.4,3.62,2917,10,3.4,2018-05,2025-05,tough grader:4|clear grading criteria:3|lecture heavy:3
-1074268,Robert Kaufman,Comparative Literature,3.5,3.62,2918,18,3.44,2008-10,2025-11,tough grader:4|graded by few things:3|amazing lectures:3
+890888,Sam Berde,Business Administration,2.5,3.63,2900,2,4.5,2009-11,2010-01,
+933556,Natalia Belfiore,Biology,2.5,3.63,2901,2,4.5,2006-12,2013-04,
+1461121,Yes Duffy,Architecture,2.5,3.63,2902,2,4.5,2010-07,2018-11,
+1492562,Brenda Fellows,Business Administration,2.5,3.63,2903,2,4,2015-07,2015-10,
+2140360,Fontini Katapodes Chow,Engineering,2.5,3.63,2904,2,2.5,2016-05,2025-04,
+2378634,Arpy Khatchirian,Philosophy,2.5,3.63,2905,2,3.5,2018-05,2025-12,tough grader:1|participation matters:1|get ready to read:1
+2503187,Raymond Jeanloz,Earth & Planetary Sciences,2.5,3.63,2906,2,2,2019-06,2022-05,lots of homework:2|extra credit:1|online savvy:1
+2582105,Alexander Katz,Chemical Engineering,2.5,3.63,2907,2,4,2020-04,2026-09,lots of homework:1|test heavy:1|graded by few things:1
+2626686,Michel DuPage,MolecularCellular Biology,2.5,3.63,2908,2,4.5,2020-10,2022-04,respected:1|skip class? you won't pass.:1|lecture heavy:1
+2734612,Ndola Prata,Public Health,2.5,3.63,2909,2,1.5,2025-12,2025-12,participation matters:2|group projects:2|extra credit:1
+2818210,Masayoshi Tomizuka,Mechanical Engineering,2.5,3.63,2910,2,5,2023-05,2026-10,get ready to read:1|respected:1|test heavy:1
+2823634,Jelani Nelson,Electrical Engineering & Computer Science,2.5,3.63,2911,2,2,2024-09,2026-08,
+2883624,Bernadette Perez,History,2.5,3.63,2912,2,3,2024-12,2026-05,tough grader:2|lecture heavy:2|test heavy:1
+2948402,Aditya Parameswaran,Information Systems,2.5,3.63,2913,2,2.5,2026-01,2026-06,lecture heavy:1
+2974939,Federico Echenique,Economics,2.5,3.63,2914,2,4,2025-11,2026-04,lecture heavy:2|group projects:1|tough grader:1
+3148879,Hunter Rendleman,Political Science,2.5,3.63,2915,2,4,2026-01,2026-01,tough grader:2|beware of pop quizzes:1
+3151542,Rebecca Tarvin,Biology,2.5,3.63,2916,2,4,2025-12,2025-12,amazing lectures:1|lecture heavy:1
+2143688,Laurel Larsen,Geography,3.4,3.63,2917,10,3.4,2018-05,2025-05,tough grader:4|clear grading criteria:3|lecture heavy:3
+1074268,Robert Kaufman,Comparative Literature,3.5,3.63,2918,18,3.44,2008-10,2025-11,tough grader:4|graded by few things:3|amazing lectures:3
 2176523,David Shuster,Earth & Planetary Sciences,3.47,3.62,2919,15,3.4,2016-10,2026-06,lecture heavy:9|accessible outside class:5|beware of pop quizzes:4
 2486709,Cecile Gaubert,Economics,3.47,3.62,2920,15,3.53,2020-01,2026-04,tough grader:6|lecture heavy:5|test heavy:5
 1853441,Ken Sandy,Industrial Engineering,3.29,3.62,2921,7,3.29,2013-11,2021-10,participation matters:2|lots of homework:1|lecture heavy:1
@@ -2930,32 +2930,32 @@ id,name,department,rating,weighted,rank,reviews,difficulty,first,last,tags
 469053,Martin Covington,Psychology,3.47,3.62,2929,17,1.41,2005-04,2016-05,
 757890,Laurent Coscoy,Biology,3.47,3.62,2930,17,4,2005-11,2025-12,caring:5|lecture heavy:4|accessible outside class:3
 803982,Lior Pachter,Mathematics,3.47,3.62,2931,17,3.18,2006-01,2016-06,
-661325,Huma Dar,Electrical Engineering,3,3.62,2932,4,3.25,2005-08,2018-05,
-729508,Jennifer Bajorek,Rhetoric,3,3.62,2933,4,4.25,2005-10,2015-10,
-872667,Carlos Mujal,History,3,3.62,2934,4,3.5,2006-08,2012-08,
-896005,Julia Chang,Spanish,3,3.62,2935,4,3.25,2006-12,2012-08,
-904597,Lubna Qureshi,History,3,3.62,2936,4,2.75,2006-10,2009-06,
-926733,Xin Guo,Industrial Engineering,3,3.62,2937,4,3,2011-08,2025-10,tough grader:1|lots of homework:1|lecture heavy:1
-967122,Heather McMichael,Spanish,3,3.62,2938,4,2.5,2007-03,2015-05,
-1161825,Sanjay Hukku,Film,3,3.62,2939,4,2.75,2008-10,2026-02,hilarious:1
-1397224,Molly Jacobs,Scandinavian,3,3.62,2940,4,3.5,2014-02,2015-12,
-1697798,Nitash Balsara,Chemical Engineering,3,3.62,2941,4,4.25,2020-04,2025-12,respected:1|test heavy:1|amazing lectures:1
-1709071,Lucas Davis,Business Administration,3,3.62,2942,4,3,2012-04,2021-11,participation matters:1|test heavy:1|lecture heavy:1
-1818003,Alice Agogino,Mechanical Engineering,3,3.62,2943,4,1.25,2013-05,2024-10,tough grader:1|hilarious:1
-1825328,Ilya Zakharevich,Mathematics,3,3.62,2944,4,4.75,2013-09,2018-02,respected:1|participation matters:1|accessible outside class:1
-2393100,Ahmad Diab,Near Eastern Studies,3,3.62,2945,4,3.5,2020-01,2023-05,get ready to read:3|lots of homework:1|tough grader:1
-2429222,Katherine Mezur,Comparative Literature,3,3.62,2946,4,3,2020-05,2022-10,participation matters:3|group projects:3|graded by few things:1
-2431745,Elizabeth Bolton,Mass Communications,3,3.62,2947,4,3.25,2018-11,2019-03,accessible outside class:2|get ready to read:2|inspirational:1
-2433074,Theodore Pena,Classics,3,3.62,2948,4,3,2018-11,2023-12,tough grader:2|amazing lectures:2|gives good feedback:2
-2456288,Osita Udekwu,Rhetoric,3,3.62,2949,4,3.75,2019-01,2021-08,accessible outside class:1|get ready to read:1|caring:1
-2475544,William Fithian,Statistics,3,3.62,2950,4,3.25,2019-07,2023-09,amazing lectures:2|respected:2|caring:1
-2762655,Ali Hanks,Engineering,3,3.62,2951,4,4,2022-01,2025-05,lots of homework:4|tough grader:2|group projects:2
-2942559,Victoria Huynh,Ethnic Studies,3,3.62,2952,4,3,2023-10,2025-07,get ready to read:2|clear grading criteria:2|gives good feedback:1
-2943028,Kevin Quintero,Education,3,3.62,2953,4,3.75,2024-01,2025-02,so many papers:2|gives good feedback:1|caring:1
-3036229,Nilopa Shah,Economics,3,3.62,2954,4,2.5,2024-12,2026-05,tough grader:1
-3066736,Sergei Korotkikh,Mathematics,3,3.62,2955,4,3.5,2025-11,2026-07,get ready to read:3|hilarious:1|lecture heavy:1
-3068250,Leah Guthrie,Engineering,3,3.62,2956,4,2.5,2025-10,2026-05,test heavy:1|graded by few things:1|caring:1
-3137203,Hsin-hung (Sean) Yeh,Chinese,3,3.62,2957,4,3,2026-01,2026-10,tough grader:2|get ready to read:2|participation matters:2
+661325,Huma Dar,Electrical Engineering,3,3.61,2932,4,3.25,2005-08,2018-05,
+729508,Jennifer Bajorek,Rhetoric,3,3.61,2933,4,4.25,2005-10,2015-10,
+872667,Carlos Mujal,History,3,3.61,2934,4,3.5,2006-08,2012-08,
+896005,Julia Chang,Spanish,3,3.61,2935,4,3.25,2006-12,2012-08,
+904597,Lubna Qureshi,History,3,3.61,2936,4,2.75,2006-10,2009-06,
+926733,Xin Guo,Industrial Engineering,3,3.61,2937,4,3,2011-08,2025-10,tough grader:1|lots of homework:1|lecture heavy:1
+967122,Heather McMichael,Spanish,3,3.61,2938,4,2.5,2007-03,2015-05,
+1161825,Sanjay Hukku,Film,3,3.61,2939,4,2.75,2008-10,2026-02,hilarious:1
+1397224,Molly Jacobs,Scandinavian,3,3.61,2940,4,3.5,2014-02,2015-12,
+1697798,Nitash Balsara,Chemical Engineering,3,3.61,2941,4,4.25,2020-04,2025-12,respected:1|test heavy:1|amazing lectures:1
+1709071,Lucas Davis,Business Administration,3,3.61,2942,4,3,2012-04,2021-11,participation matters:1|test heavy:1|lecture heavy:1
+1818003,Alice Agogino,Mechanical Engineering,3,3.61,2943,4,1.25,2013-05,2024-10,tough grader:1|hilarious:1
+1825328,Ilya Zakharevich,Mathematics,3,3.61,2944,4,4.75,2013-09,2018-02,respected:1|participation matters:1|accessible outside class:1
+2393100,Ahmad Diab,Near Eastern Studies,3,3.61,2945,4,3.5,2020-01,2023-05,get ready to read:3|lots of homework:1|tough grader:1
+2429222,Katherine Mezur,Comparative Literature,3,3.61,2946,4,3,2020-05,2022-10,participation matters:3|group projects:3|graded by few things:1
+2431745,Elizabeth Bolton,Mass Communications,3,3.61,2947,4,3.25,2018-11,2019-03,accessible outside class:2|get ready to read:2|inspirational:1
+2433074,Theodore Pena,Classics,3,3.61,2948,4,3,2018-11,2023-12,tough grader:2|amazing lectures:2|gives good feedback:2
+2456288,Osita Udekwu,Rhetoric,3,3.61,2949,4,3.75,2019-01,2021-08,accessible outside class:1|get ready to read:1|caring:1
+2475544,William Fithian,Statistics,3,3.61,2950,4,3.25,2019-07,2023-09,amazing lectures:2|respected:2|caring:1
+2762655,Ali Hanks,Engineering,3,3.61,2951,4,4,2022-01,2025-05,lots of homework:4|tough grader:2|group projects:2
+2942559,Victoria Huynh,Ethnic Studies,3,3.61,2952,4,3,2023-10,2025-07,get ready to read:2|clear grading criteria:2|gives good feedback:1
+2943028,Kevin Quintero,Education,3,3.61,2953,4,3.75,2024-01,2025-02,so many papers:2|gives good feedback:1|caring:1
+3036229,Nilopa Shah,Economics,3,3.61,2954,4,2.5,2024-12,2026-05,tough grader:1
+3066736,Sergei Korotkikh,Mathematics,3,3.61,2955,4,3.5,2025-11,2026-07,get ready to read:3|hilarious:1|lecture heavy:1
+3068250,Leah Guthrie,Engineering,3,3.61,2956,4,2.5,2025-10,2026-05,test heavy:1|graded by few things:1|caring:1
+3137203,Hsin-hung (Sean) Yeh,Chinese,3,3.61,2957,4,3,2026-01,2026-10,tough grader:2|get ready to read:2|participation matters:2
 109841,Charles Pugh,Mathematics,3.54,3.61,2958,35,4.43,2003-02,2021-04,lots of homework:3|respected:2|inspirational:1
 2320829,Carmen Butcher,English,3.54,3.61,2959,35,3.77,2018-01,2025-12,tough grader:22|gives good feedback:14|lots of homework:11
 1797382,Darell Fields,Architecture,3.33,3.61,2960,9,4.33,2013-03,2020-05,lots of homework:4|tough grader:2|amazing lectures:2
@@ -3020,7 +3020,7 @@ id,name,department,rating,weighted,rank,reviews,difficulty,first,last,tags
 640194,Gary Pieroni,Business Administration,3.17,3.61,3019,6,2.83,2005-07,2024-10,test heavy:2|clear grading criteria:2|lots of homework:1
 718881,David Hult,French,3.17,3.61,3020,6,2.83,2005-10,2020-06,test heavy:2|beware of pop quizzes:1|tough grader:1
 1622900,Stuart Bale,Physics,3.17,3.61,3021,6,2.67,2011-10,2025-05,lots of homework:1|test heavy:1|get ready to read:1
-869744,Jonathan Wallis,Psychology,3.36,3.6,3022,11,4.09,2006-10,2014-03,
+869744,Jonathan Wallis,Psychology,3.36,3.61,3022,11,4.09,2006-10,2014-03,
 246554,George Lakoff,Linguistics,3.44,3.6,3023,16,2.75,2003-09,2012-05,
 692983,Carlos Munoz,Ethnic Studies,3.44,3.6,3024,16,2.25,2006-01,2016-04,
 1498769,Dan Himelstein,Business Administration,3.44,3.6,3025,16,1.75,2010-11,2026-05,group projects:7|graded by few things:5|participation matters:4
@@ -3053,8 +3053,8 @@ id,name,department,rating,weighted,rank,reviews,difficulty,first,last,tags
 2693598,Diana Thow,Italian,3,3.59,3052,5,3,2021-12,2024-05,tough grader:3|participation matters:3|accessible outside class:3
 2992370,Rebecca Perlman,Political Science,3,3.59,3053,5,3.4,2025-12,2026-09,get ready to read:2|graded by few things:2|tough grader:1
 3068149,Kevin Shadel,East Asian Studies,3,3.59,3054,5,3.8,2025-01,2026-11,get ready to read:3|hilarious:2|tough grader:2
-211947,Kent Udell,Engineering,3.46,3.59,3055,22,2.32,2003-05,2015-05,
-500448,Peter Berck,Economics,3.46,3.59,3056,22,2.73,2004-11,2017-12,graded by few things:3|tough grader:2|accessible outside class:2
+211947,Kent Udell,Engineering,3.45,3.59,3055,22,2.32,2003-05,2015-05,
+500448,Peter Berck,Economics,3.45,3.59,3056,22,2.73,2004-11,2017-12,graded by few things:3|tough grader:2|accessible outside class:2
 765569,Jocelyne Guilbault,Music,3.41,3.59,3057,17,2.53,2005-11,2018-07,caring:1|group projects:1
 631996,Robert Leachman,Industrial Engineering,3.33,3.59,3058,12,3.42,2006-05,2016-07,
 1172386,Ellen Simms,Biology,3.33,3.59,3059,12,3.5,2008-12,2022-05,caring:4|accessible outside class:3|lecture heavy:1
@@ -3128,27 +3128,27 @@ id,name,department,rating,weighted,rank,reviews,difficulty,first,last,tags
 189652,Jennifer Miller,English,3.5,3.56,3127,62,3.48,2003-04,2025-08,graded by few things:12|participation matters:8|inspirational:7
 585656,Hamid Shomali,Economics,3.37,3.56,3128,19,2.58,2005-03,2016-12,tough grader:1|test heavy:1|group projects:1
 374632,Steven Weber,Political Science,3.46,3.56,3129,37,3.11,2004-03,2020-04,respected:1|group projects:1|caring:1
-474925,Alessandra Lanzara,Physics,3.51,3.56,3130,82,3.42,2004-10,2026-04,lecture heavy:8|extra credit:7|test heavy:7
+474925,Alessandra Lanzara,Physics,3.51,3.56,3130,82,3.41,2004-10,2026-04,lecture heavy:8|extra credit:7|test heavy:7
 179605,Judith Butler,Rhetoric,3.38,3.56,3131,21,3.67,2004-04,2026-08,hilarious:2|graded by few things:1|inspirational:1
-927729,Randy Katz,Computer Science,3.25,3.56,3132,12,3.92,2006-12,2018-01,lots of homework:4|test heavy:2|group projects:2
-1780785,Candace Johnson,Music,3.25,3.56,3133,12,2.67,2012-12,2024-12,caring:5|respected:2|gives good feedback:2
-902376,Jeffrey Bokor,Electrical Engineering,2.33,3.56,3134,3,3.67,2012-12,2023-01,group projects:1|test heavy:1|accessible outside class:1
-1053515,Mimi Koehl,Biology,2.33,3.56,3135,3,3.67,2007-11,2014-10,
-1251797,Isabelle Philipp,Biology,2.33,3.56,3136,3,2.33,2009-07,2009-08,
-1394810,Edward Kaas,Business Administration,2.33,3.56,3137,3,4,2010-03,2025-10,lecture heavy:1
-1405064,Richard Scheffler,Public Health,2.33,3.56,3138,3,1.33,2010-05,2017-05,
-1450794,Ulf Olsson,Scandinavian,2.33,3.56,3139,3,4.33,2010-07,2012-03,
-1515261,Michael Botchan,Biology,2.33,3.56,3140,3,3,2010-12,2013-02,
-2268045,Vasudha Paramasivan,Religious Studies,2.33,3.56,3141,3,2.67,2018-02,2018-11,lecture heavy:3|get ready to read:1|so many papers:1
-2430682,Daniel McKinsey,Physics,2.33,3.56,3142,3,3.33,2021-12,2023-11,respected:1|accessible outside class:1|caring:1
-2531759,Alina Predescu,Film,2.33,3.56,3143,3,4,2020-01,2021-12,lots of homework:2|accessible outside class:2|so many papers:1
-2602072,Kaoru Saijo,MolecularCellular Biology,2.33,3.56,3144,3,4.67,2020-05,2023-04,tough grader:2|lecture heavy:2|test heavy:2
-2812951,Veselina Dinova,Business Administration,2.33,3.56,3145,3,4,2025-07,2026-08,participation matters:3|tough grader:1|group projects:1
-2871505,Dimitrios Konstantinidis,Civil & Environmental Engineering,2.33,3.56,3146,3,4.67,2022-12,2025-12,tough grader:1|test heavy:1|gives good feedback:1
-2910056,Eaman Jahani,Statistics,2.33,3.56,3147,3,3.33,2023-11,2023-12,get ready to read:1|graded by few things:1|accessible outside class:1
-2924487,Sara Gorchoff,Psychology,2.33,3.56,3148,3,2,2023-08,2023-09,graded by few things:3|lecture heavy:1|test heavy:1
-3009965,Camila Yadeau,Rhetoric,2.33,3.56,3149,3,3,2026-04,2026-05,tough grader:1|gives good feedback:1|participation matters:1
-3068163,Ariel Gibbs,English,2.33,3.56,3150,3,4.67,2025-01,2025-05,participation matters:3|tough grader:2|get ready to read:2
+927729,Randy Katz,Computer Science,3.25,3.55,3132,12,3.92,2006-12,2018-01,lots of homework:4|test heavy:2|group projects:2
+1780785,Candace Johnson,Music,3.25,3.55,3133,12,2.67,2012-12,2024-12,caring:5|respected:2|gives good feedback:2
+902376,Jeffrey Bokor,Electrical Engineering,2.33,3.55,3134,3,3.67,2012-12,2023-01,group projects:1|test heavy:1|accessible outside class:1
+1053515,Mimi Koehl,Biology,2.33,3.55,3135,3,3.67,2007-11,2014-10,
+1251797,Isabelle Philipp,Biology,2.33,3.55,3136,3,2.33,2009-07,2009-08,
+1394810,Edward Kaas,Business Administration,2.33,3.55,3137,3,4,2010-03,2025-10,lecture heavy:1
+1405064,Richard Scheffler,Public Health,2.33,3.55,3138,3,1.33,2010-05,2017-05,
+1450794,Ulf Olsson,Scandinavian,2.33,3.55,3139,3,4.33,2010-07,2012-03,
+1515261,Michael Botchan,Biology,2.33,3.55,3140,3,3,2010-12,2013-02,
+2268045,Vasudha Paramasivan,Religious Studies,2.33,3.55,3141,3,2.67,2018-02,2018-11,lecture heavy:3|get ready to read:1|so many papers:1
+2430682,Daniel McKinsey,Physics,2.33,3.55,3142,3,3.33,2021-12,2023-11,respected:1|accessible outside class:1|caring:1
+2531759,Alina Predescu,Film,2.33,3.55,3143,3,4,2020-01,2021-12,lots of homework:2|accessible outside class:2|so many papers:1
+2602072,Kaoru Saijo,MolecularCellular Biology,2.33,3.55,3144,3,4.67,2020-05,2023-04,tough grader:2|lecture heavy:2|test heavy:2
+2812951,Veselina Dinova,Business Administration,2.33,3.55,3145,3,4,2025-07,2026-08,participation matters:3|tough grader:1|group projects:1
+2871505,Dimitrios Konstantinidis,Civil & Environmental Engineering,2.33,3.55,3146,3,4.67,2022-12,2025-12,tough grader:1|test heavy:1|gives good feedback:1
+2910056,Eaman Jahani,Statistics,2.33,3.55,3147,3,3.33,2023-11,2023-12,get ready to read:1|graded by few things:1|accessible outside class:1
+2924487,Sara Gorchoff,Psychology,2.33,3.55,3148,3,2,2023-08,2023-09,graded by few things:3|lecture heavy:1|test heavy:1
+3009965,Camila Yadeau,Rhetoric,2.33,3.55,3149,3,3,2026-04,2026-05,tough grader:1|gives good feedback:1|participation matters:1
+3068163,Ariel Gibbs,English,2.33,3.55,3150,3,4.67,2025-01,2025-05,participation matters:3|tough grader:2|get ready to read:2
 847170,Christopher Gade,Psychology,3.54,3.55,3151,220,2.64,2006-05,2026-05,lecture heavy:48|clear grading criteria:43|tough grader:33
 439060,Noam Sobel,Psychology,3.29,3.55,3152,14,3.71,2004-07,2017-03,respected:1|get ready to read:1
 1522662,Edgar Knobloch,Physics,3.29,3.55,3153,14,4.57,2011-01,2026-07,lots of homework:7|tough grader:5|amazing lectures:4
@@ -3173,7 +3173,7 @@ id,name,department,rating,weighted,rank,reviews,difficulty,first,last,tags
 565165,Melvin Pomerantz,Physics,3.33,3.55,3172,18,2.89,2005-05,2020-12,
 519151,Raj Chetty,Economics,3.11,3.54,3173,9,3.44,2005-11,2015-08,
 3010606,Jiantao Jiao,Computer Science,3.11,3.54,3174,9,3.78,2024-05,2025-08,tough grader:3|graded by few things:2|amazing lectures:1
-285207,Caroline Cole,Writing,3.48,3.54,3175,59,4.66,2003-11,2025-12,tough grader:21|lots of homework:12|get ready to read:10
+285207,Caroline Cole,Writing,3.47,3.54,3175,59,4.66,2003-11,2025-12,tough grader:21|lots of homework:12|get ready to read:10
 114660,David Milnes,Music,3.43,3.54,3176,35,2.17,2003-02,2026-07,participation matters:4|skip class? you won't pass.:4|lecture heavy:3
 649076,Frederic E. Theunissen,Psychology,3.38,3.54,3177,24,3.96,2006-10,2026-09,lecture heavy:4|graded by few things:3|lots of homework:3
 2374426,Nicholas Weaver,Computer Science,3.38,3.54,3178,24,3.79,2018-05,2024-04,hilarious:9|lots of homework:8|test heavy:5
@@ -3189,7 +3189,7 @@ id,name,department,rating,weighted,rank,reviews,difficulty,first,last,tags
 2903943,Sheng Luan,Plant Biology,1.5,3.53,3188,2,5,2023-05,2026-07,lecture heavy:2|tough grader:1|test heavy:1
 271089,Yuet-Sim Chiang,Writing,3.29,3.53,3189,17,3.71,2003-10,2011-05,
 2274620,Chad Denton,International Studies,3.29,3.53,3190,17,3.71,2017-08,2021-12,get ready to read:6|lots of homework:6|tough grader:5
-2218702,Bill Fanning,Business Administration,3.32,3.53,3191,19,3.1,2016-12,2025-06,participation matters:12|group projects:9|amazing lectures:5
+2218702,Bill Fanning,Business Administration,3.32,3.53,3191,19,3.11,2016-12,2025-06,participation matters:12|group projects:9|amazing lectures:5
 701811,J. Ngai,Biology,2.5,3.53,3192,4,4.25,2005-09,2016-01,
 1096279,Luis Cordero-Sanchez,Spanish,2.5,3.53,3193,4,2.75,2008-02,2020-11,gives good feedback:1|participation matters:1|test heavy:1
 1132964,L Murray,Business Administration,2.5,3.53,3194,4,3.5,2008-05,2009-08,
@@ -3248,14 +3248,14 @@ id,name,department,rating,weighted,rank,reviews,difficulty,first,last,tags
 852166,Emmanuel Saez,Economics,3.29,3.51,3247,21,3.38,2006-11,2025-04,lecture heavy:4|graded by few things:3|inspirational:3
 2150633,Teresa Head-Gordon,Chemistry,3.3,3.51,3248,23,3.91,2017-01,2021-05,get ready to read:7|respected:7|extra credit:6
 244357,David Zusman,Biology,3.32,3.51,3249,25,3.56,2003-09,2011-05,
-654843,Holly Schroth,Business Administration,3.36,3.5,3250,31,2.68,2005-08,2024-12,participation matters:2|clear grading criteria:2|tough grader:1
+654843,Holly Schroth,Business Administration,3.35,3.51,3250,31,2.68,2005-08,2024-12,participation matters:2|clear grading criteria:2|tough grader:1
 369647,Arthur Ogus,Mathematics,3.37,3.5,3251,35,3.97,2004-03,2011-12,
 265301,Robert Price,Political Science,3.46,3.5,3252,109,2.44,2003-10,2020-06,gives good feedback:1|respected:1|clear grading criteria:1
 36956,Alan Weinstein,Mathematics,3.29,3.49,3253,24,3.17,2002-03,2021-05,lecture heavy:1
 666463,Kathryn Klar,International Studies,3.29,3.49,3254,24,3.46,2005-09,2017-02,gives good feedback:1|respected:1|inspirational:1
 1011629,Shachar Kariv,Economics,3.29,3.49,3255,24,3.17,2007-07,2026-02,graded by few things:6|inspirational:6|amazing lectures:6
-880410,Dennis Baldocchi,Environmental Science,3.27,3.49,3256,22,3.46,2009-05,2023-12,caring:5|accessible outside class:5|lecture heavy:5
-1930438,Mark Leinauer,Law,3.27,3.49,3257,22,3.04,2014-10,2023-07,graded by few things:7|test heavy:6|tough grader:5
+880410,Dennis Baldocchi,Environmental Science,3.27,3.49,3256,22,3.45,2009-05,2023-12,caring:5|accessible outside class:5|lecture heavy:5
+1930438,Mark Leinauer,Law,3.27,3.49,3257,22,3.05,2014-10,2023-07,graded by few things:7|test heavy:6|tough grader:5
 246772,Bob Glushko,Information Systems,3.19,3.49,3258,16,2.94,2003-09,2025-03,participation matters:3|caring:3|respected:2
 1489058,Ming Hsu,Business Administration,3.08,3.49,3259,12,3.08,2013-04,2023-05,group projects:5|lecture heavy:3|participation matters:3
 2835314,Stephanie Zonszein,Political Science,3.08,3.49,3260,12,2.75,2023-05,2026-04,get ready to read:9|graded by few things:4|extra credit:2
@@ -3316,7 +3316,7 @@ id,name,department,rating,weighted,rank,reviews,difficulty,first,last,tags
 2835226,Ora Gelley,English,2.71,3.47,3315,7,2.29,2022-11,2023-10,caring:2|inspirational:2|tough grader:1
 2907404,Sarah Chasins,Computer Science,2.71,3.47,3316,7,2.57,2023-10,2025-12,participation matters:1|amazing lectures:1|inspirational:1
 1622208,Dmitry Livdan,Business Administration,3.34,3.47,3317,41,4.07,2011-10,2022-01,test heavy:5|accessible outside class:5|hilarious:5
-1451673,Emily Gottreich,International Studies,3.33,3.47,3318,39,3.2,2010-06,2026-09,get ready to read:17|lecture heavy:15|amazing lectures:11
+1451673,Emily Gottreich,International Studies,3.33,3.47,3318,39,3.21,2010-06,2026-09,get ready to read:17|lecture heavy:15|amazing lectures:11
 1177458,Jane Delaney,Liberal Arts,2.4,3.47,3319,5,3,2008-09,2011-08,
 1846173,Justin Vaccaro,Film,2.4,3.47,3320,5,4,2015-04,2017-12,get ready to read:2|graded by few things:2|participation matters:2
 2262548,Erik Scollon,Art,2.4,3.47,3321,5,3.8,2017-06,2018-10,tough grader:2|participation matters:1|inspirational:1
@@ -3362,7 +3362,7 @@ id,name,department,rating,weighted,rank,reviews,difficulty,first,last,tags
 2442327,Christine Beier,Linguistics,2.91,3.44,3361,11,2.36,2018-12,2024-11,group projects:7|get ready to read:6|tough grader:4
 2480763,Mark Hansen,Civil Engineering,2.91,3.44,3362,11,2.73,2019-04,2026-02,amazing lectures:3|lots of homework:3|clear grading criteria:2
 111119,Richard Saykally,Chemistry,3.39,3.44,3363,106,3.35,2003-01,2021-10,get ready to read:11|hilarious:6|tough grader:3
-855536,K R Ryan,Biology,3.22,3.44,3364,27,3.82,2006-11,2026-01,tough grader:13|test heavy:9|graded by few things:6
+855536,K R Ryan,Biology,3.22,3.44,3364,27,3.81,2006-11,2026-01,tough grader:13|test heavy:9|graded by few things:6
 645515,Alper Atamturk,Industrial Engineering,3.11,3.44,3365,18,3.72,2005-12,2019-08,
 562133,Rae Greiner,English,2.78,3.44,3366,9,3,2005-01,2016-11,get ready to read:1|beware of pop quizzes:1|test heavy:1
 2173351,Evgenia Duzhak,Economics,2.78,3.44,3367,9,4.11,2016-12,2022-11,participation matters:4|lots of homework:4|tough grader:3
@@ -3383,14 +3383,14 @@ id,name,department,rating,weighted,rank,reviews,difficulty,first,last,tags
 2292149,David Foster,Psychology,2.92,3.43,3382,12,3.75,2017-12,2023-11,test heavy:9|graded by few things:6|lecture heavy:3
 2445432,Matthew Potts,Environmental Science,2.92,3.43,3383,12,3.17,2018-12,2026-03,participation matters:3|caring:3|group projects:3
 2739904,Christyna Serrano,Education,2.92,3.43,3384,12,1.42,2022-12,2026-08,participation matters:5|graded by few things:3|group projects:2
-570237,Jenefer Johnson,Theatre & Dance,3.1,3.43,3385,19,2.26,2005-02,2017-04,skip class? you won't pass.:1|graded by few things:1|lecture heavy:1
+570237,Jenefer Johnson,Theatre & Dance,3.11,3.43,3385,19,2.26,2005-02,2017-04,skip class? you won't pass.:1|graded by few things:1|lecture heavy:1
 1310524,Wendy Sinek,Political Science,3.33,3.43,3386,66,3.38,2009-10,2026-01,get ready to read:24|tough grader:17|participation matters:14
 976535,D.V. Jones,English,3.06,3.43,3387,17,3.65,2007-10,2025-02,caring:2|participation matters:1|graded by few things:1
 1193612,Rose Wilkerson,Linguistics,3.06,3.43,3388,17,2.06,2008-12,2022-01,get ready to read:4|accessible outside class:3|group projects:2
 1394972,Edward Kass,Business Administration,3.06,3.43,3389,17,2.59,2019-01,2026-05,graded by few things:5|participation matters:4|caring:3
-538055,Gordon Frankie,Environmental Science,2.8,3.42,3390,10,2.9,2005-10,2023-11,skip class? you won't pass.:1|lecture heavy:1|inspirational:1
-792948,Desiree Pries,French,2.8,3.42,3391,10,3.4,2006-01,2013-01,
-3032080,Iain Clark,Bioengineering,2.8,3.42,3392,10,2.2,2024-12,2026-06,group projects:6|caring:3|participation matters:2
+538055,Gordon Frankie,Environmental Science,2.8,3.43,3390,10,2.9,2005-10,2023-11,skip class? you won't pass.:1|lecture heavy:1|inspirational:1
+792948,Desiree Pries,French,2.8,3.43,3391,10,3.4,2006-01,2013-01,
+3032080,Iain Clark,Bioengineering,2.8,3.43,3392,10,2.2,2024-12,2026-06,group projects:6|caring:3|participation matters:2
 596854,Mina Aganagic,Mathematics,3.36,3.42,3393,102,2.81,2005-11,2026-07,lots of homework:26|caring:21|test heavy:20
 1702613,Steven Segal,Social Welfare,1.33,3.42,3394,3,3.33,2012-03,2015-03,
 1732499,Martin Lettau,Not Specified,1.33,3.42,3395,3,2.67,2012-07,2013-04,
@@ -3401,11 +3401,11 @@ id,name,department,rating,weighted,rank,reviews,difficulty,first,last,tags
 3112933,Kamal Dulai,Biology,1.33,3.42,3400,3,3,2025-08,2025-09,lecture heavy:2|test heavy:1
 205050,David Sunding,Economics,3.21,3.42,3401,29,2.86,2003-05,2021-04,graded by few things:1|lots of homework:1|test heavy:1
 475199,R Ramesh,Physics,3.27,3.42,3402,41,2.66,2004-11,2026-10,caring:8|accessible outside class:5|inspirational:4
-562079,Anna Leong,Asian Studies,3.18,3.42,3403,27,2.89,2005-03,2018-09,tough grader:2|participation matters:1|skip class? you won't pass.:1
+562079,Anna Leong,Asian Studies,3.19,3.42,3403,27,2.89,2005-03,2018-09,tough grader:2|participation matters:1|skip class? you won't pass.:1
 804030,Kristie Boering,Chemistry,3.31,3.42,3404,58,3.69,2006-07,2026-07,test heavy:17|lecture heavy:17|caring:12
 2448811,Corinne Riddell,Public Health,2.62,3.42,3405,8,3,2019-07,2021-11,accessible outside class:1|clear grading criteria:1|caring:1
 88743,Bill Prinzmetal,Psychology,3.1,3.42,3406,20,2.9,2005-09,2011-05,
-1478716,Tim King,Sociology,3.06,3.42,3407,18,2.28,2010-09,2015-03,
+1478716,Tim King,Sociology,3.06,3.41,3407,18,2.28,2010-09,2015-03,
 1915812,Archana Dube,Economics,2.33,3.41,3408,6,4.67,2014-08,2015-05,
 3011963,Kwanele Sosibo,English,2.33,3.41,3409,6,3.67,2024-05,2026-01,tough grader:4|get ready to read:3|participation matters:1
 1963428,Stephanie Jones-Rogers,History,3.25,3.41,3410,40,2.68,2015-03,2026-06,get ready to read:21|so many papers:12|lots of homework:9
@@ -3416,9 +3416,9 @@ id,name,department,rating,weighted,rank,reviews,difficulty,first,last,tags
 2126450,Stephanie Syjuco,Art,1.75,3.41,3415,4,3,2016-04,2026-01,participation matters:2|group projects:1|gives good feedback:1
 2520817,Paul Duguid,Information Systems,1.75,3.41,3416,4,3.75,2020-08,2023-04,tough grader:3|get ready to read:2|participation matters:2
 2917175,Ian Swinburne,Molecular/Cellular Biology,1.75,3.41,3417,4,4.25,2024-08,2026-03,caring:1|accessible outside class:1
-2883367,ChengXi Tang,Literature,2.67,3.4,3418,9,2.89,2024-04,2026-04,get ready to read:5|graded by few things:4|lecture heavy:3
-2936083,Marco Gonzalez-Navarro,Economics,2.67,3.4,3419,9,4.22,2023-12,2026-03,test heavy:6|graded by few things:4|tough grader:4
-3015291,Joseph Gonzalez,Data Science,2.67,3.4,3420,9,4.11,2024-05,2024-12,respected:3|caring:2|lots of homework:2
+2883367,ChengXi Tang,Literature,2.67,3.41,3418,9,2.89,2024-04,2026-04,get ready to read:5|graded by few things:4|lecture heavy:3
+2936083,Marco Gonzalez-Navarro,Economics,2.67,3.41,3419,9,4.22,2023-12,2026-03,test heavy:6|graded by few things:4|tough grader:4
+3015291,Joseph Gonzalez,Data Science,2.67,3.41,3420,9,4.11,2024-05,2024-12,respected:3|caring:2|lots of homework:2
 653571,D.H. Wright,Art History,2.93,3.4,3421,14,3.71,2005-11,2011-04,
 2726993,Juan Berumen,Ethnic Studies,2.93,3.4,3422,14,3.71,2022-01,2026-09,get ready to read:10|tough grader:8|group projects:6
 2670637,Kristin Sangren,Legal Studies,3.26,3.4,3423,47,3.89,2021-10,2026-05,get ready to read:32|participation matters:22|tough grader:13
@@ -3428,7 +3428,7 @@ id,name,department,rating,weighted,rank,reviews,difficulty,first,last,tags
 647533,Dorri Beam,English,2.43,3.4,3427,7,3.86,2005-07,2013-10,
 3131540,Aner Preminger,Film,2.43,3.4,3428,7,2.43,2025-12,2026-05,lecture heavy:4|gives good feedback:2|amazing lectures:1
 570149,Paul Pierson,Political Science,3.27,3.4,3429,55,3.42,2005-02,2025-05,get ready to read:33|lecture heavy:12|graded by few things:12
-526869,Jim Pitman,Statistics,3.12,3.4,3430,25,3.92,2004-12,2020-09,lots of homework:1|lecture heavy:1
+526869,Jim Pitman,Statistics,3.12,3.39,3430,25,3.92,2004-12,2020-09,lots of homework:1|lecture heavy:1
 210892,Gene Irschick,History,3.05,3.39,3431,20,3.5,2003-05,2009-07,
 2769657,Clancy Wilmott,Geography,3.05,3.39,3432,20,3.1,2022-01,2026-02,amazing lectures:6|get ready to read:5|caring:3
 63103,Robert Dibble,Engineering,2.7,3.39,3433,10,2.8,2005-12,2013-08,
@@ -3452,10 +3452,10 @@ id,name,department,rating,weighted,rank,reviews,difficulty,first,last,tags
 545947,Hong Yung Lee,Political Science,2.73,3.38,3451,11,2.82,2005-01,2010-07,
 848844,As'Ad Abukhalil,Near Eastern Studies,2.73,3.38,3452,11,3,2006-05,2019-04,
 884959,Ian Holmes,Bioengineering,2.73,3.38,3453,11,3.82,2006-08,2026-08,lecture heavy:5|caring:2|group projects:2
-2165366,Elif Kale-Lostuvali,Sociology,2.73,3.38,3454,11,2.54,2016-12,2019-08,get ready to read:6|accessible outside class:4|caring:3
+2165366,Elif Kale-Lostuvali,Sociology,2.73,3.38,3454,11,2.55,2016-12,2019-08,get ready to read:6|accessible outside class:4|caring:3
 445080,Nicos Makris,Civil Engineering,2.17,3.38,3455,6,4.5,2004-08,2022-12,participation matters:1|lecture heavy:1|accessible outside class:1
 1844221,Bethany Goldblum,Nuclear Engineering,2.17,3.38,3456,6,4.17,2013-10,2026-07,tough grader:2|lecture heavy:1|test heavy:1
-1047036,Marjorie Shapiro,Physics,3.04,3.38,3457,22,3.54,2007-11,2023-04,accessible outside class:4|get ready to read:2|gives good feedback:2
+1047036,Marjorie Shapiro,Physics,3.05,3.38,3457,22,3.55,2007-11,2023-04,accessible outside class:4|get ready to read:2|gives good feedback:2
 213692,Christine Palmer,American Studies,3.25,3.37,3458,60,3.75,2003-05,2026-05,participation matters:11|lecture heavy:11|tough grader:9
 728028,Omer Savas,Engineering,2.94,3.37,3459,17,3.24,2005-10,2024-01,respected:5|clear grading criteria:3|lecture heavy:3
 1624182,Stephanie Etting,Anthropology,2.56,3.37,3460,9,3.11,2011-12,2016-07,
@@ -3464,7 +3464,7 @@ id,name,department,rating,weighted,rank,reviews,difficulty,first,last,tags
 388539,Jennifer Doudna,Biology,3.17,3.37,3463,36,3.42,2004-04,2026-08,get ready to read:6|test heavy:4|respected:3
 1200680,David Ebrey,Philosophy,2.75,3.37,3464,12,3.83,2008-12,2015-03,
 1349515,Holger Mueller,Physics,2.75,3.37,3465,12,3.33,2010-04,2021-01,hilarious:2|accessible outside class:1|caring:1
-827306,Russell Merritt,Film,3.04,3.37,3466,23,3.44,2006-04,2020-03,get ready to read:2|tough grader:2|respected:1
+827306,Russell Merritt,Film,3.04,3.37,3466,23,3.43,2006-04,2020-03,get ready to read:2|tough grader:2|respected:1
 109843,Gabor Somorjai,Chemistry,2.29,3.36,3467,7,2.86,2003-11,2011-12,
 823237,Padma Rangarajan,English,2.29,3.36,3468,7,3.14,2006-03,2020-02,get ready to read:3|tough grader:2|skip class? you won't pass.:2
 946042,Benjamin Hermalin,Business Administration,2.29,3.36,3469,7,3,2007-01,2025-12,tough grader:1
@@ -3486,7 +3486,7 @@ id,name,department,rating,weighted,rank,reviews,difficulty,first,last,tags
 217218,Mark Wilson,Sociology,3.07,3.35,3485,28,2.18,2003-05,2018-04,respected:1|caring:1
 603924,David Tse,Electrical Engineering,2.38,3.35,3486,8,4.38,2005-04,2014-02,
 1336759,K Nishimura,English,2.38,3.35,3487,8,3.25,2010-03,2012-08,
-1245907,Wayne Getz,Environ. Sci. Policy & Mgmt.,2.64,3.35,3488,11,4.54,2009-01,2014-02,
+1245907,Wayne Getz,Environ. Sci. Policy & Mgmt.,2.64,3.35,3488,11,4.55,2009-01,2014-02,
 1599203,Martin Sanchez-Jankowski,Not Specified,2.64,3.35,3489,11,3.73,2012-11,2025-12,tough grader:3|get ready to read:3|lecture heavy:1
 2836657,Joelle Frechette,Chemical Engineering,2.64,3.35,3490,11,3.82,2023-05,2026-09,tough grader:5|amazing lectures:2|lots of homework:2
 557634,Rebecca McLennan,History,3.15,3.35,3491,40,3.05,2005-01,2024-05,get ready to read:19|lots of homework:10|tough grader:4
@@ -3505,13 +3505,13 @@ id,name,department,rating,weighted,rank,reviews,difficulty,first,last,tags
 1143738,Aya De Leon,African-American Studies,2.69,3.33,3504,13,2.46,2008-06,2025-12,participation matters:3|lecture heavy:2|so many papers:1
 1118361,Sherrilyn Roush,Philosophy,2.14,3.32,3505,7,3.43,2008-10,2012-12,
 2806749,Cynthia Looy,Biology,2.14,3.32,3506,7,4,2022-08,2023-12,lecture heavy:1|tough grader:1|hilarious:1
-1157375,James Holston,Anthropology,3.1,3.32,3507,38,2.29,2008-07,2026-10,get ready to read:13|lecture heavy:13|graded by few things:9
+1157375,James Holston,Anthropology,3.11,3.32,3507,38,2.29,2008-07,2026-10,get ready to read:13|lecture heavy:13|graded by few things:9
 1102732,Kimmen Sjolander,Bioengineering,1.25,3.32,3508,4,4.5,2008-02,2017-05,lots of homework:1|beware of pop quizzes:1|accessible outside class:1
 865427,Dini Wong,Physical Education,3.06,3.32,3509,32,3.34,2006-07,2025-05,tough grader:11|graded by few things:4|test heavy:4
 452765,Marc Davis,Astronomy,2.71,3.32,3510,14,3.07,2004-11,2010-12,
 802610,Birgitta Whaley,Chemistry,2.71,3.32,3511,14,3.57,2006-01,2021-12,lots of homework:1|get ready to read:1
-798951,Janak Ramakrishnan,Mathematics,2.54,3.32,3512,11,3.54,2006-02,2013-12,
-1012741,Jeff Romm,Environmental Science,2.54,3.32,3513,11,1.82,2008-04,2012-01,
+798951,Janak Ramakrishnan,Mathematics,2.55,3.31,3512,11,3.55,2006-02,2013-12,
+1012741,Jeff Romm,Environmental Science,2.55,3.31,3513,11,1.82,2008-04,2012-01,
 2148977,Winnie Wong,Rhetoric,3,3.31,3514,27,3.63,2016-06,2026-05,get ready to read:19|amazing lectures:8|tough grader:7
 467864,Yuri Suzuki,Engineering,2.25,3.31,3515,8,3.5,2004-10,2010-10,
 1138370,Shamgar Gurevich,Mathematics,2.25,3.31,3516,8,2.38,2008-05,2011-02,
@@ -3539,25 +3539,25 @@ id,name,department,rating,weighted,rank,reviews,difficulty,first,last,tags
 2341616,Shreeharsh Kelkar,Interdisciplinary Studies,2.96,3.29,3538,27,2.44,2019-05,2026-06,so many papers:7|lecture heavy:7|caring:7
 617085,James Turner,English,3.03,3.29,3539,34,4.03,2005-05,2026-09,tough grader:7|get ready to read:7|accessible outside class:4
 3125826,Landon Hobbs,Philosophy,2.92,3.29,3540,24,4.04,2025-11,2026-05,get ready to read:16|tough grader:13|lecture heavy:9
-995920,Michael Deweese,Physics,3.14,3.29,3541,62,3.16,2007-10,2026-01,get ready to read:10|test heavy:6|accessible outside class:6
+995920,Michael Deweese,Physics,3.15,3.29,3541,62,3.16,2007-10,2026-01,get ready to read:10|test heavy:6|accessible outside class:6
 3015732,Xiangyi Meng,Economics,2,3.29,3542,7,3.14,2024-05,2026-06,extra credit:1|caring:1|lecture heavy:1
 352519,Peter Duesberg,Biology,2.64,3.29,3543,14,2.43,2004-02,2018-08,inspirational:1|amazing lectures:1|caring:1
 585355,Thomas Scanlon,Mathematics,3.19,3.29,3544,91,3.13,2005-03,2022-12,caring:13|clear grading criteria:13|accessible outside class:9
 722825,Bruce Mangan,Psychology,3.11,3.28,3545,53,3.06,2005-10,2018-12,get ready to read:10|graded by few things:8|lecture heavy:4
-2498757,Michael Mahoney,Statistics,2.46,3.28,3546,11,4.18,2019-05,2023-01,lots of homework:7|lecture heavy:4|tough grader:3
-3019459,Maheemah Bokhoree,Chemistry,2.46,3.28,3547,11,2.27,2024-12,2026-07,lots of homework:7|lecture heavy:3|participation matters:1
+2498757,Michael Mahoney,Statistics,2.45,3.28,3546,11,4.18,2019-05,2023-01,lots of homework:7|lecture heavy:4|tough grader:3
+3019459,Maheemah Bokhoree,Chemistry,2.45,3.28,3547,11,2.27,2024-12,2026-07,lots of homework:7|lecture heavy:3|participation matters:1
 1151043,Graham Fleming,Chemistry,1,3.28,3548,4,5,2019-09,2019-12,
 2260978,Israel Romem,Economics,1,3.28,3549,4,4.75,2017-05,2017-06,tough grader:4|test heavy:3|lecture heavy:2
 2349114,Eric Friedman,Industrial Engineering,1,3.28,3550,4,3.25,2018-03,2019-03,test heavy:2|hilarious:2|tough grader:2
 2464203,Sadrine Dudoit,Statistics,1,3.28,3551,4,3,2019-02,2019-11,get ready to read:3|lecture heavy:2
 3024839,Dominique Zonyee,Journalism,1,3.28,3552,4,3.75,2024-08,2024-08,tough grader:2|participation matters:2|group projects:1
 3118329,Abbye Atkinson,Legal Studies,1,3.28,3553,4,3.25,2025-09,2025-09,tough grader:2|get ready to read:1|test heavy:1
-2836498,Hidetaka Hirota,History,3.08,3.28,3554,47,3.4,2023-06,2026-07,get ready to read:20|lecture heavy:20|tough grader:13
+2836498,Hidetaka Hirota,History,3.09,3.28,3554,47,3.4,2023-06,2026-07,get ready to read:20|lecture heavy:20|tough grader:13
 822435,Lowell Dittmer,Political Science,2.67,3.28,3555,15,3.53,2006-03,2018-01,beware of pop quizzes:1|tests? not many:1|lecture heavy:1
 850387,Mary Berry,History,2.67,3.28,3556,15,3.47,2006-05,2017-12,get ready to read:1|skip class? you won't pass.:1|clear grading criteria:1
 1786620,Angela Marino,Theatre & Dance,2.67,3.28,3557,15,2.47,2012-12,2026-10,lecture heavy:5|get ready to read:4|participation matters:3
 413982,M Rieffel,Mathematics,2.92,3.28,3558,26,2.88,2004-09,2025-12,tough grader:3|lots of homework:2|respected:2
-862032,Joann Conrad,Anthropology,2.79,3.28,3559,19,3.1,2006-08,2016-06,
+862032,Joann Conrad,Anthropology,2.79,3.28,3559,19,3.11,2006-08,2016-06,
 1085586,Raveevarn Choksombatchai,Architecture,2.5,3.27,3560,12,4.58,2008-01,2025-03,gives good feedback:1|participation matters:1|caring:1
 1712071,Diliana Angelova,Art History,2.5,3.27,3561,12,3.75,2015-08,2025-07,get ready to read:7|lecture heavy:5|graded by few things:4
 2482705,Sarumathi Jayaraman,Public Policy,2.5,3.27,3562,12,2.17,2020-01,2025-04,group projects:5|graded by few things:4|get ready to read:3
@@ -3580,10 +3580,10 @@ id,name,department,rating,weighted,rank,reviews,difficulty,first,last,tags
 538052,Nancy Peluso,Environmental Science,2.82,3.26,3579,22,3.36,2006-01,2022-07,get ready to read:8|so many papers:5|tough grader:3
 941759,Margaretta Lovell,Art History,2.88,3.26,3580,26,3.73,2006-12,2026-10,tough grader:9|get ready to read:8|lecture heavy:8
 1455235,Ahmet Yildiz,Physics,2.88,3.26,3581,26,4.19,2010-11,2026-06,test heavy:8|tough grader:4|respected:4
-560262,Ugo Nwokeji,African-American Studies,2.97,3.26,3582,34,2.29,2005-01,2026-01,lecture heavy:7|graded by few things:5|tough grader:3
+560262,Ugo Nwokeji,African-American Studies,2.97,3.25,3582,34,2.29,2005-01,2026-01,lecture heavy:7|graded by few things:5|tough grader:3
 294299,Daniel F. Melia,Rhetoric,3.02,3.25,3583,42,3.19,2003-11,2017-08,skip class? you won't pass.:2|gives good feedback:1|caring:1
 11539,Phillip Stark,Statistics,3.1,3.25,3584,62,3.02,2001-07,2022-07,
-312430,Michelle Douskey,Chemistry,3.22,3.25,3585,270,2.93,2003-12,2026-04,lots of homework:49|participation matters:47|tough grader:36
+312430,Michelle Douskey,Chemistry,3.21,3.25,3585,270,2.93,2003-12,2026-04,lots of homework:49|participation matters:47|tough grader:36
 2337711,Andreas Mueller,Mathematics,1.86,3.25,3586,7,4.29,2018-01,2019-06,get ready to read:2|graded by few things:2|beware of pop quizzes:2
 2411501,Sylvie Corteel,Mathematics,2.6,3.25,3587,15,3.07,2018-10,2026-09,lots of homework:4|test heavy:4|get ready to read:2
 1065254,Silvia Bunge,Psychology,2.94,3.25,3588,31,3.42,2008-03,2025-05,get ready to read:10|lecture heavy:3|tough grader:3
@@ -3592,7 +3592,7 @@ id,name,department,rating,weighted,rank,reviews,difficulty,first,last,tags
 2046107,Mather George,Anthropology,2.42,3.24,3591,12,3.42,2015-10,2016-11,participation matters:1|group projects:1
 602296,Marina Levina,Mass Communications,3,3.24,3592,41,3.37,2005-04,2016-07,
 2550677,Robin Flagg,Public Health,2.76,3.24,3593,21,3.43,2019-12,2025-12,lecture heavy:6|amazing lectures:5|tough grader:4
-719241,Daniel Warren,Philosophy,3.06,3.24,3594,55,3.84,2003-04,2025-05,lots of homework:8|tough grader:7|so many papers:4
+719241,Daniel Warren,Philosophy,3.05,3.24,3594,55,3.84,2003-04,2025-05,lots of homework:8|tough grader:7|so many papers:4
 982823,Elise Miller,English,2.65,3.24,3595,17,4.18,2007-12,2023-10,participation matters:8|tough grader:4|get ready to read:3
 1065627,Alain De Janvry,Economics,2.65,3.24,3596,17,4.12,2007-12,2011-06,
 2274209,Carla Brunet,Music,2.94,3.24,3597,34,2.91,2017-08,2026-10,participation matters:10|lecture heavy:9|get ready to read:8
@@ -3600,7 +3600,7 @@ id,name,department,rating,weighted,rank,reviews,difficulty,first,last,tags
 638629,Jamie Doudna-Cate,Chemistry,2.46,3.24,3599,13,3.46,2005-08,2017-09,lecture heavy:2|tough grader:1|test heavy:1
 1485799,Nicholas Tackett,History,2.46,3.24,3600,13,2.77,2010-10,2025-12,lecture heavy:7|get ready to read:3|graded by few things:3
 3107873,Karina Gutierrez,Theatre & Dance,2.46,3.24,3601,13,3.62,2025-06,2026-05,tough grader:6|lots of homework:4|caring:3
-538830,Fyodor Urnov,Biology,3.16,3.24,3602,141,3.4,2004-12,2025-02,inspirational:4|amazing lectures:4|respected:2
+538830,Fyodor Urnov,Biology,3.16,3.23,3602,141,3.4,2004-12,2025-02,inspirational:4|amazing lectures:4|respected:2
 1288889,Jean-Paul Bourdier,Architecture,2.11,3.23,3603,9,4.33,2009-05,2025-03,lots of homework:2|tough grader:1|participation matters:1
 2343467,Galina Hale,Economics,2.11,3.23,3604,9,4.56,2018-04,2019-12,lots of homework:5|get ready to read:5|skip class? you won't pass.:5
 1904169,Ling Hon Lam,Chinese,2.77,3.23,3605,22,3.82,2014-05,2025-09,participation matters:11|beware of pop quizzes:9|tough grader:6
@@ -3611,8 +3611,8 @@ id,name,department,rating,weighted,rank,reviews,difficulty,first,last,tags
 433331,Richard Borcherds,Mathematics,3.08,3.23,3610,66,1.98,2004-09,2022-12,hilarious:2|lecture heavy:1|accessible outside class:1
 388540,Percy Hintzen,African-American Studies,2.94,3.23,3611,36,2.53,2004-04,2011-04,
 205414,Robert Ashmore,Chinese,2.91,3.23,3612,32,3.69,2003-05,2026-09,get ready to read:7|lecture heavy:7|skip class? you won't pass.:6
-509426,Gerard Roland,Economics,2.2,3.22,3613,10,3,2004-12,2024-01,lecture heavy:3|amazing lectures:1|caring:1
-756140,Sarah Herbold,Comparative Literature,2.2,3.22,3614,10,4.3,2006-01,2025-06,tough grader:6|lots of homework:4|get ready to read:3
+509426,Gerard Roland,Economics,2.2,3.23,3613,10,3,2004-12,2024-01,lecture heavy:3|amazing lectures:1|caring:1
+756140,Sarah Herbold,Comparative Literature,2.2,3.23,3614,10,4.3,2006-01,2025-06,tough grader:6|lots of homework:4|get ready to read:3
 890671,Hanh Tran,Languages,2.86,3.22,3615,28,3.04,2006-09,2025-10,group projects:11|participation matters:8|tough grader:4
 1288906,Berend Smit,Chemical Engineering,1.5,3.22,3616,6,4.5,2009-05,2010-05,
 2467136,Benjamin Faber,Economics,2.8,3.22,3617,25,3.76,2019-03,2026-07,graded by few things:9|test heavy:8|lecture heavy:5
@@ -3657,7 +3657,7 @@ id,name,department,rating,weighted,rank,reviews,difficulty,first,last,tags
 1625497,Fei XU,Psychology,2.64,3.16,3656,22,3.82,2011-10,2023-08,graded by few things:3|clear grading criteria:2|lecture heavy:1
 1760524,David Weisblat,Biology,2,3.16,3657,10,3.1,2012-12,2023-11,tough grader:2|lecture heavy:1|graded by few things:1
 2386826,Demian Pouzo,Economics,2.65,3.16,3658,23,3.39,2018-06,2026-09,graded by few things:9|test heavy:9|lecture heavy:7
-309183,Charles Altieri,English,2.88,3.16,3659,43,3.49,2003-12,2018-05,inspirational:2|amazing lectures:2|hilarious:1
+309183,Charles Altieri,English,2.88,3.15,3659,43,3.49,2003-12,2018-05,inspirational:2|amazing lectures:2|hilarious:1
 335983,Hiroshi Nikaido,Biology,2.67,3.15,3660,24,4,2004-10,2009-07,
 829943,Khaled Mosalam,Civil Engineering,2.09,3.15,3661,11,3.36,2006-08,2026-09,
 393030,Paolo Ney De Souza,Mathematics,2.5,3.15,3662,18,2.94,2004-04,2009-08,
@@ -3685,7 +3685,7 @@ id,name,department,rating,weighted,rank,reviews,difficulty,first,last,tags
 64122,T. Don Tilley,Chemistry,2.15,3.11,3684,13,3.77,2002-09,2025-12,tough grader:3|test heavy:2|get ready to read:2
 587249,C. Susheel Bibbs,Engineering,2.15,3.11,3685,13,2.85,2005-04,2010-01,
 2900549,Steven Sexton,Economics,2.71,3.11,3686,31,3.26,2023-10,2026-04,graded by few things:7|clear grading criteria:5|caring:5
-1460855,Christian Santesteban,Economics,2.56,3.11,3687,23,4.22,2010-10,2012-01,
+1460855,Christian Santesteban,Economics,2.57,3.11,3687,23,4.22,2010-10,2012-01,
 79988,John Neu,Mathematics,2.86,3.11,3688,51,3.12,2002-11,2012-05,
 687693,Scott Saul,English,2.9,3.11,3689,61,3.8,2005-09,2025-03,gives good feedback:5|get ready to read:5|accessible outside class:5
 546135,Robert Collins,Anthropology,2.27,3.11,3690,15,4.13,2005-01,2007-07,
@@ -3698,7 +3698,7 @@ id,name,department,rating,weighted,rank,reviews,difficulty,first,last,tags
 126232,Arturo Perez-Reyes,Business Administration,2.39,3.1,3697,18,3.11,2004-07,2026-07,graded by few things:6|tough grader:5|group projects:1
 1381397,Chris Paciorek,Statistics,1.91,3.09,3698,11,4.73,2010-03,2026-10,amazing lectures:1
 1925998,Ann Kalinowski,Statistics,1.91,3.09,3699,11,3,2014-10,2026-02,inspirational:1|lots of homework:1|participation matters:1
-2390891,Brian Karl,Anthropology,2.54,3.08,3700,24,2.79,2019-08,2026-08,get ready to read:16|graded by few things:11|lecture heavy:6
+2390891,Brian Karl,Anthropology,2.54,3.09,3700,24,2.79,2019-08,2026-08,get ready to read:16|graded by few things:11|lecture heavy:6
 318823,Hank Ibser,Statistics,3.02,3.08,3701,192,3.56,2003-12,2021-08,tough grader:32|test heavy:30|group projects:18
 484041,Paul Thomas,Political Science,2.08,3.08,3702,13,3.69,2004-11,2013-08,
 633831,Pradeep Chhibber,Political Science,2.87,3.08,3703,62,3.4,2005-06,2026-07,get ready to read:12|tough grader:7|accessible outside class:6
@@ -3710,13 +3710,13 @@ id,name,department,rating,weighted,rank,reviews,difficulty,first,last,tags
 2050107,Alexander Appleton,Mathematics,2.2,3.08,3709,15,4.73,2015-12,2019-01,tough grader:8|lots of homework:5|test heavy:3
 101791,John Steel,Mathematics,2.76,3.08,3710,41,2.88,2002-12,2025-02,tough grader:4|clear grading criteria:4|test heavy:2
 158359,K. Peter Vollhardt,Chemistry,2.99,3.08,3711,161,3.78,2003-03,2024-10,test heavy:18|graded by few things:14|get ready to read:14
-1778698,John Briginshaw,Business Administration,2.85,3.07,3712,59,3.3,2012-12,2026-07,participation matters:13|lecture heavy:12|tough grader:8
+1778698,John Briginshaw,Business Administration,2.85,3.07,3712,59,3.31,2012-12,2026-07,participation matters:13|lecture heavy:12|tough grader:8
 558450,Dorit Hochbaum,Industrial Engineering,2.37,3.07,3713,19,3.74,2005-04,2025-10,group projects:4|lots of homework:3|clear grading criteria:2
 606234,Loic Wacquant,Sociology,2.69,3.07,3714,36,4.28,2005-04,2025-10,graded by few things:5|get ready to read:3|lecture heavy:3
 1924065,Tiffany Page,Latin American Studies,2.48,3.06,3715,23,3.65,2014-10,2024-05,tough grader:8|get ready to read:6|accessible outside class:5
 628,Jerry Sanders,Peace & Conflict Studies,2.88,3.06,3716,76,3.42,2001-11,2024-10,participation matters:1|amazing lectures:1|inspirational:1
 1825737,Burkhard Militzer,Astronomy,2.57,3.06,3717,28,4.14,2013-06,2026-11,lots of homework:11|tough grader:7|test heavy:5
-2344760,Joseph Farrell,Economics,1.92,3.06,3718,12,3.75,2018-03,2018-12,test heavy:7|tough grader:4|get ready to read:4
+2344760,Joseph Farrell,Economics,1.92,3.05,3718,12,3.75,2018-03,2018-12,test heavy:7|tough grader:4|get ready to read:4
 2383569,Stephen Torres,Engineering,2.07,3.05,3719,14,3.79,2018-06,2021-02,tough grader:5|inspirational:3|group projects:3
 2775532,Parsa Taheri,Engineering,2.13,3.05,3720,15,4.2,2022-03,2024-05,tough grader:7|lots of homework:5|graded by few things:5
 412049,Michelle Baptiste,Writing,2.87,3.05,3721,78,3.62,2004-05,2026-08,lots of homework:39|get ready to read:29|tough grader:17
@@ -3734,7 +3734,7 @@ id,name,department,rating,weighted,rank,reviews,difficulty,first,last,tags
 1075205,John Levi Martin,Sociology,1.25,3.03,3733,8,4.12,2007-12,2013-12,
 2291350,Daniella Hirschfeld,Landscape Architecture & Regional Planning,1.44,3.03,3734,9,3.67,2018-01,2024-12,tough grader:6|group projects:4|lecture heavy:3
 1227387,Avideh Zakhor,Electrical Engineering,1.73,3.02,3735,11,4.09,2015-03,2024-01,test heavy:5|tough grader:4|lecture heavy:3
-2228071,Sanjam Garg,Computer Science,1.73,3.02,3736,11,4.46,2017-08,2026-02,tough grader:5|lots of homework:4|lecture heavy:3
+2228071,Sanjam Garg,Computer Science,1.73,3.02,3736,11,4.45,2017-08,2026-02,tough grader:5|lots of homework:4|lecture heavy:3
 813797,Gautam Premnath,English,1.83,3.02,3737,12,3.67,2006-04,2017-12,tough grader:1|so many papers:1
 2833488,Khalilah Beal-Uribe,Mathematics,2.07,3.02,3738,15,3.87,2023-01,2026-08,test heavy:5|graded by few things:4|tough grader:3
 1126010,Deborah Nolan,Statistics,2.18,3.02,3739,17,3.35,2008-12,2019-12,lecture heavy:2
@@ -3749,7 +3749,7 @@ id,name,department,rating,weighted,rank,reviews,difficulty,first,last,tags
 337472,Flor Feldman,Mathematics,2.64,3,3748,42,4.24,2004-05,2020-07,lots of homework:15|tough grader:9|test heavy:5
 211943,Leo Harrington,Mathematics,2.62,3,3749,40,3.05,2003-05,2014-06,
 2903910,Erick Bell,Business Administration,2.57,3,3750,35,3.6,2023-05,2026-07,group projects:13|amazing lectures:8|tough grader:7
-1173311,James Demmel,Mathematics,2.46,3,3751,28,3.46,2008-11,2025-07,test heavy:8|lots of homework:6|tough grader:5
+1173311,James Demmel,Mathematics,2.46,2.99,3751,28,3.46,2008-11,2025-07,test heavy:8|lots of homework:6|tough grader:5
 2511847,Mi-Suk Kang Dufour,Public Health,2.32,2.99,3752,22,2.41,2019-10,2026-09,group projects:10|extra credit:4|clear grading criteria:4
 2927544,Lon Rork,Physical Education,2.25,2.99,3753,20,3.25,2023-08,2026-05,tough grader:9|test heavy:7|get ready to read:6
 3014253,Ronnie Spizter,Physics,2.21,2.99,3754,19,3.32,2024-12,2026-11,test heavy:8|lecture heavy:5|caring:5
@@ -3762,7 +3762,7 @@ id,name,department,rating,weighted,rank,reviews,difficulty,first,last,tags
 2294888,Bruce Hall,History,2.16,2.97,3761,19,3.84,2017-11,2025-12,get ready to read:15|tough grader:9|lots of homework:7
 218213,Jonathan Lang,English,2.64,2.97,3762,47,4.11,2003-06,2026-03,tough grader:23|get ready to read:14|gives good feedback:8
 2196022,Thibault Fally,Economics,1.86,2.96,3763,14,3.71,2016-11,2025-12,graded by few things:4|tough grader:3|clear grading criteria:3
-3032373,Celeste Saravia,Economics,1.54,2.96,3764,11,4.46,2024-11,2025-01,test heavy:10|graded by few things:6|lecture heavy:5
+3032373,Celeste Saravia,Economics,1.55,2.96,3764,11,4.45,2024-11,2025-01,test heavy:10|graded by few things:6|lecture heavy:5
 2688096,Emily West,Film,2.51,2.96,3765,35,4.29,2021-04,2025-05,get ready to read:16|graded by few things:14|tough grader:11
 759761,Galina Schwartz,Economics,2.41,2.95,3766,29,3.1,2005-11,2007-04,
 706300,Kristin Hanson,English,2.32,2.95,3767,25,3.52,2005-10,2025-11,tough grader:6|caring:3|lecture heavy:2
@@ -3770,12 +3770,12 @@ id,name,department,rating,weighted,rank,reviews,difficulty,first,last,tags
 1481070,Michelle Chang,Chemistry,1.87,2.94,3769,15,3.13,2011-01,2021-12,caring:1
 583602,Jill Stoner,Architecture,1.58,2.93,3770,12,3.25,2005-03,2021-03,
 2569901,Weihong Bao,Film,1.58,2.93,3771,12,4.33,2020-01,2026-10,get ready to read:4|lecture heavy:3|group projects:3
-992548,David Freedman,Mathematics,1.3,2.92,3772,10,4.8,2007-05,2007-10,
-2746720,Ellen Lumpkin,Biology,1.3,2.92,3773,10,3.9,2023-10,2025-12,tough grader:9|test heavy:4|lecture heavy:2
+992548,David Freedman,Mathematics,1.3,2.93,3772,10,4.8,2007-05,2007-10,
+2746720,Ellen Lumpkin,Biology,1.3,2.93,3773,10,3.9,2023-10,2025-12,tough grader:9|test heavy:4|lecture heavy:2
 1105168,George Brooks,Biology,2.05,2.92,3774,19,3.58,2008-02,2025-12,inspirational:1|respected:1|get ready to read:1
-509423,Enrico Moretti,Economics,2.7,2.92,3775,78,3.67,2005-04,2026-07,tough grader:23|test heavy:21|graded by few things:18
-453944,Olga Holtz,Mathematics,2.66,2.92,3776,65,4.01,2004-09,2025-09,tough grader:24|test heavy:15|lots of homework:13
-1676551,Steven Evans,Statistics,2,2.92,3777,18,4.56,2013-10,2026-03,lecture heavy:2|accessible outside class:2|graded by few things:1
+509423,Enrico Moretti,Economics,2.71,2.92,3775,78,3.67,2005-04,2026-07,tough grader:23|test heavy:21|graded by few things:18
+453944,Olga Holtz,Mathematics,2.66,2.91,3776,65,4.02,2004-09,2025-09,tough grader:24|test heavy:15|lots of homework:13
+1676551,Steven Evans,Statistics,2,2.91,3777,18,4.56,2013-10,2026-03,lecture heavy:2|accessible outside class:2|graded by few things:1
 2720452,Daniel Pirutinsky,Industrial Engineering,1.88,2.91,3778,16,3.69,2021-12,2026-02,tough grader:8|lecture heavy:6|test heavy:5
 312957,W. Hugh Woodin,Mathematics,2.63,2.91,3779,60,3.43,2003-12,2014-04,
 531043,Mary Power,Biology,2.61,2.91,3780,57,3.19,2004-12,2021-05,lecture heavy:3|tough grader:3|caring:2
@@ -3794,7 +3794,7 @@ id,name,department,rating,weighted,rank,reviews,difficulty,first,last,tags
 290731,Alison Gopnik,Psychology,2.22,2.87,3793,27,3.22,2004-03,2019-05,respected:1|accessible outside class:1|amazing lectures:1
 82449,Steven Best,English,2.35,2.87,3794,34,3.91,2002-11,2023-01,tough grader:6|get ready to read:3|participation matters:2
 714510,Aihwa Ong,Anthropology,2.5,2.86,3795,48,2.42,2006-10,2012-12,
-1302055,Teresa Head-Gordon,Bioengineering,2.54,2.86,3796,55,3.74,2009-07,2025-12,lecture heavy:17|get ready to read:13|tough grader:9
+1302055,Teresa Head-Gordon,Bioengineering,2.55,2.86,3796,55,3.75,2009-07,2025-12,lecture heavy:17|get ready to read:13|tough grader:9
 832399,Naroudinne El Karoui,Statistics,1.89,2.86,3797,18,3.83,2006-04,2021-05,skip class? you won't pass.:1|test heavy:1
 3006394,Andrea Massari,Statistics,2.16,2.86,3798,25,3.96,2024-05,2026-09,tough grader:9|graded by few things:6|hilarious:5
 2448484,Benjamin Blackman,Biology,2.41,2.86,3799,39,4.31,2021-05,2026-07,lecture heavy:27|tough grader:12|test heavy:9
@@ -3810,7 +3810,7 @@ id,name,department,rating,weighted,rank,reviews,difficulty,first,last,tags
 1457206,Todd Fitch,Business Administration,2.46,2.82,3809,52,4.27,2010-10,2025-10,tough grader:16|test heavy:12|graded by few things:7
 559994,Fai Ma,Engineering,2.2,2.82,3810,30,3.83,2005-04,2026-04,tough grader:10|test heavy:10|graded by few things:5
 1088949,George Anwar,Mechanical Engineering,2.41,2.81,3811,46,3.41,2008-01,2026-10,group projects:10|hilarious:7|tough grader:6
-1980208,Adam Lucas,Statistics,2.68,2.81,3812,143,3.8,2015-02,2026-10,test heavy:47|tough grader:39|lots of homework:27
+1980208,Adam Lucas,Statistics,2.69,2.81,3812,143,3.8,2015-02,2026-10,test heavy:47|tough grader:39|lots of homework:27
 109836,George Bergman,Mathematics,1.84,2.81,3813,19,3.42,2003-11,2012-09,
 1251502,Nancy Weston,Rhetoric,2.29,2.81,3814,35,4.54,2009-01,2025-12,get ready to read:19|tough grader:17|graded by few things:10
 2293828,Andrew Little,Political Science,2.17,2.81,3815,29,3.9,2017-11,2025-12,clear grading criteria:4|lots of homework:4|group projects:4
@@ -3821,7 +3821,7 @@ id,name,department,rating,weighted,rank,reviews,difficulty,first,last,tags
 2561667,Sabeeha Merchant,MolecularCellular Biology,2.1,2.77,3820,29,4.38,2020-09,2026-03,lecture heavy:15|lots of homework:12|get ready to read:8
 1533264,Sarah Reynolds,Economics,1.47,2.76,3821,15,4.47,2011-02,2011-11,
 528464,Ronald Cohen,Chemistry,2.13,2.76,3822,31,3.29,2004-12,2024-06,get ready to read:2|tough grader:1|respected:1
-568951,Gordon Rausser,Economics,2.4,2.76,3823,55,3.66,2005-04,2020-09,lecture heavy:4|tough grader:4|graded by few things:3
+568951,Gordon Rausser,Economics,2.4,2.76,3823,55,3.65,2005-04,2020-09,lecture heavy:4|tough grader:4|graded by few things:3
 586687,William Lester,Chemistry,1.86,2.76,3824,22,3.82,2005-09,2010-05,
 2691363,Jennifer Listgarten,Computer Science,2,2.76,3825,26,4,2021-10,2026-06,lecture heavy:5|lots of homework:3|hilarious:2
 238312,Hung-Hsi Wu,Mathematics,2.44,2.75,3826,62,3.95,2003-09,2021-05,get ready to read:1|inspirational:1|amazing lectures:1
@@ -3849,9 +3849,9 @@ id,name,department,rating,weighted,rank,reviews,difficulty,first,last,tags
 543361,Randy Schekman,Biology,2.18,2.55,3848,65,4.09,2004-12,2026-11,lecture heavy:17|test heavy:13|tough grader:11
 154602,Marius Wodzicki,Mathematics,2.26,2.53,3849,91,3.84,2003-02,2026-06,tough grader:7|lecture heavy:2|graded by few things:2
 38531,"John ""Jack"" Wagoner",Mathematics,2.14,2.52,3850,64,3.2,2002-03,2023-02,lots of homework:1|lecture heavy:1|graded by few things:1
-2776800,Ruixiang Zhang,Mathematics,1.54,2.5,3851,26,4.58,2022-03,2025-05,test heavy:11|tough grader:11|graded by few things:6
+2776800,Ruixiang Zhang,Mathematics,1.54,2.49,3851,26,4.58,2022-03,2025-05,test heavy:11|tough grader:11|graded by few things:6
 1470607,Dan Acland,Economics,2.35,2.49,3852,182,4.31,2010-09,2026-09,lots of homework:21|skip class? you won't pass.:14|tough grader:11
-1478882,Shobhana Murali Stoyanov,Statistics,2.34,2.46,3853,217,3.88,2011-05,2026-10,tough grader:56|test heavy:39|lots of homework:35
+1478882,Shobhana Murali Stoyanov,Statistics,2.34,2.45,3853,217,3.88,2011-05,2026-10,tough grader:56|test heavy:39|lots of homework:35
 3034964,Arash Jamshidpey,Statistics,1.38,2.45,3854,24,4.04,2024-10,2026-10,tough grader:10|graded by few things:5|test heavy:3
 1651560,Rebekah Marsh,Not Specified,1.33,2.43,3855,24,4.54,2012-02,2026-03,tough grader:4|get ready to read:4|test heavy:2
 2975203,Jie Yao,Engineering,1.69,2.42,3856,36,4.14,2023-12,2026-05,tough grader:21|get ready to read:15|graded by few things:10
@@ -3864,12 +3864,12 @@ id,name,department,rating,weighted,rank,reviews,difficulty,first,last,tags
 1531593,Sayeef Salahuddin,Electrical Engineering,1.87,2.33,3863,60,4.38,2012-10,2026-05,tough grader:28|graded by few things:20|test heavy:17
 2164593,Khalilah Beal,Mathematics,1.9,2.31,3864,71,4,2017-11,2026-10,tough grader:28|lots of homework:25|test heavy:18
 1828750,Stephen Bianchi,Economics,1.95,2.29,3865,85,4.12,2014-09,2026-05,test heavy:35|tough grader:23|graded by few things:20
-2649163,Donald Hanna,Business Administration,1.76,2.24,3866,62,4.14,2020-12,2026-10,test heavy:20|tough grader:15|participation matters:15
+2649163,Donald Hanna,Business Administration,1.76,2.24,3866,62,4.15,2020-12,2026-10,test heavy:20|tough grader:15|participation matters:15
 312426,Ming Gu,Mathematics,1.96,2.24,3867,108,3.19,2003-12,2026-02,get ready to read:23|lots of homework:22|tough grader:12
 1896990,Katrin Wehrheim,Mathematics,1.98,2.22,3868,126,3.9,2014-05,2025-10,lots of homework:36|get ready to read:31|so many papers:26
 2026308,Richard Bamler,Mathematics,2.04,2.2,3869,187,4.2,2015-10,2026-08,tough grader:74|lots of homework:62|test heavy:61
-211945,Sarah McMains,Engineering,1.7,2.17,3870,66,3.54,2003-05,2026-01,tough grader:18|lots of homework:14|group projects:14
-420346,Paul Vojta,Mathematics,1.74,2.12,3871,83,3.94,2005-01,2024-07,test heavy:28|lots of homework:22|tough grader:13
+211945,Sarah McMains,Engineering,1.7,2.17,3870,66,3.55,2003-05,2026-01,tough grader:18|lots of homework:14|group projects:14
+420346,Paul Vojta,Mathematics,1.73,2.12,3871,83,3.94,2005-01,2024-07,test heavy:28|lots of homework:22|tough grader:13
 2512359,Ryan Hass,Mathematics,1.89,2.06,3872,193,4.47,2019-08,2026-11,test heavy:100|tough grader:89|lots of homework:47
 2881561,Franziska Weber,Mathematics,1.26,2.04,3873,43,4.37,2025-11,2026-01,test heavy:20|tough grader:16|lots of homework:10
 3027953,Meredith Lanska,Cognitive Science,1.12,1.96,3874,42,4.36,2024-09,2024-12,tough grader:20|lecture heavy:14|participation matters:11

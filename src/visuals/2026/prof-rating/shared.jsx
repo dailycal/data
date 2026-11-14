@@ -1,7 +1,7 @@
-// Pieces shared by the prof-rating story's visuals: the article's search (ProfRatingSearch.jsx),
-// the campus-wide ratings-by-year chart (RatingCountsByYear.jsx) and the professor report page
+// Pieces shared by the prof-rating story's visuals: the article's charts (RatingCountsByYear.jsx,
+// DepartmentRankBump.jsx and the search, ProfRatingSearch.jsx) and the professor report page
 // (ProfReport.jsx, at /interactive/profratings).
-import React, {
+import {
   useEffect, useMemo, useRef, useState,
 } from 'react';
 import * as d3 from 'd3';
@@ -11,15 +11,50 @@ export const formatRating = d3.format('.2f');
 export const formatCount = d3.format(',');
 export const plural = (n, word) => `${formatCount(n)} ${word}${n === 1 ? '' : 's'}`;
 
+// Background of the selected or active row in lists and tables.
+export const HIGHLIGHT_BG = '#eef4fa';
+
+// The box hover tooltips sit in (position it with top and left/right).
+export const tooltipBox = {
+  position: 'absolute',
+  background: '#fff',
+  border: '1px solid #ccc',
+  boxShadow: '0 2px 10px rgba(0,0,0,0.1)',
+  padding: '8px 10px',
+  fontSize: 14,
+  pointerEvents: 'none',
+  whiteSpace: 'nowrap',
+  zIndex: 2,
+};
+
 // Lowercase words with accents and punctuation dropped, for matching.
 export const tokenize = (text) => text.toLowerCase()
   .normalize('NFD')
   .replace(/[̀-ͯ]/g, '')
   .split(/[^a-z0-9]+/)
   .filter(Boolean);
+export const nameKey = (text) => tokenize(text).join(' ');
+
+// A function giving the link to a professor's report (src/pages/interactive/profratings.astro).
+// Names shared by more than one professor in `profs` add the department (&dept=), which the
+// report uses to tell them apart.
+export const useReportHref = (profs) => {
+  const counts = useMemo(
+    () => (profs ? d3.rollup(profs, (v) => v.length, (p) => nameKey(p.name)) : null),
+    [profs],
+  );
+  return (prof) => {
+    const q = new URLSearchParams({ prof: prof.name });
+    if (counts && counts.get(nameKey(prof.name)) > 1) q.set('dept', prof.department);
+    return `/interactive/profratings?${q}`;
+  };
+};
+
+// A row of rating_histogram.csv (score, professors_weighted) as { score, professors }.
+export const parseHist = (r) => ({ score: +r.score, professors: +r.professors_weighted });
 
 // Width of an element, kept up to date as it resizes (640 until it's measured).
-export const useWidth = (ref, min = 280) => {
+const useWidth = (ref, min = 280) => {
   const [width, setWidth] = useState(640);
   useEffect(() => {
     const box = ref.current;
@@ -35,14 +70,29 @@ const MARGIN = {
   top: 34, right: 16, bottom: 42, left: 46,
 };
 const MARKER = theme.palette.red;
+const POPUP_WIDTH = 250;
 
-// A smoothed histogram of professors' ratings, with the selected professor marked.
-// hist: [{ score, professors }]; value: the selected professor's rating on the same scale.
+// The professors with each rating, rounded to hundredths: rating x 100 -> professors,
+// most-reviewed first.
+const byHundredth = (profs, ratingOf) => {
+  if (!profs) return null;
+  const groups = d3.group(profs, (p) => Math.round(ratingOf(p) * 100));
+  groups.forEach((list) => list.sort((a, b) => b.reviews - a.reviews || a.name.localeCompare(b.name)));
+  return groups;
+};
+
+// A smoothed histogram of professors' ratings. hist: [{ score, professors }] (see parseHist).
+// With `selected` (a professor), `value` (their rating on the same scale) and `total` (how many
+// professors), that professor is marked on the curve.
+// With `profs`, ratingOf(prof) and hrefOf(prof), hovering (or tapping) the chart marks that
+// score on the curve and pops up the professors with it, each linking to their report.
 export const Histogram = ({
-  hist, total, selected, value, axisLabel, height = 260,
+  hist, total, selected, value, axisLabel, height = 260, profs, ratingOf, hrefOf,
 }) => {
   const boxRef = useRef();
   const width = useWidth(boxRef);
+  const [hover, setHover] = useState(null); // { score }
+  const groups = useMemo(() => byHundredth(profs, ratingOf), [profs, ratingOf]);
 
   const narrow = width < 480;
   const x = d3.scaleLinear().domain([1, 5]).range([MARGIN.left, width - MARGIN.right]);
@@ -64,12 +114,50 @@ export const Histogram = ({
     return hist[i].professors;
   };
 
+  // Height of the curve at any score, between the histogram's points.
+  const curveBetween = (score) => {
+    const i = Math.min(hist.length - 1, Math.max(1, d3.bisector((d) => d.score).left(hist, score)));
+    const a = hist[i - 1];
+    const b = hist[i];
+    return a.professors + ((b.professors - a.professors) * (score - a.score)) / (b.score - a.score);
+  };
+
   const mx = selected ? x(value) : 0;
   const labelEnd = selected && mx > width * 0.62;
 
+  // Hovering snaps to the nearest hundredth, the precision ratings are shown at. The popup
+  // sits at a fixed height above the chart, on top of the hover line, and mostly-vertical
+  // mouse moves keep the score, so the pointer can go straight up into the popup to click
+  // a name without the popup moving away. While the pointer is on the popup, it stays put.
+  const last = useRef(null);
+  const onPoint = (event, always = false) => {
+    if (!groups || !hrefOf || !hist) return;
+    const prev = last.current;
+    last.current = { x: event.clientX, y: event.clientY };
+    if (!always && hover && prev
+      && Math.abs(event.clientY - prev.y) > Math.abs(event.clientX - prev.x)) return;
+    const px = event.clientX - event.currentTarget.getBoundingClientRect().left;
+    if (px < MARGIN.left || px > width - MARGIN.right) {
+      setHover(null);
+      return;
+    }
+    setHover({ score: Math.round(x.invert(px) * 100) / 100 });
+  };
+
+  const hoverList = hover ? groups.get(Math.round(hover.score * 100)) || [] : [];
+  const hx = hover ? x(hover.score) : 0;
+  const popupWidth = Math.min(POPUP_WIDTH, width - 16);
+  const popupBottom = MARGIN.top - 10; // where the hover line starts
+
   return (
-    <div ref={boxRef} style={{ width: '100%' }}>
+    <div
+      ref={boxRef}
+      style={{ width: '100%', position: 'relative' }}
+      onMouseLeave={() => setHover(null)}
+    >
       <svg
+        onMouseMove={(event) => onPoint(event)}
+        onClick={(event) => onPoint(event, true)}
         width={width}
         height={height}
         role="img"
@@ -143,7 +231,60 @@ export const Histogram = ({
             </text>
           </g>
         )}
+        {hist && hover && (
+          <g pointerEvents="none">
+            <line x1={hx} x2={hx} y1={popupBottom} y2={y(0)} stroke={theme.palette.black} strokeWidth={1} />
+            <circle
+              cx={hx}
+              cy={y(curveBetween(hover.score))}
+              r={5}
+              fill={theme.palette.darkBlue}
+              stroke="#fff"
+              strokeWidth={2}
+            />
+          </g>
+        )}
       </svg>
+      {hover && (
+        <div
+          style={{
+            position: 'absolute',
+            left: Math.max(0, Math.min(width - popupWidth, hx - popupWidth / 2)),
+            top: popupBottom,
+            transform: 'translateY(-100%)',
+            width: popupWidth,
+            boxSizing: 'border-box',
+            padding: '8px 10px',
+            background: '#fff',
+            border: '1px solid #d6d6d6',
+            borderRadius: 4,
+            boxShadow: '0 2px 8px rgba(14, 20, 27, 0.15)',
+            fontFamily: 'Georgia, serif',
+            fontSize: 14,
+            lineHeight: 1.35,
+            color: theme.palette.black,
+            zIndex: 5,
+          }}
+        >
+          <div style={{ fontWeight: 'bold' }}>{`${axisLabel} ${formatRating(hover.score)}`}</div>
+          <div style={{ color: theme.palette.darkGrey, fontSize: 13 }}>
+            {hoverList.length ? `${plural(hoverList.length, 'professor')} with this rating` : 'No professors with this rating'}
+          </div>
+          {hoverList.length > 0 && (
+            <ul style={{
+              listStyle: 'none', margin: '6px 0 0', padding: 0, maxHeight: 168, overflowY: 'auto',
+            }}
+            >
+              {hoverList.map((p) => (
+                <li key={`${p.name}|${p.department}|${p.reviews}`} style={{ padding: '2px 0' }}>
+                  <a href={hrefOf(p)} style={{ color: theme.palette.black }}>{p.name}</a>
+                  <span style={{ color: theme.palette.darkGrey, fontSize: 12 }}>{` · ${p.department}`}</span>
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
+      )}
     </div>
   );
 };
@@ -267,7 +408,6 @@ export const ProfSearchBox = ({
           )}
           {suggestions.map((p, i) => (
             // The input handles the keyboard for the list (arrow keys and Enter).
-            // eslint-disable-next-line jsx-a11y/click-events-have-key-events
             <li
               key={p.id}
               id={`${listboxId}-${i}`}
@@ -283,7 +423,7 @@ export const ProfSearchBox = ({
                 justifyContent: 'space-between',
                 gap: 12,
                 cursor: 'pointer',
-                background: i === active ? '#eef4fa' : '#fff',
+                background: i === active ? HIGHLIGHT_BG : '#fff',
               }}
             >
               <span>
@@ -305,7 +445,7 @@ export const ProfSearchBox = ({
 
 // ---------- reviews by rating, year by year (stacked bars) ----------
 
-export const RATINGS = [1, 2, 3, 4, 5];
+const RATINGS = [1, 2, 3, 4, 5];
 // Low ratings red, the middle gray, high ratings blue. 1 is stacked at the bottom.
 const RATING_COLORS = {
   1: theme.palette.red,
@@ -330,22 +470,14 @@ export const parseRatingYear = (r) => {
   return row;
 };
 
-// Years in order, with any missing years between the first and last filled in as empty bars.
-export const fillYears = (rows) => {
-  if (!rows.length) return [];
-  const byYear = new Map(rows.map((r) => [r.year, r]));
-  const [y0, y1] = d3.extent(rows, (r) => r.year);
-  return d3.range(y0, y1 + 1).map((year) => byYear.get(year)
-    || { year, total: 0, ...Object.fromEntries(RATINGS.map((k) => [k, 0])) });
-};
-
 const BAR_MARGIN = {
   top: 12, right: 18, bottom: 50, left: 68,
 };
 const BAR_GAP = 1.5; // white line between stacked segments
 
 // The legend and a stacked bar chart of reviews by rating for each year: `years` is
-// [{ year, total, 1: n, ..., 5: n }] in order (see parseRatingYear and fillYears).
+// [{ year, total, 1: n, ..., 5: n }] in order (see parseRatingYear). A missing year is a gap;
+// give it a row of zeros to show it as an empty bar.
 export const RatingBars = ({ years, height = 350 }) => {
   const boxRef = useRef();
   const width = useWidth(boxRef);
@@ -477,17 +609,9 @@ export const RatingBars = ({ years, height = 350 }) => {
 
         {hovered && (
           <div style={{
-            position: 'absolute',
+            ...tooltipBox,
             top: BAR_MARGIN.top,
             [tipOnLeft ? 'right' : 'left']: tipOnLeft ? width - tipX + barWidth : tipX + barWidth,
-            background: '#fff',
-            border: '1px solid #ccc',
-            boxShadow: '0 2px 10px rgba(0,0,0,0.1)',
-            padding: '8px 10px',
-            fontSize: 14,
-            pointerEvents: 'none',
-            whiteSpace: 'nowrap',
-            zIndex: 2,
           }}
           >
             <div style={{ fontWeight: 700 }}>
@@ -515,3 +639,34 @@ export const RatingBars = ({ years, height = 350 }) => {
     </div>
   );
 };
+
+// ---------- the figure around each chart in the article ----------
+
+// RateMyProfessors' list of every UC Berkeley professor (school 1072), where the data was scraped.
+const RMP_URL = 'https://www.ratemyprofessors.com/search/professors/1072?q=*';
+
+// A link to RMP_URL that keeps the surrounding text's color.
+export const RmpLink = () => (
+  <a href={RMP_URL} target="_blank" rel="noopener noreferrer" style={{ color: 'inherit' }}>
+    RateMyProfessors
+  </a>
+);
+
+// A chart in the article: its title and subtitle, the chart (children), then an optional note
+// and the source line, "Source: Brendan Raykoff/The Daily Californian analysis of
+// RateMyProfessors reviews".
+export const Figure = ({
+  title, subtitle, note, children,
+}) => (
+  <figure style={{ margin: '2rem 0', fontFamily: 'Georgia, serif' }}>
+    <h3 style={{ margin: '0 0 0.25rem' }}>{title}</h3>
+    <p style={{ margin: '0 0 0.75rem', color: theme.palette.darkGrey }}>{subtitle}</p>
+    {children}
+    <figcaption style={{ fontSize: 14, color: theme.palette.darkGrey, marginTop: '0.75rem' }}>
+      {note && <p style={{ margin: '0 0 0.5rem', fontSize: 14 }}>{note}</p>}
+      {'Source: Brendan Raykoff/The Daily Californian analysis of '}
+      <RmpLink />
+      {' reviews'}
+    </figcaption>
+  </figure>
+);
