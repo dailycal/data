@@ -1,0 +1,3877 @@
+name,department,reviews,weighted
+Toni Mar,Physical Ed,626,4.84
+Howard D'Abrera,Statistics,452,3.87
+Zvezdelina Stankova,Mathematics,440,3.12
+Alexander Paulin,Mathematics,361,4.57
+Alex Filippenko,Astronomy,361,4.51
+Arun Sharma,Mathematics,355,3.82
+John DeNero,Computer Science,285,4.32
+Michelle Douskey,Chemistry,270,3.25
+David E. Presti,Biology,255,4.3
+Alexis Shusterman,Chemistry,250,4.5
+Darren Zook,Political Science,247,4.37
+Mary-Ann Robak,Chemistry,240,3.76
+Peter Marsden,Chemistry,228,4.21
+Christopher Gade,Psychology,220,3.55
+Shobhana Murali Stoyanov,Statistics,217,2.45
+Dan Garcia,Computer Science,201,3.7
+Steven Pedersen,Chemistry,199,4.42
+Kelli Talaska,Mathematics,197,1.91
+Ryan Hass,Mathematics,193,2.06
+Hank Ibser,Statistics,192,3.08
+Richard Bamler,Mathematics,187,2.2
+James Sethian,Mathematics,183,3.34
+Dan Acland,Economics,182,2.49
+Kurt Spreyer,Environmental Science,179,3.56
+Martha Olney,Economics,172,4.39
+James Campbell,Economics,172,4.17
+Michael Meighan,Biology,170,2.55
+David Robinson,Business Administration,161,3.72
+K. Peter Vollhardt,Chemistry,161,3.08
+Mohammed Nadeem,Business Administration,160,4.54
+Ani Adhikari,Statistics,148,4.5
+Jean Frechet,Chemistry,143,4.43
+Steven Fish,Political Science,143,4.24
+Adam Lucas,Statistics,143,2.81
+Fyodor Urnov,Biology,141,3.23
+Maciej Zworski,Mathematics,141,3.12
+Arman Catterson,Psychology,140,4.7
+Amy Gurowitz,Political Science,136,3.95
+Jeremy Sanchez,Statistics,136,3.69
+Robert Van Houweling,Political Science,135,1.73
+Brian Powers,Sociology,132,2.72
+Mark Haiman,Mathematics,131,4.31
+Mark Kubinec,Chemistry,128,3.82
+Katrin Wehrheim,Mathematics,126,2.22
+Eric Neuscamman,Chemistry,125,3.04
+Robin Einhorn,History,124,4.51
+Satish Rao,Computer Science,124,2.58
+Tom Carlson,Biology,121,4.16
+Paul Hilfinger,Computer Science,120,3.59
+Heino Nitsche,Chemistry,120,3.48
+David Romps,Earth & Planetary Sciences,116,4.03
+Emiliano Gomez,Mathematics,114,3.49
+Richard Allen,Earth Science,113,3.58
+Szonja Ivester,Sociology,113,3.08
+Victoria Robinson,Ethnic Studies,109,4.01
+Davina Chan,Psychology,109,3.95
+Robert Price,Political Science,109,3.5
+Achilles Speliotopoulos,Physics,109,3.2
+Ming Gu,Mathematics,108,2.24
+Ko Ohm,Mathematics,107,2.4
+Richard Saykally,Chemistry,106,3.44
+Babak Ayazifar,Electrical Engineering,105,4.21
+Alan Ross,Political Science,104,3.95
+Mina Aganagic,Mathematics,102,3.42
+Mary Kelsey,Sociology,101,4.56
+Ole Hald,Mathematics,101,4.11
+Kenneth Ribet,Mathematics,101,3.3
+Dacher Keltner,Psychology,100,3.85
+Roger Purves,Statistics,98,3.18
+Hatem Bazian,Near Eastern Studies,96,3.96
+Nicolai Reshetikhin,Mathematics,96,3.73
+Josh Hug,Engineering,94,4.59
+Martin Head-Gordon,Chemistry,94,3.8
+A.J Gregor,Political Science,92,3.85
+Alexander Givental,Mathematics,92,2.38
+Edward Frenkel,Mathematics,91,3.86
+Thomas Scanlon,Mathematics,91,3.29
+Marius Wodzicki,Mathematics,91,2.53
+Marina Ratner,Mathematics,90,4.09
+William Golightly,Physics,90,3.71
+Richard Muller,Physics,89,4.2
+Adrian Lee,Physics,89,2.63
+Chris Herold,Theatre & Dance,88,4.68
+Lorenzo Lones,Molecular/Cellular Biology,88,3.78
+Michael Cohen,American Studies,87,4.28
+Barbara Barnes,Women's Studies,87,4.22
+Terrence Deacon,Anthropology,87,3.8
+Jennifer Bergner,Chemistry,87,2.71
+Jason Wittenberg,Political Science,87,2.64
+P. Robert Beatty,Biology,86,4.25
+Xin Liu,Anthropology,86,3.04
+Stephen Bianchi,Economics,85,2.29
+Carlos Norena,History,84,4.65
+Laura Nader,Anthropology,84,3.93
+Meeta Jha,Women's Studies,83,2.62
+Paul Vojta,Mathematics,83,2.12
+Alex Zettl,Physics,82,4.38
+Kenneth E. Train,Economics,82,4.22
+Leslea Hlusko,Biology,82,4.02
+Alessandra Lanzara,Physics,82,3.56
+Kent Lightfoot,Anthropology,80,4.57
+Edwin Lin,Sociology,80,4.29
+Alan Shabel,Biology,80,4.23
+Catherine Bordel,Physics,80,3.81
+Jasper Rine,Biology,80,3.02
+Peyrin Kao,Computer Science,79,4.62
+Christina Romer,Economics,79,4.29
+John Kihlstrom,Psychology,79,4.06
+Laleh Behbehanian,Sociology,78,4.7
+Seth Lunine,Geography,78,4.63
+Michelle Baptiste,Writing,78,3.05
+Enrico Moretti,Economics,78,2.92
+Ron Hassner,Political Science,77,4.55
+L.J. Feldman,Biology,77,4.46
+Jill Bakehorn,Sociology,77,4.16
+Calanit Kamala,Economics,77,2.74
+David Henkin,History,76,4.12
+Anant Sahai,Electrical Engineering,76,3.26
+Jerry Sanders,Peace & Conflict Studies,76,3.06
+Nancy Amy,Nutrition,75,3.77
+Andrew Charman,Physics,74,3.14
+Michael Hutchings,Mathematics,73,4
+Linus Huang,Sociology,72,3.62
+Matthew Berry,History,72,3.03
+Brian Delay,History,71,4.47
+Leon Litwack,History,71,3.88
+Richard Ashcroft,Political Science,71,3.78
+Khalilah Beal,Mathematics,71,2.31
+Arpita Roy,Anthropology,70,4.21
+Jack Citrin,Political Science,70,3.7
+Francis (Michael) Christ,Mathematics,70,3
+Oliver P John,Psychology,69,4.4
+Brian Harvey,Computer Science,69,4.21
+Laura Stoker,Political Science,69,4.08
+Nikhil Srivastava,Mathematics,69,4.05
+Seema Saharan,Statistics,68,3.85
+Steven A. Wood,Economics,68,3.78
+Greg Aponte,Nutrition,68,3.36
+Gaston Sanchez Trujillo,Statistics,67,3.2
+Justin Yokota,Computer Science,67,3.1
+Ron Amundson,Environmental Science,66,4.02
+Wendy Sinek,Political Science,66,3.43
+Richard Borcherds,Mathematics,66,3.23
+Sarah McMains,Engineering,66,2.17
+Alexander Coward,Mathematics,65,4.04
+Olga Holtz,Mathematics,65,2.91
+Randy Schekman,Biology,65,2.55
+Purin Phanichphant,Art Media & Design,64,4.68
+Jonathan Shewchuk,Computer Science,64,4.5
+Alex M. Saragoza,Ethnic Studies,64,4.21
+Josh Jackson,Mass Communications,64,4.01
+"John ""Jack"" Wagoner",Mathematics,64,2.52
+Ananya Roy,Urban Design & Development,63,4.11
+Alan Karras,History,63,3.99
+Anthony Bulloch,Classics,63,3.9
+Jon Ellman,Chemistry,62,4.56
+Jeroen Dewulf,German,62,4.53
+Kent Puckett,English,62,4.5
+Darcy Grigsby,Art History,62,4.45
+John Campbell,Philosophy,62,4.33
+Debjani Roy,Chemistry,62,4.23
+Chien-I Chiang,Physics,62,3.81
+Jennifer Miller,English,62,3.56
+Michael Deweese,Physics,62,3.29
+Phillip Stark,Statistics,62,3.25
+Raymond Hawkins,Economics,62,3.22
+Pradeep Chhibber,Political Science,62,3.08
+Hung-Hsi Wu,Mathematics,62,2.75
+Donald Hanna,Business Administration,62,2.24
+Justin Underhill,Art History,61,4.58
+David Wetzel,History,61,4.56
+Ann Swidler,Sociology,61,4.4
+Jean Retzinger,Mass Communications,61,3.9
+Vera Serganova,Mathematics,61,3.49
+Scott Saul,English,61,3.11
+Khalid Kadir,International Studies,60,4.41
+Carolyn Trist,Geography,60,4.22
+Christine Palmer,American Studies,60,3.37
+W. Hugh Woodin,Mathematics,60,2.91
+Sayeef Salahuddin,Electrical Engineering,60,2.33
+Gary Firestone,Biology,59,4.52
+Ethan Shagan,History,59,4.47
+Trevor Murphy,Classics,59,4.09
+Caroline Cole,Writing,59,3.54
+John Briginshaw,Business Administration,59,3.07
+Phillip Geissler,Chemistry,58,4.18
+Andrew Barlow,Sociology,58,3.78
+Steve Etter,Business Administration,58,3.65
+Kristie Boering,Chemistry,58,3.42
+Karine Gibbs,MolecularCellular Biology,58,2.68
+Marian Diamond,Biology,57,4.23
+Claudia Carr,Environmental Science,57,4.17
+Rakesh Bhandari,Interdisciplinary Studies,57,4.13
+Harvey Dong,Ethnic Studies,57,4.02
+Mary Power,Biology,57,2.91
+Brad Delong,Economics,57,2.61
+Angelica Stacy,Chemistry,56,4.02
+Ke Xu,Chemistry,56,2.62
+Max Auffhammer,International Studies,55,4.65
+Michael Burawoy,Sociology,55,4.53
+Serena Chen,Psychology,55,4.2
+Mark Brilliant,History,55,3.44
+Paul Pierson,Political Science,55,3.4
+Daniel Warren,Philosophy,55,3.24
+Teresa Head-Gordon,Bioengineering,55,2.86
+Jenny Harrison,Mathematics,55,2.85
+Gordon Rausser,Economics,55,2.76
+Michael Watts,Geography,54,3.92
+Robert Sharf,East Asian Studies,54,3.78
+Celeste Langan,English,54,3.39
+Sabrina Agarwal,Anthropology,54,3.39
+Mohamad Hallal,Civil Engineering,53,4.54
+Nathan Lowhorn,Physics,53,4.45
+Jon Wilkening,Mathematics,53,3.8
+Suncica Canic,Mathematics,53,3.59
+Zheng Huang,Economics,53,3.3
+Bruce Mangan,Psychology,53,3.28
+Wendy Brown,Political Science,52,3.83
+Mario Muzzi,Economics,52,3.54
+Jose Ramirez-Latorre,Cognitive Science,52,2.9
+Michael Frenklach,Engineering,52,2.83
+Todd Fitch,Business Administration,52,2.82
+Daniel Fisher,Anthropology,52,2.66
+Constantin Teleman,Mathematics,52,2.55
+Robb Willer,Sociology,51,4.48
+Gary Richards,Anthropology,51,3.94
+Shaofan Li,Civil Engineering,51,3.46
+Lawrence Cohen,Anthropology,51,3.43
+John Neu,Mathematics,51,3.11
+Thomas Gold,Sociology,50,4.05
+Bill Berry,Earth Science,50,3.88
+Clare Talwalker,International Studies,50,3.88
+Nathan Sayre,Geography,50,3.87
+Kwabena Bediako,Chemistry,50,3.85
+Americ Azevedo,International Studies,50,3.51
+Bethanie Edwards,Earth & Planetary Sciences,50,2.34
+Lisa Regan,Art History,49,4.24
+John Huelsenbeck,Biology,49,3.94
+Steven Edward Boggs,Physics,48,4.35
+Robert Reich,Public Policy,48,4.1
+Nadesan Permaul,Rhetoric,48,4.06
+Gary Wren,Interdisciplinary Studies,48,3.73
+Daniel Mulhern,Business Administration,48,3.73
+Ahamindra Jain,Chemistry,48,3.58
+Paola Bacchetta,Women's Studies,48,3.41
+Aihwa Ong,Anthropology,48,2.86
+Mitchell Breitwieser,English,47,4.5
+Tal Lavian,Computer Science,47,4.38
+John Bishop,English,47,4
+Ignacio Chapela,Environmental Science,47,3.97
+Dylan Riley,Sociology,47,3.83
+John Searle,Philosophy,47,3.76
+Vincent Resh,Biology,47,3.71
+Joanna Reed,Sociology,47,3.7
+Kristin Sangren,Legal Studies,47,3.4
+Hidetaka Hirota,History,47,3.28
+Jonathan Lang,English,47,2.97
+Mariane Ferme,Anthropology,47,2.68
+Keith Plymale,Architecture,46,4.31
+Ian Duncan,English,46,4.13
+Crystal Chang,Sociology,46,3.95
+Bob Jacobsen,Physics,46,3.71
+Robin Ball,Biology,46,3.51
+TJ Pempel,Political Science,46,3.45
+George Anwar,Mechanical Engineering,46,2.81
+Robert Rhew,Geography,45,4.27
+Hubert Dreyfus,Philosophy,45,4.1
+Dennis K. Lieu,Engineering,45,3.27
+Michael Nylan,History,45,3.21
+Joseph De Quattro,Writing,44,4.39
+Steven Justice,English,44,4.15
+David Landreth,English,44,4.07
+Sean Gailmard,Political Science,44,3.96
+Sandra Smith,Sociology,44,3.84
+Vaughan Jones,Mathematics,44,3.18
+David Karol,Political Science,44,2.89
+Jun Sunseri,Anthropology,44,2.75
+Nicholas Mathew,Music,43,4.47
+Felipe Gutterriez,Rhetoric,43,4.2
+Kathy Moran,American Studies,43,4.17
+David Nadler,Mathematics,43,4.15
+Karenjot Bhangoo Randhawa,Peace & Conflict Studies,43,4.01
+Christoph Hermann,Sociology,43,4
+Margaret Conkey,Anthropology,43,3.58
+Daniela Cammack,Political Science,43,3.58
+David Chandler,Chemistry,43,3.33
+Charles Altieri,English,43,3.15
+Donnett Flash,Writing,43,3
+Franziska Weber,Mathematics,43,2.04
+Timothy Crockett,Philosophy,42,4.25
+Brandi Catanese,Theatre & Dance,42,4.16
+Andrew C. Janos,Political Science,42,3.43
+Daniel F. Melia,Rhetoric,42,3.25
+Flor Feldman,Mathematics,42,3
+Meredith Lanska,Cognitive Science,42,1.96
+L. Craig Evans,Mathematics,41,4.29
+Cari Kaufman,Statistics,41,4.23
+Helen Lew,Biology,41,3.96
+David Broockman,Political Science,41,3.9
+Carol Redmount,Near Eastern Studies,41,3.85
+John MacFarlane,Philosophy,41,3.83
+Gireeja Ranade,Electrical Engineering,41,3.57
+Dmitry Livdan,Business Administration,41,3.47
+R Ramesh,Physics,41,3.42
+Marina Levina,Mass Communications,41,3.24
+John Steel,Mathematics,41,3.08
+Richie Kim,Philosophy,40,4.38
+Kipling Will,Biology,40,4.11
+Steven K. Vogel,Political Science,40,4.08
+Anna Eng,Women's Studies,40,4.05
+Andrew Barshay,History,40,3.98
+Robert Acker,Geography,40,3.95
+Alexander Pines,Chemistry,40,3.65
+Yury Kolomensky,Physics,40,3.48
+Stephanie Jones-Rogers,History,40,3.41
+Rebecca McLennan,History,40,3.35
+Leo Harrington,Mathematics,40,3
+Raka Ray,Sociology,39,4.33
+Katie Blackford,Chemistry,39,4.18
+Terry Buehler,Physics,39,4.17
+Nicholas Paige,French,39,3.96
+Martin Olsson,Mathematics,39,3.93
+Emily Gottreich,International Studies,39,3.47
+Penny Weiser,Earth Science,39,3.22
+Kourosh Youssefi,Mechanical Engineering,39,2.88
+Benjamin Blackman,Biology,39,2.86
+Michael Larkin,Writing,38,4.51
+Brooke lober,Women's Studies,38,4.48
+Karina Palau,Literature,38,4.38
+Kevis Goodman,English,38,4.32
+Robert Braun,Sociology,38,4.19
+Ann Kring,Psychology,38,4.15
+John Hayes,Near Eastern Studies,38,4.03
+John Arnold,Chemistry,38,3.94
+Jeffrey Perloff,Economics,38,3.93
+Amelia Barili,Spanish,38,3.75
+Fraydoun Rezakhanlou,Mathematics,38,3.7
+Laurie Wilkie,Anthropology,38,3.69
+James Holston,Anthropology,38,3.32
+Kirin Chaudry,Political Science,38,3.31
+Stefania Pandolfo,Anthropology,38,3.2
+Anna Maria Bellezza,Italian,37,4.56
+David Wagner,Computer Science,37,4.4
+Ken Goldberg,Industrial Engineering,37,4.38
+Jeffrey Knapp,English,37,4.36
+Josh Hug,Computer Science,37,4.36
+Kerwin Klein,History,37,4.24
+Andrew Garrett,Linguistics,37,4.05
+Clayton Radke,Chemical Engineering,37,4.03
+Charles Briggs,Anthropology,37,3.96
+Anne Nesbet,Film,37,3.84
+Paolo Mancosu,Philosophy,37,3.84
+Neil Viernes,Chemistry,37,3.73
+Terry MacHen,Biology,37,3.64
+Steven Weber,Political Science,37,3.56
+Jim Bishop,Earth Science,37,3.12
+Bryan Wagner,English,36,4.39
+Eric Schickler,Political Science,36,4.39
+Sarah Song,Legal Studies,36,4.28
+Per-Olof Persson,Mathematics,36,4.07
+Margaret Anderson,History,36,4.03
+Aaron McDaniel,Business Administration,36,3.91
+Charles Hirschkind,Anthropology,36,3.87
+Jac Asher,Women's Studies,36,3.85
+Chris Ansell,Political Science,36,3.8
+Kim Shelton,Classics,36,3.75
+Andrew Bray,Statistics,36,3.67
+Norman Sperling,Astronomy,36,3.53
+Glenn Woroch,Economics,36,3.46
+Jennifer Doudna,Biology,36,3.37
+Percy Hintzen,African-American Studies,36,3.23
+Loic Wacquant,Sociology,36,3.07
+Jack Silver,Mathematics,36,2.94
+Jie Yao,Engineering,36,2.42
+Oliver Arnold,English,35,4.47
+Benjamin Blonder,Earth Science,35,4.43
+Joanna Picciotto,English,35,4.36
+John Efron,History,35,4.3
+Daniel Sargent,History,35,4.29
+Devin Leigh,International Studies,35,4.27
+Ben Spanbock,Writing,35,4.25
+Swupnil Sahai,Data Science,35,4.18
+Anne Baranger,Chemistry,35,3.96
+Beshara Doumani,History,35,3.81
+John Kuriyan,Chemistry,35,3.74
+David Pereira,Music,35,3.74
+Steven Stahler,Physics,35,3.72
+Barry Eichengreen,Economics,35,3.65
+Cihan Tugal,Sociology,35,3.63
+Charles Pugh,Mathematics,35,3.61
+Carmen Butcher,English,35,3.61
+David Milnes,Music,35,3.54
+Arthur Ogus,Mathematics,35,3.5
+Scott Carson,Economics,35,3.47
+Alva Noe,Philosophy,35,3.34
+Jeremy Thorner,Biology,35,3.21
+Donald Mastronarde,Classics,35,3.2
+Erick Bell,Business Administration,35,3
+Emily West,Film,35,2.96
+Nancy Weston,Rhetoric,35,2.81
+Dan Voiculescu,Mathematics,35,2.8
+Ian Agol,Mathematics,35,2.78
+Raluca Scarlat,Nuclear Engineering,35,2.41
+Munis Faruqui,Asian Studies,34,4.44
+Dariush Zahedi,Political Science,34,4.29
+Pablo Gonzalez,Ethnic Studies,34,4.22
+Grace Gu,Mechanical Engineering,34,4.22
+Bonnie Morris,History,34,4.18
+Maura Nolan,English,34,4.11
+Richard Perry,Legal Studies,34,4.01
+Desmond Jagmohan,Political Science,34,3.98
+Benjamin Brinner,Music,34,3.94
+Fatmir Haskaj,Sociology,34,3.87
+Luciano Moretto,Chemistry,34,3.74
+Montgomery Slatkin,Biology,34,3.74
+Daniel Kammen,Public Policy,34,3.64
+James Turner,English,34,3.29
+Ugo Nwokeji,African-American Studies,34,3.25
+Carla Brunet,Music,34,3.24
+Renate Holub,History,34,3.16
+Taeku Lee,Political Science,34,3.11
+Martin Sanzhez-Jankowski,Sociology,34,3.03
+Belinda Kremer,English,34,2.9
+Steven Best,English,34,2.87
+Konstantine Magin,Economics,34,2.55
+Samuel Lucas,Sociology,34,2.4
+Marina Romani,Sociology,33,4.45
+Steven Goldsmith,English,33,4.3
+Poulomi Saha,English,33,3.88
+Gregory La Blanc,Business Administration,33,3.86
+Larry Hyman,Linguistics,33,3.83
+Stephen Booth,English,33,3.75
+Panos Papadopoulos,Engineering,33,3.75
+Uri Korisky,Cognitive Science,33,3.73
+Brent Mishler,Biology,33,3.34
+Simo Makiharju,Mechanical Engineering,33,3.15
+Karen Nakamura,Anthropology,33,2.84
+Ron Gronsky,Engineering,32,4.51
+Terry Johnson,Engineering,32,4.5
+Catherine Hollis,English,32,4.5
+Matthew Walker,Psychology,32,4.42
+Bac Tran,Languages,32,4.36
+Stephen Hinshaw,Psychology,32,4.32
+Margi Wald,Writing,32,4.25
+David Marno,English,32,4.25
+Cori Hayden,Anthropology,32,4.21
+Sam Mchombo,Linguistics,32,4.17
+Ryan Edwards,Economics,32,4.17
+Yasmin Syed,Classics,32,4.15
+James Casey,Engineering,32,4.03
+John Ferrari,Classics,32,4.03
+Gillian Hart,Geography,32,3.98
+Ken Worthy,Environ. Sci. Policy & Mgmt.,32,3.94
+Christopher Kutz,Law,32,3.88
+Kenneth Worthy,Earth Science,32,3.86
+Kathleen Frydl,History,32,3.84
+Ayse Agis,Women's Studies,32,3.65
+Larry Rosenthal,Public Policy,32,3.65
+Matt Kondolf,Environmental Science,32,3.48
+Bernhard Boser,Electrical Engineering,32,3.4
+Lin Lin,Mathematics,32,3.38
+Dini Wong,Physical Education,32,3.32
+Greg Niemeyer,Art,32,3.3
+Robert Ashmore,Chinese,32,3.23
+Philip Wood,Mathematics,32,3.17
+Charles Marshall,Biology,31,4.45
+Kameshwar Poolla,Engineering,31,4.31
+Lisa Pieraccini,Art History,31,4.29
+Darlene Francis,Psychology,31,4.23
+Hans Sluga,Philosophy,31,4
+John Wallace,Japanese,31,4
+Victor Stanton,Business Administration,31,3.9
+R. Jay Wallace,Philosophy,31,3.88
+Heath Pearson,History,31,3.84
+Apara Nanda,English,31,3.82
+David Bates,Rhetoric,31,3.58
+Brian Baumann,East Asian Studies,31,3.56
+Holly Schroth,Business Administration,31,3.51
+Silvia Bunge,Psychology,31,3.25
+Joel Fajans,Physics,31,3.17
+Steven Sexton,Economics,31,3.11
+Ronald Cohen,Chemistry,31,2.76
+John Kaiser,Sociology,30,4.34
+Bob Fischer,Biology,30,4.3
+Jordan Ruyle,English,30,4.2
+William Hanks,Anthropology,30,4.16
+David Beecher,International Studies,30,4.1
+Ryan Sloan,Writing,30,4.02
+John Chiang,Geography,30,3.94
+Marion Fourcade-Gourinchas,Sociology,30,3.94
+Robert Hass,English,30,3.92
+Siri Brown,African-American Studies,30,3.9
+Melanie Phillips,Political Science,30,3.88
+Ted Lempert,Political Science,30,3.84
+Emily MacKil,History,30,3.8
+Donald Sarason,Mathematics,30,3.72
+Stanley Brandes,Anthropology,30,3.68
+Scott Wallin,Theatre & Dance,30,3.66
+Pat Steenland,Writing,30,3.54
+Nancy Scheper-Hughes,Anthropology,30,3.24
+Heather Haveman,Sociology,30,2.88
+Fai Ma,Engineering,30,2.82
+Larry Karp,Economics,30,2.78
+Abby Dernburg,Biology,30,2.36
+Bob Calonico,Music,29,4.36
+Kathleen Donegan,English,29,4.34
+Mario Telo,Classics,29,4.32
+Denis Auroux,Mathematics,29,4.3
+Kevin Padian,Biology,29,4.22
+Rachel Shuh,French,29,4.16
+Grace Lavery,English,29,4.14
+Kinch Hoekstra,Political Science,29,4.1
+Mark Griffith,Classics,29,4.02
+Fred Wilt,Biology,29,4.02
+Tom Goldstein,Mass Communications,29,3.79
+Ian Davis,Mass Communications,29,3.73
+Sonja Ivester,Sociology,29,3.53
+Daniel Tataru,Mathematics,29,3.48
+David Sunding,Economics,29,3.42
+Jan T. Liphardt,Physics,29,3.12
+Galina Schwartz,Economics,29,2.95
+Andrew Little,Political Science,29,2.81
+Sabeeha Merchant,MolecularCellular Biology,29,2.77
+Alani Hicks Bartlett,Italian,28,4.47
+Kaya Oakes,Writing,28,4.43
+Leslie Kurke,Classics,28,4.29
+Leo Van Munching,Philosophy,28,4.27
+Scott Foglesong,Music,28,4.27
+Gordon Silverstein,Political Science,28,4.22
+Beverly Crawford,Economics,28,4.2
+Jonah Levy,Political Science,28,4.14
+Harley Shaiken,Latin American Studies,28,4.12
+Lorenzo Lones,Biology,28,4.1
+Ula Taylor,African-American Studies,28,4.04
+Daniel Kelly,History,28,3.99
+Andrew Stewart,Art History,28,3.91
+Richard Walker,Geography,28,3.85
+Lester Hu,Music,28,3.83
+David Roland-Holst,Economics,28,3.68
+Judy Hopelain,Business Administration,28,3.68
+Katherine Snyder,English,28,3.66
+Marc Hellerstein,Nutrition,28,3.64
+Matt Pyle,Physics,28,3.47
+Mark Wilson,Sociology,28,3.35
+Hanh Tran,Languages,28,3.22
+Burkhard Militzer,Astronomy,28,3.06
+Raja Sengupta,Engineering,28,3.02
+Laura Hubbard,Anthropology,28,3.02
+James Demmel,Mathematics,28,2.99
+Myriah Williams,Ethnic Studies,28,2.74
+Thomas Fleming,Ethnic Studies,27,4.4
+Mont Allen,Art History,27,4.38
+Sugata Ray,Art History,27,4.27
+Line Mikkelsen,Linguistics,27,4.21
+Lev Michael,Linguistics,27,4.19
+Srijani Ghosh,Theatre & Dance,27,4.17
+Davitt Moroney,Music,27,4.08
+Rachel Schmale,Psychology,27,4.06
+Janet Sorensen,English,27,4.02
+Robert Brown,Legal Studies,27,3.97
+Kristin Primus,Philosophy,27,3.97
+Christine Gehrig-Downie,Environ. Sci. Policy & Mgmt.,27,3.97
+Evan Miller,Chemistry,27,3.87
+Michael Ball,Computer Science,27,3.85
+Bernd Sturmfels,Mathematics,27,3.8
+Arpad Horvath,Civil Engineering,27,3.74
+Aaron Fisher,Psychology,27,3.68
+Rui Wang,Mathematics,27,3.63
+Shannon Steen,Theatre & Dance,27,3.61
+Tim Markowitz,Environ. Sci. Policy & Mgmt.,27,3.46
+K R Ryan,Biology,27,3.44
+Anna Leong,Asian Studies,27,3.42
+Winnie Wong,Rhetoric,27,3.31
+Shreeharsh Kelkar,Interdisciplinary Studies,27,3.29
+Carlos Bustamante,Physics,27,3.04
+Wasim Azhar,Business Administration,27,3.04
+Vivek Shende,Mathematics,27,2.89
+Alison Gopnik,Psychology,27,2.87
+Matt Francis,Chemistry,26,4.36
+Ozlem Ayduk,Psychology,26,4.15
+Dolores McElroy,Film,26,4.13
+Daniel Blanton,English,26,4.04
+Enrique Lima,Ethnic Studies,26,3.93
+Reza Alam,Mechanical Engineering,26,3.91
+Irene Bloemraad,Sociology,26,3.86
+Rudy Mendoza-Denton,Psychology,26,3.82
+Nelson Maldonado-Torres,Ethnic Studies,26,3.82
+Theodore (Ted) Slaman,Mathematics,26,3.67
+Ramon Grosfoguel,Ethnic Studies,26,3.54
+Michael Freeling,Plant Biology,26,3.52
+Helene Silverberg,Political Science,26,3.52
+M Rieffel,Mathematics,26,3.28
+Margaretta Lovell,Art History,26,3.26
+Ahmet Yildiz,Physics,26,3.26
+Jack Gallant,Psychology,26,3.17
+Vinod Aggarwal,Political Science,26,3.15
+Ruth Tringham,Anthropology,26,2.84
+Robin Lakoff,Linguistics,26,2.82
+Jennifer Listgarten,Computer Science,26,2.76
+Ruixiang Zhang,Mathematics,26,2.49
+Tyrone Hayes,Biology,25,4.28
+Arthur Shimamura,Psychology,25,4.26
+Thomas Dandelet,History,25,4.26
+Diane Pearson,Ethnic Studies,25,4.22
+Matt Welch,Biology,25,4.15
+Eran Rabani,Chemistry,25,4.11
+Thomas Courtade,Electrical Engineering,25,4.08
+Natalia Caporale,Molecular/Cellular Biology,25,4.04
+Emiliana Simon-Thomas,Psychology,25,4.02
+Jordan Mursinna,History,25,4.02
+Tom Laqueur,History,25,3.97
+Lance Kriegsfeld,Psychology,25,3.95
+Dan Schnur,Political Science,25,3.93
+James O'Brien,Computer Science,25,3.91
+Lynn Huntsinger,Environmental Science,25,3.88
+Michael Mascuch,Rhetoric,25,3.84
+Jack Phillips,Business Administration,25,3.82
+Maki Takata,Japanese,25,3.79
+Junko Habu,Anthropology,25,3.75
+Joshua Gang,English,25,3.73
+Hannah Ginsborg,Philosophy,25,3.71
+Sanjay Govindjee,Civil Engineering,25,3.71
+Trond Petersen,Sociology,25,3.71
+Richard Ivry,Psychology,25,3.68
+Allison Harvey,Psychology,25,3.66
+Avril Angevine,English,25,3.64
+Ethan Ligon,Economics,25,3.57
+David Zusman,Biology,25,3.51
+Michael (miki) Lustig,Electrical Engineering,25,3.44
+Jim Pitman,Statistics,25,3.39
+Anne-Lise Francois,English,25,3.33
+Robert De Neufville,Political Science,25,3.33
+John Dueber,Bioengineering,25,3.33
+Benjamin Faber,Economics,25,3.22
+Michael Needham,Business Administration,25,3.13
+Krystal Thomas,Business Administration,25,3.02
+Alexandre Chorin,Mathematics,25,2.97
+Kristin Hanson,English,25,2.95
+Andrea Massari,Statistics,25,2.86
+John Dougherty,Ethnic Studies,24,4.4
+Paul Li,Cognitive Science,24,4.38
+Michael Manga,Earth & Planetary Sciences,24,4.31
+Michael Omi,Ethnic Studies,24,4.15
+Oliver O'Reilly,Engineering,24,4.09
+Rosemary Joyce,Anthropology,24,4.04
+Elizabeth Abel,English,24,4.02
+Benjamin Schoefer,Economics,24,3.97
+Amy Jamgochian,Rhetoric,24,3.93
+Nicholas De Monchaux,Architecture,24,3.88
+Stephen Small,African-American Studies,24,3.86
+Jake Kosek,Geography,24,3.81
+Richard Calendar,Biology,24,3.74
+Kristen Luker,Sociology,24,3.65
+Tabitha Kanogo,History,24,3.63
+Frederic E. Theunissen,Psychology,24,3.54
+Nicholas Weaver,Computer Science,24,3.54
+Alan Weinstein,Mathematics,24,3.49
+Kathryn Klar,International Studies,24,3.49
+Shachar Kariv,Economics,24,3.49
+Cort Worthington,Business Administration,24,3.36
+Antonio Montalban,Mathematics,24,3.31
+Landon Hobbs,Philosophy,24,3.29
+Stephen Vaisey,Sociology,24,3.27
+Hiroshi Nikaido,Biology,24,3.15
+Brian Karl,Anthropology,24,3.09
+David Steigmann,Engineering,24,3.02
+Alan Hammond,Mathematics,24,2.63
+Arash Jamshidpey,Statistics,24,2.45
+Rebekah Marsh,Not Specified,24,2.43
+Cassie Cook,Nutrition,23,4.41
+Trevor Jackson,History,23,4.41
+Alan Pomerantz,Legal Studies,23,4.39
+Christopher Lowman,Anthropology,23,4.39
+Dave Walter,Comparative Literature,23,4.37
+Daniel Zoughbie,International Studies,23,4.37
+Jason Tan,Data Science,23,4.3
+Peter Jenks,Linguistics,23,4.25
+Margaret Salifu,Writing,23,4.16
+Niko Kolodny,Philosophy,23,4.13
+James Vernon,History,23,4.09
+Russell Ahn,Physical Ed,23,4.06
+Sue Johannessen,Physical Education,23,4.06
+Timothy Clarke,Philosophy,23,4.06
+Eric Longfellow,English,23,4.04
+D.A. Miller,English,23,3.9
+Marcus Opp,Business Administration,23,3.9
+Mark Goble,English,23,3.88
+Erin Murphy-Graham,Education,23,3.85
+Doug Tygar,Computer Science,23,3.83
+Aaron Edlin,Economics,23,3.6
+Teresa Head-Gordon,Chemistry,23,3.51
+Joan Hollinger,Legal Studies,23,3.48
+Stephen Andrews,Environmental Science,23,3.39
+Russell Merritt,Film,23,3.37
+Robert Ehrlich,Interdisciplinary Studies,23,3.18
+Demian Pouzo,Economics,23,3.16
+Christian Santesteban,Economics,23,3.11
+Tiffany Page,Latin American Studies,23,3.06
+Jennifer Lee,Psychology,23,2.72
+Becky Hsu,Writing,22,4.4
+Leslie Martin,French,22,4.38
+John McNamara,Art,22,4.33
+Claire Kramsch,German,22,4.3
+Jesse Nathan,English,22,4.3
+Ariel Shannon,Italian,22,4.28
+Andy Shanken,Architecture,22,4.28
+Balthazar Beckett,English,22,4.26
+Joseph Klett,Sociology,22,4.23
+Justin Brashares,Environmental Science,22,4.21
+Mohammad Mofrad,Bioengineering,22,4.21
+David Romer,Economics,22,4.11
+Emily Carpenter,Film,22,4.11
+Marilyn Fabe,Film,22,4.09
+Jonathan Sheehan,History,22,4.04
+John Lott,Mathematics,22,4.04
+Zehlia Babaci-Wilhite,Education,22,3.99
+Biwen Zhang,Business Administration,22,3.99
+Zi Qiang Qiu,Physics,22,3.97
+Pamela Fox,Computer Science,22,3.97
+Brooks Abel,Chemistry,22,3.97
+Bob Knight,Psychology,22,3.95
+Anthony Long,Classics,22,3.9
+Ricardo Nino,City & Regional Planning,22,3.9
+Melissa Bayne,Psychology,22,3.9
+Michael D. Rubenstein,English,22,3.85
+Paulo Monteiro,Civil Engineering,22,3.85
+Geoffrey Koziol,History,22,3.8
+Daniele Boucher,French,22,3.73
+Narges Norouzi,Computer Science,22,3.73
+Kent Udell,Engineering,22,3.59
+Peter Berck,Economics,22,3.59
+Dennis Baldocchi,Environmental Science,22,3.49
+Mark Leinauer,Law,22,3.49
+Francisco Armero,Civil Engineering,22,3.45
+Marjorie Shapiro,Physics,22,3.38
+Jeremy Magruder,Economics,22,3.35
+Nancy Peluso,Environmental Science,22,3.26
+Ling Hon Lam,Chinese,22,3.23
+Fei XU,Psychology,22,3.16
+Mi-Suk Kang Dufour,Public Health,22,2.99
+Santiago Oliveros,Business Administration,22,2.88
+William Lester,Chemistry,22,2.76
+Carson Li,Mathematics,21,4.38
+Li Liu,Chinese,21,4.34
+Suneel Udpa,Business Administration,21,4.34
+Alexandra Pfiffner,Linguistics,21,4.34
+Melanie Abrams,English,21,4.31
+Bahman Solati,Near Eastern Studies,21,4.31
+Atul Singh,International Studies,21,4.29
+Carolyn Bertozzi,Chemistry,21,4.26
+Ala Moradian,Mechanical Engineering,21,4.26
+Anthony Adamthwaite,History,21,4.24
+Chris Knaus,African-American Studies,21,4.16
+Yuri Slezkine,History,21,4.16
+Daniel Lee,Political Science,21,4.12
+Ronit Stahl,History,21,4.12
+Richmond Sarpong,Chemistry,21,4.09
+Seth Yalcin,Philosophy,21,4.07
+Nadia Ellis,English,21,4.02
+Scott Hassler,Earth Science,21,3.99
+Terri Crisp,Writing,21,3.99
+Michael Parayno,Ethnic Studies,21,3.97
+Tim White,Biology,21,3.95
+Rasmus Nielsen,Biology,21,3.95
+Wen-Hsin Yeh,History,21,3.92
+Elena Schneider,History,21,3.92
+Sug Woo Shin,Mathematics,21,3.9
+Mark Schlissel,Biology,21,3.87
+John Connelly,History,21,3.87
+David Savage,Biology,21,3.87
+Omar Hernandez,Business Administration,21,3.87
+Pierre-Olivier Gourinchas,Economics,21,3.85
+Mark Sandberg,Scandinavian,21,3.8
+Lisa Yan,Computer Science,21,3.8
+Bruce Baldwin,Biology,21,3.77
+Alberto Grunbaum,Mathematics,21,3.7
+Wesley Holliday,Philosophy,21,3.7
+Thomas Chastain,Architecture,21,3.7
+Gian Garriga,Biology,21,3.63
+Mike Clancy,Computer Science,21,3.63
+Alex Von Rospatt,Asian Studies,21,3.63
+Eleanor Rosch,Psychology,21,3.6
+James Webb,Business Administration,21,3.6
+Charles Wohl,Physics,21,3.58
+Judith Butler,Rhetoric,21,3.56
+Emmanuel Saez,Economics,21,3.51
+Louis Segal,Latin American Studies,21,3.48
+Xinyi Yuan,Mathematics,21,3.46
+Gabriel Gomes,Mechanical Engineering,21,3.43
+Andrew Wurmser,Biology,21,3.31
+Gertrude Buehring,Biology,21,3.26
+Robin Flagg,Public Health,21,3.24
+Susan Hyde,Political Science,21,3.19
+Philip Marcus,Mechanical Engineering,21,3.04
+John Gonzales,Business Administration,21,2.75
+Hsinyu Lin,Chinese,20,4.37
+Edmund Mendelssohn,Music,20,4.34
+Giovanni Biasin,Italian,20,4.32
+Eric Falci,English,20,4.32
+Nelly Timmons,French,20,4.29
+Angela Hume,English,20,4.29
+David Wiese,English,20,4.27
+Alastair Iles,Environ. Sci. Policy & Mgmt.,20,4.24
+Mahmood Monshipouri,Political Science,20,4.22
+Chip Sullivan,Landscape Architecture & Regional Planning,20,4.19
+Tom Bruns,Biology,20,4.17
+Austin Hedeman,Physics,20,4.17
+Michael Crommie,Physics,20,4.14
+Paul Groth,Architecture,20,4.12
+Cristina Banks,Business Administration,20,4.12
+Ephrem Fernandez,Psychology,20,4.12
+Walter Alvarez,Earth Science,20,4.09
+Kannan Ramchandran,Computer Science,20,4.09
+Fae Myenne Ng,Asian Studies,20,4.07
+Sima Belmar,Theatre & Dance,20,4.07
+Greg Choy,Ethnic Studies,20,4.04
+Ron Hendel,Religious Studies,20,4.02
+Kirsten Schwartz,Rhetoric,20,4.02
+Duncan Macrae,Classics,20,4.02
+Chunmei Li,Chemistry,20,3.87
+Filip Filippou,Civil Engineering,20,3.82
+Marcin Majda,Chemistry,20,3.72
+Barbara Bowman,Biology,20,3.59
+Greg Duncan,Economics,20,3.47
+Kimberly TallBear,Environ. Sci. Policy & Mgmt.,20,3.47
+Stephanie Ballenger,History,20,3.47
+Patricia Hilden,Ethnic Studies,20,3.44
+Michael Larice,City & Regional Planning,20,3.44
+Bill Prinzmetal,Psychology,20,3.42
+Gene Irschick,History,20,3.39
+Clancy Wilmott,Geography,20,3.39
+Sylvia Tiwon,Asian Studies,20,3.27
+Oskar Hallatschek,Physics,20,3.27
+Richard Rhodes,Linguistics,20,3.12
+Lon Rork,Physical Education,20,2.99
+Lydia Sohn,Engineering,20,2.84
+Stephanie Pearson,Art History,19,4.35
+John Latto,Biology,19,4.33
+Ying Yang,Chinese,19,4.3
+Ryan Steele,Chemistry,19,4.3
+Kurt Cuffey,Geography,19,4.3
+Iris Mauss,Psychology,19,4.3
+Andrew Emerson,Military Affairs,19,4.3
+Manuel Sabin,Computer Science,19,4.3
+Irfan Siddiqi,Physics,19,4.25
+Russell Vance,Biology,19,4.25
+Edward Miguel,Economics,19,4.22
+Matthew Parker,English,19,4.22
+Carly Stair,Psychology,19,4.2
+Samantha Gervase,History,19,4.2
+Benson Tongue,Engineering,19,4.17
+Yasuko Konno Baker,Japanese,19,4.17
+Mark Peterson,History,19,4.15
+Richard Huntsinger,Business Administration,19,4.12
+Timothy Hampton,French,19,4.1
+Darya Kavitskaya,Linguistics,19,4.1
+John Strain,Mathematics,19,4.07
+Caitlin Rosenthal,History,19,4.07
+Sung-Jin Oh,Mathematics,19,4.07
+Elena Conis,Environmental Science,19,4.05
+Josh Grossman,Data Science,19,4.05
+Caroline Williams,Biology,19,3.97
+Meir Dan-Cohen,Legal Studies,19,3.92
+Andrew Jones,Chinese,19,3.92
+Fang Xu,Interdisciplinary Studies,19,3.89
+Malcolm Feeley,Legal Studies,19,3.87
+Rada Brooks,Business Administration,19,3.87
+Peter Hurtubise,Sociology,19,3.87
+Leonardo Arriola,Political Science,19,3.84
+Sheri Johnson,Psychology,19,3.79
+Frances Nkara,Psychology,19,3.79
+Mia Fuller,Italian,19,3.76
+Alexei Yurchak,Anthropology,19,3.74
+Bruno Meyerhof Salama,Legal Studies,19,3.74
+Barry Stroud,Philosophy,19,3.63
+Geoffrey O'Brien,English,19,3.63
+Jennifer Hudin,Philosophy,19,3.63
+Khatharya Um,Ethnic Studies,19,3.58
+Terrance Odean,Business Administration,19,3.58
+Hamid Shomali,Economics,19,3.56
+Bill Fanning,Business Administration,19,3.53
+James Wilcox,Business Administration,19,3.51
+Frederick Vincent,African-American Studies,19,3.51
+Daniela Kaufer,Biology,19,3.51
+Sofia Villas-Boas,Economics,19,3.48
+Jenefer Johnson,Theatre & Dance,19,3.43
+Anne Banfield,English,19,3.35
+Joann Conrad,Anthropology,19,3.28
+Connie Chang - Hasnain,Electrical Engineering,19,3.15
+David Wemmer,Chemistry,19,3.12
+Dorit Hochbaum,Industrial Engineering,19,3.07
+Ronnie Spizter,Physics,19,2.99
+Bruce Hall,History,19,2.97
+George Brooks,Biology,19,2.92
+George Bergman,Mathematics,19,2.81
+Sebastian Griscti,Spanish,18,4.34
+Joshua Blumenstock,Economics,18,4.34
+James Davies,Music,18,4.31
+Karl Britto,French,18,4.26
+Li Hua Zhang,Chinese,18,4.26
+Shari Paladino,Art Media & Design,18,4.23
+Ori Ganor,Physics,18,4.2
+Tarek Zohdi,Mechanical Engineering,18,4.18
+Marika Kuzma,Music,18,4.15
+Chisako Cole,Writing,18,4.13
+Sean Farhang,Public Policy,18,4.1
+Eugene Chiang,Astronomy,18,4.02
+Ellen Oliensis,Classics,18,4.02
+Horst Rademacher,Earth & Planetary Sciences,18,3.99
+Gregory Levine,Art History,18,3.97
+Allen Goldstein,Environ. Sci. Policy & Mgmt.,18,3.97
+Michael Shapira,Biology,18,3.97
+Everett Wetchler,Statistics,18,3.97
+Susanna Elm,Religious Studies,18,3.94
+Stefano Dellavigna,Economics,18,3.94
+Peter Zinoman,History,18,3.91
+Botond Koszegi,Economics,18,3.89
+Kai Ping Peng,Psychology,18,3.86
+Tom McEnaney,Spanish,18,3.86
+Garrison Sposito,Engineering,18,3.84
+Dorian Liepmann,Bioengineering,18,3.84
+Sally Fairfax,Environmental Science,18,3.81
+Tsit-Yuen Lam,Mathematics,18,3.81
+Waldo Martin,History,18,3.76
+Maria Mavroudi,History,18,3.76
+Earl Klee,Interdisciplinary Studies,18,3.73
+Jennifer Burns,History,18,3.68
+Mel Chen,Women's Studies,18,3.68
+Eva Fuchs,English,18,3.65
+Michael Hout,Sociology,18,3.65
+Andrew Kim,Anthropology,18,3.65
+Robert Kaufman,Comparative Literature,18,3.63
+Marianne Smart,Music,18,3.6
+Martin Shapiro,Legal Studies,18,3.6
+William White,Anthropology,18,3.6
+Sharad Chari,Geography,18,3.57
+Melvin Pomerantz,Physics,18,3.55
+Gabe Lenz,Political Science,18,3.52
+Alper Atamturk,Industrial Engineering,18,3.44
+Tim King,Sociology,18,3.41
+Christine Hastorf,Anthropology,18,3.2
+George Chang,Nutrition,18,3.18
+Robert Birgeneau,Physics,18,3.18
+Paolo Ney De Souza,Mathematics,18,3.15
+Arturo Perez-Reyes,Business Administration,18,3.1
+Eve Sweetser,Cognitive Science,18,3.05
+Danika Cooper,Landscape Architecture & Regional Planning,18,3.02
+Steven Evans,Statistics,18,2.91
+Naroudinne El Karoui,Statistics,18,2.86
+Juana Maria Rodriguez,Women's Studies,17,4.29
+Dylan Sailor,Classics,17,4.26
+Kay Ousterhout,Computer Science,17,4.26
+Bernard Griego,Public Health,17,4.24
+Alex Diesl,Mathematics,17,4.24
+Joni Spigler,Art History,17,4.24
+Evan Variano,Civil Engineering,17,4.21
+David Winickoff,Environmental Science,17,4.16
+Suzanne Guerlac,French,17,4.16
+Nicholas Mills,Environmental Science,17,4.13
+Robert Goldman,Religious Studies,17,4.13
+Marianne Constable,Rhetoric,17,4.13
+Keith Johnson,Linguistics,17,4.13
+Shahwali Ahmadi,Near Eastern Studies,17,4.13
+Robert Yamasato,Music,17,4.13
+Stephan Astourian,History,17,4.07
+Alex Saum-Pascual,Spanish,17,4.07
+Steve Welter,Environmental Science,17,4.02
+Jamie Rector,Civil & Environmental Engineering,17,4.02
+Robert Berring,Legal Studies,17,4.02
+Darren Zook,Peace & Conflict Studies,17,4.02
+Susan Schweik,English,17,3.99
+Marcial Gonzalez,English,17,3.99
+Saul Perlmutter,Physics,17,3.99
+Rodolfo Alaniz,History,17,3.99
+Daryl Chrzan,Materials Science,17,3.97
+Yun S Song,Statistics,17,3.97
+Dale Carrico,Rhetoric,17,3.94
+Nikki Jones,African-American Studies,17,3.94
+Joseph Campos,Psychology,17,3.91
+Natalia Brizuela,Spanish,17,3.89
+Shamik Dasgupta,Philosophy,17,3.89
+Beatriz Manz,Geography,17,3.86
+Peter Bartu,Peace & Conflict Studies,17,3.86
+Karen I-Hao Li,Chinese,17,3.83
+Hillel Adesnik,Psychology,17,3.83
+Mary Ann Koory,English,17,3.8
+Keiko Yamanaka,Asian Studies,17,3.8
+Massimo Mazzotti,History,17,3.8
+Bill Weigel,Linguistics,17,3.75
+Van Carey,Engineering,17,3.72
+Shawn Kim,Business Administration,17,3.72
+Martin Covington,Psychology,17,3.62
+Laurent Coscoy,Biology,17,3.62
+Lior Pachter,Mathematics,17,3.62
+Jocelyne Guilbault,Music,17,3.59
+Shannon Stimson,Political Science,17,3.56
+Yuet-Sim Chiang,Writing,17,3.53
+Chad Denton,International Studies,17,3.53
+Richard Taruskin,Music,17,3.51
+Thomas Kent,Political Science,17,3.48
+Lisa Iwamoto,Architecture,17,3.45
+D.V. Jones,English,17,3.43
+Rose Wilkerson,Linguistics,17,3.43
+Edward Kass,Business Administration,17,3.43
+Geoffrey Lee,Philosophy,17,3.4
+Omer Savas,Engineering,17,3.37
+Thomas Marschak,Business Administration,17,3.26
+Elise Miller,English,17,3.24
+Alain De Janvry,Economics,17,3.24
+Alison Post,Political Science,17,3.13
+David Levine,Business Administration,17,3.05
+Deborah Nolan,Statistics,17,3.02
+Joshua Goldstein,Economics,17,2.83
+Armando Fox,Computer Science,17,2.62
+Mark D'Esposito,Psychology,16,4.24
+Charis Thompson,Women's Studies,16,4.19
+Umair Khan,Arts & Humanities,16,4.16
+Jesilyn Faust,Geography,16,4.16
+William Boos,Earth Science,16,4.13
+Hayden Taylor,Mechanical Engineering,16,4.1
+Abigail De Kosnik,Theatre & Dance,16,4.02
+Daniel Portnoy,Biology,16,3.99
+Roland Burgmann,Earth Science,16,3.99
+Andrew Reddie,Political Science,16,3.99
+Eileen Jones,Film,16,3.94
+Julia Bader,English,16,3.91
+Maureen Lahiff,Public Health,16,3.91
+Harsha Ram,Comparative Literature,16,3.88
+Ramona Nadaff,Rhetoric,16,3.88
+Irina Paperno,Slavic Languages & Literatures,16,3.88
+Qiang Zhou,Biology,16,3.83
+Lousie Mozingo,Landscape Architecture & Regional Planning,16,3.83
+W. B. Turner,Mass Communications,16,3.77
+Michael Zuerch,Chemistry,16,3.77
+Thomas Devine,Materials Science,16,3.74
+Daniel Rokhsar,Biology,16,3.74
+Daniel Stolper,Earth & Planetary Sciences,16,3.74
+Rachel Shoup,Psychology,16,3.72
+Stephanie Nail,Political Science,16,3.72
+Mark Healey,History,16,3.69
+George Starr,English,16,3.66
+Jim Demmel,Engineering,16,3.63
+Rodrigo Almeida,Environ. Sci. Policy & Mgmt.,16,3.63
+George Lakoff,Linguistics,16,3.6
+Carlos Munoz,Ethnic Studies,16,3.6
+Dan Himelstein,Business Administration,16,3.6
+Gary Holland,Linguistics,16,3.52
+Diana Bautista,Biology,16,3.52
+Bob Glushko,Information Systems,16,3.49
+Andrew Dillin,Biology,16,3.41
+Matthias Reinsch,Physics,16,3.38
+Laura Perez,Ethnic Studies,16,3.35
+JD Allen,Psychology,16,3.33
+Roy Caldwell,Biology,16,3.3
+Walter Hood,Landscape Architecture & Regional Planning,16,3.27
+Ching-Shui Cheng,Statistics,16,3.19
+Thomas Lee,Business Administration,16,3.13
+David Rich,Mechanical Engineering,16,2.99
+Daniel Pirutinsky,Industrial Engineering,16,2.91
+Brian Salazar,Engineering,16,2.88
+Mina Mirazimi,Business Administration,16,2.8
+Seda Chavdarian,French,15,4.28
+Christopher Muller,Sociology,15,4.28
+Clelia Donovan,Portuguese,15,4.25
+Anna Muza,Languages,15,4.22
+Lara Buchak,Philosophy,15,4.22
+Zachary Johnson,Slavic Languages & Literatures,15,4.22
+Sarah Gold McBride,American Studies,15,4.22
+Weisi Cai,Chinese,15,4.19
+Johann Frick,Philosophy,15,4.19
+John Lindow,Scandinavian,15,4.16
+Samuel Otter,English,15,4.16
+Jon Steinsson,Economics,15,4.16
+Jonathon Simon,Law,15,4.14
+Mike Wong,Mathematics,15,4.14
+Kranthi Mandadapu,Chemical Engineering,15,4.14
+Dorothy Hale,English,15,4.11
+Diana Negrin Da Silva,Geography,15,4.11
+Mike Leong,Mathematics,15,4.08
+Jerome Baggett,Sociology,15,4.05
+Soojin Lee,Languages,15,3.99
+Joellen Shively,Sociology,15,3.96
+Stephen Lee,English,15,3.96
+Ronald Lee,Economics,15,3.94
+Debarati Sanyal,French,15,3.91
+Victoria Frede,History,15,3.91
+Feng Wang,Physics,15,3.91
+Janet Brady,Business Administration,15,3.88
+Michael Nagler,Peace & Conflict Studies,15,3.82
+Umesh V. Vazirani,Computer Science,15,3.82
+Terri Bimes,Political Science,15,3.82
+Malcolm Potts,Public Health,15,3.79
+George Roderick,Biology,15,3.79
+Aditi Krishnapriyan,Chemical Engineering,15,3.79
+William Holzapfel,Physics,15,3.76
+F. Dean Toste,Chemistry,15,3.74
+Margaret Chowning,History,15,3.74
+Franklin Zimring,Legal Studies,15,3.74
+Leslie Salzinger,Sociology,15,3.74
+Tyler Lange,History,15,3.74
+Andrea Gomez,Biology,15,3.74
+David Johnson,History,15,3.71
+Lauren Williams,Mathematics,15,3.71
+David Shuster,Earth & Planetary Sciences,15,3.62
+Cecile Gaubert,Economics,15,3.62
+Kate O'Neill,Environmental Science,15,3.59
+Linda Williams,Film,15,3.54
+Susanne Gahl,Linguistics,15,3.54
+Michel Laguerre,Ethnic Studies,15,3.48
+Irina Conboy,Bioengineering,15,3.48
+Dan Stamper-Kurn,Physics,15,3.34
+Brian Wright,Economics,15,3.34
+Livi Yoshioka,French,15,3.31
+Dora Zhang,English,15,3.31
+Lowell Dittmer,Political Science,15,3.28
+Mary Berry,History,15,3.28
+Angela Marino,Theatre & Dance,15,3.28
+Sylvie Corteel,Mathematics,15,3.25
+Shyam Parekh,Computer Science,15,3.16
+Robert Collins,Anthropology,15,3.11
+Teri Crisp,Writing,15,3.11
+Zack Powell,Biology,15,3.08
+David Zilberman,Economics,15,3.08
+John Zysman,Political Science,15,3.08
+Alexander Appleton,Mathematics,15,3.08
+Parsa Taheri,Engineering,15,3.05
+Khalilah Beal-Uribe,Mathematics,15,3.02
+Michelle Chang,Chemistry,15,2.94
+Torsor Kotee,Business Administration,15,2.82
+Sarah Reynolds,Economics,15,2.76
+Jason Vivrette,Italian,14,4.26
+Alexander Walker,Music,14,4.26
+Saira Gupta,Engineering,14,4.26
+Jonas Wellendorf,Scandinavian,14,4.23
+Eliot Quataert,Astronomy,14,4.2
+Belen Bistue,Comparative Literature,14,4.2
+Andrew Leong,English,14,4.17
+Bartlett,English,14,4.14
+Iswar Hariharan,Biology,14,4.14
+Xiao-Sheng Huang,Physics,14,4.14
+Ami Zins,Rhetoric,14,4.14
+Alexander Strang,Statistics,14,4.14
+Bruce Cain,Political Science,14,4.11
+John Lesch,History,14,4.11
+Dara O'Rourke,Environmental Science,14,4.11
+Lisa Maher,Anthropology,14,4.11
+Grace Erny,Classics,14,4.11
+John Levine,English,14,4.08
+Rachel Stern,Legal Studies,14,4.02
+Robert Full,Biology,14,3.99
+Amanda Goldstein,Comparative Literature,14,3.99
+Carolyn Finney,Environmental Science,14,3.99
+Amy Rose Deal,Linguistics,14,3.99
+M Bevir,Political Science,14,3.96
+David Anthoff,Economics,14,3.96
+Mary Wildermuth,Biology,14,3.93
+Hamid Algar,Near Eastern Studies,14,3.9
+Klaus Corcilius,Philosophy,14,3.9
+Robert Harley,Engineering,14,3.88
+Francis Annan,Environ. Sci. Policy & Mgmt.,14,3.88
+Marsha Saxton,Interdisciplinary Studies,14,3.85
+Steve Selvin,Statistics,14,3.82
+John Shoptaw,English,14,3.82
+Joseph Orenstein,Physics,14,3.82
+Francesca Giovanini,Peace & Conflict Studies,14,3.79
+Borivoje Nikolic,Electrical Engineering,14,3.79
+Ben Porter,Near Eastern Studies,14,3.79
+Mel Gordon,Theatre & Dance,14,3.76
+Christopher Hallett,Art History,14,3.76
+Annalee Rejhon,Languages,14,3.76
+Ali Niknejad,Electrical Engineering,14,3.76
+Paula Varsano,Chinese,14,3.73
+Jason Britton,Physical Education,14,3.73
+Catherine Choy,Ethnic Studies,14,3.7
+Lauren Heller,Mathematics,14,3.7
+Samuel (Sam) Pimentel,Statistics,14,3.67
+Daniel Immerwahr,History,14,3.64
+Ari Edmundson,History,14,3.58
+Noam Sobel,Psychology,14,3.55
+Edgar Knobloch,Physics,14,3.55
+Christopher Tomlins,Legal Studies,14,3.55
+Emi Nakamura,Economics,14,3.55
+Anne Cheng,English,14,3.52
+Matthew Jurow,Chemistry,14,3.52
+Rhonda Righter,Industrial Engineering,14,3.46
+D.H. Wright,Art History,14,3.4
+Juan Berumen,Ethnic Studies,14,3.4
+Marc Davis,Astronomy,14,3.32
+Birgitta Whaley,Chemistry,14,3.32
+Peter Duesberg,Biology,14,3.29
+Michael Klass,Statistics,14,3.2
+Chris Rycroft,Mathematics,14,3.17
+Kyriakos Komvopoulos,Engineering,14,3.08
+Stephen Torres,Engineering,14,3.05
+Thibault Fally,Economics,14,2.96
+Zachary Pardos,Computer Science,14,2.88
+Laxmi Kumaran,Theatre & Dance,13,4.24
+Eileen Lacey,Biology,13,4.2
+Carolyn Hill,Writing,13,4.2
+Chan Bae,Mathematics,13,4.2
+Daniel Roddy,History,13,4.2
+Luis Gonzalez-Reimann,Religious Studies,13,4.17
+Christopher Scott,English,13,4.17
+Tasios Melis,Biology,13,4.14
+Alistair Sinclair,Computer Science,13,4.14
+Maximilian Auffhammer,Economics,13,4.14
+Lyn Hejinian,English,13,4.11
+Wes Leonard,Linguistics,13,4.11
+Margot Szarke,Art History,13,4.11
+Chelsea Gregory,Theatre & Dance,13,4.11
+Ross Doll,Geography,13,4.11
+Alexander Cook,History,13,4.08
+Sean Freeder,Political Science,13,4.08
+Damon Young,Film,13,4.05
+Paola Timiras,Biology,13,3.99
+Jim McGuire,Biology,13,3.99
+Dheer Baldua,Engineering,13,3.99
+Karsten Weis,Biology,13,3.96
+Ramesh Sridharan,Computer Science,13,3.96
+Gregory Bruce,Asian Studies,13,3.93
+Timothy Bowles,Environ. Sci. Policy & Mgmt.,13,3.93
+Hertha Sweet-Wong,English,13,3.9
+Saba Mahmood,Anthropology,13,3.9
+Alan Alan Ross,Business Administration,13,3.9
+Asad Ahmed,Near Eastern Studies,13,3.9
+Noah Whiteman,Biology,13,3.9
+Greg Castillo,Architecture,13,3.9
+Barrie Thorne,Sociology,13,3.84
+Kunxin Luo,Biology,13,3.84
+Diane Anderson,Psychology,13,3.84
+Kenneth Speirs,English,13,3.84
+Ethan Katz,History,13,3.84
+Alexander Craghead,American Studies,13,3.81
+Thomas Schutzius,Mechanical Engineering,13,3.81
+Schaab Andreas,Economics,13,3.81
+Jennifer Shanoski,Chemistry,13,3.78
+Slobodan Simic,Mathematics,13,3.78
+Miryam Sas,Film,13,3.72
+Eliza Brown,Sociology,13,3.72
+Sonia Bishop,Psychology,13,3.69
+Benjamin Johnson,Mathematics,13,3.66
+John Radke,Landscape Architecture & Regional Planning,13,3.63
+Somayeh Sojoudi,Engineering,13,3.63
+Sonia Katyal,Law,13,3.6
+Sean Burns,English,13,3.6
+Daniel Barsky,Physics,13,3.6
+Ron Loewinsohn,English,13,3.57
+Catherine Albiston,Legal Studies,13,3.57
+Richard Hutson,English,13,3.57
+Jugdep Chima,Political Science,13,3.57
+Joseph Lough,Interdisciplinary Studies,13,3.51
+Carla Hudson-Kam,Psychology,13,3.48
+Linda Wilbrecht,Psychology,13,3.48
+Yuriy Gorodnichenko,Economics,13,3.45
+Ilan Adler,Industrial Engineering,13,3.36
+Aya De Leon,African-American Studies,13,3.33
+Jikang Wang,Mathematics,13,3.3
+Jamie Doudna-Cate,Chemistry,13,3.24
+Nicholas Tackett,History,13,3.24
+Karina Gutierrez,Theatre & Dance,13,3.24
+Juan Liu,Biology,13,3.17
+T. Don Tilley,Chemistry,13,3.11
+C. Susheel Bibbs,Engineering,13,3.11
+Paul Thomas,Political Science,13,3.08
+Jared Greene,Rhetoric,13,2.99
+Richard Balmer,Mathematics,13,2.84
+Arkady Alexeev,Languages,12,4.21
+Christopher Chua,Asian Studies,12,4.21
+Yaniv Konchitchki,Business Administration,12,4.21
+Michael Zaletel,Physics,12,4.21
+Michael Wintroub,Rhetoric,12,4.15
+Robert Kayen,Civil Engineering,12,4.15
+Joshua Bloom,Astronomy,12,4.12
+Gregory Feist,Psychology,12,4.09
+Cybelle Fox,Sociology,12,4.09
+Jasenka Rakas,Civil Engineering,12,4.09
+Mary Grover,English,12,4.05
+Nusrat Rabbee,Statistics,12,4.02
+Maria Barrios-Leblanc,Asian Studies,12,4.02
+Julia Fawcett,Theatre & Dance,12,4.02
+Steve Lindow,Biology,12,3.99
+Ehud Isacoff,Biology,12,3.99
+Olivia Bailey,Philosophy,12,3.99
+Jennifer Johnson-Hanks,Anthropology,12,3.96
+David Card,Economics,12,3.96
+Anna Livia Brawn,French,12,3.96
+David Sedlak,Civil Engineering,12,3.96
+Emily Thornbury,English,12,3.96
+Lilla Balint,German,12,3.96
+Ashley Reaver,Nutrition,12,3.96
+Charles Sarno,Sociology,12,3.96
+Tom Alber,Biology,12,3.93
+Soraya Tlatli,French,12,3.93
+Deborah Blocker,French,12,3.93
+Minsook Kim,Languages,12,3.93
+James Sallee,Economics,12,3.93
+Mark Bevir,Political Science,12,3.93
+Kyle Deland,Legal Studies,12,3.93
+Alan Nelson,English,12,3.87
+George Brimhall,Earth Science,12,3.87
+Florian Grosser,Philosophy,12,3.87
+Mark Alper,Biology,12,3.84
+Nezar Alsayyad,Urban Design & Development,12,3.84
+Chris Jensen,English,12,3.84
+Vasundhara Sirnate,Political Science,12,3.84
+Cecil Giscombe,English,12,3.84
+Grace O'Connell,Mechanical Engineering,12,3.84
+Nasser Zakariya,Rhetoric,12,3.84
+Celeste Kidd,Psychology,12,3.84
+Michael Chang,Ethnic Studies,12,3.84
+Steve Lehman,Biology,12,3.8
+Peter Sahlins,History,12,3.8
+Todd Olson,Art History,12,3.8
+Keith Feldman,Ethnic Studies,12,3.8
+Ryan Lundell-Creagh,Psychology,12,3.8
+JW Morris,Engineering,12,3.77
+Roger Byrne,Geography,12,3.77
+Courtney Morris,Women's Studies,12,3.77
+Peter Sudmant,Biology,12,3.74
+Diego Evans,Architecture,12,3.74
+Beth Piatote,Ethnic Studies,12,3.65
+Kevin Weiner,Psychology,12,3.65
+Maureen Miller,History,12,3.62
+Lucia Jacobs,Psychology,12,3.62
+Tiffany Rasmussen,Business Administration,12,3.62
+Mark Blum,Asian Studies,12,3.62
+Zachary Lamb,City & Regional Planning,12,3.62
+Robert Leachman,Industrial Engineering,12,3.59
+Ellen Simms,Biology,12,3.59
+Nora Broege,Sociology,12,3.59
+Jan Engelmann,Psychology,12,3.59
+Randy Katz,Computer Science,12,3.55
+Candace Johnson,Music,12,3.55
+Ming Hsu,Business Administration,12,3.49
+Stephanie Zonszein,Political Science,12,3.49
+Dana Buntrock,Architecture,12,3.46
+David Foster,Psychology,12,3.43
+Matthew Potts,Environmental Science,12,3.43
+Christyna Serrano,Education,12,3.43
+Peidong Yang,Chemistry,12,3.4
+David Ebrey,Philosophy,12,3.37
+Holger Mueller,Physics,12,3.37
+Kyle Jennings,Psychology,12,3.3
+Raveevarn Choksombatchai,Architecture,12,3.27
+Diliana Angelova,Art History,12,3.27
+Sarumathi Jayaraman,Public Policy,12,3.27
+Miriam Greenberg,English,12,3.27
+William Schaefer,Chinese,12,3.24
+Bryan Graham,Economics,12,3.24
+Mather George,Anthropology,12,3.24
+Kausalya Hart,Asian Studies,12,3.18
+You-Tien Hsing,Geography,12,3.15
+Michael Anderson,Economics,12,3.15
+Joseph Farrell,Economics,12,3.05
+Gautam Premnath,English,12,3.02
+Raphael Giraud,Economics,12,2.99
+Negar Mehr,Mechanical Engineering,12,2.99
+Jill Stoner,Architecture,12,2.93
+Weihong Bao,Film,12,2.93
+Mark Biggin,MolecularCellular Biology,12,2.9
+Ana Arias,Electrical Engineering,12,2.9
+Ehud Altman,Physics,12,2.87
+Mira Kopell,Film,11,4.19
+Georgina Kleege,English,11,4.19
+Santiago Canez,Mathematics,11,4.19
+Daniel Hoffman,French,11,4.19
+Fuifuilupe Niumeitolu,Women's Studies,11,4.19
+Russell Weber,History,11,4.19
+Linda H Rugg,Scandinavian,11,4.15
+Michael Tuncap,Ethnic Studies,11,4.15
+John Matsui,Biology,11,4.15
+Tehmina Khan,English,11,4.15
+Marian Feldman,Near Eastern Studies,11,4.12
+Felicia Viator,History,11,4.12
+Christian Gaetz,Mathematics,11,4.12
+Jeffrey Hadler,Asian Studies,11,4.09
+Amy Rust,Film,11,4.09
+Luba Golburt,Languages,11,4.09
+Terry Regier,Cognitive Science,11,4.09
+Abhishek Kaicker,History,11,4.09
+Shawn Shadden,Mechanical Engineering,11,4.09
+Maya Sidhu,French,11,4.09
+Eric Stanley,Women's Studies,11,4.09
+Wayne Sousa,Environmental Science,11,4.06
+Bruce Elliott,History,11,4.06
+David Ackerly,Biology,11,4.06
+Lanchih Po,East Asian Studies,11,4.06
+Semyon Dyatlov,Mathematics,11,4.06
+Leonard Bjeldanes,Nutrition,11,4.02
+Tom Griffiths,Cognitive Science,11,4.02
+Elisa Tamarkin,English,11,4.02
+John Elrick,Geography,11,4.02
+Abhijeet Paul,East Asian Studies,11,4.02
+Rita Lucarelli,Near Eastern Studies,11,4.02
+Charles Huang,Arts & Humanities,11,4.02
+Kunal Cholera,Business Administration,11,4.02
+Ken Jowitt,Political Science,11,3.99
+Neil Fligstein,Sociology,11,3.99
+Kristen Whissel,Film,11,3.96
+Katherine Milton,Environmental Science,11,3.96
+Edmund Campion,Music,11,3.96
+Catherine Flynn,English,11,3.96
+Hakeem Naim,History,11,3.96
+Crawford Greenwalt,Classics,11,3.93
+Marshall Foletta,History,11,3.93
+Meir Karlinsky,Business Administration,11,3.93
+Ivo Plsek,Political Science,11,3.93
+John Hurst,Education,11,3.9
+Blas Guerrero,Chicano Studies,11,3.9
+Rebekah Collins,Asian Studies,11,3.9
+Gavriel Moses,Film,11,3.86
+Randy Hussong,Art,11,3.83
+Margaret Weir,Sociology,11,3.83
+Minoo Moallem,Women's Studies,11,3.83
+Kurt Organista,Social Welfare,11,3.83
+Kathrine Sherwood,Art,11,3.8
+Carolyn Porter,English,11,3.8
+Tanja Cuk,Not Specified,11,3.8
+David Whitney,Psychology,11,3.8
+Ulysse Dutoit,French,11,3.77
+Jose Carmena,Cognitive Science,11,3.73
+Laura Nathan,Sociology,11,3.73
+Amir Kamil,Computer Science,11,3.73
+Greig Crysler,Architecture,11,3.7
+Peter Ekman,Geography,11,3.7
+Alanna Schepartz,Chemistry,11,3.7
+Cathryn Carson,History,11,3.67
+Jill Banfield,Environmental Science,11,3.67
+Michel Maharbiz,Electrical Engineering,11,3.67
+Mark Barnby,Biology,11,3.64
+Hannah Michell,Asian Studies,11,3.64
+Jonathan Wallis,Psychology,11,3.61
+Gibor Basri,Physics,11,3.57
+Tania Lombrozo,Psychology,11,3.57
+Hei-Sook Sul,Nutrition,11,3.51
+Eli Kass,Business Administration,11,3.48
+Robert Tjian,Biology,11,3.44
+Leroy Kerth,Physics,11,3.44
+Christine Beier,Linguistics,11,3.44
+Mark Hansen,Civil Engineering,11,3.44
+Hong Yung Lee,Political Science,11,3.38
+As'Ad Abukhalil,Near Eastern Studies,11,3.38
+Ian Holmes,Bioengineering,11,3.38
+Elif Kale-Lostuvali,Sociology,11,3.38
+Wayne Getz,Environ. Sci. Policy & Mgmt.,11,3.35
+Martin Sanchez-Jankowski,Not Specified,11,3.35
+Joelle Frechette,Chemical Engineering,11,3.35
+Janak Ramakrishnan,Mathematics,11,3.31
+Jeff Romm,Environmental Science,11,3.31
+Michael Mahoney,Statistics,11,3.28
+Maheemah Bokhoree,Chemistry,11,3.28
+Khaled Mosalam,Civil Engineering,11,3.15
+Chris Paciorek,Statistics,11,3.09
+Ann Kalinowski,Statistics,11,3.09
+Avideh Zakhor,Electrical Engineering,11,3.02
+Sanjam Garg,Computer Science,11,3.02
+Celeste Saravia,Economics,11,2.96
+Cris Benton,Architecture,10,4.16
+Victoria Kahn,Comparative Literature,10,4.16
+Patrick Russell,Theatre & Dance,10,4.16
+Damien Donnelly,Chinese,10,4.16
+Ahmad Rashid Salim,Near Eastern Studies,10,4.16
+Bridgette Portman,English,10,4.16
+William Thompson,Psychology,10,4.16
+Justin Davidson,Spanish,10,4.16
+Mark Stacey,Engineering,10,4.13
+Vesna Rodic,French,10,4.13
+Amanda Reiman,Social Welfare,10,4.13
+Daniel Kasen,Physics,10,4.13
+Gerald Benoit,Computer Science,10,4.13
+Chris Dolder,Theatre & Dance,10,4.09
+Craig Nagasawa,Art,10,4.09
+Phillip Nonet,Legal Studies,10,4.09
+Anton Kaes,Film,10,4.09
+Elizabeth Honig,Art History,10,4.09
+Genaro Padilla,English,10,4.09
+Max Shen,Industrial Engineering,10,4.09
+Eric Naiman,Comparative Literature,10,4.09
+Carl Olsen,Scandinavian,10,4.09
+Sean Curran,Music,10,4.09
+Joseph Jordan,English,10,4.09
+Mairi McLaughlin,French,10,4.09
+Gholam-Reza Ghahramani,Near Eastern Studies,10,4.09
+Michael Bernstein,English,10,4.06
+Sharon Amacher,Biology,10,4.06
+Randy Hester,Landscape Architecture & Regional Planning,10,4.06
+Greggor Mattson,Sociology,10,4.06
+Frederic Bourgoin,Mathematics,10,4.06
+Aaron Lopes,Chemistry,10,4.06
+Daniel Husman,Writing,10,4.06
+Brice Particelli,English,10,4.06
+Gustav Steinhardt,Anthropology,10,4.06
+Andreas Glaeser,Engineering,10,4.03
+John Taylor,Biology,10,4.03
+Christina Gerhardt,German,10,4.03
+Steven Botterill,Italian,10,4.03
+Patrick Kirch,Anthropology,10,4.03
+Arthur Reingold,Public Health,10,4.03
+Carlos Padilla,Political Science,10,4.03
+Karthik Shekhar,Chemical Engineering,10,4.03
+Joan McQuade,English,10,4.03
+John Wright,Computer Science,10,4.03
+Michael Rodriguez-Muniz,Sociology,10,4.03
+Aurelie Vialette,Spanish,10,3.99
+Kathryn De Master,Environ. Sci. Policy & Mgmt.,10,3.99
+Michael Nachman,Biology,10,3.99
+Jinsoo An,East Asian Studies,10,3.99
+Diego Pirillo,Italian,10,3.99
+Liang Dai,Physics,10,3.99
+Jan Reimann,Mathematics,10,3.96
+Gail Offen-Brown,Writing,10,3.96
+George Bentley,Biology,10,3.96
+Deborah Kang,History,10,3.96
+Vikram Chandra,English,10,3.96
+Jennifer Cho,English,10,3.96
+Nora Melnikova,Languages,10,3.96
+Lindsey Lanfersieck,English,10,3.96
+Leo Chen,Chemistry,10,3.96
+Wakae Kambara,Japanese,10,3.93
+Sanjyot Mehendale,Near Eastern Studies,10,3.89
+Kathleen McCarthy,Classics,10,3.89
+Joseph Bohling,History,10,3.89
+Kimberly Freeman,English,10,3.89
+Carla Hesse,History,10,3.89
+George Shanthikumar,Engineering,10,3.86
+Robert Bergman,Chemistry,10,3.86
+Susan Maslan,French,10,3.86
+Margarita Gordon,Comparative Literature,10,3.86
+Mark Mueller,Mechanical Engineering,10,3.86
+Leyla Modirzadeh,Theatre & Dance,10,3.86
+Ed McLaughlin,Biology,10,3.83
+Dana Carney,Business Administration,10,3.83
+Christian Paiz,Ethnic Studies,10,3.83
+Roberto Horowitz,Engineering,10,3.79
+Marco Aldi,Mathematics,10,3.79
+Teresa Smith,Art,10,3.76
+David Montejano,Ethnic Studies,10,3.76
+Andrej Milivojevic,History,10,3.76
+Javad Lavaei,Industrial Engineering,10,3.76
+Kijoo Ko,Languages,10,3.76
+Jyh-Yuan Chen,Engineering,10,3.73
+Abolhassan Astaneh-Asl,Engineering,10,3.73
+Lisa Wymore,Theatre & Dance,10,3.73
+Song Li,Bioengineering,10,3.73
+Susan Lin,Linguistics,10,3.73
+Miguel Altieri,Environmental Science,10,3.69
+Sam Olesky,Business Administration,10,3.69
+Aaron Parsons,Astronomy,10,3.69
+Steven Woods,Business Administration,10,3.66
+Paz Gutierrez,Architecture,10,3.66
+Laurel Larsen,Geography,10,3.63
+Robyn Jensen,Slavic Languages & Literatures,10,3.56
+Bob Buchanan,Biology,10,3.49
+Dave Patterson,Computer Science,10,3.46
+Thomas Budinger,Engineering,10,3.46
+Benoit Dherin,Mathematics,10,3.46
+Astar Winoto,Biology,10,3.46
+Gordon Frankie,Environmental Science,10,3.43
+Desiree Pries,French,10,3.43
+Iain Clark,Bioengineering,10,3.43
+Robert Dibble,Engineering,10,3.39
+Rebecca Bodenheimer,Music,10,3.36
+Iris Tommelein,Civil Engineering,10,3.36
+Gerard Roland,Economics,10,3.23
+Sarah Herbold,Comparative Literature,10,3.23
+David Weisblat,Biology,10,3.16
+David Freedman,Mathematics,10,2.93
+Ellen Lumpkin,Biology,10,2.93
+Hitoshi Murayama,Physics,9,4.13
+Noriko Komatsu,Japanese,9,4.13
+Amanda Doxtater,Scandinavian,9,4.13
+Julie Napolin,Rhetoric,9,4.13
+Nikolaus Euba,German,9,4.13
+Paul Fine,Biology,9,4.13
+Markus Pauly,Biology,9,4.13
+Neil Tsutsui,Environ. Sci. Policy & Mgmt.,9,4.13
+Dyan Connelly,Psychology,9,4.13
+Jackson Crawford,Scandinavian,9,4.13
+Elsa Elmahdy,Near Eastern Studies,9,4.13
+Laura Bonicatto,German,9,4.13
+Adam Benkato,Near Eastern Studies,9,4.13
+Qing Zhou,Psychology,9,4.13
+Harriet Lau,Earth & Planetary Sciences,9,4.13
+Erika Weissinger,Public Policy,9,4.13
+Erich S. Gruen,History,9,4.1
+James Harker,Rhetoric,9,4.1
+Carolyn Abbott,Mathematics,9,4.1
+Solly Fulp,Business Administration,9,4.1
+Luvreet Sangha,Mathematics,9,4.1
+Chris Killion,Theatre & Dance,9,4.06
+Alan Miller,Biology,9,4.06
+Daniel Klein,Computer Science,9,4.06
+Jack Moehle,Civil Engineering,9,4.06
+Michael Orland,Music,9,4.06
+Daniel O'Neil,East Asian Studies,9,4.06
+Greg Bonetti,Comparative Literature,9,4.06
+Richard Kim,Philosophy,9,4.06
+Christopher Walters,Economics,9,4.06
+Joseph Coppola,Film,9,4.06
+Daniel Viehoff,Philosophy,9,4.06
+Robert Cooter,Legal Studies,9,4.03
+Thomas Maimone,Chemistry,9,4.03
+Alex Budak,Business Administration,9,4.03
+Steven Murray,Physical Education,9,4.03
+Christos Papadimitriou,Computer Science,9,3.99
+Christy Dana,Music,9,3.99
+Ed Timke,Mass Communications,9,3.99
+Andy Jackson,Biology,9,3.96
+Patricia Berger,Art History,9,3.96
+Jacqueline Jung,Art History,9,3.96
+William Jagust,Public Health,9,3.96
+Sumi Furiya,Classics,9,3.96
+Samera Esmeir,Rhetoric,9,3.96
+Leigh Raiford,African-American Studies,9,3.96
+Eric Van Dusen,Data Science,9,3.96
+Bill Sonnenschein,Business Administration,9,3.92
+Karen Feldman,German,9,3.92
+Mark Tanouye,Environmental Science,9,3.92
+Naomi Cleghorn,Anthropology,9,3.92
+Phil Spector,Statistics,9,3.92
+Niklaus Largier,Religious Studies,9,3.92
+Charlotte Smith,Public Health,9,3.92
+Daniel Schneider,Sociology,9,3.92
+Hassan Rezakhany,Near Eastern Studies,9,3.92
+Amel Belguith,Near Eastern Studies,9,3.92
+Alfred Arteaga,Ethnic Studies,9,3.89
+Michael Johns,Geography,9,3.89
+G Cristina Mora,Sociology,9,3.89
+Glynda Hull,Education,9,3.89
+Puck Engman,History,9,3.89
+Krishna Niyogi,Biology,9,3.89
+Tina Chow,Civil Engineering,9,3.85
+Jeffrey Weiner,Comparative Literature,9,3.85
+Timothy Dayonot,Business Administration,9,3.85
+Ann Laudati,Geography,9,3.85
+Victoria Robertson,Spanish,9,3.85
+Britt Glaunsinger,Biology,9,3.85
+Elizabeth Hoover,Environmental Science,9,3.85
+Jaleh Pirnazar,Near Eastern Studies,9,3.82
+Peter Evans,Sociology,9,3.82
+George Johnson,Engineering,9,3.82
+Manuel Vallee,Sociology,9,3.82
+Jason Corburn,Public Health,9,3.82
+Alexis Brice Bouthier,Mathematics,9,3.82
+Nicolas Sitar,Civil Engineering,9,3.82
+Brandi Pearce,Business Administration,9,3.82
+Courtney Dressing,Astronomy,9,3.82
+Stuart Russell,Computer Science,9,3.78
+Trinh Minh-Ha,Rhetoric,9,3.78
+Christine Rosen,Business Administration,9,3.78
+Kim Stryker,Landscape Architecture & Regional Planning,9,3.78
+Karen Chapple,Urban Design & Development,9,3.78
+Vanessa Vega,Mass Communications,9,3.78
+Jill Berrick,Social Welfare,9,3.78
+Shimon Kolkowitz,Physics,9,3.78
+Roya Maboudian,Chemical Engineering,9,3.75
+Elchanan Mossel,Statistics,9,3.75
+Bonnye Lynn Ingram,Earth Science,9,3.75
+Robert Levenson,Psychology,9,3.75
+Rachel Morello-Frosch,Environ. Sci. Policy & Mgmt.,9,3.75
+Erica Bree Rosenblum,Environ. Sci. Policy & Mgmt.,9,3.75
+Doris Bachtrog,Not Specified,9,3.75
+Jun Hu,Art History,9,3.75
+Mengxuan Yang,Mathematics,9,3.75
+David Grewal,Legal Studies,9,3.75
+Brian Staskawicz,Biology,9,3.72
+Andrew Neureuther,Electrical Engineering,9,3.72
+Douglas Long,Biology,9,3.72
+Patrick Beauchesne,Anthropology,9,3.72
+Jasper Bernes,English,9,3.72
+Nikolaos Papazarkadas,Classics,9,3.68
+Whendee Silver,Environ. Sci. Policy & Mgmt.,9,3.68
+Kim Freeman,Writing,9,3.68
+Michaela Mattes,Political Science,9,3.68
+Patricia Zambryski,Biology,9,3.65
+Michael Rape,Biology,9,3.65
+Peng Ding,Statistics,9,3.65
+Noha Farghal,Earth & Planetary Sciences,9,3.65
+Sharon Coleman,English,9,3.65
+Darell Fields,Architecture,9,3.61
+Raul Coronado,Ethnic Studies,9,3.61
+Mark Wolfe,Urban Design & Development,9,3.58
+Steve Conolly,Bioengineering,9,3.58
+Dave Penneys,Mathematics,9,3.58
+Chris Manon,Mathematics,9,3.58
+Niren Murthy,Bioengineering,9,3.58
+Michael Mascarenhas,Environ. Sci. Policy & Mgmt.,9,3.58
+Raj Chetty,Economics,9,3.54
+Jiantao Jiao,Computer Science,9,3.54
+Craig Moritz,Biology,9,3.51
+Peter Koroteev,Mathematics,9,3.51
+Kevin Smith,East Asian Studies,9,3.51
+Kathleen Collins,Biology,9,3.47
+Dennis Geyer,Business Administration,9,3.47
+Ellen Robey,Biology,9,3.47
+Kyle Steinfeld,Architecture,9,3.47
+Rae Greiner,English,9,3.44
+Evgenia Duzhak,Economics,9,3.44
+ChengXi Tang,Literature,9,3.41
+Marco Gonzalez-Navarro,Economics,9,3.41
+Joseph Gonzalez,Data Science,9,3.41
+Stephanie Etting,Anthropology,9,3.37
+Song Sun,Mathematics,9,3.37
+Yuanyuan Deng,Economics,9,3.37
+Ryan Giordano,Statistics,9,3.3
+James Lincoln,Business Administration,9,3.27
+Bernard Sadoulet,Physics,9,3.27
+Jean-Paul Bourdier,Architecture,9,3.23
+Galina Hale,Economics,9,3.23
+Vladimir Cherkassky,Mathematics,9,3.2
+Eric Paulos,Computer Science,9,3.2
+Brian Judge,Political Science,9,3.2
+Elora Shehabuddin,Women's Studies,9,3.2
+Kristin Persson,Materials Science,9,3.13
+Michael Lindsey,Mathematics,9,3.13
+Daniella Hirschfeld,Landscape Architecture & Regional Planning,9,3.03
+Ron Williams,Education,8,4.1
+Karen Frick,Urban Design & Development,8,4.1
+Scott Darieck,African-American Studies,8,4.1
+Carolina Reid,Architecture,8,4.1
+Justin Gomer,Ethnic Studies,8,4.1
+Haitham Mohamed,Near Eastern Studies,8,4.1
+Emma Logan,Art,8,4.1
+Cruz Carlos,Civil & Environmental Engineering,8,4.1
+Lewis Msasa,Engineering,8,4.1
+Richard Shaw,Art,8,4.06
+Els Anderson,English,8,4.06
+Tonya Dewey,German,8,4.06
+Juan Pestana,Civil Engineering,8,4.06
+Michael Souza,Psychology,8,4.06
+Boroka Bo,Sociology,8,4.06
+Tianna Paschel,African-American Studies,8,4.06
+Nathan Atkinson,Rhetoric,8,4.06
+Julian Harris,Molecular/Cellular Biology,8,4.06
+Heather Bamford,Spanish,8,4.03
+Midiyanto Midiyanto,Music,8,4.03
+Joseph Scalice,Asian Studies,8,4.03
+James McIvor,Mathematics,8,4.03
+Andrea Gadberry,Comparative Literature,8,4.03
+Michelle Koerner,French,8,4.03
+Theodore Kacznski,Mathematics,8,4.03
+Jane Hammon,Writing,8,3.99
+Karin Sanders,Scandinavian,8,3.99
+Joe McBride,Environmental Science,8,3.99
+Kathryn Abrams,Legal Studies,8,3.99
+Andreas Stahl,Nutrition,8,3.99
+Layne Little,Not Specified,8,3.99
+Yasmine Van Pee,Art History,8,3.99
+Mark Sawchuk,History,8,3.99
+Chika Shibahara,Japanese,8,3.99
+Louise Fortmann,Environmental Science,8,3.96
+Christine Trost,Political Science,8,3.96
+Alexandre Bayen,Civil Engineering,8,3.96
+Karen Moller,Scandinavian,8,3.96
+Avaren Ipsen,Interdisciplinary Studies,8,3.96
+Param Dhillon,Chemistry,8,3.96
+Leti Volpp,Legal Studies,8,3.96
+Jean Ahn,Music,8,3.96
+Lauren Kroiz,Art History,8,3.96
+Armando Lara-Millan,Sociology,8,3.96
+Vladimir Stojanovic,Electrical Engineering,8,3.96
+Brett Driben,Comparative Literature,8,3.96
+Robert Iafolla,History,8,3.96
+Alexander Tian,Engineering,8,3.96
+Michael Cassidy,Engineering,8,3.92
+Gemma Niermann,Biology,8,3.92
+Rosemary Gillespie,Biology,8,3.92
+Elena Olsen,Spanish,8,3.92
+Donna Southard,Spanish,8,3.92
+James Analytis,Physics,8,3.92
+Pierre Simon,Mathematics,8,3.92
+Ina Choi,Languages,8,3.92
+Giulio Caviglia,Mathematics,8,3.88
+Ray Telles,Chicano Studies,8,3.88
+Isabelle Le Blanc,MolecularCellular Biology,8,3.88
+Barbara Richter,Near Eastern Studies,8,3.88
+Kristopher Kohler,International Studies,8,3.88
+Carl Mason,History,8,3.85
+Roshanak Kheshti,Women's Studies,8,3.85
+Eva Nogales,Biology,8,3.85
+Natalia Valencia,Spanish,8,3.85
+Stefan-Ludwig Hoffmann,History,8,3.85
+Jose Vazquez-Medina,Biology,8,3.85
+Liwei Lin,Engineering,8,3.81
+Ronelle Alexander,Languages,8,3.81
+Doug Dreger,Earth Science,8,3.81
+Maria Kotzamanidou,Comparative Literature,8,3.81
+Laura Enriquez,Sociology,8,3.78
+Fatemeh Montazeri,Near Eastern Studies,8,3.78
+Valerie Zhang,Business Administration,8,3.78
+Robert Kagan,History,8,3.74
+Jacqueline Chew,Music,8,3.74
+Erik Hesse,Psychology,8,3.74
+Xueyin (Snow) Zhang,Philosophy,8,3.74
+Roni Abusaad,Interdisciplinary Studies,8,3.71
+Daniel Robert,History,8,3.71
+Saikat Chaudhuri,Business Administration,8,3.71
+Tomer Altman,Chemistry,8,3.71
+Chi Wang,Earth Science,8,3.67
+Rebecca Falkoff,Italian,8,3.67
+Dan Chatman,Urban Studies,8,3.67
+Bruce Newsome,International Studies,8,3.67
+Tai Melcher,Statistics,8,3.63
+Lila Huettemann,Languages,8,3.63
+Fernando Perez,Statistics,8,3.63
+Alan Cerf,Business Administration,8,3.6
+Ivo Souza,Physics,8,3.56
+Arash Komeili,Biology,8,3.56
+Jeffrey Chambers,Geography,8,3.56
+David Dornfeld,Engineering,8,3.53
+David Lindberg,Biology,8,3.53
+Michael Reich,Economics,8,3.49
+Fenno Ogutu,Sociology,8,3.49
+Michael Lugo,Statistics,8,3.49
+Mary Ann Doane,Film,8,3.49
+Trina Thompson,Ethnic Studies,8,3.46
+Geri Kerstiens,Chemistry,8,3.46
+Corinne Riddell,Public Health,8,3.42
+Hurichan Islamoglu,History,8,3.38
+Lisa Gold,Music,8,3.38
+Steven Hayward,Political Science,8,3.38
+Doris Tsao,Molecular/Cellular Biology,8,3.38
+David Tse,Electrical Engineering,8,3.35
+K Nishimura,English,8,3.35
+Yuri Suzuki,Engineering,8,3.31
+Shamgar Gurevich,Mathematics,8,3.31
+Bryan Krantz,Biology,8,3.31
+Dara Hellman,English,8,3.31
+Bronwyn Lucas,Molecular/Cellular Biology,8,3.31
+Roy Ulrich,Public Policy,8,3.21
+Carrie Rosenbaum,Legal Studies,8,3.21
+Arnav Sheth,Economics,8,3.17
+Deniz Gokturk,Film,8,3.17
+Felix Fischer,Chemistry,8,3.17
+Karen Davies,MolecularCellular Biology,8,3.13
+Jonathan Rowan,Comparative Literature,8,3.13
+John Levi Martin,Sociology,8,3.03
+Steven Kahn,Physics,8,2.99
+Deolinda Adao,Portuguese,7,4.07
+Seiko Kosaka,Japanese,7,4.07
+Melissa Etzler,German,7,4.07
+Harry Neale,Languages,7,4.07
+David Divita,French,7,4.07
+Julie Suh,Business Administration,7,4.07
+Gordon Steil,Education,7,4.07
+Nitin Kohli,Statistics,7,4.07
+Bharathy Rajulu,Languages,7,4.07
+Scott Shell,German,7,4.07
+Delia Casadei,Music,7,4.07
+Doug Leeds,Business Administration,7,4.07
+Timothy Tangherlini,Scandinavian,7,4.07
+Matthew Denham,Physical Education,7,4.07
+Mohamed Ben Hammed,Literature,7,4.07
+Raffy Xie,Chemistry,7,4.07
+Jvala Singh,Languages,7,4.07
+Phillip Kerger,Industrial Engineering,7,4.07
+David Skolnick,English,7,4.07
+Lara Meintjes,English,7,4.07
+William Nazaroff,Engineering,7,4.03
+Chana Kronfeld,Comparative Literature,7,4.03
+Frederico Finan,Economics,7,4.03
+Laure Marest-Caffey,Art History,7,4.03
+Christine Quinan,Women's Studies,7,4.03
+Karl Van Bibber,Nuclear Engineering,7,4.03
+Sandeep Shastri,Political Science,7,4.03
+Clancy Slack,Chemistry,7,4.03
+Rosemarie Wagner,Political Science,7,4.03
+Adam Jadhav,Geography,7,4.03
+Michael Arrigo,French,7,4.03
+Shalle Leeming,English,7,4.03
+Nataliia Goshylyk,Slavic Languages & Literatures,7,4.03
+Luca Iliesiu,Physics,7,4.03
+Emilie Bergmann,Spanish,7,3.99
+Michael Lucey,French,7,3.99
+Thomas Philippi,Engineering,7,3.99
+Michael Iarocci,Spanish,7,3.99
+Sarah Gamble,Public Health,7,3.99
+Sean Fitzpatrick,Mathematics,7,3.99
+Julie Woodruff,Biology,7,3.99
+Daniel Weisz,Aerospace Studies,7,3.99
+Mark Csikszentmihalyi,Asian Studies,7,3.99
+Brendan Shanahan,History,7,3.99
+Elizabeth Schwall,History,7,3.99
+Nick Ziegler,Political Science,7,3.95
+Frank Schultz,Business Administration,7,3.95
+Awwab Bukhari,Political Science,7,3.95
+Anne Walsh,Art,7,3.92
+Jamie O'Connell,Law,7,3.92
+Clark Kellogg,Architecture,7,3.92
+Clyde Sugahara,Statistics,7,3.92
+Cheryl Colopy,English,7,3.92
+Ted Grudin,Environ. Sci. Policy & Mgmt.,7,3.92
+Ameer Loggins,African-American Studies,7,3.92
+Vasugi Kailasam,Asian Studies,7,3.92
+James Graham,Theatre & Dance,7,3.92
+Ethan Dlugie,Mathematics,7,3.92
+Ezra Rubenstein,Philosophy,7,3.92
+Anthony Dubovsky,Architecture,7,3.88
+Milton Azevedo,Spanish,7,3.88
+Yves Winter,Rhetoric,7,3.88
+Michael Schuering,German,7,3.88
+Meredith Fowlie,Agriculture,7,3.88
+Tetsushi Ogata,Peace & Conflict Studies,7,3.88
+Massimiliano Fratoni,Nuclear Engineering,7,3.88
+Lane Martin,Materials Science,7,3.88
+Yim Au,Art Media & Design,7,3.88
+Hannah Zeavin,History,7,3.88
+Rhiannon Welch,Italian,7,3.88
+Patina Mendez,Environmental Science,7,3.88
+John Forte,Biology,7,3.84
+Isaiah Nengo,Anthropology,7,3.84
+Slavica Naumovska,English,7,3.84
+Elaine Kim,Ethnic Studies,7,3.84
+Raymond Seed,Civil Engineering,7,3.84
+Nathan Ilten,Mathematics,7,3.84
+Norman Jacobson,Political Science,7,3.81
+Chris Chang,Chemistry,7,3.81
+Anne Wagner,Art History,7,3.81
+Jane Mauldon,Public Policy,7,3.81
+Mary Main,Psychology,7,3.81
+David Orkand,Architecture,7,3.81
+Arianne Eason,Psychology,7,3.81
+Joel Wanek,Geography,7,3.81
+Melanie Chandra,English,7,3.77
+Christopher McKee,Physics,7,3.77
+Thomas McCullough,Business Administration,7,3.77
+Murat Arcak,Electrical Engineering,7,3.77
+Lisa Hirai Tsuchitani,Asian Studies,7,3.77
+Roberto Zoncu,MolecularCellular Biology,7,3.77
+Nathalie Khankan,Near Eastern Studies,7,3.77
+Lewis Bremner,History,7,3.77
+Gregory Choy,Ethnic Studies,7,3.77
+Caitlin Daniel,Sociology,7,3.77
+Katherine Wright,English,7,3.73
+Susan Stone,Social Welfare,7,3.73
+Penny Edwards,Asian Studies,7,3.73
+Polina Lishko,Biology,7,3.73
+Ali Kashani,Philosophy,7,3.73
+Manuel Vargas,Philosophy,7,3.69
+Carlos Fernandez-Pello,Mechanical Engineering,7,3.69
+Jan Devries,History,7,3.69
+John Welsh,Engineering,7,3.66
+David Culler,Computer Science,7,3.66
+Matt Culler,Art History,7,3.66
+Henk Roelink,Biology,7,3.66
+Prasad Raghavendra,Computer Science,7,3.66
+Ivy Mills,Art History,7,3.66
+Madison Douglas,Earth Science,7,3.66
+Ken Sandy,Industrial Engineering,7,3.62
+Yan Long,Sociology,7,3.62
+Richard Ofshe,Sociology,7,3.58
+James Lamb,Sociology,7,3.58
+Julia Hastings,Sociology,7,3.58
+Mary Alice Yund,Chemistry,7,3.58
+Ronald Yeung,Mechanical Engineering,7,3.58
+Nathan Ross,Statistics,7,3.58
+Mao-Mei Liu,Sociology,7,3.58
+Fenyong Liu,Public Health,7,3.58
+Jaimie Baron,Film,7,3.58
+David Aldous,Statistics,7,3.55
+Nayantara Bhatnagar,Statistics,7,3.55
+Gabriel Zucman,Economics,7,3.55
+Mahesh Srinivasan,Psychology,7,3.55
+Alvin Cheung,Computer Science,7,3.55
+Regis Barnichon,Economics,7,3.55
+Christian Gonzalez Reyes,Literature,7,3.55
+Costas Grigoropoulos,Engineering,7,3.51
+Benito De Lumen,Nutrition,7,3.51
+Karen Christensen,Urban Design & Development,7,3.51
+Slawomir W. Hermanowicz,Civil Engineering,7,3.51
+Tony Keaveny,Mechanical Engineering,7,3.51
+Bill Sha,MolecularCellular Biology,7,3.51
+Ernest Hook,Public Health,7,3.47
+Martin Schwartz,Near Eastern Studies,7,3.47
+Steven Glaser,Civil Engineering,7,3.47
+Stephen Morris,Mechanical Engineering,7,3.47
+Daniel Neumark,Chemistry,7,3.47
+Katherine Wagner,Economics,7,3.47
+Ora Gelley,English,7,3.47
+Sarah Chasins,Computer Science,7,3.47
+Nike Sun,Statistics,7,3.44
+Chunlei Liu,Computer Science,7,3.44
+Dorri Beam,English,7,3.4
+Aner Preminger,Film,7,3.4
+Gabor Somorjai,Chemistry,7,3.36
+Padma Rangarajan,English,7,3.36
+Benjamin Hermalin,Business Administration,7,3.36
+Eli Yablonovitch,Electrical Engineering,7,3.36
+Michael Bloxham,Physics,7,3.36
+Ken Ueno,Music,7,3.36
+Sherrilyn Roush,Philosophy,7,3.32
+Cynthia Looy,Biology,7,3.32
+Xiangyi Meng,Economics,7,3.29
+Andreas Mueller,Mathematics,7,3.25
+Maurizio Franzini,Chemistry,7,3.14
+Rui Wang,Chemical Engineering,7,3.14
+Judy Juanita,English,7,3.1
+Alexander Bell,Chemical Engineering,7,3.03
+Khiara Bridges,Law,7,3.03
+Peter Hanson,Political Science,6,4.03
+Nilabh Shastri,Biology,6,4.03
+Sonia S'Hiri,Near Eastern Studies,6,4.03
+Gabriel Trop,German,6,4.03
+Celine Piser,Comparative Literature,6,4.03
+Markus Kohl,Philosophy,6,4.03
+Hayley Lam,Engineering,6,4.03
+Michael Vanvalkenburgh,Mathematics,6,4.03
+Matt Langione,American Studies,6,4.03
+Ajay Manthripragada,Architecture,6,4.03
+Kerstin Lueck,Sociology,6,4.03
+Lisa Garcia Bedolla,Education,6,4.03
+Sansan Kwan,Theatre & Dance,6,4.03
+Blake Wentworth,Asian Studies,6,4.03
+Yuriko Miyamoto-Caltabiano,Japanese,6,4.03
+Amber Sweat,French,6,4.03
+Djordje Popovic,Slavic Languages & Literatures,6,4.03
+Scott Straus,Political Science,6,4.03
+Jesus Barraza,Ethnic Studies,6,4.03
+Cole Carvour,English,6,4.03
+Long Le-Khac,Asian Studies,6,4.03
+Peter Evans,Engineering,6,4.03
+Polina Dimova,Comparative Literature,6,3.99
+Yoko Uda,Japanese,6,3.99
+Hal Haggard,Physics,6,3.99
+Chad Crosson,English,6,3.99
+Elmar Stefke,Physical Education,6,3.99
+Claudia Albano,Social Welfare,6,3.99
+Alice Medvedev,Mathematics,6,3.99
+Ivonne Del Valle,Spanish,6,3.99
+Zachary Rosner,Psychology,6,3.99
+Blake Johnson,History,6,3.99
+Evelyn Chang,Social Welfare,6,3.99
+Di Fang,Mathematics,6,3.99
+Anneka Lenssen,Art,6,3.99
+Dylan Bland,Interdisciplinary Studies,6,3.99
+William Burton,French,6,3.99
+David Miller,Music,6,3.99
+Alex Dimakis,Engineering,6,3.99
+Estelle Tarica,Spanish,6,3.95
+Adam Szeidl,Economics,6,3.95
+Abena Osseo-Assare,History,6,3.95
+Clara Nicholls,International Studies,6,3.95
+Daniel Feldman,Biology,6,3.95
+Clark Nguyen,Electrical Engineering,6,3.95
+Sanjay Kumar,Bioengineering,6,3.95
+Dor Abrahamson,Education,6,3.95
+Yu-wei Fan,Mathematics,6,3.95
+Mark Cohen,African-American Studies,6,3.95
+David Brookman,Political Science,6,3.95
+Magdalena Ostas,English,6,3.95
+Aleksandra Utiralova,Mathematics,6,3.95
+Thomas Shannon,German,6,3.91
+Nicole Johnson,Business Administration,6,3.91
+Donald McQuade,English,6,3.91
+Malo Hutson,City & Regional Planning,6,3.91
+Theo Johnson-Freyd,Mathematics,6,3.91
+Abigail Andrews,Sociology,6,3.91
+Seth Sanders,Electrical Engineering,6,3.91
+Craig Miller,Biology,6,3.91
+Elcin Unal,MolecularCellular Biology,6,3.91
+Indira Martina Morre,Art,6,3.91
+Kara Wittman,English,6,3.91
+David David Jamieson,English,6,3.91
+Andrew Falk,Education,6,3.88
+Thomas Farber,English,6,3.88
+Kristin Scott,Biology,6,3.88
+Richard Kern,French,6,3.88
+Mike Levine,Biology,6,3.88
+Toby Reiner,Political Science,6,3.88
+Eric Oh,Nutrition,6,3.88
+Brian Clancy,Comparative Literature,6,3.88
+Lauren Edelman,Legal Studies,6,3.88
+Aila Matanock,Political Science,6,3.88
+Dylan Miars,Ethnic Studies,6,3.88
+Isobel Boles,Scandinavian,6,3.88
+Tory Adkisson,English,6,3.88
+G Hull,Education,6,3.84
+James Powell,Economics,6,3.84
+Darlene Francis,Public Health,6,3.84
+Pheng Cheah,Rhetoric,6,3.84
+Eugene Chislenko,Philosophy,6,3.84
+John Stehlin,Geography,6,3.84
+David Harding,Sociology,6,3.84
+Matthew Stenberg,Political Science,6,3.84
+Ryan Brutger,Political Science,6,3.84
+Kris Niyogi,Plant Biology,6,3.84
+Jacob Gaboury,Film,6,3.84
+Mark Danner,Journalism,6,3.84
+Nicolas Depetris Chauvin,Economics,6,3.84
+Yanin Kramsky,City & Regional Planning,6,3.84
+Ussama Makdisi,History,6,3.84
+Ming Wu,Electrical Engineering,6,3.8
+Deanna Kiser-Go,Near Eastern Studies,6,3.8
+Ericka Lutz,Business Administration,6,3.8
+Marthine Satris,English,6,3.8
+Laura Waller,Electrical Engineering,6,3.8
+Jen Chywan Wang,Nutrition,6,3.8
+Thomas Kirchstetter,Engineering,6,3.76
+Irum Shiekh,Ethnic Studies,6,3.76
+Donald Moore,Anthropology,6,3.76
+Duer-Berrick Jill,Sociology,6,3.76
+J. Karl Hedrick,Engineering,6,3.76
+Rondi Gilbert-Mauldon,English,6,3.76
+Juan Caballero,Comparative Literature,6,3.76
+Richard Harland,Biology,6,3.76
+Atreyee Gupta,Art History,6,3.76
+Benson Au,Statistics,6,3.76
+Oscar Perea Rodriguez,Spanish,6,3.76
+Pol Fité Matamoros,Architecture,6,3.76
+Johan Klehs,Political Science,6,3.72
+Nathan Hallquist,Engineering,6,3.72
+Leora Lawton,Sociology,6,3.72
+Galen Cranz,Architecture,6,3.72
+Gili Drori,Sociology,6,3.72
+Alex Carstensen,Psychology,6,3.72
+Joseph Richards,Statistics,6,3.72
+Kristofer Pister,Electrical Engineering,6,3.72
+Jason Okonofua,Psychology,6,3.72
+Ksenia Krasileva,Plant Biology,6,3.72
+Christopher Ryba,Computer Science,6,3.72
+Louise Glass,Biology,6,3.68
+Margaret Larkin,Near Eastern Studies,6,3.68
+Chris Vulpe,Nutrition,6,3.68
+Squeak Carnwath,Art,6,3.68
+William Kahan,Mathematics,6,3.68
+Bill Dietrich,Earth Science,6,3.68
+Linda Jewell,Landscape Architecture & Regional Planning,6,3.68
+Ignacio Navarrete,Spanish,6,3.68
+Elizabeth Purdom,Statistics,6,3.68
+Nathan John,Architecture,6,3.68
+Zeyu Zheng,Industrial Engineering,6,3.68
+Dylan Penningroth,History,6,3.68
+Swapan Chaterji,Physics,6,3.68
+Dora Santana,Women's Studies,6,3.68
+T.J. Clark,Art History,6,3.64
+Reginald Barrett,Environmental Science,6,3.64
+David Nelson,Business Administration,6,3.64
+John Lie,Sociology,6,3.64
+Brad Erickson,Anthropology,6,3.64
+Norman Miller,Geography,6,3.64
+Jacob Dalton,Philosophy,6,3.64
+Galen Kranz,Architecture,6,3.61
+Michael Tarter,Public Health,6,3.61
+Gary Pieroni,Business Administration,6,3.61
+David Hult,French,6,3.61
+Stuart Bale,Physics,6,3.61
+Peter Glazer,Theatre & Dance,6,3.57
+Koushik Sen,Computer Science,6,3.57
+Whitney Davis,Art History,6,3.57
+Leo Blitz,Astronomy,6,3.57
+Marco Cenzatti,Architecture,6,3.57
+Celia Rodriguez,Ethnic Studies,6,3.57
+Krutika Tawri,Mathematics,6,3.57
+Vernadette Gonzalez,Ethnic Studies,6,3.57
+Inez Fung,Environmental Science,6,3.53
+Richard Grijalva,Rhetoric,6,3.53
+Perry De Valpine,Environ. Sci. Policy & Mgmt.,6,3.53
+Annie Danis,Anthropology,6,3.53
+Desiree Fields,Geography,6,3.53
+Boris Mladenov,Mathematics,6,3.53
+Haw Yang,Chemistry,6,3.49
+Cecilia Mo,Political Science,6,3.49
+Hari Dharan,Mechanical Engineering,6,3.45
+Kim Richards,Ethnic Studies,6,3.45
+Archana Dube,Economics,6,3.41
+Kwanele Sosibo,English,6,3.41
+Nicos Makris,Civil Engineering,6,3.38
+Bethany Goldblum,Nuclear Engineering,6,3.38
+Jamie Keller,Business Administration,6,3.34
+Sarah Nina Kelsey,Political Science,6,3.34
+Allison Post,Political Science,6,3.3
+Ayyana Chakravartula,Mechanical Engineering,6,3.3
+Maria Paz Gutierrez,Architecture,6,3.3
+Henrik Scheller,Biology,6,3.3
+Gaius Stern,Art History,6,3.26
+Onyebuchi Ekenta,Mathematics,6,3.26
+Berend Smit,Chemical Engineering,6,3.22
+John Canny,Computer Science,6,3.18
+Yoonnyong Bahk,Art Media & Design,6,3.11
+Matthew Lasner,Architecture,6,3.11
+Rob Ritchie,Engineering,5,3.99
+Elizabeth Page-Gould,Psychology,5,3.99
+Claude Fischer,Sociology,5,3.99
+Andrew Lim,Industrial Engineering,5,3.99
+Leslie Elwell,Italian,5,3.99
+Judy Sakanari,Biology,5,3.99
+Brad Rogers,Rhetoric,5,3.99
+Rauri Bowie,Biology,5,3.99
+Brian Gillis,English,5,3.99
+Norman Gendelman,Film,5,3.99
+Chen-Hui Tsai,Chinese,5,3.99
+Elad Alon,Electrical Engineering,5,3.99
+Holly Jackson,Spanish,5,3.99
+Karen Llagas,Tagalog,5,3.99
+Aria Fani,Near Eastern Studies,5,3.99
+Marlo Warburton,Interdisciplinary Studies,5,3.99
+Niek Veldhuis,Near Eastern Studies,5,3.99
+Esmée van der Hoeven,German,5,3.99
+Yvan Yukee,Anthropology,5,3.99
+Anca Dragan,Computer Science,5,3.99
+Daylet Dominguez,Spanish,5,3.99
+Klara Libman,Slavic Languages & Literatures,5,3.99
+Ramsey McGlazer,Comparative Literature,5,3.99
+Mark Scott,English,5,3.99
+Michelle Ripplinger,English,5,3.99
+Jason de Stefano,English,5,3.99
+Natalie Novoa,History,5,3.99
+Myrna Douzjian,Slavic Languages & Literatures,5,3.99
+Brandi Summers,Geography,5,3.99
+Lea Beneish,Mathematics,5,3.99
+Polina Barskova,Slavic Languages & Literatures,5,3.99
+Park Sinchaisri,Business Administration,5,3.99
+John Cutler,English,5,3.99
+Yuichiro Kamada,Business Administration,5,3.99
+John Prusynski,Scandinavian,5,3.99
+Scott Stephens,Environmental Science,5,3.99
+Riley Vanmeter,Languages,5,3.99
+Manar Shami,Civil & Environmental Engineering,5,3.99
+Akash Kumar,Italian,5,3.99
+Julian Boyd,English,5,3.95
+Christine Quinan,French,5,3.95
+Juliana Martinez,Spanish,5,3.95
+Tony Barnosky,Biology,5,3.95
+Lindsay Taylor,Psychology,5,3.95
+Jonathan Haynes,Film,5,3.95
+Calder Daenzer,Mathematics,5,3.95
+John Chuang,Information Systems,5,3.95
+Iulia Sprinceana,Spanish,5,3.95
+Samantha Henneberry,Art History,5,3.95
+Mike Gesinski,Chemistry,5,3.95
+Sam Mchombo,African-American Studies,5,3.95
+Julia Bryan-Wilson,Art History,5,3.95
+Marianne Kaletzky,Comparative Literature,5,3.95
+Ajay Harish,Civil Engineering,5,3.95
+Claire Tourmen,French,5,3.95
+Susan Muller,Chemical Engineering,5,3.91
+Lek-Heng Lim,Mathematics,5,3.91
+Chung Pang Mok,Mathematics,5,3.91
+Alexander Covalciuc,English,5,3.91
+Paul Sterzing,Social Welfare,5,3.91
+Peter Hosemann,Nuclear Engineering,5,3.91
+Mario Wimmer,Rhetoric,5,3.91
+Lee Bernstein,Nuclear Engineering,5,3.91
+Baoxia Mi,Civil Engineering,5,3.91
+Koushil Sreenath,Mechanical Engineering,5,3.91
+Gabriel Lenz,Political Science,5,3.91
+Mikiko Soga,East Asian Studies,5,3.91
+Julien Lafortune,Economics,5,3.91
+Sonia Gaind-Krishnan,Music,5,3.91
+Rachel Shigekane,Peace & Conflict Studies,5,3.87
+Jennifer Zahrt,German,5,3.87
+David Ahn,Economics,5,3.87
+Ali Javey,Electrical Engineering,5,3.87
+Phillip Gordon,Sociology,5,3.87
+Bruce Buffett,Earth Science,5,3.87
+Sharad Vikram,Computer Science,5,3.87
+Sarah Anzia,Public Policy,5,3.87
+Damian Elias,Environ. Sci. Policy & Mgmt.,5,3.87
+Ethan Nowak,Philosophy,5,3.87
+Jacob Grumbach,Political Science,5,3.87
+Amy Lerman,Political Science,5,3.87
+Danielle Callegari,Italian,5,3.87
+Xavier Darzacq,MolecularCellular Biology,5,3.87
+Marla Feller,Biology,5,3.87
+Dmitry Vaintrob,Mathematics,5,3.87
+Konrad Posch,Political Science,5,3.87
+Alan Tansman,East Asian Studies,5,3.87
+Matthew Gleeson,Earth & Planetary Sciences,5,3.87
+Roni Masel,Comparative Literature,5,3.87
+Ken Kamrin,Mechanical Engineering,5,3.87
+Mahiko Suzuki,Physics,5,3.83
+Hertha Wong,American Studies,5,3.83
+Francoise Sorgen-Goldschmidt,French,5,3.83
+Matthew Rahaim,Music,5,3.83
+Kayoko Imagawa,Japanese,5,3.83
+Rebecca Heald,Biology,5,3.83
+William Di Napoli,Architecture,5,3.83
+John Harte,Environ. Sci. Policy & Mgmt.,5,3.83
+Tamara Roberts,Music,5,3.83
+Naomi Ginsberg,Chemistry,5,3.83
+Mason Allred,German,5,3.83
+Julie Underhill,East Asian Studies,5,3.83
+Dan Nomura,Nutrition,5,3.83
+Celine Pallud,Environmental Science,5,3.83
+Theresa Honein,Mathematics,5,3.83
+Daena Funahashi,Anthropology,5,3.83
+Alexis Kaminski,Mechanical Engineering,5,3.83
+Micheal Ranney,Not Specified,5,3.79
+Michael Jordan,Computer Science,5,3.79
+Tony Mirabelli,Education,5,3.79
+Paul Skokowski,Philosophy,5,3.79
+Judith Stilgenbauer,Landscape Architecture & Regional Planning,5,3.79
+Andrea Lankin,English,5,3.79
+D Alfonso,Anthropology,5,3.79
+Mohamad Siddique,Near Eastern Studies,5,3.79
+Margaret Crawford,Architecture,5,3.79
+Mykhaylo Shkolnikov,Statistics,5,3.79
+Arash Adel,Architecture,5,3.79
+Ming Hammond,Chemistry,5,3.79
+Henrike Lange,Art History,5,3.79
+Duncan Callaway,Public Policy,5,3.79
+Miles Drawdy,English,5,3.79
+Nicole Starosielski,Film,5,3.79
+Charles McClain,Legal Studies,5,3.75
+Mia You,English,5,3.75
+Joesph Hellerstein,Computer Science,5,3.75
+Steven Ruzin,Biology,5,3.75
+Diane Dwyer,Business Administration,5,3.75
+Thomas Biolsi,Ethnic Studies,5,3.75
+Chris Shannon,Economics,5,3.75
+Douglas Koshland,Biology,5,3.75
+Amm Quamruzzaman,Interdisciplinary Studies,5,3.75
+Fiona McFarlane,English,5,3.75
+James McHale,Psychology,5,3.75
+Barbara Spackman,Comparative Literature,5,3.71
+Roger Hahn,History,5,3.71
+William Ibbs,Civil Engineering,5,3.71
+Armen Der Kiureghian,Engineering,5,3.71
+Richard Norgaard,Economics,5,3.71
+Bharati Mukherjee,English,5,3.71
+Elisabeth Sadoulet,Economics,5,3.71
+Lia Fernald,Public Health,5,3.71
+Peter Wilton,Business Administration,5,3.71
+Cara Stanley,African-American Studies,5,3.71
+Giuliana Perco,Italian,5,3.71
+Matthew DeJong,Civil Engineering,5,3.71
+James Stone-Lunde,History,5,3.71
+Amitai Shenhav,Cognitive Science,5,3.71
+Steven Brenner,Biology,5,3.67
+Fred Collignon,Urban Design & Development,5,3.67
+Kevin O'Brien,Political Science,5,3.67
+Leece Lee,Ethnic Studies,5,3.67
+John Danner,Business Administration,5,3.67
+Roddy Creedon,Architecture,5,3.67
+Keith Budner,Art History,5,3.67
+Sarah Zyba,Public Health,5,3.67
+Adityanand Guntuboyina,Statistics,5,3.67
+Edward Wasserman,Journalism,5,3.67
+Nikita Zhivotovskiy,Statistics,5,3.67
+Sam Liebhaber,Languages,5,3.63
+Godwin Wong,Business Administration,5,3.63
+Luca Trevisan,Not Specified,5,3.63
+Alex Haskell,African-American Studies,5,3.63
+Sanjit Seshia,Computer Science,5,3.63
+Gabriel Orebi Gann,Physics,5,3.63
+Sara Hinkley,City & Regional Planning,5,3.63
+Stephen Andrews,Earth & Planetary Sciences,5,3.63
+Matthew Hough,Music,5,3.63
+Wooseok Ha,Statistics,5,3.63
+Emily Zazulia,Music,5,3.63
+Francesca Rivera,Music,5,3.63
+Nancy Van House,Information Systems,5,3.59
+Yoram Rubin,Civil Engineering,5,3.59
+Dee Bielenberg,History,5,3.59
+Amin Jazaeri,Physics,5,3.59
+Marta Gonzalez,City & Regional Planning,5,3.59
+Diana Thow,Italian,5,3.59
+Rebecca Perlman,Political Science,5,3.59
+Kevin Shadel,East Asian Studies,5,3.59
+Adam Arkin,Engineering,5,3.55
+Merrill Shanks,Political Science,5,3.55
+P D Nesbitt,Sociology,5,3.55
+Alan Jose,Spanish,5,3.55
+Edward Morse,Nuclear Engineering,5,3.55
+Jean Walrand,Computer Science,5,3.55
+Lisa Barcellos,Public Health,5,3.55
+Annaliese Beery,Biology,5,3.55
+Hedy Kober,Psychology,5,3.55
+Haiyan Huang,Statistics,5,3.51
+Semeon Artamonov,Mathematics,5,3.51
+Elizabeth Tejada,Legal Studies,5,3.51
+Ysis Tarter,Data Science,5,3.51
+Karen Draney,Education,5,3.51
+Jane Delaney,Liberal Arts,5,3.47
+Justin Vaccaro,Film,5,3.47
+Erik Scollon,Art,5,3.47
+Laura Nelson,Women's Studies,5,3.47
+Gul Dolen,Psychology,5,3.47
+Sharlan Nemeth,Psychology,5,3.43
+Avy Valladares,Italian,5,3.43
+Deirdre Mulligan,Information Systems,5,3.43
+H. Horton,Japanese,5,3.43
+Federico Castillo,Chicano Studies,5,3.43
+Juan Berumen,Arts & Humanities,5,3.43
+Maryam Hosseini,City & Regional Planning,5,3.43
+Carol Gilson,Biology,5,3.39
+Zakiyyah Jackson,Women,5,3.39
+Fouzieyaha Towghi,Women's Studies,5,3.35
+Laura Fantone,Women's Studies,5,3.35
+Anne Collins,Cognitive Science,5,3.35
+Mathilde Munoz,Economics,5,3.35
+Dawn Song,Computer Science,5,3.31
+Gerald Friedland,Computer Science,5,3.31
+Uros Seljak,Physics,5,3.27
+Chi Li,Film,5,3.27
+Homayoon Kazerooni,Mechanical Engineering,5,3.27
+D Brillinger,Not Specified,5,3.23
+Kei Kawai,Economics,5,3.23
+Dmitry Taubinsky,Economics,5,3.23
+John Groves,Molecular/Cellular Biology,5,3.23
+Merav Singer,Music,5,3.19
+Anthony Donoghue,Statistics,5,3.19
+Andressa Maia,Arts & Humanities,5,3.19
+Rashi Glazer,Business Administration,4,3.95
+David Sayre,Geography,4,3.95
+Elaine Tenant,German,4,3.95
+Prachi Deshpande,History,4,3.95
+Barbara Abrams,Public Health,4,3.95
+Jonathan Combs-Schilling,Italian,4,3.95
+Dale Loepp,Near Eastern Studies,4,3.95
+Damon English,Physics,4,3.95
+Andrew Estrada Phuonng,Education,4,3.95
+Sasha Miko,English,4,3.95
+Aneri Patel,Mathematics,4,3.95
+Beth Williams,Writing,4,3.95
+Alison Davis-Rabosky,Biology,4,3.95
+Xu Chen,Mechanical Engineering,4,3.95
+Verena Hoefig,Scandinavian,4,3.95
+Michael Dalebout,Rhetoric,4,3.95
+Richard Hindle,Architecture,4,3.95
+Kristen Rasmussen,Nutrition,4,3.95
+Ren Ng,Computer Science,4,3.95
+Raymond Telles,Spanish,4,3.95
+Cynthia Aban,Tagalog,4,3.95
+James Stone,Music,4,3.95
+Lotta Weckstrom,Scandinavian,4,3.95
+Brooks Ambrose,Information Systems,4,3.95
+David Jaehning,Architecture,4,3.95
+Jeremy Lovejoy,Mathematics,4,3.95
+Joey Kellner,History,4,3.95
+Ryan Ikeda,Rhetoric,4,3.95
+Rachel Kotok,Writing,4,3.95
+Gaspard Duchene,Astronomy,4,3.95
+Edward Tyerman,Slavic Languages & Literatures,4,3.95
+Emily Sutton,English,4,3.95
+James Boman,Film,4,3.95
+Lexi Caruthers,Geography,4,3.95
+Noel Perkins,Mechanical Engineering,4,3.95
+Jordan Brown,Mathematics,4,3.95
+Cati de los Rios,Education,4,3.95
+Dipti Nayak,Molecular/Cellular Biology,4,3.95
+Simona Lazzerini,East Asian Studies,4,3.95
+Kourtney Kawano,Education,4,3.95
+Dana Miller-Cotto,Education,4,3.95
+Lisa Pruitt,Engineering,4,3.91
+Stephen Tollefson,Writing,4,3.91
+Miriam Lee,Portuguese,4,3.91
+Steve Blank,Business Administration,4,3.91
+John Clarke,Physics,4,3.91
+Raphael Bousso,Physics,4,3.91
+Matt Parrott,Philosophy,4,3.91
+Charles Legere,English,4,3.91
+Sue Anne Davis,Business Administration,4,3.91
+Francesco Borrelli,Mechanical Engineering,4,3.91
+Gail Brager,Architecture,4,3.91
+Stephen Gross,History,4,3.91
+Nastaran FA,Nutrition,4,3.91
+Loren Goldman,Rhetoric,4,3.91
+Seth Finnegan,Biology,4,3.91
+C. Oliver O'Donnell,Art History,4,3.91
+Delia Neyra Tercero,Languages,4,3.91
+Michael Taylor,History,4,3.91
+Sarah Vaughn,Anthropology,4,3.91
+Arthur Middleton,Environ. Sci. Policy & Mgmt.,4,3.91
+Martha Wilfahrt,Political Science,4,3.91
+Avishay Tal,Computer Science,4,3.91
+Kevin Miao,Data Science,4,3.91
+Na Ji,Physics,4,3.91
+Mae Teo,Physics,4,3.91
+Zhiyan Ding,Mathematics,4,3.91
+Felicia Darling,Mathematics,4,3.91
+Hannes Bajohr,German,4,3.91
+David Zywina,Mathematics,4,3.86
+Marisa Escolar,Italian,4,3.86
+David Bilder,Biology,4,3.86
+Bruce Fuller,Education,4,3.86
+Sourav Chatterjee,Statistics,4,3.86
+Gina Zupsich,French,4,3.86
+Patrick O'Grady,Environmental Science,4,3.86
+Daniel Walin,Classics,4,3.86
+John Casida,Environmental Science,4,3.86
+Mary Cavanaugh,Social Welfare,4,3.86
+Marc Boucai,Theatre & Dance,4,3.86
+T C Roberts,Music,4,3.86
+Samuel Gillette,Chemistry,4,3.86
+Dorothy Gilbert,English,4,3.86
+Robert Chung,Statistics,4,3.86
+Serena Le,English,4,3.86
+Britt Koskella,Biology,4,3.86
+Kwong-loi Shun,Philosophy,4,3.86
+Iryna Dronova,Landscape Architecture & Regional Planning,4,3.86
+Haluk Ergin,Economics,4,3.86
+Marika Landau-Wells,Political Science,4,3.86
+Benjamin Beitler,French,4,3.86
+Matthew Welch,Biology,4,3.86
+Nicholas Laluk,Anthropology,4,3.86
+Rebecca Herman,History,4,3.86
+Danny Yagan,Economics,4,3.86
+Nika Haghtalab,Computer Science,4,3.86
+Candace Yano,Industrial Engineering,4,3.82
+David Palaita,Ethnic Studies,4,3.82
+Jesus Rodriguez-Velasco,Spanish,4,3.82
+Chris Plummer,Languages,4,3.82
+Zachary Judson,Mathematics,4,3.82
+C. Z. Tugal,Sociology,4,3.82
+Richard Kramer,Biology,4,3.82
+Andrew Moisey,Film,4,3.82
+Jonathan Stone,Writing,4,3.82
+Greg Barton,Biology,4,3.82
+William Drummond,Journalism,4,3.82
+Cammeron Girvin,Slavic Languages & Literatures,4,3.82
+Saleem Al-Bahloly,Anthropology,4,3.82
+Christine Philliou,History,4,3.82
+Helen Bateup,MolecularCellular Biology,4,3.82
+Duarte Pinheiro,Portuguese,4,3.82
+Terri Sullivan,Women's Studies,4,3.82
+Sandra Eder,History,4,3.82
+Sean Lambert,German,4,3.82
+Geronimo Barrera de la Torre,Geography,4,3.82
+Kai Xu,Mathematics,4,3.82
+Dimitry Budker,Physics,4,3.78
+Philip Kaminsky,Industrial Engineering,4,3.78
+Jitendra Malik,Computer Science,4,3.78
+Alan Drosdick,English,4,3.78
+Joel Moore,Physics,4,3.78
+Tyson Hausdoerffer,Comparative Literature,4,3.78
+Luis Ramos,Comparative Literature,4,3.78
+Carolyn Tipton,English,4,3.78
+Junqiao Wu,Materials Science,4,3.78
+Sarah Hamill,Art History,4,3.78
+Mikelle McCoin,Nutrition,4,3.78
+Mark Berger,Film,4,3.78
+Kate Mattson,Theatre & Dance,4,3.78
+Joshua Troncoso,Ethnic Studies,4,3.78
+Clayton Critcher,Business Administration,4,3.78
+Peter Daily,Public Health,4,3.78
+Annelise Morris,Anthropology,4,3.78
+Meredith Spoto,Legal Studies,4,3.78
+Jason Luger,City & Regional Planning,4,3.78
+Mihaela Ifrim,Mathematics,4,3.78
+George Breslauer,Political Science,4,3.78
+William Weigel,Linguistics,4,3.78
+Colleen Lye,English,4,3.78
+Brenda Rosado,Italian,4,3.78
+Kyoko Takahara,Japanese,4,3.78
+Jessica Berman Hirigoyen,Theatre & Dance,4,3.78
+Olga Matich,Languages,4,3.74
+Michael O'Hare,Public Policy,4,3.74
+James Godzik,Mathematics,4,3.74
+Bharathwaj Muthuswamy,Electrical Engineering,4,3.74
+David Graves,Chemical Engineering,4,3.74
+Pam Samuelson,Law,4,3.74
+John Gerhart,Biology,4,3.74
+Christopher Fraser,Chemistry,4,3.74
+Claire Kremen,Environmental Science,4,3.74
+Konstantin Bobkov,Physics,4,3.74
+Annie Smart,Theatre & Dance,4,3.74
+Jonathan Wurtele,Physics,4,3.74
+Eric Driscoll,Classics,4,3.74
+Kurt Beyer,Business Administration,4,3.74
+Michal Reznizki,English,4,3.74
+Arash Farahmand,Mathematics,4,3.74
+Sergey Levine,Computer Science,4,3.74
+Tamma Carleton,Economics,4,3.74
+Shannon Jackson,Rhetoric,4,3.7
+Katie Brakora,Biology,4,3.7
+Richard Lee,Urban Design & Development,4,3.7
+Veronique Munoz-Darde,Philosophy,4,3.7
+Francisco Brito,Comparative Literature,4,3.7
+Stephen Collier,City & Regional Planning,4,3.7
+Moriel Vandsburger,Bioengineering,4,3.7
+Francis Wang,Legal Studies,4,3.66
+Sophie Volpp,Chinese,4,3.66
+Mona Bower,Rhetoric,4,3.66
+Sara Brenneis,Spanish,4,3.66
+Vivek Subramanian,Electrical Engineering,4,3.66
+David Hill,Mathematics,4,3.66
+Mike Urbancic,Economics,4,3.66
+Nikki Pratt,Psychology,4,3.66
+Benjamin Klein,History,4,3.66
+MacKenzie Moore,History,4,3.66
+Ion Stoica,Computer Science,4,3.66
+Andrius Galisanka,Political Science,4,3.66
+Manuela Travaglianti,Peace & Conflict Studies,4,3.66
+Sinho Chewi,Computer Science,4,3.66
+Eliot Bessette,Film,4,3.66
+Bulent Erbilgin,Engineering,4,3.66
+Ross Wilson,MolecularCellular Biology,4,3.66
+Olivia Natan,Business Administration,4,3.66
+Sumon Mazumdar,Business Administration,4,3.66
+Di Wang,Political Science,4,3.66
+Huma Dar,Electrical Engineering,4,3.61
+Jennifer Bajorek,Rhetoric,4,3.61
+Carlos Mujal,History,4,3.61
+Julia Chang,Spanish,4,3.61
+Lubna Qureshi,History,4,3.61
+Xin Guo,Industrial Engineering,4,3.61
+Heather McMichael,Spanish,4,3.61
+Sanjay Hukku,Film,4,3.61
+Molly Jacobs,Scandinavian,4,3.61
+Nitash Balsara,Chemical Engineering,4,3.61
+Lucas Davis,Business Administration,4,3.61
+Alice Agogino,Mechanical Engineering,4,3.61
+Ilya Zakharevich,Mathematics,4,3.61
+Ahmad Diab,Near Eastern Studies,4,3.61
+Katherine Mezur,Comparative Literature,4,3.61
+Elizabeth Bolton,Mass Communications,4,3.61
+Theodore Pena,Classics,4,3.61
+Osita Udekwu,Rhetoric,4,3.61
+William Fithian,Statistics,4,3.61
+Ali Hanks,Engineering,4,3.61
+Victoria Huynh,Ethnic Studies,4,3.61
+Kevin Quintero,Education,4,3.61
+Nilopa Shah,Economics,4,3.61
+Sergei Korotkikh,Mathematics,4,3.61
+Leah Guthrie,Engineering,4,3.61
+Hsin-hung (Sean) Yeh,Chinese,4,3.61
+David Wessel,Music,4,3.57
+Stuart Freedman,Physics,4,3.57
+Jamie Cate,Chemistry,4,3.57
+Joseph Napoli,Nutrition,4,3.57
+Mark Borgschulte,Economics,4,3.57
+Lara Kueppers,Earth & Planetary Sciences,4,3.57
+Carisa Harris,Industrial Engineering,4,3.57
+J. Ngai,Biology,4,3.53
+Luis Cordero-Sanchez,Spanish,4,3.53
+L Murray,Business Administration,4,3.53
+Luke Oeding,Mathematics,4,3.53
+Daniel Calef,Mathematics,4,3.53
+Maggie Elmore,History,4,3.53
+Anne Walker,English,4,3.53
+Kathleen Moran,Interdisciplinary Studies,4,3.53
+John Isom,Geography,4,3.53
+Derfogail Delcassian,Bioengineering,4,3.53
+Lauren Bartone,Italian,4,3.53
+John Wawrzynek,Computer Science,4,3.49
+Eric Corsini,Physics,4,3.49
+Janaki Bakhle,History,4,3.49
+Gabrielle Elias,English,4,3.49
+Carol Christ,English,4,3.45
+Terence Hendershott,Business Administration,4,3.45
+Alexander Nezlobin,Business Administration,4,3.45
+Daniel Naylor,Plant Biology,4,3.45
+Colin Lacon,Business Administration,4,3.45
+Niku Sharei,Sociology,4,3.45
+Jan M. Rabaey,Electrical Engineering,4,3.41
+Andrew Kim,Asian Studies,4,3.41
+Stephanie Syjuco,Art,4,3.41
+Paul Duguid,Information Systems,4,3.41
+Ian Swinburne,Molecular/Cellular Biology,4,3.41
+Kimmen Sjolander,Bioengineering,4,3.32
+Graham Fleming,Chemistry,4,3.28
+Israel Romem,Economics,4,3.28
+Eric Friedman,Industrial Engineering,4,3.28
+Sadrine Dudoit,Statistics,4,3.28
+Dominique Zonyee,Journalism,4,3.28
+Abbye Atkinson,Legal Studies,4,3.28
+Alexander Purcell,Environmental Science,3,3.9
+Ayla Algar,Near Eastern Studies,3,3.9
+Ron Stroud,Classics,3,3.9
+Amy Strage,Psychology,3,3.9
+Robert Hirst,English,3,3.9
+Paul Terrell,Sociology,3,3.9
+Quame Patton,African-American Studies,3,3.9
+Barrie Roberts,English,3,3.9
+Jeff Dorman,Biology,3,3.9
+Ayelet Ben-Yishai,Comparative Literature,3,3.9
+Sally Sutherland - Goldman,Languages,3,3.9
+Greg Bloch,Music,3,3.9
+Christopher Tompkins,Education,3,3.9
+Darry Sragow,Political Science,3,3.9
+Julio Ramos,Not Specified,3,3.9
+Paul Haacke,Comparative Literature,3,3.9
+Dougherty Dru,Spanish,3,3.9
+Dawit Melak,African-American Studies,3,3.9
+Mike Bigley,English,3,3.9
+Todd Barnes,Rhetoric,3,3.9
+Robert Alter,Comparative Literature,3,3.9
+Laura Garcia-Moreno,Spanish,3,3.9
+Lisa Little,Slavic Languages & Literatures,3,3.9
+K C Rosenak,Music,3,3.9
+Atilla Yilmaz,Mathematics,3,3.9
+Daniela Blei,History,3,3.9
+Joseph Ring,English,3,3.9
+Roi Livne,Sociology,3,3.9
+Jarred Ghilarducci,Chemical Engineering,3,3.9
+Rebecca Cover,Linguistics,3,3.9
+Pnina Feldman,Business Administration,3,3.9
+David Hollinger,History,3,3.9
+Kyle Livie,History,3,3.9
+Jocelyn Rodal,English,3,3.9
+Timothy Justus,Psychology,3,3.9
+Conrad Hengesbach,Mathematics,3,3.9
+James Porter,Rhetoric,3,3.9
+Poema Q. Valente Meyer,Portuguese,3,3.9
+Michael Kowen,Sociology,3,3.9
+Nathan Cheng,Mathematics,3,3.9
+Phillip Messersmith,Materials Science,3,3.9
+Nathan Pippenger,Political Science,3,3.9
+Eglantine Colon,French,3,3.9
+Kimberly Christensen,Anthropology,3,3.9
+Dexter Hough-Snee Zavalza,Spanish,3,3.9
+Imogen Hart,Art History,3,3.9
+Vinitra Swamy,Computer Science,3,3.9
+Oren Hanner,East Asian Studies,3,3.9
+Eric Ryan,Business Administration,3,3.9
+Jhonni Carr,Spanish,3,3.9
+Daniel Arnold,Civil Engineering,3,3.9
+Nema Lankarani,Cognitive Science,3,3.9
+Tara Hottman,English,3,3.9
+Hayato Saito,East Asian Studies,3,3.9
+Jenny Chai,Music,3,3.9
+Jessica Laser,English,3,3.9
+Yukiko Tsuchiya,Japanese,3,3.9
+Ryan Mcwilliams,English,3,3.9
+Sebastian Eterovic,Mathematics,3,3.9
+David Lieberman,Legal Studies,3,3.9
+David Lieberman,Law,3,3.9
+Sukanya Banerjee,English,3,3.9
+Robert Strand,Business Administration,3,3.9
+Ryan Chornock,Astronomy,3,3.9
+Cristina Farronato,Italian,3,3.9
+Oliver Whitmore,Linguistics,3,3.9
+Samuel Stein,Geography,3,3.9
+Yu-Ling Chang,Social Welfare,3,3.9
+Hany Farid,Computer Science,3,3.9
+Chi Chan,Chinese,3,3.9
+Amir Effat,Spanish,3,3.9
+Lincoln Cushing,Art History,3,3.9
+Kea Johnston,Arts & Humanities,3,3.9
+Sarah Stanley,Public Health,3,3.9
+Joseph Shapiro,Economics,3,3.9
+Arash Ng,Biology,3,3.9
+Leila Mire,Theatre & Dance,3,3.9
+Semyon Leonenko,Slavic Languages & Literatures,3,3.9
+Xiaoming Hou,Religious Studies,3,3.9
+Eric Chen,Statistics,3,3.9
+Rebecca Ennals,Theatre & Dance,3,3.9
+Isabel Jiang,Legal Studies,3,3.9
+Chi Leung Chan,Chinese,3,3.9
+Samantha Lewis,Biology,3,3.9
+Jason Porzio,Engineering,3,3.9
+Robert Saxton,Chemistry,3,3.9
+Charlott Vallon,Mechanical Engineering,3,3.9
+Alice Chapman,Art History,3,3.9
+Daniel Larlham,Theatre & Dance,3,3.9
+Kirk Bansak,Political Science,3,3.9
+Caitlin Patler,Public Policy,3,3.9
+Luis Madrigal,Film,3,3.9
+Noga Abraham,Business Administration,3,3.9
+Gina Garcia,Education,3,3.9
+Robert Shaye,Business Administration,3,3.9
+Benjamin Becker,Environmental Science,3,3.9
+Eos Trinidad,Education,3,3.9
+Yolanda Wei,Mathematics,3,3.9
+Jeffrey Long,Chemistry,3,3.86
+Lee Schruben,Industrial Engineering,3,3.86
+Sirpa Tuomainen,Scandinavian,3,3.86
+George Cluff,Business Administration,3,3.86
+Brendan McSherry,Political Science,3,3.86
+Francine Masiello,Spanish,3,3.86
+Mary Cudahy,Comparative Literature,3,3.86
+Beth Roy,Peace & Conflict Studies,3,3.86
+Katharine Young,Anthropology,3,3.86
+Mary Firestone,Environmental Science,3,3.86
+Liliana Loofbourow,English,3,3.86
+Katherine Lee,Writing,3,3.86
+Jim Hunt,Civil Engineering,3,3.86
+Joshua Sussan,Mathematics,3,3.86
+Azin Seraj,Art,3,3.86
+Kim Klein,Social Welfare,3,3.86
+Joe A. Reyes,Not Specified,3,3.86
+Soufiane Chami,Near Eastern Studies,3,3.86
+Sarah Knuth,Geography,3,3.86
+Ana Rojas,English,3,3.86
+Mark Asta,Engineering,3,3.86
+Per Peterson,Nuclear Engineering,3,3.86
+Tyleen Kelly,English,3,3.86
+Michael Marletta,MolecularCellular Biology,3,3.86
+Selim Göncü,Music,3,3.86
+Amy Tick,Rhetoric,3,3.86
+Melissa Nink,Mathematics,3,3.86
+Hannah Bosley,Psychology,3,3.86
+Patrick Kline,Economics,3,3.86
+Spencer Strub,English,3,3.86
+Aaron Streets,Bioengineering,3,3.86
+Ramya Janandharan,East Asian Studies,3,3.86
+Robert Pilawa-Podgurski,Electrical Engineering,3,3.86
+Sholeh Asgary,Art,3,3.86
+Rachel Gershon,Business Administration,3,3.86
+Jack Tseng,Biology,3,3.86
+Harold Lecar,Biology,3,3.82
+Margaret Dhaemers,Architecture,3,3.82
+Robert Littlejohn,Physics,3,3.82
+Chenming Hu,Electrical Engineering,3,3.82
+Arturo Davila,Ethnic Studies,3,3.82
+Donald Weston,Biology,3,3.82
+Heather Kirn,Writing,3,3.82
+John.D. Coates,Biology,3,3.82
+Neil Gilbert,Social Welfare,3,3.82
+Enrique Iglesia,Chemical Engineering,3,3.82
+Katherine Ding,English,3,3.82
+Thomas Hill,History,3,3.82
+Allan Sly,Statistics,3,3.82
+Siyuan Sun,Industrial Engineering,3,3.82
+Christopher Snedigar,Chemistry,3,3.82
+John Perry,Philosophy,3,3.82
+Van Butsic,Environ. Sci. Policy & Mgmt.,3,3.82
+Carolyn Chen,Ethnic Studies,3,3.82
+Kyle Russ-Navarro,Mathematics,3,3.82
+Agnieszka Smelkowska,History,3,3.82
+Amy Lee,English,3,3.82
+Max Kaisler,Comparative Literature,3,3.82
+Jacob Dalton,Religious Studies,3,3.82
+Román Luján,Spanish,3,3.82
+Jessica Boles,Electrical Engineering,3,3.82
+Gianna Ward-Vetrano,Film,3,3.82
+Hector Cardenas Suarez,Public Policy,3,3.82
+Evan vanDommelen-Gonzalez,Public Health,3,3.82
+Quetzalcoatl Xolotl,Computer Science,3,3.82
+Meghan Anderson,Mathematics,3,3.77
+Patricia Buffler,Public Health,3,3.77
+Andy Furco,Education,3,3.77
+Alex Green,Writing,3,3.77
+Ethan Kaplan,Economics,3,3.77
+R. Morris,Physical Education,3,3.77
+Pamela Diaz,French,3,3.77
+Elizabeth MacDonald,Urban Design & Development,3,3.77
+William Turner,Mass Communications,3,3.77
+David Larue,Biology,3,3.77
+Dagmar Theison,German,3,3.77
+Brendan Prawdzik,English,3,3.77
+Maya Kuehn,Psychology,3,3.77
+Steven Zemmelman,Social Welfare,3,3.77
+Mary Hoopes,Legal Studies,3,3.77
+Meg Alvarado Saggese,Rhetoric,3,3.77
+Kai Vetter,Nuclear Engineering,3,3.77
+Renee Pastel,Film,3,3.77
+Benjamin Recht,Electrical Engineering,3,3.77
+Christoffer Bovbjerg,History,3,3.77
+Deirdre Martin,Political Science,3,3.77
+Karina McCorkle,Slavic Languages & Literatures,3,3.77
+Peng Zhou,Mathematics,3,3.77
+Juliet Kunkel,English,3,3.77
+Azza Ahmad,Near Eastern Studies,3,3.77
+Guanyu Su,Nuclear Engineering,3,3.77
+Gabriela Rodriguez Lebron,Spanish,3,3.77
+Nicole Trigg,Literature,3,3.77
+Andrew Marks,Mathematics,3,3.77
+John Veitch,Business Administration,3,3.73
+Peggy Lemaux,Biology,3,3.73
+Silvia Valisa,Italian,3,3.73
+Thaveeporn Vasavakul,Asian Studies,3,3.73
+Amyrose McCue Gill,Comparative Literature,3,3.73
+Nicholas Junkerman,English,3,3.73
+Richard Legates,Urban Design & Development,3,3.73
+Nils Bultmann,Music,3,3.73
+Sarah Iveson,Mathematics,3,3.73
+Rana Tomaira,Urban Design & Development,3,3.73
+Parijat Deshpande,Psychology,3,3.73
+David Kaspar,Mathematics,3,3.73
+Christian Zickert,Mathematics,3,3.73
+Evan Williams,Chemistry,3,3.73
+Allison Mongold,Mathematics,3,3.73
+James Little,Physics,3,3.73
+Christina Feliciana,Social Welfare,3,3.73
+John Marshall,Legal Studies,3,3.73
+Dan Golub,Education,3,3.73
+Raluca Popa,Computer Science,3,3.73
+Carl Boettiger,Environ. Sci. Policy & Mgmt.,3,3.73
+Eric Stover,Legal Studies,3,3.73
+Bilal Bagis,Economics,3,3.73
+Simona Balan,Public Health,3,3.73
+Manuela Girotto,Environmental Science,3,3.73
+Alix Schwartz,Arts & Humanities,3,3.73
+Jennifer Bussell,Political Science,3,3.73
+Sarah Levin,Religious Studies,3,3.73
+Hendrik Utzat,Chemistry,3,3.73
+Jennifer Fletcher,Plant Biology,3,3.73
+Shannon Boettcher,Chemical Engineering,3,3.73
+Shmuel Oren,Industrial Engineering,3,3.69
+John Drabble,International Studies,3,3.69
+Xiao-Jun Zhang,Business Administration,3,3.69
+Veronica De Jesus,Art,3,3.69
+David Nasatir,Sociology,3,3.69
+Laura Tyson,Business Administration,3,3.69
+Max Weintraub,Environ. Sci. Policy & Mgmt.,3,3.69
+Amy Kim,Art,3,3.69
+Lisa Barcellos,Psychology,3,3.69
+Krste Asanovic,Computer Science,3,3.69
+Jeana Jorgensen,Anthropology,3,3.69
+Matt Kondolf,Landscape Architecture & Regional Planning,3,3.69
+Paolo D'Odorico,Environ. Sci. Policy & Mgmt.,3,3.69
+Marcus Owens,Architecture,3,3.69
+Rudabeh Pakravan,Architecture,3,3.69
+Joeva Rock,Interdisciplinary Studies,3,3.69
+Vira Semenova,Economics,3,3.69
+Kate Heslop,Scandinavian,3,3.69
+Ramon De Santiago,Art History,3,3.69
+Christopher Fletcher,Computer Science,3,3.69
+James Bartolome,Environmental Science,3,3.64
+David Bogy,Mechanical Engineering,3,3.64
+Daniel Cullen,Music,3,3.64
+Ying-Ju Chen,Industrial Engineering,3,3.64
+Kenneth Wells,History,3,3.64
+Anders Diana,Rhetoric,3,3.64
+Ronald Fearing,Electrical Engineering,3,3.64
+Tiffanny Page,Latin American Studies,3,3.64
+Keshia Williams,Social Welfare,3,3.64
+Jesse Chapman,Chinese,3,3.64
+Yi Ma,Electrical Engineering,3,3.64
+Benjamin Swerdlow,Psychology,3,3.64
+Sara Hong,Writing,3,3.64
+Sean Hendricks,Student Success Center,3,3.64
+Nicolle Gonzalez,Mathematics,3,3.64
+Forte Shinko,Mathematics,3,3.64
+Asma Kazmi,Art,3,3.64
+Paul Rabinow,Anthropology,3,3.6
+Ahmad Roosta,Chemistry,3,3.6
+Maria Tamburrino,Music,3,3.6
+Ludovic Patey,Mathematics,3,3.6
+Archana Prakash,International Studies,3,3.6
+Ashton Wesner,History,3,3.6
+Ingrid Gavshon,Engineering,3,3.6
+Christopher Christion,Art,3,3.6
+Jeffrey Bokor,Electrical Engineering,3,3.55
+Mimi Koehl,Biology,3,3.55
+Isabelle Philipp,Biology,3,3.55
+Edward Kaas,Business Administration,3,3.55
+Richard Scheffler,Public Health,3,3.55
+Ulf Olsson,Scandinavian,3,3.55
+Michael Botchan,Biology,3,3.55
+Vasudha Paramasivan,Religious Studies,3,3.55
+Daniel McKinsey,Physics,3,3.55
+Alina Predescu,Film,3,3.55
+Kaoru Saijo,MolecularCellular Biology,3,3.55
+Veselina Dinova,Business Administration,3,3.55
+Dimitrios Konstantinidis,Civil & Environmental Engineering,3,3.55
+Eaman Jahani,Statistics,3,3.55
+Sara Gorchoff,Psychology,3,3.55
+Camila Yadeau,Rhetoric,3,3.55
+Ariel Gibbs,English,3,3.55
+Christopher Paciorek,Statistics,3,3.51
+Alex Frano,Physics,3,3.51
+Tina Trujillo,Education,3,3.51
+Marta Vuckovic,Nutrition,3,3.51
+Adrian Montufar,Music,3,3.51
+Agnes Dimitriou,Spanish,3,3.47
+Miriam Petruck,Writing,3,3.47
+Jelle Stoop,History,3,3.47
+Lee Fleming,Industrial Engineering,3,3.47
+Mary Scott,Materials Science,3,3.47
+Steven Segal,Social Welfare,3,3.42
+Martin Lettau,Not Specified,3,3.42
+Julia Harvard,Theatre & Dance,3,3.42
+Partow Imani,Statistics,3,3.42
+Dinying Sun,Mechanical Engineering,3,3.42
+Genevieve Quick,Art,3,3.42
+Kamal Dulai,Biology,3,3.42
+Tony Bezsylko,Philosophy,3,3.38
+Jack Rasmus,Economics,3,3.38
+Amy Kyle,Public Health,3,3.38
+Hernan Garcia,Molecular/Cellular Biology,3,3.38
+Jason Moser,Writing,3,3.38
+Raffaele Perrotta,Chemistry,3,3.38
+Ishmael Reed,English,2,3.85
+George Akerlof,Economics,2,3.85
+Lesley Baker,Art,2,3.85
+Lisa Alvarez-Cohen,Civil Engineering,2,3.85
+Adrian McIntyre,Anthropology,2,3.85
+Manoj Mate,Political Science,2,3.85
+Loren Partridge,Art History,2,3.85
+Xuanming Su,Business Administration,2,3.85
+John Lanier,Classics,2,3.85
+Rachel Brem,Biology,2,3.85
+J Randles,Sociology,2,3.85
+Aftab Ahmed,Languages,2,3.85
+Richard Van Sluyters,Optometry,2,3.85
+Ruth Baldwin,English,2,3.85
+Felipe Rincon,Mathematics,2,3.85
+Greg Merrill,Social Welfare,2,3.85
+Daniel Halpern-Leistner,Mathematics,2,3.85
+Frank Liao,Electrical Engineering,2,3.85
+AC Cook,History,2,3.85
+K P Feldman,Ethnic Studies,2,3.85
+Sarah Chihaya,Comparative Literature,2,3.85
+Daniel Brooks,Slavic Languages & Literatures,2,3.85
+Sarah MacDonald,Mass Communications,2,3.85
+Shanti Morell-Hart,Anthropology,2,3.85
+Nipam Patel,Biology,2,3.85
+Dariek Scott,African-American Studies,2,3.85
+Megan Brennan,Chemistry,2,3.85
+David Linger,Art,2,3.85
+Juan Ospina,Spanish,2,3.85
+George Tsai,Philosophy,2,3.85
+Nina Hagel,Legal Studies,2,3.85
+Katrina Winzeler,Philosophy,2,3.85
+Mara Jacobsen,Italian,2,3.85
+Jorge Díaz-Velez,Spanish,2,3.85
+Joshua Marker,Linguistics,2,3.85
+Marc-Tizoc Gonzalez,Ethnic Studies,2,3.85
+Rachel Trocchio,English,2,3.85
+Matthew Oltman,Music,2,3.85
+Jonathan Larner-Lewis,English,2,3.85
+Mark Anderson,Architecture,2,3.85
+Dave Wahl,Geography,2,3.85
+Taryn Flock,Mathematics,2,3.85
+Michelle Tsutsui,Art,2,3.85
+Whitney Reiner,Biology,2,3.85
+Jeffrey Miner,History,2,3.85
+Sarah Boggs,Writing,2,3.85
+John Deionno,Mathematics,2,3.85
+Xiaojing Sun,Chinese,2,3.85
+Justin Gomer,American Studies,2,3.85
+Marlin Halim,Chemistry,2,3.85
+Sarah Keyes,History,2,3.85
+Michelle Koerner,Comparative Literature,2,3.85
+Lissette Jimenez,Near Eastern Studies,2,3.85
+James Dillon,Legal Studies,2,3.85
+Christina Schwartz,Slavic Languages & Literatures,2,3.85
+Caroline Chen,Landscape Architecture & Regional Planning,2,3.85
+James Olzmann,Nutrition,2,3.85
+Christopher Schmitt,Anthropology,2,3.85
+Matt Goren,Psychology,2,3.85
+Max Schmeder,History,2,3.85
+Christina Hill,Landscape Architecture & Regional Planning,2,3.85
+Andrew Atwood,Architecture,2,3.85
+Avash Monajemi,Mathematics,2,3.85
+Sylvia Flatt,Sociology,2,3.85
+Jovan Lewis,African-American Studies,2,3.85
+Kathryn Mann,Mathematics,2,3.85
+Yuval Ben-Bassat,History,2,3.85
+Thomas Walsh,Scandinavian,2,3.85
+Lindsey Summers,Theatre & Dance,2,3.85
+Andy Shogan,Business Administration,2,3.85
+Gabriel Milner,History,2,3.85
+Karen Barkey,Sociology,2,3.85
+Philip Kan Gotanda,Theatre & Dance,2,3.85
+Michael Fragomeni,German,2,3.85
+Francesco Spagnolo,Music,2,3.85
+Naeem Zafar,Computer Science,2,3.85
+Derek Popple,Chemistry,2,3.85
+Carter Koppelman,Sociology,2,3.85
+Suleman Khan,Chemistry,2,3.85
+Norman Yao,Physics,2,3.85
+Seth Holmes,Environ. Sci. Policy & Mgmt.,2,3.85
+John McCauley,Business Administration,2,3.85
+Joe Dougherty,Business Administration,2,3.85
+Vince Law,Business Administration,2,3.85
+Ben Wormleighton,Mathematics,2,3.85
+Scott Moura,Civil Engineering,2,3.85
+Douglas Epps,Social Welfare,2,3.85
+James Conway,Mathematics,2,3.85
+David Walter,English,2,3.85
+Beverly Davis,Aerospace Studies,2,3.85
+Jennifer Lum,Rhetoric,2,3.85
+Chunhong Xie,Chinese,2,3.85
+Kubrat Danailov,Mathematics,2,3.85
+Ian MacCormack,East Asian Studies,2,3.85
+Sarah Eriksen,Scandinavian,2,3.85
+Sarah Minkow,Nutrition,2,3.85
+Yumi Wilson,Journalism,2,3.85
+Flavio Silva de la Mora,Anthropology,2,3.85
+Katharina Kaiser,Philosophy,2,3.85
+Zachary Hicks,Slavic Languages & Literatures,2,3.85
+Tae Kim,East Asian Studies,2,3.85
+Lizzie Vinyard Boyle,English,2,3.85
+Rupinder Kaur,French,2,3.85
+Angelique Allain,French,2,3.85
+Mingzhe Zheng,Chinese,2,3.85
+Gabriel Dorfsman-Hopkins,Mathematics,2,3.85
+Brian Bond,Music,2,3.85
+Calvin Morrill,Legal Studies,2,3.85
+Daniel Friedman,Writing,2,3.85
+Jasmit Rangr,Architecture,2,3.85
+Rickey Vincent,African-American Studies,2,3.85
+John Mundell,African-American Studies,2,3.85
+Nasser Meerkhan,Near Eastern Studies,2,3.85
+Mahasin Mujahid,Public Health,2,3.85
+Alexis Herr,History,2,3.85
+McFeely Goodman,Mathematics,2,3.85
+Thomas Corbani,French,2,3.85
+Kuan Hwa,Rhetoric,2,3.85
+N. Benjamin Erichson,Statistics,2,3.85
+Erik Raymond Lee,Theatre & Dance,2,3.85
+Carlos Cisneros,Linguistics,2,3.85
+Jesse Nyiri,English,2,3.85
+Anibel Ferus-Comelo,Public Policy,2,3.85
+Deibi Sibrian,Environmental Science,2,3.85
+Conor Healy,Data Science,2,3.85
+Emma Fraser,Mass Communications,2,3.85
+Jason Bircea,English,2,3.85
+Robin Mills,Public Health,2,3.85
+Kristen Burmester,Education,2,3.85
+Anna Dini,Italian,2,3.85
+Eric Chen,Mathematics,2,3.85
+Jarrell Chua,Theatre & Dance,2,3.85
+Deimy Chavez,Rhetoric,2,3.85
+Philipp Lenhard,History,2,3.85
+Jean Johnstone,Public Policy,2,3.85
+George Balazs,Biology,2,3.85
+Will Hymer,Statistics,2,3.85
+Eda Er,Music,2,3.85
+Shari Huhndorff,Ethnic Studies,2,3.85
+Jay Graham,Public Health,2,3.85
+Thomas Chen,Engineering,2,3.85
+Laura Sterponi,Education,2,3.85
+tiffany chien,Military Affairs,2,3.85
+Micah Khater,African-American Studies,2,3.85
+Ryan Lackey,English,2,3.85
+Sofie Hansen,Scandinavian,2,3.85
+Stefanie Hutka,Information Systems,2,3.85
+Tijana Petrovic,Film,2,3.85
+Amanda Clayton,Political Science,2,3.85
+Megan Martik,Molecular/Cellular Biology,2,3.85
+Micheal Eisen,Molecular/Cellular Biology,2,3.85
+Antje Postema,Slavic Languages & Literatures,2,3.85
+Emily Nusbaum,Interdisciplinary Studies,2,3.85
+Omar Wasow,Political Science,2,3.85
+Chiyuma Elliott,Ethnic Studies,2,3.85
+Amy Rowland,English,2,3.85
+Junghee Park,Languages,2,3.85
+Anne Finger,Interdisciplinary Studies,2,3.85
+Sagit Betser,Education,2,3.85
+Jack Chang,Art History,2,3.85
+Jingyuan Chen,Statistics,2,3.85
+Dzovinar Derderian,History,2,3.85
+Jess Johnson,Near Eastern Studies,2,3.85
+Noam Schimmel,International Studies,2,3.85
+Peter Mardsen,Chemistry,2,3.85
+Kayla van Kooten,German,2,3.85
+Stephen Litschauer,Engineering,2,3.85
+Kyungmi Yoo,Physical Education,2,3.85
+Anuj Kumar,Mathematics,2,3.85
+Quitze Valenzuela-Stookey,Economics,2,3.85
+Jean-Paul Tennant,Engineering,2,3.85
+Daisy Ament,Italian,2,3.85
+Melanie Acosta,Music,2,3.85
+Andrew Taylor,Data Science,2,3.85
+Molly Ohainle,Molecular/Cellular Biology,2,3.85
+Andreja Novakovic,Philosophy,2,3.85
+Rikky Muller,Electrical Engineering,2,3.85
+Jetsun Deleplanque,Religious Studies,2,3.85
+Jiahe Mei,East Asian Studies,2,3.85
+Aarti Sethi,Anthropology,2,3.85
+Dmitri Brown,History,2,3.85
+Michelle Baron,Theatre & Dance,2,3.81
+Chelsea Specht,Biology,2,3.81
+Roy Fisher,Near Eastern Studies,2,3.81
+Christopher Goetz,Film,2,3.81
+Jessica Merrill,Slavic Languages & Literatures,2,3.81
+Rebekah Compton,Art History,2,3.81
+Raymond Lifchez,Architecture,2,3.81
+Blake Hausman,English,2,3.81
+Jere Takahashi,Ethnic Studies,2,3.81
+Savaughn Banks,Social Welfare,2,3.81
+William Kwok,Asian Studies,2,3.81
+Maria Nondorf,Business Administration,2,3.81
+Michael Martin,Philosophy,2,3.81
+Aditya Adiredja,Mathematics,2,3.81
+Francine Landes,Theatre & Dance,2,3.81
+Marilola Perez-Rodas,Spanish,2,3.81
+Jann Ronis,Religious Studies,2,3.81
+Alexander Madva,Philosophy,2,3.81
+Stephanie Sherman,Theatre & Dance,2,3.81
+Ved Datar,Mathematics,2,3.81
+Philip Gerard,German,2,3.81
+Andres Rodriguez-Clare,Economics,2,3.81
+Adriana Hernandez-Rodrigue,Spanish,2,3.81
+Eleanor Pries,Architecture,2,3.81
+Phuoc Le,Public Health,2,3.81
+Mike Boots,Biology,2,3.81
+Tina Sacks,Social Welfare,2,3.81
+Andrew Barbour,English,2,3.81
+Garreth O'Brien,English,2,3.81
+Dennis Feehan,Statistics,2,3.81
+Alan Hubbard,Public Health,2,3.81
+Simon Rogghe,French,2,3.81
+Jacopo di Bonito,Mathematics,2,3.81
+Victoria Plaut,Legal Studies,2,3.81
+Molly Bronstein,Comparative Literature,2,3.81
+John Kubiatowicz,Computer Science,2,3.81
+Gabriel Regalado,English,2,3.81
+Atti Viragh,English,2,3.81
+Lakshya Jain,Computer Science,2,3.81
+Tim Tangherlini,Scandinavian,2,3.81
+Gregory Arena,Biology,2,3.81
+Tracy Becker,Civil Engineering,2,3.81
+Travis Bristol,African-American Studies,2,3.81
+Natacha Crooks,Computer Science,2,3.81
+Brian Mirea,Anthropology,2,3.81
+Devin Coleman-Derr,Plant Biology,2,3.81
+Patrick Shih,Plant Biology,2,3.81
+Jeffrey Neaton,Physics,2,3.81
+Matthew Manno,English,2,3.81
+Puninder Singh,Asian Studies,2,3.81
+Laryn Qi,Computer Science,2,3.81
+Gregory Parker,Mathematics,2,3.81
+David Dowall,Urban Design & Development,2,3.76
+Nils Halvard Lunde,Languages,2,3.76
+Bernt Wahl,Engineering,2,3.76
+David Cohen,Rhetoric,2,3.76
+Elizabeth Raddock,Asian Studies,2,3.76
+Nilgun Bakaraktar,Theatre & Dance,2,3.76
+Adrian Willoughby,Psychology,2,3.76
+Mona El-Sherif,Near Eastern Studies,2,3.76
+Karim El Gendy,Near Eastern Studies,2,3.76
+Rachel Segalman,Chemical Engineering,2,3.76
+Michael Mushino,Legal Studies,2,3.76
+Sophia Rabe-Hesketh,Education,2,3.76
+Monica Hidalgo,Scandinavian,2,3.76
+Diana Challis,Astronomy,2,3.76
+Maria Vendetti,French,2,3.76
+Richard Dodd,Environ. Sci. Policy & Mgmt.,2,3.76
+Martyn Smith,Public Health,2,3.76
+Ashley Brock,Comparative Literature,2,3.76
+Michael Hanson,Business Administration,2,3.76
+Andreea Gorbatai,Business Administration,2,3.76
+Bilal Ibrahim,Near Eastern Studies,2,3.76
+Johnathan Vaknin,Comparative Literature,2,3.76
+Paul Bryan,Chemical Engineering,2,3.76
+Pieter Abbeel,Computer Science,2,3.76
+Karthik Patange,Anthropology,2,3.76
+Johan Walden,Business Administration,2,3.76
+Achva Stein,Landscape Architecture & Regional Planning,2,3.76
+Paul Martorelli,Political Science,2,3.76
+Amelia Farid,Mathematics,2,3.76
+Bryan McCloskey,Chemical Engineering,2,3.76
+Mark Richards,Earth & Planetary Sciences,2,3.76
+Hannah Stuart,Mechanical Engineering,2,3.76
+Laura Wagner,Comparative Literature,2,3.76
+Julia Havard,Theatre & Dance,2,3.76
+Vanessa Ogle,History,2,3.76
+Travis Petzoldt,Naval Science,2,3.76
+Matthew McCauley,Philosophy,2,3.76
+David Limmer,Chemistry,2,3.76
+Kosa Goucher-Lambert,Mechanical Engineering,2,3.76
+Koji Shimizu,Mathematics,2,3.76
+Darren Cooke,Business Administration,2,3.76
+Samuel Evans,Economics,2,3.76
+Brandon Graves,Journalism,2,3.76
+Nora Jacobsen Ben Hammed,Near Eastern Studies,2,3.76
+"Jaime Sánchez, Jr",History,2,3.76
+Sofia Martinez,Computer Science,2,3.76
+Jonathan Lee,Music,2,3.72
+Millicent Angelin,Business Administration,2,3.72
+Gisele Bousquet,Not Specified,2,3.72
+Jamie Rifkin,Psychology,2,3.72
+Dan Stark,Environ. Sci. Policy & Mgmt.,2,3.72
+Mary Lee,Spanish,2,3.72
+Annie Fukushima,Ethnic Studies,2,3.72
+George Necula,Computer Science,2,3.72
+Martin Renner,International Studies,2,3.72
+Marcos Garcia,English,2,3.72
+Dan Spiegel,Architecture,2,3.72
+Joseph Horton,Writing,2,3.72
+Patrick Baur,Environ. Sci. Policy & Mgmt.,2,3.72
+Kam-Biu Luk,Physics,2,3.72
+Gabriel Kaprielian,Urban Design & Development,2,3.72
+Carmen Martinez Calderon,Chicano Studies,2,3.72
+Ramona Naddaff,Rhetoric,2,3.72
+Rajan Udwani,Industrial Engineering,2,3.72
+Lisandro Claudio,Asian Studies,2,3.72
+Venkat Anantharam,Electrical Engineering,2,3.72
+Isaac Bleaman,Linguistics,2,3.72
+Matthew Shelton,International Studies,2,3.72
+Kim Jones,Information Systems,2,3.72
+Robert Lemon,Landscape Architecture & Regional Planning,2,3.72
+Jon Metzler,Business Administration,2,3.72
+Grace Zeng,Political Science,2,3.72
+Sharon Stanley,Political Science,2,3.67
+Chiang Hsieh,Economics,2,3.67
+Harry Scheiber,Legal Studies,2,3.67
+Jason Bodik,Comparative Literature,2,3.67
+Jessica Gelber,Philosophy,2,3.67
+Theocharis Grigoriadis,Political Science,2,3.67
+Xochitl Marsilli,Anthropology,2,3.67
+Lloyd Goldwasser,Biology,2,3.67
+Kinga Novak,History,2,3.67
+Darby Price,Ethnic Studies,2,3.67
+Pamela Duffy,Political Science,2,3.67
+Javier Cikota,History,2,3.67
+Jonathan Marshall,Legal Studies,2,3.67
+Andrew Sweet,Engineering,2,3.67
+Abdul JanMohamed,English,2,3.67
+Charisma Acey,Landscape Architecture & Regional Planning,2,3.67
+Paul Grigas,Industrial Engineering,2,3.67
+Steve Chow,Mathematics,2,3.67
+Arja Logman,Architecture,2,3.67
+David Ridge,Music,2,3.67
+Ruoqi Yu,Statistics,2,3.67
+Kristin Zodrow,English,2,3.67
+Fred DeWitt,Art,2,3.67
+peter nelson,Anthropology,2,3.67
+Maya Shen,Data Science,2,3.67
+Victor Pineda,City & Regional Planning,2,3.67
+Carmine Cella,Music,2,3.67
+Preeya Khanna,Engineering,2,3.67
+Sam Berde,Business Administration,2,3.63
+Natalia Belfiore,Biology,2,3.63
+Yes Duffy,Architecture,2,3.63
+Brenda Fellows,Business Administration,2,3.63
+Fontini Katapodes Chow,Engineering,2,3.63
+Arpy Khatchirian,Philosophy,2,3.63
+Raymond Jeanloz,Earth & Planetary Sciences,2,3.63
+Alexander Katz,Chemical Engineering,2,3.63
+Michel DuPage,MolecularCellular Biology,2,3.63
+Ndola Prata,Public Health,2,3.63
+Masayoshi Tomizuka,Mechanical Engineering,2,3.63
+Jelani Nelson,Electrical Engineering & Computer Science,2,3.63
+Bernadette Perez,History,2,3.63
+Aditya Parameswaran,Information Systems,2,3.63
+Federico Echenique,Economics,2,3.63
+Hunter Rendleman,Political Science,2,3.63
+Rebecca Tarvin,Biology,2,3.63
+Benjamin Stamm,Mathematics,2,3.58
+Elizabeth Brown,Legal Studies,2,3.58
+joseph lough,Economics,2,3.58
+Steven Weissman,Public Policy,2,3.58
+Thomas Carlson,Biology,2,3.58
+Katrin Wierheim,Mathematics,2,3.58
+Sahar Khoury,Art,2,3.58
+Solmaz Sharif,English,2,3.58
+Lazaro Gonzalez,Film,2,3.58
+D Krasne,Classics,2,3.53
+Deborah Gordon,Anthropology,2,3.53
+Keisha Williams,Social Welfare,2,3.53
+Elizabeth Kovats,Business Administration,2,3.53
+Sheng Luan,Plant Biology,2,3.53
+Imke De Pater,Earth Science,2,3.49
+Allan Jacobs,Urban Design & Development,2,3.49
+Tim Cramer,Mathematics,2,3.49
+Randi Evans,Theatre & Dance,2,3.49
+Jennifer Shin,Statistics,2,3.49
+Se' Sullivan,Women's Studies,2,3.49
+Fletcher Ibser,Economics,2,3.49
+Andrew Isaacs,Business Administration,2,3.49
+Heather Gray,Physics,2,3.49
+Daryl Preece,Bioengineering,2,3.49
+Matthew Van Dusen,Data Science,2,3.49
+Joshua Povich,Biology,2,3.49
+Laurent Reyes,Social Welfare,2,3.49
+Rosa Norton,Art History,2,3.49
+Eyitayo Opabola,Civil & Environmental Engineering,2,3.49
+Avi Zeff,Mathematics,2,3.49
+Lorraine Cruz Del Rio,Sociology,2,3.49
+Philip Cowan,Psychology,1,3.8
+David Frick,Comparative Literature,1,3.8
+Edward Lee,Engineering,1,3.8
+Brian Simison,Biology,1,3.8
+Felipe Barrueto,Theatre & Dance,1,3.8
+Ashvin Vishwanath,Physics,1,3.8
+Christopher Lever,Environmental Science,1,3.8
+Richard Gilbert,Economics,1,3.8
+Elizabeth Stokkebye,Scandinavian,1,3.8
+Donna Petrine,Law,1,3.8
+Kendra Salois,Music,1,3.8
+Alexandra Mittler,German,1,3.8
+Mike Rielly,Business Administration,1,3.8
+T Martin,English,1,3.8
+Uri Andrews,Mathematics,1,3.8
+Andrew Peng,Mathematics,1,3.8
+Norman Gendleman,Film,1,3.8
+Yael Braunschweig,Music,1,3.8
+M C Miller,History,1,3.8
+Margeret Weir,Political Science,1,3.8
+Joshua Vera,Classics,1,3.8
+Robertson Bayer,Mathematics,1,3.8
+Lee Panich,Anthropology,1,3.8
+Brian Carver,Information Systems,1,3.8
+Ting XU,Materials Science,1,3.8
+Santought Mikaelian,Near Eastern Studies,1,3.8
+Bill Satariano,Public Health,1,3.8
+Jessica Fisher,English,1,3.8
+Hillary Falb,History,1,3.8
+Justin Tiwald,Philosophy,1,3.8
+James Sang Chi,History,1,3.8
+Jesse Knutson,Asian Studies,1,3.8
+John Wilmoth,Sociology,1,3.8
+Tyrone Johnson,Writing,1,3.8
+David Pieper,Geography,1,3.8
+Solomon Darwin,Not Specified,1,3.8
+Robert Betman,Chemistry,1,3.8
+Marcia Linn,Education,1,3.8
+Courtney Wang,Computer Science,1,3.8
+Mark Angel,Not Specified,1,3.8
+Mara Decker,Public Health,1,3.8
+Ella Mershon,English,1,3.8
+Michael Houser,Linguistics,1,3.8
+Justin Tumlinson,Business Administration,1,3.8
+Gautam Rao,Economics,1,3.8
+Travis Wilds,French,1,3.8
+Michelle Shiota,Psychology,1,3.8
+Lordy Rodriguez,Art,1,3.8
+Coye Cheshire,Information Systems,1,3.8
+Matt Baker,Mathematics,1,3.8
+Ana Casereto,Anthropology,1,3.8
+RE Panagiotou,Not Specified,1,3.8
+Nick Wilson,Sociology,1,3.8
+Rosa Martinez,English,1,3.8
+Alexei Tchistyi,Business Administration,1,3.8
+Swati Rana,English,1,3.8
+Kevin Quinn,Legal Studies,1,3.8
+Joshua Park,Physics,1,3.8
+Clara Mantini-Briggs,Anthropology,1,3.8
+Oran Gannot,Mathematics,1,3.8
+Khalil Sullivan,English,1,3.8
+Jason Kooiker,German,1,3.8
+Matthew Evans,French,1,3.8
+Sarah Ismail,Biology,1,3.8
+Liz Horberg,Psychology,1,3.8
+R. Gary Black,Architecture,1,3.8
+Nicole Alexander,Business Administration,1,3.8
+Elizabeth Wueste,Classics,1,3.8
+Reza Moazzami,Business Administration,1,3.8
+Charlie Ferguson,Social Welfare,1,3.8
+Kevin Sweeney,Business Administration,1,3.8
+Theodore Stadnik,Mathematics,1,3.8
+Todd Carmody,English,1,3.8
+Megan O'Connor,English,1,3.8
+Linda Choi,Not Specified,1,3.8
+Michael Grone,Anthropology,1,3.8
+Sharon Hsu,English,1,3.8
+Sara Boettiger,Agriculture,1,3.8
+Maura Tang,Theatre & Dance,1,3.8
+Scott Loarie,Geography,1,3.8
+Samuel Sakhai,Psychology,1,3.8
+Geoff Hamm,History,1,3.8
+Jennifer Devine,Geography,1,3.8
+Kevin Muller,American Studies,1,3.8
+Yahil Zaban,Religious Studies,1,3.8
+Alex Kruckman,Mathematics,1,3.8
+Natalia Caporale,Biology,1,3.8
+Julian Jonker,Philosophy,1,3.8
+Maryam Farahmand,Mathematics,1,3.8
+Marco Prina,Italian,1,3.8
+Ali Hassan,Asian Studies,1,3.8
+Lucy Sirianni,English,1,3.8
+Amelia Moore,Anthropology,1,3.8
+Jacqueline Asher,Women's Studies,1,3.8
+Avinash Bhardwaj,Industrial Engineering,1,3.8
+Laura Richard,Art History,1,3.8
+Jennifer Chatman,Business Administration,1,3.8
+Clare Stinchcombe,Mathematics,1,3.8
+Nick Kroshus,Business Administration,1,3.8
+Colas Zibaut,Rhetoric,1,3.8
+Sherrie Gallipeau,Biology,1,3.8
+Rebe Wiseman,Rhetoric,1,3.8
+Mahesh Sirinivasan,Psychology,1,3.8
+Alan Kluegel,Legal Studies,1,3.8
+Sagar Karandikar,Computer Science,1,3.8
+Neil Henry,Mass Communications,1,3.8
+Valkyrie Savage,Computer Science,1,3.8
+Sarah Accomazzo,Social Welfare,1,3.8
+Talia Prussin,Classics,1,3.8
+Minh Nguyen,Public Policy,1,3.8
+Charles Marcil,Mechanical Engineering,1,3.8
+Joonhong Ahn,Nuclear Engineering,1,3.8
+Jasmina Vujic,Nuclear Engineering,1,3.8
+Joel Middleton,Political Science,1,3.8
+Zane Burris,French,1,3.8
+Marisa Boyce,Women's Studies,1,3.8
+Myra Melford,Music,1,3.8
+Khoa Nguyen,Mathematics,1,3.8
+Fareed Ben-Youssef,Film,1,3.8
+Matthew Freeman,Economics,1,3.8
+Simone Stirner,Comparative Literature,1,3.8
+Yan Zhang,Mathematics,1,3.8
+Katie La Barbera,Biology,1,3.8
+Anthony Rizzuto,Chemistry,1,3.8
+Marco Amezcua,Psychology,1,3.8
+Michael Shalov,Political Science,1,3.8
+Joyce Oates,English,1,3.8
+Felipe Dias,Sociology,1,3.8
+Aimee Genell,History,1,3.8
+Lisa Jacobson,Film,1,3.8
+Mario Castillo,Sociology,1,3.8
+Linda Darling,English,1,3.8
+Molly Borowitz,Spanish,1,3.8
+Gilad Sharvit,Religious Studies,1,3.8
+Alice Miller Cotter,Music,1,3.8
+Adam Barker,Slavic Languages & Literatures,1,3.8
+Charlotte Horsey,French,1,3.8
+Aanchal Jain,Environmental Science,1,3.8
+Carly Giffin,Psychology,1,3.8
+Brody Reiman,Art,1,3.8
+Lilith Acadia,Rhetoric,1,3.8
+Christopher Llop,Information Systems,1,3.8
+Jenny Tan,English,1,3.8
+Michael Pejic,Mathematics,1,3.8
+Jason Klocek,Political Science,1,3.8
+Madelline Pruitt,English,1,3.8
+Zachary Manfredi,Rhetoric,1,3.8
+Pietro Calogero,City & Regional Planning,1,3.8
+Branden Saenz,Mathematics,1,3.8
+Melanie Jeske,Sociology,1,3.8
+Luisa Giulianetti,English,1,3.8
+Kelly Beuchene,Psychology,1,3.8
+Cody Bahir,Asian Studies,1,3.8
+Michael Nacht,Public Policy,1,3.8
+Max Stevenson,English,1,3.8
+Jeffrey Kuan,Mathematics,1,3.8
+Daniel Hedblom,Information Systems,1,3.8
+Douglas Hughes,Information Systems,1,3.8
+Tessa Talebi,Political Science,1,3.8
+J. Brooks Jessup,History,1,3.8
+David Rochlin,Business Administration,1,3.8
+Wei Cheng,Music,1,3.8
+Daniel Rodriguez,City & Regional Planning,1,3.8
+Dylan Arceneaux,Architecture,1,3.8
+Nicole Rosner,Anthropology,1,3.8
+Jacob Garboury,Film,1,3.8
+Ruthe Foushee,Linguistics,1,3.8
+Lauren Cooper,Business Administration,1,3.8
+Evan Bissell,Art,1,3.8
+Ben Pageler,Cognitive Science,1,3.8
+Sarah Harris,German,1,3.8
+Gavin Williams,Music,1,3.8
+Maria Sonevytsky,Music,1,3.8
+Jay Keasling,Chemical Engineering,1,3.8
+Negar Pour,Chemical Engineering,1,3.8
+Gary Wedemeyer,Biology,1,3.8
+Gerard Ramm,English,1,3.8
+Margarita Boenig-Liptsin,History,1,3.8
+Drew Jacoby-Senghor,Business Administration,1,3.8
+Giovanni Compiani,Business Administration,1,3.8
+Jeffery Cox,MolecularCellular Biology,1,3.8
+Deborah McKoy,City & Regional Planning,1,3.8
+Jennifer Tamayo,Theatre & Dance,1,3.8
+Laskin Emily,Comparative Literature,1,3.8
+Noel Bartlow,Physics,1,3.8
+Gert Christen,Industrial Engineering,1,3.8
+greogry niemeyer,Art,1,3.8
+Tyler Haddow,Philosophy,1,3.8
+NIMA Moini,Mathematics,1,3.8
+Laurent El Ghaoui,Electrical Engineering,1,3.8
+Alexander Ullman,English,1,3.8
+Shaunak Modak,Astronomy,1,3.8
+Lubna Safi,Near Eastern Studies,1,3.8
+Geoff Penington,Physics,1,3.8
+Jennifer Ochoa,Education,1,3.8
+Peter Hopkinson,Environ. Sci. Policy & Mgmt.,1,3.8
+Isabel Richter,History,1,3.8
+Nicole King,MolecularCellular Biology,1,3.8
+Sara Mameni,Ethnic Studies,1,3.8
+Kerry Shannon,History,1,3.8
+Amadeus Regucera,Music,1,3.8
+Kathleen Gao,Computer Science,1,3.8
+Paul Laskowski,Data Science,1,3.8
+Claudia Ostertag,Civil & Environmental Engineering,1,3.8
+Brandon Collins,Environ. Sci. Policy & Mgmt.,1,3.8
+Nazune Menka,Legal Studies,1,3.8
+Alessandro Chiesa,Computer Science,1,3.8
+Kaitlin Forcier,Film,1,3.8
+Talia Lebovitz,Education,1,3.8
+Pei-Chen Tsung,Near Eastern Studies,1,3.8
+Alec Apodaca,Anthropology,1,3.8
+Jason Price,Anthropology,1,3.8
+Alan Yeh,French,1,3.8
+Tatsuki Yoshida,Biology,1,3.8
+Samuel Holland,MolecularCellular Biology,1,3.8
+Daphne Edwards,Landscape Architecture & Regional Planning,1,3.8
+Morgan Jennings,Film,1,3.8
+Richard Hernandez,Journalism,1,3.8
+Kathryn Funderburg,English,1,3.8
+Gemma Tronfi,Italian,1,3.8
+Justin Berner,Spanish,1,3.8
+David Harris,Business Administration,1,3.8
+Hengrui Luo,Computer Science,1,3.8
+Raffaela Margutti,Physics,1,3.8
+Joel Childers,English,1,3.8
+Tanya Paul,Business Administration,1,3.8
+Cristian Ugarte,Economics,1,3.8
+Susan Houlihan,Business Administration,1,3.8
+Sahra Agahi,Political Science,1,3.8
+Eliot D'Silva,English,1,3.8
+Jessie Salas,Art Media & Design,1,3.8
+Ann Keller,Public Health,1,3.8
+Alec Burko,German,1,3.8
+Craig Johnson,History,1,3.8
+Brittany Arsiniega,Legal Studies,1,3.8
+Lauren van der Walt,Public Health,1,3.8
+Ben Safdi,Physics,1,3.8
+Simo Cocco,Italian,1,3.8
+Mariana Somma,Business Administration,1,3.8
+Rizvana Bradley,Film,1,3.8
+Michael Jansson,Economics,1,3.8
+Madeline Wyse,Religious Studies,1,3.8
+Karol Londoño,Languages,1,3.8
+Yang Bai,Psychology,1,3.8
+Gaby Wolodarski,Art,1,3.8
+Fangyuan Lin,Mathematics,1,3.8
+louise corron,Anthropology,1,3.8
+Timmia DeRoy,Theatre & Dance,1,3.8
+Lindsay Harris,Legal Studies,1,3.8
+Flavio Santini,History,1,3.8
+Ericka Weissinger,Public Policy,1,3.8
+Rangoli Goyal,Mathematics,1,3.8
+Xihan Yao,Geography,1,3.8
+David Kyeu,Languages,1,3.8
+Panayiotis Papadopoulos,Aerospace Studies,1,3.8
+Phil Ting,Public Policy,1,3.8
+Gloria Brar,Biology,1,3.8
+Ryan Chornock,Physics,1,3.8
+Christian Borgs,Computer Science,1,3.8
+Haichen Wang,Physics,1,3.8
+Paula Plessas,Physical Education,1,3.8
+Thea Patterson,Physical Education,1,3.8
+Latanya Tigner,Theatre & Dance,1,3.8
+Ray Oppenheimer,Theatre & Dance,1,3.8
+Booth Wilson,English,1,3.8
+Ariana Pemberton,Art History,1,3.8
+Robert Ritchie,Engineering,1,3.8
+Jon Martens,Architecture,1,3.8
+Julia Runkle,Film,1,3.8
+Anne Daquino,Biology,1,3.8
+Marisa Kwiatkowski,Journalism,1,3.8
+Kenneth Wong,Asian Studies,1,3.8
+Liesl Yamaguchi,French,1,3.8
+Justin Weinstock,Anthropology,1,3.8
+Vishwanath Bulusu,Civil Engineering,1,3.8
+Brent Fulton,Public Health,1,3.8
+Gaia WXYZ,Art,1,3.8
+Alexa Koenig,Law,1,3.8
+Marguerite Morlaln,Spanish,1,3.8
+Meredith Wallis,Legal Studies,1,3.8
+Michael Ragone,Mathematics,1,3.8
+Yael Segalovitz,Comparative Literature,1,3.8
+Jaqueline Brown,Sociology,1,3.8
+Jae-Min Yoo,Rhetoric,1,3.8
+Kirill Borusyak,Economics,1,3.8
+Ben Goldberg,Music,1,3.8
+Ryan Keerns,Architecture,1,3.8
+Mallory Barkdull,Civil & Environmental Engineering,1,3.8
+Aneliza Ruiz,Ethnic Studies,1,3.8
+David Bamman,Information Systems,1,3.8
+Rahul Parson,Asian Studies,1,3.8
+Rebecca Rainof,English,1,3.8
+Ruslans Aleksejevs,Mathematics,1,3.8
+Hillel Soifer,Political Science,1,3.8
+Mariagratzia De Luca,Italian,1,3.8
+Brian Fernando,Statistics,1,3.8
+Amara Ali,Languages,1,3.8
+Yifat Moas,Sociology,1,3.8
+Ishaan Sharma,Philosophy,1,3.8
+Ilia Nekrasov,Mathematics,1,3.8
+Madeline Zimring,Comparative Literature,1,3.8
+Xiaobo Lü,Political Science,1,3.8
+Matthew Rappaport,Engineering,1,3.8
+Chris Anderson,Bioengineering,1,3.8
+Nicholas Baer,German,1,3.8
+Chase Hobbs-Morgan,Geography,1,3.8
+Luis Flores,Sociology,1,3.8
+Igor Jovanovic,Nuclear Engineering,1,3.8
+Yuhan Jiang,Mathematics,1,3.8
+Patrice Douglass,Women's Studies,1,3.8
+Joshua Apte,Civil Engineering,1,3.8
+Jorge Liderman,Music,1,3.75
+Richard Buxbaum,Law,1,3.75
+M Xu,Computer Science,1,3.75
+Daniel Pomerleano,Mathematics,1,3.75
+Justin McCrary,Legal Studies,1,3.75
+Jason Valadao,Naval Science,1,3.75
+Mira-Lisa Katz,Education,1,3.75
+Nicholas Zeigler,Political Science,1,3.75
+Shauna Somerville,Biology,1,3.75
+Sita Patel,Psychology,1,3.75
+Peter Lorentzen,Political Science,1,3.75
+Joel Rygorsky,Classics,1,3.75
+Mai Vuong-Hurt,Chemistry,1,3.75
+Rodney Hero,Political Science,1,3.75
+Vikki YU,Optometry,1,3.75
+John Ellwood,Public Policy,1,3.75
+Zerubba Levi,Chemistry,1,3.75
+Sarah Cutfield,Linguistics,1,3.75
+Nuo XU,Electrical Engineering,1,3.75
+Daniel Cordaro,Psychology,1,3.75
+Danielle Watts,Geography,1,3.75
+Stefan Hoffmann,History,1,3.75
+CFS Creasy,English,1,3.75
+Wagstaff O'Brien,English,1,3.75
+Rachel Sutton,Legal Studies,1,3.75
+Ryan Copus,Legal Studies,1,3.75
+Ed Stack,Languages,1,3.75
+David O'Sullivan,Geography,1,3.75
+Brian Egdorf,Slavic Languages & Literatures,1,3.75
+Fithawee Tzeggai,Sociology,1,3.75
+Felix Gotti,Mathematics,1,3.75
+Mariska Kriek,Astronomy,1,3.75
+Lise Gaston,English,1,3.75
+Dunbar Ogden,Theatre & Dance,1,3.75
+Emmanuel Comte,History,1,3.75
+Jenna Coughlin,Scandinavian,1,3.75
+Tom Baker,Environ. Sci. Policy & Mgmt.,1,3.75
+Fahad Kamran,Statistics,1,3.75
+Corey Jackson,Information Systems,1,3.75
+Kristine Kay,Political Science,1,3.75
+Ivo Duijnstee,Earth & Planetary Sciences,1,3.75
+Stephanie Farmer,Linguistics,1,3.75
+Troy Smith,Scandinavian,1,3.75
+Wendy Weigmann,Social Welfare,1,3.75
+Ian McRae,Landscape Architecture & Regional Planning,1,3.75
+Lou Macher,German,1,3.75
+Jennifer Flaherty,Slavic Languages & Literatures,1,3.75
+Solomon Hsiang,Public Policy,1,3.75
+Chanel Caplan,Mass Communications,1,3.75
+Dinah Lensing-Sharp,English,1,3.75
+Edward Lempert,Political Science,1,3.75
+Morris Hirsch,Mathematics,1,3.75
+Kara Nelson,Civil Engineering,1,3.75
+Kevin Williams,Public Health,1,3.75
+Gerard Marriott,Bioengineering,1,3.75
+Alexis Bell,Chemical Engineering,1,3.75
+Lillia Balint,German,1,3.75
+Laurie Pearce,Near Eastern Studies,1,3.75
+Pedro Rolon,English,1,3.75
+Taner Sen,Agriculture,1,3.75
+Rebekah Ramsay,History,1,3.75
+Jeff Garnand,City & Regional Planning,1,3.75
+Thibaut Mastrolia,Industrial Engineering,1,3.75
+Jennifer Templeton Dunn,Sociology,1,3.75
+Robin Manley,Rhetoric,1,3.75
+Gabriel Gomes,Engineering,1,3.75
+Molly Turner,Business Administration,1,3.75
+Madison Brown,English,1,3.75
+Keven Sandoval-Menendez,English,1,3.75
+Hannah Larson,Mathematics,1,3.75
+Dan Zeltzer,Public Health,1,3.75
+Elena Whitfield,Computer Science,1,3.75
+Lindsay Walter,Legal Studies,1,3.75
+Sidney Kustu,Biology,1,3.7
+Oscar Dubon,Materials Science,1,3.7
+M Fish,Political Science,1,3.7
+Rene Davids,Architecture,1,3.7
+Ramon Jimenez,Spanish,1,3.7
+Peggy Hackney,Theatre & Dance,1,3.7
+Gabe Page,Comparative Literature,1,3.7
+Jane Singh,Ethnic Studies,1,3.7
+Doris Maldonado,Anthropology,1,3.7
+Andrea Stier Samuels,Psychology,1,3.7
+J S Eng,Psychology,1,3.7
+Alberto Sangiovanni-Vincentelli,Electrical Engineering,1,3.7
+Barbara Freeman,Rhetoric,1,3.7
+Elizabeth Elizabeth,Art Media & Design,1,3.7
+Barbara Romanowicz,Earth & Planetary Sciences,1,3.7
+Gregory Biging,Environ. Sci. Policy & Mgmt.,1,3.7
+Jacob Parker,Women's Studies,1,3.7
+Stephanie Shih,Linguistics,1,3.7
+Kimberly Quince,Philosophy,1,3.7
+Lewis Lewin,Psychology,1,3.7
+David Allstot,Mechanical Engineering,1,3.7
+David Dynerman,Mathematics,1,3.7
+Ida Johnson,Scandinavian,1,3.7
+Stacy Van Vleet,Asian Studies,1,3.7
+David Coll,Music,1,3.7
+Kenneson Chen,German,1,3.7
+Morgan King,Classics,1,3.7
+Andrew Ly,Music,1,3.7
+Conrad Miller,Data Science,1,3.7
+William Littmann,Architecture,1,3.7
+Prabal Dutta,Electrical Engineering,1,3.7
+Matthew Leister,Economics,1,3.7
+Jesse Zymet,Linguistics,1,3.7
+Upkar Ubhi,Asian Studies,1,3.7
+Paul de Morais,Comparative Literature,1,3.7
+Taehyun Kim,Asian Studies,1,3.7
+Alan Schoenfeld,Education,1,3.7
+Ziad Obermeyer,Public Health,1,3.7
+Dingyi Sun,Engineering,1,3.7
+John Vogel,Plant Biology,1,3.7
+Lakshmi Eassey,Journalism,1,3.7
+Hanan Alexander,Education,1,3.7
+Daniyal Channa,Near Eastern Studies,1,3.7
+Serena Villalobos,Information Systems,1,3.7
+Lesdi Robleto,Art History,1,3.7
+Yoshitaka Yamamoto,Japanese,1,3.7
+Mark Bauer,Engineering,1,3.7
+Audrey Meunier,French,1,3.66
+James Crothers,Biology,1,3.66
+Robert Sheperd,Architecture,1,3.66
+Lauren Naturale,English,1,3.66
+Stephan Few,Business Administration,1,3.66
+Tim Fuson,Music,1,3.66
+Venus Bivar,History,1,3.66
+James Freitag,Mathematics,1,3.66
+Jane Cho,History,1,3.66
+Geneveive Painter,Legal Studies,1,3.66
+Helena Keeffe,Art,1,3.66
+Ping Foong,Art History,1,3.66
+Tapan Parikh,Information Systems,1,3.66
+Alex Kocurek,Philosophy,1,3.66
+Glenn Richman,Music,1,3.66
+Alan Auerbach,Economics,1,3.66
+Paul Thiem,Psychology,1,3.66
+Kevin Gibbs,Anthropology,1,3.66
+Darrell Fields,Architecture,1,3.66
+Sandrine Dudoit,Statistics,1,3.66
+Eric Cesal,Architecture,1,3.66
+Cathy Lu,Art,1,3.66
+Jennifer Stokes,Civil Engineering,1,3.66
+Jennifer Skeem,Social Welfare,1,3.66
+Rutie Adler,Near Eastern Studies,1,3.66
+Andrew Rastetter,Architecture,1,3.66
+Austin Andrews,Philosophy,1,3.66
+Marco Torrez,Mass Communications,1,3.66
+Silvia Tiwon,Asian Studies,1,3.66
+Adam Anderson,Data Science,1,3.66
+Edward Evenson,History,1,3.66
+Juan Nico Pereda,Film,1,3.66
+Matthew Sherburne,Materials Science,1,3.66
+Cindy Looy,Biology,1,3.66
+Michael Jannson,Economics,1,3.66
+Jessica Reimche,Biology,1,3.66
+Sytske Wijnsma,Data Science,1,3.66
+Erin Hansen,Physics,1,3.66
+Christina Bejarano,Landscape Architecture & Regional Planning,1,3.66
+Laila Riazi,Comparative Literature,1,3.66
+Chen Lian,Economics,1,3.66
+Isaac Preiss,Film,1,3.66
+Michelle Dan,Earth & Planetary Sciences,1,3.66
+Maggie Chan,Education,1,3.66
+Ruofan Jiang,Mathematics,1,3.66
+Stanley Chen,Philosophy,1,3.61
+Qunhua LI,Statistics,1,3.61
+Nathan Cheung,Electrical Engineering,1,3.61
+Barbara Coles,Biology,1,3.61
+Taffeta Elliott,Psychology,1,3.61
+J B Delong,Economics,1,3.61
+Christian Traeger,Agriculture,1,3.61
+Michael Christianson,Plant Biology,1,3.61
+Rosie Wagner,Political Science,1,3.61
+Jim Baxter,Biology,1,3.61
+Gabriel Flambard,French,1,3.61
+Harriet Chiang,Journalism,1,3.61
+Yumeng Zhang,Statistics,1,3.61
+Priya Kalra,Cognitive Science,1,3.61
+Marc Rieffel,Mathematics,1,3.61
+Michel Gelobter,Environ. Sci. Policy & Mgmt.,1,3.61
+Jacqueline Siapno,Near Eastern Studies,1,3.61
+Sue Li Jue,Physical Education,1,3.61
+Wayne Delker,Engineering,1,3.61
+Rebecca Triano,Chemistry,1,3.61
+Zawadi Rucks Ahidiana,Sociology,1,3.61
+Julia Morris,Anthropology,1,3.61
+Franck Bedrossian,Music,1,3.61
+Margherita Ghetti,Italian,1,3.61
+Merle Behr,Statistics,1,3.61
+Tolanni Britton,Education,1,3.61
+Jill Miller,Art,1,3.61
+Kimberly Koenig,Legal Studies,1,3.61
+Donatella Taurasi,Business Administration,1,3.61
+Arman Zand,Business Administration,1,3.61
+Brendan Hamilton,Slavic Languages & Literatures,1,3.61
+Kathy Yelick,Computer Science,1,3.61
+David Shraub,Political Science,1,3.61
+Miriam Rodriguez,Spanish,1,3.61
+Christina Villarreal,Counseling,1,3.61
+Candace Hester,Public Policy,1,3.61
+Kan Liu,Geography,1,3.61
+Ghazal Rahimi,Art Media & Design,1,3.61
+Amy Pickering,Civil & Environmental Engineering,1,3.61
+Nicholas Gooding,Philosophy,1,3.61
+Lawrence Hall,Physics,1,3.61
+Leslie Vaughan,Business Administration,1,3.61
+Liam Waters,Scandinavian,1,3.61
+Seung-Wuk Lee,Bioengineering,1,3.61
+Ysis Wilson-Tafter,Data Science,1,3.61
+Kenneth Allen,Psychology,1,3.61
+Emmanual Saez,Economics,1,3.61
+Maia Darmon,Mathematics,1,3.61
+Alejandro Graziano,Economics,1,3.61
+Saeed Saremi,Computer Science,1,3.61
+Suchita Ghosh,Architecture,1,3.61
+Amy Rathbone,Art,1,3.61
+Mary Combs,Statistics,1,3.61
+Li Plass,Urban Design & Development,1,3.61

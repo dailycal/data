@@ -25,6 +25,17 @@ article.content {
   font-feature-settings: "kern", "liga", "clig", "calt";
 }
 
+/*
+ * Links written in an article's text (markdown links: the body's own paragraphs, lists, quotes
+ * and headings) are the text's color, underlined, instead of the browser's blue. Only direct
+ * children of the body, so links inside visuals keep their own styles.
+ */
+article.content > :is(p, ul, ol, blockquote, h1, h2, h3, h4, h5, h6) a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
 /* Images in the article body keep their proportions when scaled to the column */
 .content img {
   height: auto;

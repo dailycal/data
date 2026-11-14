@@ -2,7 +2,7 @@
 /** The layout for articles (layout: true): header, title, hero image, byline, body and footer. */
 import { Image } from "astro:assets";
 import PageLayout from "./PageLayout.astro";
-import { site } from "../config/site";
+import StoryFooter from "../components/StoryFooter.astro";
 import { type Article, articleHead, dateFormat, featuredImageAlt } from "../lib/articles";
 import { bylinePath } from "../lib/authors";
 import "../styles/article.css";
@@ -29,9 +29,6 @@ const {
 } = article.data;
 
 const imageAlt = featuredImageAlt(article);
-
-// Check if is joint-department article
-const isJointDept = typeof jointDept === "string" && jointDept.trim().length > 0;
 ---
 
 <PageLayout article={articleHead(article)}>
@@ -91,60 +88,14 @@ const isJointDept = typeof jointDept === "string" && jointDept.trim().length > 0
       <slot />
     </article>
 
-    {/* About story */}
-    <div class="footerCard content">
-      <h3>About this Story</h3>
-      {isJointDept ? (
-        <p>
-          This project was developed jointly by the Data Department and the {jointDept} Department
-          at The Daily Californian.
-        </p>
-      ) : (
-        <p>This project was developed by the Data Department at The Daily Californian.</p>
-      )}
-      {aboutStory && <p>{aboutStory}</p>}
-
-      {isJointDept ? (
-        <p>
-          <a href={site.contactUrl} class="contactLink">
-            Contact the Daily Californian
-          </a>
-        </p>
-      ) : (
-        <p>
-          Questions, comments or corrections? Email{" "}
-          <a href={`mailto:${site.contactEmail}`} class="link">
-            {site.contactEmail}
-          </a>
-          . Code, data and text are open-source on{" "}
-          <a href={site.githubUrl} class="link">
-            GitHub
-          </a>
-          .
-        </p>
-      )}
-    </div>
-
-    <div class="footerCard content">
-      <h3>Support us</h3>
-      <p>
-        We are a nonprofit, student-run newsroom. Please consider{" "}
-        <a href={site.donateUrl} class="link">
-          donating
-        </a>{" "}
-        to support our coverage.
-      </p>
-    </div>
+    {/* About story and Support us */}
+    <StoryFooter aboutStory={aboutStory} jointDept={jointDept} />
   </div>
 </PageLayout>
 
 <style>
   .link {
     color: var(--palette-dark-blue);
-  }
-  .contactLink {
-    color: gray;
-    font-size: 14px;
   }
   .article {
     display: flex;
@@ -205,18 +156,5 @@ const isJointDept = typeof jointDept === "string" && jointDept.trim().length > 0
     font-weight: 500;
     font-size: 0.87055rem;
     line-height: 1.1;
-  }
-  /* Footer */
-  .footerCard {
-    padding: 20px 20px 0 20px;
-    margin: 10px 0 20px 0px;
-    border: 1px solid black;
-    border-radius: 10px;
-  }
-  .footerCard p {
-    color: var(--palette-dark-gray);
-    font-family: var(--font-list);
-    font-weight: 500;
-    font-size: 15px;
   }
 </style>

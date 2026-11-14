@@ -1,0 +1,87 @@
+---
+/**
+ * The "About this Story" and "Support us" cards at the end of every article
+ * (src/layouts/ArticleLayout.astro), and of interactive pages that belong to an article (e.g.
+ * src/pages/interactive/profratings.astro), which pass that article's aboutStory and jointDept.
+ */
+import { site } from "../config/site";
+// .content: the cards share the article body's paragraph and heading styles. Both are scoped to
+// .content (and blank articles), so they don't touch the rest of the page.
+import "../styles/article.css";
+import "../styles/legacy-typography.css";
+
+interface Props {
+  aboutStory?: string;
+  jointDept?: string;
+}
+
+const { aboutStory, jointDept } = Astro.props;
+const isJointDept = typeof jointDept === "string" && jointDept.trim().length > 0;
+---
+
+{/* About story */}
+<div class="footerCard content">
+  <h3>About this Story</h3>
+  {isJointDept ? (
+    <p>
+      This project was developed jointly by the Data Department and the {jointDept} Department at
+      The Daily Californian.
+    </p>
+  ) : (
+    <p>This project was developed by the Data Department at The Daily Californian.</p>
+  )}
+  {aboutStory && <p>{aboutStory}</p>}
+
+  {isJointDept ? (
+    <p>
+      <a href={site.contactUrl} class="contactLink">
+        Contact the Daily Californian
+      </a>
+    </p>
+  ) : (
+    <p>
+      Questions, comments or corrections? Email{" "}
+      <a href={`mailto:${site.contactEmail}`} class="link">
+        {site.contactEmail}
+      </a>
+      . Code, data and text are open-source on{" "}
+      <a href={site.githubUrl} class="link">
+        GitHub
+      </a>
+      .
+    </p>
+  )}
+</div>
+
+<div class="footerCard content">
+  <h3>Support us</h3>
+  <p>
+    We are a nonprofit, student-run newsroom. Please consider{" "}
+    <a href={site.donateUrl} class="link">
+      donating
+    </a>{" "}
+    to support our coverage.
+  </p>
+</div>
+
+<style>
+  .link {
+    color: var(--palette-dark-blue);
+  }
+  .contactLink {
+    color: gray;
+    font-size: 14px;
+  }
+  .footerCard {
+    padding: 20px 20px 0 20px;
+    margin: 10px 0 20px 0px;
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+  .footerCard p {
+    color: var(--palette-dark-gray);
+    font-family: var(--font-list);
+    font-weight: 500;
+    font-size: 15px;
+  }
+</style>
