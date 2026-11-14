@@ -691,12 +691,6 @@ export const RatingBars = ({ years, height = 350, showAverage = false }) => {
             </div>
             <div style={{ color: theme.palette.darkGrey, fontSize: 13, marginBottom: 4 }}>
               {plural(hovered.total, 'review')}
-              {showAverage && hovered.total >= MIN_AVERAGE_REVIEWS && (
-                <>
-                  {' · average '}
-                  <strong style={{ color: AVG_COLOR }}>{formatRating(averageOf(hovered))}</strong>
-                </>
-              )}
             </div>
             {[...RATINGS].reverse().map((k) => (
               <div key={k} style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
@@ -710,6 +704,22 @@ export const RatingBars = ({ years, height = 350, showAverage = false }) => {
                 </strong>
               </div>
             ))}
+            {/* The year's average on its own row, below the counts */}
+            {showAverage && hovered.total >= MIN_AVERAGE_REVIEWS && (
+              <div style={{
+                display: 'flex', alignItems: 'center', gap: 6, marginTop: 6, paddingTop: 6, borderTop: '1px solid #e3e3e3',
+              }}
+              >
+                <svg width={10} height={10} aria-hidden="true" style={{ display: 'block' }}>
+                  <line x1={0} x2={10} y1={5} y2={5} stroke={AVG_COLOR} strokeWidth={2} />
+                  <circle cx={5} cy={5} r={2.5} fill={AVG_COLOR} />
+                </svg>
+                <span style={{ minWidth: 70 }}>Average rating</span>
+                <strong style={{ marginLeft: 'auto', paddingLeft: 12, fontVariantNumeric: 'tabular-nums' }}>
+                  {formatRating(averageOf(hovered))}
+                </strong>
+              </div>
+            )}
           </div>
         )}
       </div>

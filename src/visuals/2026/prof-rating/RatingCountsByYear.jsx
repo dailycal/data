@@ -25,7 +25,7 @@ const RatingCountsByYear = () => {
           {' reviews of UC Berkeley professors by the quality rating they gave, from 1 (awful) to 5 (awesome). The line is the average rating of the reviews posted each year.'}
         </>
       )}
-      note={`${PARTIAL_NOTE} Averages are shown for years with at least ${formatCount(MIN_AVERAGE_REVIEWS)} reviews, so they begin in 2003.`}
+      note={`${PARTIAL_NOTE} Averages are shown for years with at least ${formatCount(MIN_AVERAGE_REVIEWS)} reviews.`}
     >
       <RatingBars years={years} showAverage />
     </Figure>
