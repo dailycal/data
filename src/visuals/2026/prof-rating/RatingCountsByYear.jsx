@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import * as d3 from 'd3';
 import {
-  Figure, PARTIAL_NOTE, RatingBars, RmpLink, parseRatingYear,
+  Figure, MIN_AVERAGE_REVIEWS, PARTIAL_NOTE, RatingBars, RmpLink, formatCount, parseRatingYear,
 } from './shared';
 // Built by scripts/rating_counts.py in the scraping project: how many RateMyProfessors reviews
 // of UC Berkeley professors gave each quality rating, by the year the review was posted.
@@ -18,16 +18,16 @@ const RatingCountsByYear = () => {
 
   return (
     <Figure
-      title="Reviews posted each year, by rating"
+      title="Reviews posted each year, by rating, and their average"
       subtitle={(
         <>
           <RmpLink />
-          {' reviews of UC Berkeley professors by the quality rating they gave, from 1 (awful) to 5 (awesome).'}
+          {' reviews of UC Berkeley professors by the quality rating they gave, from 1 (awful) to 5 (awesome). The line is the average rating of the reviews posted each year.'}
         </>
       )}
-      note={PARTIAL_NOTE}
+      note={`${PARTIAL_NOTE} Averages are shown for years with at least ${formatCount(MIN_AVERAGE_REVIEWS)} reviews, so they begin in 2003.`}
     >
-      <RatingBars years={years} />
+      <RatingBars years={years} showAverage />
     </Figure>
   );
 };

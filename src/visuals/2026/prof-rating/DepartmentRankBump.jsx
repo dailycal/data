@@ -228,7 +228,10 @@ const DepartmentRankBump = () => {
               {data && data.labels.map((text, i) => (
                 <g key={text}>
                   <line x1={x(i)} x2={x(i)} y1={MARGIN_TOP - 6} y2={height - MARGIN_BOTTOM} stroke="#ececec" />
-                  <text x={x(i)} y={24} textAnchor="middle" fontSize={13} fill={theme.palette.darkGrey}>{text}</text>
+                  {/* Full years at the ends, abbreviated in between: 2015–16, ’16–17, ..., 2025–26 */}
+                  <text x={x(i)} y={24} textAnchor="middle" fontSize={13} fill={theme.palette.darkGrey}>
+                    {i === 0 || i === data.labels.length - 1 ? text : `’${text.slice(2)}`}
+                  </text>
                 </g>
               ))}
               {series && drawOrder.map((d) => {

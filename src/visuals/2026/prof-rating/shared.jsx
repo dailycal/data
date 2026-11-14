@@ -474,19 +474,29 @@ const BAR_MARGIN = {
   top: 12, right: 18, bottom: 50, left: 68,
 };
 const BAR_GAP = 1.5; // white line between stacked segments
+// With showAverage: the average-rating line and its right axis.
+const AVG_COLOR = theme.palette.black;
+const AVG_MARGIN_RIGHT = 54; // room for the right axis's ticks and title
+// Years with fewer reviews than this get no point on the average line: 2001 and 2002 have
+// 10 and 59, too few for a steady average, and would stretch the cropped scale.
+export const MIN_AVERAGE_REVIEWS = 100;
+const averageOf = (yr) => d3.sum(RATINGS, (k) => k * yr[k]) / yr.total;
 
 // The legend and a stacked bar chart of reviews by rating for each year: `years` is
 // [{ year, total, 1: n, ..., 5: n }] in order (see parseRatingYear). A missing year is a gap;
 // give it a row of zeros to show it as an empty bar.
-export const RatingBars = ({ years, height = 350 }) => {
+// showAverage adds a line of each year's average rating, on a cropped scale on the right axis
+// (only years with at least MIN_AVERAGE_REVIEWS reviews).
+export const RatingBars = ({ years, height = 350, showAverage = false }) => {
   const boxRef = useRef();
   const width = useWidth(boxRef);
   const [hover, setHover] = useState(null); // index of the hovered year
+  const right = showAverage ? AVG_MARGIN_RIGHT : BAR_MARGIN.right;
 
   const stacked = d3.stack().keys(RATINGS).value((yr, k) => yr[k])(years);
   const x = d3.scaleBand()
     .domain(years.map((yr) => yr.year))
-    .range([BAR_MARGIN.left, width - BAR_MARGIN.right])
+    .range([BAR_MARGIN.left, width - right])
     .paddingInner(0.25)
     .paddingOuter(0.1);
   const barWidth = Math.min(24, x.bandwidth());
@@ -497,6 +507,18 @@ export const RatingBars = ({ years, height = 350 }) => {
     .range([height - BAR_MARGIN.bottom, BAR_MARGIN.top]);
   // Whole numbers only: a professor with two reviews in a year shouldn't get a 0.5 tick.
   const yTicks = y.ticks(5).filter(Number.isInteger);
+
+  // The average line's points, and its scale cropped to a tenth past the lowest and highest.
+  const averages = showAverage
+    ? years.filter((yr) => yr.total >= MIN_AVERAGE_REVIEWS).map((yr) => ({ year: yr.year, avg: averageOf(yr) }))
+    : [];
+  const [avgMin, avgMax] = averages.length ? d3.extent(averages, (d) => d.avg) : [1, 5];
+  const yAvg = d3.scaleLinear()
+    .domain([Math.floor(avgMin * 10 - 1) / 10, Math.ceil(avgMax * 10 + 1) / 10])
+    .range([height - BAR_MARGIN.bottom, BAR_MARGIN.top]);
+  const avgTicks = yAvg.ticks(5);
+  const avgX = (year) => x(year) + x.bandwidth() / 2;
+  const avgPath = d3.line().x((d) => avgX(d.year)).y((d) => yAvg(d.avg))(averages);
   // Full years when there's room, two-digit years when it's tighter, otherwise every fifth year.
   let every = 5;
   if (x.step() >= 30) every = 1;
@@ -521,6 +543,15 @@ export const RatingBars = ({ years, height = 350 }) => {
             {RATING_LABELS[k]}
           </span>
         ))}
+        {showAverage && (
+          <span style={{ display: 'inline-flex', alignItems: 'center', gap: 5 }}>
+            <svg width={20} height={12} aria-hidden="true" style={{ display: 'block' }}>
+              <line x1={1} x2={19} y1={6} y2={6} stroke={AVG_COLOR} strokeWidth={2.5} />
+              <circle cx={10} cy={6} r={3} fill={AVG_COLOR} stroke="#fff" strokeWidth={1} />
+            </svg>
+            Average rating (right axis)
+          </span>
+        )}
       </div>
 
       <div ref={boxRef} style={{ position: 'relative', width: '100%' }}>
@@ -528,13 +559,13 @@ export const RatingBars = ({ years, height = 350 }) => {
           width={width}
           height={height}
           role="img"
-          aria-label={`Stacked bar chart of reviews by rating for each year from ${years.length ? years[0].year : ''} to ${years.length ? years[years.length - 1].year : ''}.`}
+          aria-label={`Stacked bar chart of reviews by rating for each year from ${years.length ? years[0].year : ''} to ${years.length ? years[years.length - 1].year : ''}${showAverage ? ', with a line of the average rating each year' : ''}.`}
           style={{ display: 'block', overflow: 'visible', fontFamily: 'Georgia, serif' }}
           onPointerLeave={() => setHover(null)}
         >
           {yTicks.map((t) => (
             <g key={t}>
-              <line x1={BAR_MARGIN.left} x2={width - BAR_MARGIN.right} y1={y(t)} y2={y(t)} stroke="#e6e6e6" />
+              <line x1={BAR_MARGIN.left} x2={width - right} y1={y(t)} y2={y(t)} stroke="#e6e6e6" />
               <line x1={BAR_MARGIN.left - 5} x2={BAR_MARGIN.left} y1={y(t)} y2={y(t)} stroke={theme.palette.grey} />
               <text x={BAR_MARGIN.left - 9} y={y(t)} dy="0.32em" textAnchor="end" fontSize={12} fill={theme.palette.darkGrey}>
                 {formatCount(t)}
@@ -563,8 +594,27 @@ export const RatingBars = ({ years, height = 350 }) => {
             </g>
           ))}
 
+          {/* The average rating line, outlined in white so it reads over the bars */}
+          {showAverage && averages.length > 0 && (
+            <g>
+              <path d={avgPath} fill="none" stroke="#fff" strokeWidth={5} strokeLinejoin="round" />
+              <path d={avgPath} fill="none" stroke={AVG_COLOR} strokeWidth={2.5} strokeLinejoin="round" />
+              {averages.map((d) => (
+                <circle
+                  key={d.year}
+                  cx={avgX(d.year)}
+                  cy={yAvg(d.avg)}
+                  r={hovered && hovered.year === d.year ? 5 : 3}
+                  fill={AVG_COLOR}
+                  stroke="#fff"
+                  strokeWidth={1.5}
+                />
+              ))}
+            </g>
+          )}
+
           {/* Axes: lines, tick marks and titles */}
-          <line x1={BAR_MARGIN.left} x2={width - BAR_MARGIN.right} y1={y(0)} y2={y(0)} stroke={theme.palette.grey} />
+          <line x1={BAR_MARGIN.left} x2={width - right} y1={y(0)} y2={y(0)} stroke={theme.palette.grey} />
           <line x1={BAR_MARGIN.left} x2={BAR_MARGIN.left} y1={BAR_MARGIN.top} y2={y(0)} stroke={theme.palette.grey} />
           {years.map((yr, i) => (i % every === 0 || i === years.length - 1) && (
             <g key={yr.year} transform={`translate(${x(yr.year) + x.bandwidth() / 2},${y(0)})`}>
@@ -575,8 +625,29 @@ export const RatingBars = ({ years, height = 350 }) => {
               </text>
             </g>
           ))}
+          {showAverage && (
+            <g>
+              <line x1={width - right} x2={width - right} y1={BAR_MARGIN.top} y2={y(0)} stroke={theme.palette.grey} />
+              {avgTicks.map((t) => (
+                <g key={t}>
+                  <line x1={width - right} x2={width - right + 5} y1={yAvg(t)} y2={yAvg(t)} stroke={theme.palette.grey} />
+                  <text x={width - right + 9} y={yAvg(t)} dy="0.32em" fontSize={12} fill={theme.palette.darkGrey}>
+                    {d3.format('.1f')(t)}
+                  </text>
+                </g>
+              ))}
+              <text
+                transform={`translate(${width - 8},${(BAR_MARGIN.top + height - BAR_MARGIN.bottom) / 2}) rotate(90)`}
+                textAnchor="middle"
+                fontSize={13}
+                fill={theme.palette.darkGrey}
+              >
+                Average rating
+              </text>
+            </g>
+          )}
           <text
-            x={(BAR_MARGIN.left + width - BAR_MARGIN.right) / 2}
+            x={(BAR_MARGIN.left + width - right) / 2}
             y={height - 6}
             textAnchor="middle"
             fontSize={13}
@@ -620,6 +691,12 @@ export const RatingBars = ({ years, height = 350 }) => {
             </div>
             <div style={{ color: theme.palette.darkGrey, fontSize: 13, marginBottom: 4 }}>
               {plural(hovered.total, 'review')}
+              {showAverage && hovered.total >= MIN_AVERAGE_REVIEWS && (
+                <>
+                  {' · average '}
+                  <strong style={{ color: AVG_COLOR }}>{formatRating(averageOf(hovered))}</strong>
+                </>
+              )}
             </div>
             {[...RATINGS].reverse().map((k) => (
               <div key={k} style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
