@@ -10,7 +10,9 @@ import ProfReport from "../../visuals/2026/prof-rating/ProfReport";
 // this Story". Found by its slug so both still match if the article's date (and file name) changes.
 const article = (await getArticles()).find((a) => a.id.endsWith("-prof-rating"));
 if (!article) {
-  throw new Error("profratings.astro: no article with the slug prof-rating (for the back link and footer)");
+  throw new Error(
+    "profratings.astro: no article with the slug prof-rating (for the back link and footer)",
+  );
 }
 ---
 
