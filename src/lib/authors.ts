@@ -3,6 +3,7 @@ import { z } from "astro/zod";
 import { site } from "../config/site";
 import team from "../config/team.json";
 import { type Article, getArticles } from "./articles";
+import { imageFile } from "./images";
 
 type AuthorEntry = CollectionEntry<"authors">;
 
@@ -32,7 +33,7 @@ export interface Author {
 /** Bylines that credit a group rather than a person: they don't link anywhere or get a page. */
 const GROUP_BYLINES = new Set(["Daily Cal Staff", "Editorial Board"]);
 
-/** Pages in /team/ that aren't an author's, so their names can't be an author's slug. */
+/** Pages in /staff/ that aren't an author's, so their names can't be an author's slug. */
 const RESERVED_SLUGS = new Set(["past"]);
 
 /** src/config/team.json: who's on the team now, by name, spelled as in their bylines. */
@@ -55,7 +56,7 @@ function authorSlug(name: string): string {
     .replace(/^-|-$/g, "");
 }
 
-export const authorPath = (slug: string) => `/team/${slug}`;
+export const authorPath = (slug: string) => `/staff/${slug}`;
 
 /** Where a byline name links: the author's page, or nowhere for a group (e.g. "Editorial Board"). */
 export function bylinePath(name: string): string | undefined {
@@ -85,11 +86,6 @@ export function authorLinks(author: Author): [label: string, url: string][] {
   ];
 }
 
-/** The file an image was imported from, e.g. "/.../src/assets/authors/ji-yeon-woo.jpg". */
-function imageFile(image: ImageMetadata): string {
-  return (image as ImageMetadata & { fsPath?: string }).fsPath ?? image.src.split("?")[0];
-}
-
 /**
  * Every author, from the author files and the articles' bylines, validated. Throws listing every
  * problem at once:
@@ -116,7 +112,7 @@ export async function getAuthors(): Promise<Author[]> {
       problems.push(`${file}: the file must be named after the author's name: ${slug}.mdx.`);
     }
     if (RESERVED_SLUGS.has(slug)) {
-      problems.push(`${file}: /team/${slug} is already a page, so it can't be an author's.`);
+      problems.push(`${file}: /staff/${slug} is already a page, so it can't be an author's.`);
     }
     if (image) {
       const imageName = imageFile(image)
@@ -143,7 +139,7 @@ export async function getAuthors(): Promise<Author[]> {
       }
       const slug = authorSlug(name);
       if (RESERVED_SLUGS.has(slug)) {
-        problems.push(`${file}: /team/${slug} is already a page, so it can't be an author's.`);
+        problems.push(`${file}: /staff/${slug} is already a page, so it can't be an author's.`);
       }
       let author = authors.get(slug);
       if (!author) {
@@ -174,7 +170,7 @@ export async function getAuthors(): Promise<Author[]> {
         const slug = authorSlug(name);
         if (RESERVED_SLUGS.has(slug)) {
           problems.push(
-            `src/config/team.json: /team/${slug} is already a page, so it can't be an author's.`,
+            `src/config/team.json: /staff/${slug} is already a page, so it can't be an author's.`,
           );
         }
         // Someone with no author file or byline yet gets a page with just their name
@@ -219,18 +215,20 @@ export function currentTeam(authors: Author[]): Author[] {
 }
 
 /**
- * Everyone who isn't on the team now, grouped by the year of their latest article, newest first,
- * and in each year by their latest article, newest first. Those with no articles come last, in a
+ * Everyone who isn't on the team now, grouped by the year of their first article, newest first,
+ * and in each year by their first article, newest first. Those with no articles come last, in a
  * group with no year, by last name.
  */
 export function pastTeam(authors: Author[]): { year?: number; authors: Author[] }[] {
-  const latest = (author: Author) => author.articles[0]?.data.date.valueOf() ?? -Infinity;
+  // Their articles are newest first, so their first article is the last one
+  const first = (author: Author) => author.articles.at(-1)?.data.date;
+  const firstTime = (author: Author) => first(author)?.valueOf() ?? -Infinity;
   const groups: { year?: number; authors: Author[] }[] = [];
   for (const author of authors
     .filter((author) => !author.teamRole)
-    .sort((a, b) => latest(b) - latest(a) || byLastName(a, b))) {
+    .sort((a, b) => firstTime(b) - firstTime(a) || byLastName(a, b))) {
     // In UTC, like the dates the site shows
-    const year = author.articles[0]?.data.date.getUTCFullYear();
+    const year = first(author)?.getUTCFullYear();
     let group = groups.at(-1);
     if (!group || group.year !== year) groups.push((group = { year, authors: [] }));
     group.authors.push(author);

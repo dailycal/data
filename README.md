@@ -10,7 +10,7 @@ Source for [data.dailycal.org](https://data.dailycal.org/): investigative storie
 | :-- | :-- |
 | `npm install` | Install dependencies |
 | `npm run dev` | Start the dev server at `http://localhost:4321` (runs in the background; stop it with `npx astro dev stop`) |
-| `npm run build` | Build the static site to `dist/` |
+| `npm run build` | Build the static site to `dist/`, saving its output as a page at `/editors/build` |
 | `npm run preview` | Serve the built `dist/` locally, to check the real production output |
 | `npm run lint` | Check code style with ESLint and Prettier |
 | `npm run lint:fix` | Fix ESLint and Prettier style errors |
@@ -21,7 +21,7 @@ Always run `npm run build` and `npm run lint` before pushing. GitHub Actions als
 
 **Deploying:** the site is entirely static, with nothing running on a server. It's hosted on Cloudflare as a Worker named `data` that only serves static assets (configured in [`wrangler.jsonc`](wrangler.jsonc)), so hosting it costs nothing. `npm run deploy` builds the site and uploads `dist/` with `wrangler deploy` (run `npx wrangler login` first).
 
-**Redirects** are real HTTP 301s, listed in [`public/_redirects`](public/_redirects), which Cloudflare reads.
+**Redirects** are real HTTP 301s, listed in [`public/_redirects`](public/_redirects), which Cloudflare reads. Cloudflare allows 2,000 static rules and 100 dynamic ones (with a `*` or `:placeholder` in the source), but every rule after the first dynamic one counts as dynamic, so keep dynamic rules at the end of the file. `npm run build` reads the file the way Cloudflare does and fails, saying which lines to fix, if Cloudflare would skip any rule ([`scripts/check-redirects.mjs`](scripts/check-redirects.mjs)).
 
 **Previews:** every pull request from a branch in this repository gets its own copy of the site at `https://pr<number>.datadev.dailycal.org` (e.g. `pr131.datadev.dailycal.org`), updated on every push and deleted when the pull request is closed or merged ([`.github/workflows/preview.yml`](.github/workflows/preview.yml)). The workflow comments the address on the pull request. Previews are [Cloudflare Workers Previews](https://developers.cloudflare.com/workers/previews/) of the `data` Worker, so they're served exactly like the real site, redirects included, but kept out of search engines. Pull requests from forks aren't previewed, since GitHub doesn't give them the repository's secrets; push the branch to this repository instead. To preview a branch from your own machine: `npm run build && npx wrangler preview --name <name>`, which serves it at `https://<name>.datadev.dailycal.org`.
 
@@ -48,7 +48,8 @@ src/
   styles/             Global and article CSS
   visuals/            Articles' visuals (React components), one folder per project, in a folder for
                       its article's year (e.g. 2026/nobel-visuals/; see "Visuals")
-scripts/              optimize-image.mjs: the command-line image optimizer
+scripts/              optimize-image.mjs: the command-line image optimizer; build.mjs: npm run build;
+                      check-redirects.mjs: checks public/_redirects before the build
 public/               Static files served as-is: the favicon, fonts, the data files visuals fetch
                       (data/<short slug>/) and interactives built elsewhere (interactive/<name>/)
 ```
@@ -60,9 +61,9 @@ public/               Static files served as-is: the favicon, fonts, the data fi
 | `/<yyyy-mm-dd>-<slug>/` | 301 redirect to `/article/<yyyy-mm-dd>-<slug>` (the old site's article URLs) |
 | `/interactive/<name>` | An interactive on a page of its own (see "Interactives") |
 | `/search?q=<query>` | Search (see "Search") |
-| `/team` | The Data Team now (see "Authors and the team") |
-| `/team/past` | Everyone else with a byline or an author file, by their latest story, grouped by its year |
-| `/team/<firstname-lastname>` | An author's page: their picture, role, links, bio and stories |
+| `/staff` | The Data Team now (see "Authors and the team") |
+| `/staff/past` | Everyone else with a byline or an author file, by their first story, grouped by its year |
+| `/staff/<firstname-lastname>` | An author's page: their picture, role, links, bio and stories |
 | `/apply` | Where the Data Department's recruiting flyer points: the application, and a form for the flyer's puzzle (hidden from search engines) |
 | `/editors/image-optimization` | In-browser image optimizer for editors (hidden from search engines) |
 | `/sitemap-index.xml`, `/robots.txt` | Generated at build time from `site` in `astro.config.mjs`. Don't add a `public/robots.txt` |
@@ -85,7 +86,7 @@ Unknown fields fail the build, so a misspelled field can't be silently ignored.
 | :-- | :-- | :-- |
 | `date` | Publish date, `"YYYY-MM-DD"`. Determines the order on the homepage. | Yes |
 | `title` | The headline. | Yes |
-| `byline` | Author names, e.g. `["Jane Doe", "John Smith"]`. At least one. Each links to the author's page at `/team/<firstname-lastname>`, so spell a name the same way in every article (the build fails if it isn't; see [Authors and the team](#authors-and-the-team)). | Yes, unless the article has a `link` |
+| `byline` | Author names, e.g. `["Jane Doe", "John Smith"]`. At least one. Each links to the author's page at `/staff/<firstname-lastname>`, so spell a name the same way in every article (the build fails if it isn't; see [Authors and the team](#authors-and-the-team)). | Yes, unless the article has a `link` |
 | `featuredImage` | The featured (hero) image: its path relative to the article, e.g. `"../../../assets/images/2026/my-story/cover.jpg"`. Also used on homepage cards and in social previews. | Yes |
 | `featuredImageAlt` | Alt text describing the featured image, for screen readers and social previews. Defaults to `Featured image for "<title>"`, so please set it. | No |
 | `description` | Short summary for search engines' results and social previews, also searched by the site's own search. Defaults to `subhead`, then the start of the article's first paragraph (then the site description, for an article with no prose). | No |
@@ -156,7 +157,7 @@ The only images outside `src/assets/` are the ones apps built elsewhere load by 
 
 ## Authors and the team
 
-Everyone in an article's `byline` gets a page at `/team/<firstname-lastname>` (e.g. "Ji Yeon Woo" is `/team/ji-yeon-woo`) listing their stories, newest first, and a link to their Daily Californian profile. Bylines link there. "Daily Cal Staff" and "Editorial Board" credit groups, so they don't link anywhere (`GROUP_BYLINES` in `src/lib/authors.ts`).
+Everyone in an article's `byline` gets a page at `/staff/<firstname-lastname>` (e.g. "Ji Yeon Woo" is `/staff/ji-yeon-woo`) listing their stories, newest first, and a link to their Daily Californian profile. Bylines link there. "Daily Cal Staff" and "Editorial Board" credit groups, so they don't link anywhere (`GROUP_BYLINES` in `src/lib/authors.ts`).
 
 To give someone a picture, a role and a bio, add `src/content/authors/<firstname-lastname>.mdx`, named after the name as it's spelled in bylines. The body is the bio:
 
@@ -185,7 +186,7 @@ Ji Yeon covers campus finances and housing...
 
 An author file is optional, for team members too: without one, their page has their name, their stories and their Daily Californian profile link.
 
-Who's on the team now is [`src/config/team.json`](src/config/team.json), by name, spelled as in their bylines. `/team` shows them in this order, each role by last name (reporters with a byline first, then those without one); everyone else is on `/team/past`, grouped by the year of their latest story:
+Who's on the team now is [`src/config/team.json`](src/config/team.json), by name, spelled as in their bylines. `/staff` shows them in this order, each role by last name (reporters with a byline first, then those without one); everyone else is on `/staff/past`, grouped by the year of their first story:
 
 ```json
 {
@@ -233,7 +234,7 @@ import "../../../visuals/2023/theft-visuals/BikeTheftMap.css";
 Astro renders components to HTML at build time and doesn't send their JavaScript to the browser unless told to. Give a visual a directive if it needs to run in the browser:
 
 - **`client:load`**: for anything interactive (state, effects, event handlers, charts that measure the page, d3). It's rendered at build time and then made interactive as the page loads.
-- **`client:only="react"`**: for visuals that can't render outside a browser at all, e.g. Leaflet maps. Rendered only in the browser. **Its CSS is imported by the `.mdx`, not by the visual** (as above): Astro adds the CSS a `client:only` visual imports to every page that lists articles (the homepage, `/team`, every article), not just its own. A Leaflet map's article imports `src/styles/leaflet.css`, which has Leaflet's CSS and the frame every map on the site has. A `client:load` visual can import its own CSS.
+- **`client:only="react"`**: for visuals that can't render outside a browser at all, e.g. Leaflet maps. Rendered only in the browser. **Its CSS is imported by the `.mdx`, not by the visual** (as above): Astro adds the CSS a `client:only` visual imports to every page that lists articles (the homepage, `/staff`, every article), not just its own. A Leaflet map's article imports `src/styles/leaflet.css`, which has Leaflet's CSS and the frame every map on the site has. A `client:load` visual can import its own CSS.
 - **No directive**: for visuals that are only HTML (an iframe, a static timeline), which then cost no JavaScript.
 
 A few things to know when writing or porting a visual:

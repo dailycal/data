@@ -127,7 +127,7 @@ const CandidateFinanceVisuals = ({ intro, middle, end }) => {
               By
               {' '}
               <a
-                href="/team/antara-gangwal"
+                href="/staff/antara-gangwal"
                 style={{ color: '#00529B', textDecoration: 'underline' }}
               >
                 Antara Gangwal
@@ -136,7 +136,7 @@ const CandidateFinanceVisuals = ({ intro, middle, end }) => {
               &
               {' '}
               <a
-                href="/team/brendan-raykoff"
+                href="/staff/brendan-raykoff"
                 style={{ color: '#00529B', textDecoration: 'underline' }}
               >
                 Brendan Raykoff

@@ -1,5 +1,5 @@
 ---
-/** /team/<firstname-lastname>: an author's picture, role, links and bio, and their articles. */
+/** /staff/<firstname-lastname>: an author's picture, role, links and bio, and their articles. */
 import { render } from "astro:content";
 import ArticleCard from "../../components/ArticleCard.astro";
 import AuthorPicture from "../../components/AuthorPicture.astro";
@@ -74,8 +74,8 @@ const description = entry
     )}
 
     <p class="back">
-      <a href={author.teamRole ? "/team" : "/team/past"}>
-        {author.teamRole ? "The team" : "Past contributors"}
+      <a href={author.teamRole ? "/staff" : "/staff/past"}>
+        {author.teamRole ? "Staff" : "Past contributors"}
       </a>
     </p>
   </div>

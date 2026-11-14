@@ -1,8 +1,8 @@
 ---
-/** /team: the Data Team now, from src/config/team.json: the editors, then everyone else. */
+/** /staff: the Data Team now, from src/config/team.json: the editors, then everyone else. */
 import AuthorCard from "../../components/AuthorCard.astro";
 import AuthorGroup from "../../components/AuthorGroup.astro";
-import TeamLayout from "../../layouts/TeamLayout.astro";
+import StaffLayout from "../../layouts/StaffLayout.astro";
 import { currentTeam, getAuthors } from "../../lib/authors";
 
 const team = currentTeam(await getAuthors());
@@ -10,7 +10,7 @@ const editors = team.filter((author) => author.teamRole !== "reporter");
 const staff = team.filter((author) => author.teamRole === "reporter");
 ---
 
-<TeamLayout title="Team" description="The Daily Californian's Data Team." heading={false}>
+<StaffLayout title="Staff" description="The Daily Californian's Data Team." heading={false}>
   <AuthorGroup title="Editors">
     {editors.map((author) => (
       <AuthorCard author={author} eager />
@@ -22,6 +22,6 @@ const staff = team.filter((author) => author.teamRole === "reporter");
     ))}
   </AuthorGroup>
   <Fragment slot="footer">
-    <a href="/team/past">Past contributors</a>
+    <a href="/staff/past">Past contributors</a>
   </Fragment>
-</TeamLayout>
+</StaffLayout>

@@ -194,7 +194,7 @@ export default function Story({ date, slots }) {
         <h1>{t("story.title")}</h1>
         {date ? <time className="story-date dark-story-date" dateTime={date}>{apDate(date)}</time> : null}
         <p className="story-byline dark-story-byline">
-          <T id="story.byline" c={[<a href="/team/john-schultz" />]} />
+          <T id="story.byline" c={[<a href="/staff/john-schultz" />]} />
         </p>
         <div className="story-lede dark-story-copy dark-story-lede">{slots.lede}</div>
         {error ? (
