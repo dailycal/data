@@ -1,0 +1,191 @@
+---
+/**
+ * Headshot generator, for editors.
+ * Makes an author's picture from a photo of them entirely in the browser (nothing is uploaded):
+ * cuts them out of it onto the gray behind authors' initials, crops it square and offers it as a
+ * small WebP to download. The steps and settings are shared with `npm run generate-headshot`, in
+ * src/lib/headshot.mjs.
+ *
+ * See README.md's "Authors and the team" for where the picture goes.
+ */
+---
+
+<html lang="en">
+  {/* Head metadata */}
+  <head>
+    <meta charset="utf-8" />
+    {/* Tell robots no index */}
+    <meta name="robots" content="noindex" />
+    <title>Generate headshot</title>
+  </head>
+  <body>
+    {/* File input and output */}
+    <input type="file" id="file" accept="image/*" />
+    <pre id="out"></pre>
+
+    {/* Rendered result */}
+    <div id="result" hidden>
+      <a id="download">Download headshot</a>
+      <br />
+      Show:{" "}
+      <label>
+        <input type="radio" name="view" id="show-original" /> Original
+      </label>{" "}
+      <label>
+        <input type="radio" name="view" id="show-headshot" /> Headshot
+      </label>
+      <br />
+      <img id="original" alt="Original" style="max-width:100%" />
+      {/* At the size it's shown on an author's page, in its circle */}
+      <img id="headshot" alt="Headshot" width="140" height="140" style="border-radius:50%" />
+    </div>
+
+    {/* Generation script */}
+    <script>
+      import encode from "@jsquash/webp/encode.js";
+      import initResize, { resize } from "@jsquash/resize/lib/resize/pkg/squoosh_resize.js";
+      import {
+        HEADSHOT_SIZE,
+        HEADSHOT_WEBP_QUALITY,
+        cutOut,
+        onBackgroundSquare,
+      } from "../../lib/headshot.mjs";
+      import { checkExtension, formatBytes } from "../../lib/image-optimization.mjs";
+
+      // Index of lanczos3 in the resizer's method list (the same kernel sharp uses)
+      const LANCZOS3 = 3;
+
+      const $ = (id: string) => document.getElementById(id)!;
+      const input = $("file") as HTMLInputElement;
+      const out = $("out");
+      const result = $("result");
+      const originalImg = $("original") as HTMLImageElement;
+      const headshotImg = $("headshot") as HTMLImageElement;
+      const showOriginal = $("show-original") as HTMLInputElement;
+      const showHeadshot = $("show-headshot") as HTMLInputElement;
+      const download = $("download") as HTMLAnchorElement;
+
+      // Make a headshot from a single photo
+      async function generate(file: File, originalUrl: string) {
+        const dot = file.name.lastIndexOf(".");
+        const ext = dot > 0 ? file.name.slice(dot).toLowerCase() : "";
+        const base = dot > 0 ? file.name.slice(0, dot) : file.name;
+
+        checkExtension(ext);
+
+        // Decoding through an <img> applies the EXIF orientation, like sharp's
+        // .rotate(), and drawing it converts any color profile to sRGB.
+        const img = new Image();
+        img.src = originalUrl;
+        try {
+          await img.decode();
+        } catch {
+          throw new Error(
+            `This browser can't decode this ${ext} file (HEIC and TIFF only open in Safari). ` +
+              `Export it to a JPEG or PNG first, then run this again on that file.`,
+          );
+        }
+        const width = img.naturalWidth;
+        const height = img.naturalHeight;
+        const canvas = document.createElement("canvas");
+        canvas.width = width;
+        canvas.height = height;
+        const ctx = canvas.getContext("2d")!;
+        ctx.drawImage(img, 0, 0);
+        const photo = ctx.getImageData(0, 0, width, height).data;
+
+        // Cut the person out onto the gray, square
+        const cutout = await cutOut(photo, width, height, 4);
+        const { pixels, size } = onBackgroundSquare(cutout, width, height);
+
+        // Scale it down to HEADSHOT_SIZE, never up. Resized in sRGB rather than
+        // linear light, as sharp does; the result is a fresh copy out of wasm
+        // memory, so it's backed by a plain ArrayBuffer (the resizer's types just
+        // predate typed array generics).
+        const newSize = Math.min(size, HEADSHOT_SIZE);
+        let resized = pixels as Uint8ClampedArray<ArrayBuffer>;
+        if (newSize !== size) {
+          await initResize();
+          resized = resize(
+            new Uint8Array(pixels.buffer),
+            size,
+            size,
+            newSize,
+            newSize,
+            LANCZOS3,
+            true,
+            false,
+          ) as Uint8ClampedArray<ArrayBuffer>;
+        }
+
+        // use_sharp_yuv is what sharp's `smartSubsample` turns on, and method 6
+        // is its `effort: 6`
+        const webp = await encode(new ImageData(resized, newSize, newSize), {
+          quality: HEADSHOT_WEBP_QUALITY,
+          method: 6,
+          use_sharp_yuv: 1,
+        });
+
+        return {
+          blob: new Blob([webp], { type: "image/webp" }),
+          outputName: `${base}.webp`,
+          width,
+          height,
+          newSize,
+        };
+      }
+
+      function show(headshot: boolean) {
+        originalImg.hidden = headshot;
+        headshotImg.hidden = !headshot;
+        showOriginal.checked = !headshot;
+        showHeadshot.checked = headshot;
+      }
+      showOriginal.onchange = () => show(false);
+      showHeadshot.onchange = () => show(true);
+
+      let run = 0;
+      input.onchange = async () => {
+        const thisRun = ++run;
+        const file = input.files?.[0];
+        result.hidden = true;
+        URL.revokeObjectURL(originalImg.src);
+        URL.revokeObjectURL(headshotImg.src);
+        if (!file) {
+          out.textContent = "";
+          return;
+        }
+
+        out.textContent =
+          `Cutting the person out of ${file.name}… ` +
+          `(the first time, this downloads a 6.6 MB model)`;
+        const originalUrl = URL.createObjectURL(file);
+        try {
+          const r = await generate(file, originalUrl);
+          // A newer file was chosen while this one was processing
+          if (thisRun !== run) {
+            URL.revokeObjectURL(originalUrl);
+            return;
+          }
+
+          const headshotUrl = URL.createObjectURL(r.blob);
+          originalImg.src = originalUrl;
+          headshotImg.src = headshotUrl;
+          download.href = headshotUrl;
+          download.download = r.outputName;
+          out.textContent =
+            `${file.name} -> ${r.outputName}\n` +
+            `original: ${r.width}x${r.height}, ${formatBytes(file.size)}\n` +
+            `headshot: ${r.newSize}x${r.newSize}, ${formatBytes(r.blob.size)}\n` +
+            `Rename it to the author's file name (e.g. ji-yeon-woo.webp) and put it in ` +
+            `src/assets/authors/.`;
+          show(true);
+          result.hidden = false;
+        } catch (err) {
+          URL.revokeObjectURL(originalUrl);
+          if (thisRun === run) out.textContent = `${file.name}: FAILED — ${(err as Error).message}`;
+        }
+      };
+    </script>
+  </body>
+</html>

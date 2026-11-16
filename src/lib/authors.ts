@@ -1,5 +1,6 @@
 import { type CollectionEntry, getCollection } from "astro:content";
 import { z } from "astro/zod";
+import linkWeights from "../config/author-links.json";
 import { site } from "../config/site";
 import team from "../config/team.json";
 import { type Article, getArticles } from "./articles";
@@ -70,8 +71,17 @@ function byLastName(a: Author, b: Author): number {
 }
 
 /**
+ * A link's weight on an author's page, by its label (any capitalization): from
+ * src/config/author-links.json, or 0 for any other label.
+ */
+const linkWeight = (label: string) =>
+  Object.entries(linkWeights).find(([known]) => known.toLowerCase() === label.toLowerCase())?.[1] ??
+  0;
+
+/**
  * Their links by label: their file's `links`, their `email`, and their Daily Californian profile
- * if their links don't include one.
+ * if their links don't include one, heaviest first (see src/config/author-links.json); links with
+ * the same weight, like custom ones, stay in the order they're listed in.
  */
 export function authorLinks(author: Author): [label: string, url: string][] {
   const { links = {}, email } = author.entry?.data ?? {};
@@ -83,7 +93,7 @@ export function authorLinks(author: Author): [label: string, url: string][] {
     ...(hasProfile
       ? []
       : [["The Daily Californian", site.authorProfileUrl(author.name)] as [string, string]]),
-  ];
+  ].sort(([a], [b]) => linkWeight(b) - linkWeight(a));
 }
 
 /**
