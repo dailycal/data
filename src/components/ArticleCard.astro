@@ -1,75 +1,252 @@
 ---
-/** A linked card for an article (date, featured image, title), used on the homepage. */
+/**
+ * A linked card for an article (file number, date, featured image, title, byline), used on the
+ * homepage and authors' pages. The homepage's newest story is a wider "lead" card with its
+ * description.
+ */
 import { Image } from "astro:assets";
-import { type Article, articlePath, dateFormat, featuredImageAlt } from "../lib/articles";
+import {
+  type Article,
+  articleHead,
+  articlePath,
+  dateFormat,
+  featuredImageAlt,
+} from "../lib/articles";
 import { cardImage } from "../lib/images";
 
 interface Props {
   article: Article;
   /** Load the image eagerly (for cards visible without scrolling). */
   eager?: boolean;
+  /** The story's number, counting from the oldest, shown as "File 042". */
+  number?: number;
+  /** The wide lead card, with the story's description. */
+  lead?: boolean;
 }
 
-const { article, eager = false } = Astro.props;
+const { article, eager = false, number, lead = false } = Astro.props;
 const { width, height, position } = await cardImage(article.data.featuredImage);
+const { date, title, byline, link } = article.data;
+const stamp = date.toISOString().slice(0, 10).replaceAll("-", ".");
+const description = lead ? articleHead(article).description : undefined;
+const authors = byline.length > 2 ? `${byline[0]} + ${byline.length - 1} more` : byline.join(" & ");
 ---
 
-<a href={articlePath(article)} class="articleCard">
-  <time class="date" datetime={article.data.date.toISOString()}>
-    {dateFormat.format(article.data.date)}
-  </time>
-  {/* Cropped to the card's shape by object-fit and object-position (see cardImage()) */}
-  <Image
-    src={article.data.featuredImage}
-    alt={featuredImageAlt(article)}
-    class="featuredImage"
-    width={width}
-    height={height}
-    densities={[1, 2]}
-    loading={eager ? "eager" : "lazy"}
-    style={`object-position: ${position}`}
-  />
-  <span class="title">{article.data.title}</span>
+<a href={articlePath(article)} class:list={["articleCard", { lead }]}>
+  <div class="frame brackets">
+    {/* Cropped to the card's shape by object-fit and object-position (see cardImage()) */}
+    <Image
+      src={article.data.featuredImage}
+      alt={featuredImageAlt(article)}
+      class="featuredImage"
+      width={width}
+      height={height}
+      densities={lead ? [1, 2, 3] : [1, 2]}
+      loading={eager ? "eager" : "lazy"}
+      fetchpriority={lead ? "high" : undefined}
+      style={`object-position: ${position}`}
+    />
+    <span class="scan" aria-hidden="true"></span>
+    {link && <span class="badge">Interactive ↗</span>}
+  </div>
+  <div class="text">
+    <div class="meta">
+      {number !== undefined && <span class="fileNo">File {String(number).padStart(3, "0")}</span>}
+      <time datetime={date.toISOString()} title={dateFormat.format(date)}>
+        {stamp}
+      </time>
+    </div>
+    <span class="title">{title}</span>
+    {description && <p class="description">{description}</p>}
+    {authors && <span class="byline">{authors}</span>}
+    {lead && <span class="cta">Open story →</span>}
+  </div>
 </a>
 
 <style>
   .articleCard {
     display: flex;
     flex-direction: column;
-    width: 360px;
-    max-width: 100%;
-    margin: 20px;
-    font-size: 15px;
-    font-family: Georgia, sans-serif;
+    gap: 14px;
+    min-width: 0;
+    padding: 12px 12px 18px;
+    border: 1px solid var(--dc-line);
+    border-radius: 4px;
+    background: linear-gradient(180deg, rgba(16, 24, 40, 0.75), rgba(9, 14, 24, 0.75));
+    font-family: var(--dc-font-sans);
     text-decoration: none;
+    color: var(--dc-text);
+    transition:
+      border-color 250ms,
+      transform 300ms var(--dc-ease-out),
+      box-shadow 300ms;
+  }
+  .articleCard:hover,
+  .articleCard:focus-visible {
+    border-color: var(--dc-line-strong);
+    transform: translateY(-3px);
+    box-shadow:
+      0 18px 40px -18px rgba(0, 0, 0, 0.9),
+      0 0 0 1px rgba(76, 201, 255, 0.08),
+      0 0 32px -8px rgba(76, 201, 255, 0.25);
+  }
+  .articleCard:focus-visible {
+    outline: 2px solid var(--dc-accent);
+    outline-offset: 2px;
   }
 
-  .articleCard:hover .title {
-    text-decoration: underline;
+  /* Image, with scanlines and corner brackets */
+  .frame {
+    position: relative;
+    overflow: hidden;
+    border-radius: 2px;
+    background: #0b111c;
   }
-
-  .date {
-    color: var(--palette-gray);
-    border-top: 1px solid var(--palette-dark-gray);
-    font-weight: 400;
-    line-height: normal;
-    font-size: 12px;
-    padding-bottom: 10px;
-    padding-top: 10px;
+  .frame::before,
+  .frame::after {
+    opacity: 0;
+    z-index: 2;
   }
-
+  .articleCard:hover .frame::before,
+  .articleCard:hover .frame::after,
+  .articleCard:focus-visible .frame::before,
+  .articleCard:focus-visible .frame::after {
+    opacity: 1;
+  }
   .featuredImage {
+    display: block;
     width: 100%;
     height: auto;
     aspect-ratio: 360 / 200;
     object-fit: cover;
+    filter: saturate(0.85) contrast(1.02);
+    transition:
+      transform 700ms var(--dc-ease-out),
+      filter 400ms;
+  }
+  .articleCard:hover .featuredImage {
+    transform: scale(1.04);
+    filter: saturate(1.05) contrast(1.04);
+  }
+  /* Scanlines, which fade out on hover */
+  .scan {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    background: repeating-linear-gradient(
+      to bottom,
+      rgba(4, 7, 13, 0.1) 0,
+      rgba(4, 7, 13, 0.1) 1px,
+      transparent 1px,
+      transparent 3px
+    );
+    transition: opacity 400ms;
+  }
+  .articleCard:hover .scan {
+    opacity: 0;
+  }
+  .badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 3;
+    padding: 4px 8px;
+    border: 1px solid var(--dc-accent);
+    border-radius: 3px;
+    background: rgba(4, 7, 13, 0.82);
+    backdrop-filter: blur(6px);
+    color: var(--dc-accent);
+    font-family: var(--dc-font-mono);
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
   }
 
+  /* Text */
+  .text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 4px;
+  }
+  .meta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--dc-font-mono);
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--dc-text-faint);
+  }
+  .fileNo {
+    color: var(--dc-accent);
+  }
+  .fileNo::after {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 1px;
+    margin-left: 10px;
+    vertical-align: middle;
+    background: var(--dc-line-strong);
+  }
+  .meta time {
+    font-variant-numeric: tabular-nums;
+  }
   .title {
-    font-weight: 400;
-    line-height: normal;
-    color: var(--palette-black);
-    font-size: 24px;
-    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.22;
+    letter-spacing: -0.015em;
+    color: var(--dc-text);
+    text-wrap: balance;
+    transition: color 200ms;
+  }
+  .articleCard:hover .title {
+    color: #fff;
+  }
+  .byline {
+    font-size: 13px;
+    color: var(--dc-text-dim);
+  }
+
+  /* Lead card: image beside the text on wide screens */
+  .lead {
+    padding: 14px;
+  }
+  .lead .title {
+    font-size: clamp(26px, 3.2vw, 40px);
+    line-height: 1.08;
+    letter-spacing: -0.028em;
+    font-weight: 650;
+  }
+  .lead .description {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.55;
+    color: var(--dc-text-dim);
+  }
+  .cta {
+    margin-top: 6px;
+    font-family: var(--dc-font-mono);
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--dc-accent);
+  }
+  @media (min-width: 900px) {
+    .lead {
+      display: grid;
+      grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr);
+      gap: 32px;
+      align-items: center;
+      padding: 16px 32px 16px 16px;
+    }
+    .lead .text {
+      gap: 16px;
+    }
   }
 </style>

@@ -10,13 +10,16 @@ const editors = team.filter((author) => author.teamRole !== "reporter");
 const staff = team.filter((author) => author.teamRole === "reporter");
 ---
 
-<StaffLayout title="Staff" description="The Daily Californian's Data Team." heading={false}>
-  <AuthorGroup title="Editors">
+<StaffLayout title="Staff" description="The Daily Californian's Data Team.">
+  <Fragment slot="intro">
+    The people behind the Data Department's stories, analysis and graphics.
+  </Fragment>
+  <AuthorGroup title="Editors" count={editors.length}>
     {editors.map((author) => (
       <AuthorCard author={author} eager />
     ))}
   </AuthorGroup>
-  <AuthorGroup title="Staff">
+  <AuthorGroup title="Staff" count={staff.length}>
     {staff.map((author) => (
       <AuthorCard author={author} />
     ))}

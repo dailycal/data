@@ -46,15 +46,18 @@ const initials = author.name
     border-radius: 50%;
     object-fit: cover;
     flex-shrink: 0;
+    box-sizing: border-box;
   }
   .initials {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #e4e4e4;
-    color: var(--palette-dark-gray);
-    font-family: Georgia, sans-serif;
-    font-size: calc(var(--size) * 0.36);
-    letter-spacing: 0.02em;
+    background:
+      radial-gradient(circle at 30% 25%, rgba(76, 201, 255, 0.25), transparent 60%),
+      linear-gradient(145deg, #142036, #0a111e);
+    color: var(--dc-text);
+    font-family: var(--dc-font-mono);
+    font-size: calc(var(--size) * 0.3);
+    letter-spacing: 0.04em;
   }
 </style>

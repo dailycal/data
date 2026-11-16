@@ -335,9 +335,9 @@ An article's `layout` frontmatter picks how it's rendered:
 
 ## Other configuration
 
-- **Footer links** are the `footerLinks` array in `src/layouts/PageLayout.astro`.
+- **The command bar and footer** (navigation, the Berkeley clock, footer links) are in `src/layouts/PageLayout.astro`; the footer's links and contact details come from `site.ts`.
 - **`<head>` and SEO** (title, description, canonical URL, Open Graph/X cards, JSON-LD) are rendered by `src/components/Head.astro` from the props each page passes to `PageLayout`: a page passes its name (`title="Search"` becomes "Search — The Daily Californian: Data"), and an article's layout passes `articleHead(article)`. The default social image is the Daily Cal logo; articles use their featured image.
-- **Colors and fonts** are CSS variables in `src/styles/global.css`.
+- **Colors and fonts** are CSS variables in `src/styles/global.css`. The site's own pages (the dark "data desk" console: the command bar, homepage, staff, search, and the article masthead and footer) use the `--dc-*` tokens there, prefixed so they can't collide with the variables visuals define (many use `--bg`, `--text`, `--accent` and so on). Article bodies stay on a light page (`--dc-paper`), the one the older visuals were designed for, and the old `--palette-*` colors are kept for them. Its type is Geist and Geist Mono, self-hosted from `@fontsource-variable`.
 
 ## Contact
 

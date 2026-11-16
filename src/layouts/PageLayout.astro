@@ -1,137 +1,522 @@
 ---
 /**
- * The layout every page renders into: <head> (see src/components/Head.astro), the fixed
- * header (a link to the staff page, the logo, and a link to search), and the page content.
+ * The layout every page renders into: <head> (see src/components/Head.astro), the fixed command
+ * bar (the logo, links to the stories, staff and search, and a live Berkeley clock), the page
+ * content and the footer.
  */
 import { Image } from "astro:assets";
-import wordmark from "../assets/site/dclogoblack.webp";
+import mark from "../assets/site/dclogo-circle.webp";
+import wordmark from "../assets/site/dclogo.webp";
 import Head, { type Props as HeadProps } from "../components/Head.astro";
+import { site } from "../config/site";
 import "../styles/global.css";
 
 type Props = HeadProps;
+
+const path = Astro.url.pathname.replace(/\.html$/, "").replace(/\/index$/, "/");
+const section = path === "/" ? "home" : path.startsWith("/staff") ? "staff" : path.split("/")[1];
+const year = new Date().getFullYear();
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" class="console">
   <head>
     <Head {...Astro.props} />
   </head>
   <body>
-    {/* Header */}
+    <a href="#main" class="skipLink">
+      Skip to content
+    </a>
+
+    {/* Command bar */}
     <header class="header">
-      <a href="/staff" class="staffLink">
-        Staff
-      </a>
-      <a href="/" class="logoLink" aria-label="The Daily Californian: Data home">
+      <a href="/" class="brand" aria-label="The Daily Californian: Data home">
+        <Image src={mark} alt="" class="mark" width={30} densities={[1, 2, 3]} loading="eager" />
         <Image
           src={wordmark}
-          alt="The Daily Californian"
-          class="logo"
-          height={20}
+          alt=""
+          class="wordmark"
+          height={15}
           densities={[1, 2, 3]}
           loading="eager"
         />
+        <span class="deskTag">Data</span>
       </a>
-      <a href="/search" class="searchLink" aria-label="Search">
-        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
-          <circle
-            cx="10.5"
-            cy="10.5"
-            r="6.5"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-          ></circle>
-          <path
-            d="M15.5 15.5 21 21"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-          ></path>
-        </svg>
-      </a>
+
+      <nav class="nav" aria-label="Site">
+        <a href="/" class="navLink" aria-current={section === "home" ? "page" : undefined}>
+          Stories
+        </a>
+        <a href="/staff" class="navLink" aria-current={section === "staff" ? "page" : undefined}>
+          Staff
+        </a>
+        <a
+          href="/search"
+          class="navLink searchLink"
+          aria-label="Search"
+          aria-current={section === "search" ? "page" : undefined}
+        >
+          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
+            <circle
+              cx="10.5"
+              cy="10.5"
+              r="6.5"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            ></circle>
+            <path
+              d="M15.5 15.5 21 21"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+            ></path>
+          </svg>
+          <span class="searchLabel">Search</span>
+          <kbd class="key">/</kbd>
+        </a>
+      </nav>
+
+      <div class="clock" aria-hidden="true">
+        <span class="pulse-dot"></span>
+        <span class="clockPlace">Berkeley</span>
+        <time class="clockTime" data-clock>
+          --:--:--
+        </time>
+        <span class="clockZone">PT</span>
+      </div>
     </header>
 
     {/* Content */}
-    <main>
+    <main id="main">
       <slot />
     </main>
+
+    {/* Footer */}
+    <footer class="footer">
+      <div class="footerInner">
+        <div class="footerBrand">
+          <p class="hud-label">The Daily Californian // Data Department</p>
+          <p class="footerTagline">{site.description}</p>
+          <p class="coords">
+            <span>37.8719° N</span>
+            <span>122.2585° W</span>
+            <span>Berkeley, CA</span>
+          </p>
+        </div>
+        <nav class="footerLinks" aria-label="More">
+          <div>
+            <p class="hud-label">Desk</p>
+            <a href="/">Stories</a>
+            <a href="/search">Search</a>
+            <a href="/staff">Staff</a>
+            <a href="/staff/past">Past contributors</a>
+          </div>
+          <div>
+            <p class="hud-label">Network</p>
+            <a href={site.mainSiteUrl}>dailycal.org</a>
+            <a href={site.githubUrl}>Source on GitHub</a>
+            <a href={`mailto:${site.contactEmail}`}>Contact</a>
+            <a href={site.donateUrl}>Donate</a>
+          </div>
+        </nav>
+      </div>
+      <div class="footerBar">
+        <span>© {year} The Daily Californian</span>
+        <span class="systemStatus">
+          <span class="okDot"></span>Independent student press
+        </span>
+      </div>
+    </footer>
+
+    <script>
+      // The command bar's clock: the time in Berkeley, every second
+      const clock = document.querySelector<HTMLElement>("[data-clock]");
+      if (clock) {
+        const format = new Intl.DateTimeFormat("en-US", {
+          hour: "2-digit",
+          minute: "2-digit",
+          second: "2-digit",
+          hour12: false,
+          timeZone: "America/Los_Angeles",
+        });
+        const tick = () => {
+          clock.textContent = format.format(new Date());
+        };
+        tick();
+        setInterval(tick, 1000);
+      }
+
+      // "/" (or Ctrl/⌘-K) anywhere but a text field opens search
+      document.addEventListener("keydown", (event) => {
+        const target = event.target as HTMLElement;
+        if (target.closest("input, textarea, select, [contenteditable]")) return;
+        const slash = event.key === "/" && !event.metaKey && !event.ctrlKey && !event.altKey;
+        const commandK = event.key === "k" && (event.metaKey || event.ctrlKey);
+        if ((slash || commandK) && location.pathname !== "/search") {
+          event.preventDefault();
+          location.href = "/search";
+        }
+      });
+    </script>
   </body>
 </html>
 
 <style>
-  body {
-    padding-top: 50px;
-    background-color: var(--palette-light-gray);
+  /*
+   * Astro doesn't scope rules for <body>, and article pages bundle this layout's CSS even when
+   * they're blank pages (BlankArticleLayout), so these are keyed to this layout's <html>.
+   */
+  :global(html.console) body {
+    padding-top: var(--dc-header-height);
+    background-color: var(--dc-bg);
+    background-image:
+      radial-gradient(1100px 520px at 78% -8%, rgba(76, 201, 255, 0.1), transparent 70%),
+      radial-gradient(900px 480px at 0% 0%, rgba(139, 123, 255, 0.08), transparent 70%);
+    background-repeat: no-repeat;
+    color: var(--dc-text);
+    font-family: var(--dc-font-sans);
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     box-sizing: border-box;
     margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  /* A faint measurement grid behind everything, fading out down the page */
+  :global(html.console) body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background-image:
+      linear-gradient(to right, rgba(130, 170, 230, 0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(130, 170, 230, 0.05) 1px, transparent 1px);
+    background-size: 56px 56px;
+    mask-image: linear-gradient(to bottom, black, transparent 85%);
   }
   main {
     flex: 1;
-    padding: 0 8px;
+    padding-bottom: 72px;
+  }
+  /* Articles end in their own footer panels */
+  :global(body:has(.articlePage)) main {
+    padding-bottom: 0;
   }
 
-  /* Header: logo centered */
+  .skipLink {
+    position: absolute;
+    top: -100px;
+    left: 12px;
+    z-index: 10000;
+    padding: 8px 12px;
+    background: var(--dc-accent);
+    color: var(--dc-bg);
+    font-family: var(--dc-font-mono);
+    font-size: 13px;
+  }
+  .skipLink:focus {
+    top: 12px;
+  }
+
+  /* Command bar */
   .header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 50px;
+    height: var(--dc-header-height);
     box-sizing: border-box;
     display: flex;
     align-items: center;
-    justify-content: center;
-    background-color: white;
+    gap: 24px;
+    padding: 0 20px;
+    background-color: rgba(4, 7, 13, 0.72);
+    backdrop-filter: blur(14px) saturate(140%);
+    -webkit-backdrop-filter: blur(14px) saturate(140%);
+    border-bottom: 1px solid var(--dc-line);
     z-index: 9999;
-    border-bottom: 1px solid #d3d3d3;
   }
-  .logoLink {
+  /* Over an article's light body, the bar is nearly solid, so it stays dark */
+  :global(body:has(.articlePage)) .header {
+    background-color: rgba(4, 7, 13, 0.94);
+  }
+  /* A thin scanning highlight along the bar's bottom edge */
+  .header::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -1px;
+    height: 1px;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      var(--dc-accent) 45%,
+      var(--dc-violet) 55%,
+      transparent
+    );
+    background-size: 40% 100%;
+    background-repeat: no-repeat;
+    animation: scan 7s linear infinite;
+    opacity: 0.8;
+  }
+  @keyframes scan {
+    from {
+      background-position: -40% 0;
+    }
+    to {
+      background-position: 140% 0;
+    }
+  }
+
+  .brand {
     display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    flex-shrink: 0;
   }
-  .logo {
-    height: 20px;
+  /* The black circle logo, inverted to white on the bar (its shadow is inverted too: a faint
+     white ring and a cyan glow) */
+  .mark {
+    width: 30px;
+    height: auto;
+    border-radius: 50%;
+    filter: invert(1);
+    box-shadow:
+      0 0 0 1px rgba(0, 0, 0, 0.3),
+      0 0 16px rgba(179, 54, 0, 0.35);
+  }
+  .wordmark {
+    height: 15px;
     width: auto;
   }
-  .searchLink {
-    position: absolute;
-    right: 16px;
+  .deskTag {
+    padding: 3px 7px 3px 8px;
+    border: 1px solid var(--dc-accent);
+    border-radius: 3px;
+    color: var(--dc-accent);
+    background: var(--dc-accent-soft);
+    font-family: var(--dc-font-mono);
+    font-size: 10.5px;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    line-height: 1;
+  }
+
+  .nav {
     display: flex;
-    padding: 6px;
-    color: var(--palette-black);
+    align-items: center;
+    gap: 4px;
+    margin-left: auto;
   }
-  .staffLink {
-    position: absolute;
-    left: 16px;
-    padding: 6px;
-    font-family: Georgia, sans-serif;
-    font-size: 16px;
-    color: var(--palette-black);
+  .navLink {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: 32px;
+    padding: 0 12px;
+    border-radius: 6px;
+    color: var(--dc-text-dim);
+    font-family: var(--dc-font-mono);
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
     text-decoration: none;
+    transition:
+      color 200ms,
+      background-color 200ms;
   }
-  .searchLink:hover,
-  .staffLink:hover {
-    color: var(--palette-dark-blue);
+  .navLink:hover {
+    color: var(--dc-text);
+    background: rgba(255, 255, 255, 0.05);
   }
-  /* Leaves room for the staff and search links on narrow phones */
-  @media (max-width: 440px) {
-    .logo {
-      height: 16px;
+  .navLink[aria-current="page"] {
+    color: var(--dc-text);
+  }
+  .navLink[aria-current="page"]::after {
+    content: "";
+    position: absolute;
+    left: 12px;
+    right: 12px;
+    bottom: -12px;
+    height: 2px;
+    background: var(--dc-accent);
+    box-shadow: 0 0 12px var(--dc-accent-glow);
+  }
+  .searchLink {
+    border: 1px solid var(--dc-line);
+    margin-left: 8px;
+  }
+  .searchLink[aria-current="page"]::after {
+    display: none;
+  }
+
+  .clock {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-left: 20px;
+    border-left: 1px solid var(--dc-line);
+    height: 28px;
+    font-family: var(--dc-font-mono);
+    font-size: 11.5px;
+    letter-spacing: 0.08em;
+    color: var(--dc-text-dim);
+    text-transform: uppercase;
+    flex-shrink: 0;
+  }
+  .clockTime {
+    color: var(--dc-text);
+    font-variant-numeric: tabular-nums;
+    min-width: 8ch;
+  }
+  .clockZone {
+    color: var(--dc-text-faint);
+  }
+
+  @media (max-width: 980px) {
+    .clock {
+      display: none;
+    }
+  }
+  @media (max-width: 720px) {
+    .header {
+      gap: 8px;
+      padding: 0 12px;
+    }
+    .searchLabel,
+    .searchLink kbd,
+    .deskTag {
+      display: none;
+    }
+    .navLink {
+      padding: 0 8px;
+      font-size: 11px;
+      letter-spacing: 0.06em;
     }
     .searchLink {
-      right: 6px;
-    }
-    .staffLink {
-      left: 6px;
-      font-size: 14px;
+      margin-left: 2px;
     }
   }
-  @media (max-width: 360px) {
-    .logo {
-      height: 13px;
+  @media (max-width: 480px) {
+    .wordmark {
+      height: 11px;
+    }
+    .mark {
+      width: 26px;
+    }
+    .brand {
+      gap: 8px;
+    }
+    .nav {
+      gap: 0;
+    }
+  }
+  @media (max-width: 370px) {
+    .wordmark {
+      display: none;
+    }
+  }
+
+  /* Footer */
+  .footer {
+    border-top: 1px solid var(--dc-line);
+    background: linear-gradient(to bottom, #080d17, var(--dc-bg));
+    color: var(--dc-text);
+    color-scheme: dark;
+    font-family: var(--dc-font-sans);
+  }
+  .footerInner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 48px 20px 32px;
+    box-sizing: border-box;
+  }
+  .footerBrand {
+    max-width: 420px;
+  }
+  .footer p {
+    margin: 0;
+  }
+  .footerTagline {
+    margin-top: 12px !important;
+    color: var(--dc-text-dim);
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  .coords {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 16px;
+    margin-top: 16px !important;
+    font-family: var(--dc-font-mono);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    color: var(--dc-text-faint);
+    text-transform: uppercase;
+  }
+  .footerLinks {
+    display: flex;
+    gap: 64px;
+  }
+  .footerLinks div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .footerLinks .hud-label {
+    margin-bottom: 4px;
+  }
+  .footerLinks a {
+    color: var(--dc-text-dim);
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 200ms;
+  }
+  .footerLinks a:hover {
+    color: var(--dc-accent);
+  }
+  .footerBar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 8px 24px;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 16px 20px 28px;
+    box-sizing: border-box;
+    border-top: 1px solid var(--dc-line);
+    font-family: var(--dc-font-mono);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--dc-text-faint);
+  }
+  .systemStatus {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .okDot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--dc-ok);
+    box-shadow: 0 0 8px var(--dc-ok);
+  }
+  @media (max-width: 560px) {
+    .footerLinks {
+      gap: 40px;
     }
   }
 </style>

@@ -20,6 +20,10 @@ const APPLICATION_URL =
   noindex
 >
   <div class="apply">
+    <p class="hud-label kicker">
+      <span class="pulse-dot"></span>Recruiting <span class="sep">//</span> Data desk
+    </p>
+    <h1>Join the desk</h1>
     <p>
       Thanks for checking out our flyer. We are the Data Department of The Daily Californian, UC
       Berkeley’s student newspaper. We work on long-form investigative pieces as well as interactive
@@ -51,7 +55,7 @@ const APPLICATION_URL =
       src={puzzleHint}
       alt="The puzzle's hint: four tall rectangles, each with one thick side, above the letters Y, X, V and Z."
       widths={[320, 683]}
-      sizes="(max-width: 600px) 42.5vw, 25vw"
+      sizes="(max-width: 600px) 60vw, 340px"
     />
   </div>
 </PageLayout>
@@ -88,50 +92,123 @@ const APPLICATION_URL =
   .apply {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 85px 0 40px;
+    align-items: flex-start;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 56px 20px 0;
+    box-sizing: border-box;
+    font-family: var(--dc-font-sans);
+    color: var(--dc-text);
   }
-  .apply > p {
-    width: 50vw;
+  .kicker {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 0 18px;
+    color: var(--dc-text-dim);
+  }
+  .sep {
+    color: var(--dc-accent);
+  }
+  h1 {
+    margin: 0 0 24px;
+    font-size: clamp(40px, 6vw, 64px);
+    font-weight: 650;
+    line-height: 1;
+    letter-spacing: -0.04em;
+  }
+  .apply > p:not(.kicker) {
+    margin: 0 0 16px;
+    font-size: 17px;
+    line-height: 1.65;
+    color: var(--dc-text-dim);
   }
   a {
-    color: var(--palette-black);
-    text-decoration: underline dotted;
+    color: var(--dc-text);
+    text-decoration: underline;
+    text-decoration-color: var(--dc-accent);
     text-underline-offset: 3px;
-    transition: color 300ms ease-out;
+    transition: color 200ms;
   }
   a:hover {
-    color: var(--palette-dark-blue);
+    color: var(--dc-accent);
   }
   form {
+    width: 100%;
     margin-top: 16px;
-    padding: 20px;
-    border: 1px solid var(--palette-black);
+    padding: 24px;
+    box-sizing: border-box;
+    border: 1px solid var(--dc-line-strong);
+    border-radius: 4px;
+    background: var(--dc-panel);
   }
   label {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    margin-bottom: 16px;
+    margin-bottom: 18px;
+    font-family: var(--dc-font-mono);
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--dc-text-faint);
+  }
+  input {
+    height: 44px;
+    padding: 0 12px;
+    border: 1px solid var(--dc-line-strong);
+    border-radius: 4px;
+    background: rgba(4, 7, 13, 0.7);
+    color: var(--dc-text);
+    font-family: var(--dc-font-mono);
+    font-size: 16px;
+    letter-spacing: normal;
+    text-transform: none;
+    caret-color: var(--dc-accent);
+  }
+  input:focus {
+    outline: none;
+    border-color: var(--dc-accent);
+    box-shadow: 0 0 0 3px rgba(76, 201, 255, 0.15);
+  }
+  button {
+    height: 44px;
+    padding: 0 20px;
+    border: 1px solid var(--dc-accent);
+    border-radius: 4px;
+    background: var(--dc-accent-soft);
+    color: var(--dc-accent);
+    font-family: var(--dc-font-mono);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  button:hover:not(:disabled) {
+    background: var(--dc-accent);
+    color: var(--dc-bg);
+  }
+  .status {
+    margin: 16px 0 0;
+    font-family: var(--dc-font-mono);
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--dc-ok);
   }
   .status:empty {
     display: none;
   }
   i {
-    margin-top: 32px;
+    margin-top: 40px;
+    color: var(--dc-text-dim);
   }
   img {
-    width: 25vw;
+    width: min(340px, 60%);
     height: auto;
     margin: 16px 0;
-    border: 1px solid var(--palette-black);
-  }
-  @media (max-width: 600px) {
-    .apply > p {
-      width: 85%;
-    }
-    img {
-      width: 42.5%;
-    }
+    border: 1px solid var(--dc-line-strong);
+    border-radius: 2px;
   }
 </style>

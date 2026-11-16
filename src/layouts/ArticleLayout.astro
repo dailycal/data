@@ -1,5 +1,12 @@
 ---
-/** The layout for articles (layout: true): header, title, hero image, byline, body and footer. */
+/**
+ * The layout for articles (layout: true): a dark masthead (title, subhead, byline, date and hero
+ * image), the body on a light reading surface, and the footer panels.
+ *
+ * The body keeps the light page the older articles' visuals were designed on: on article pages
+ * the <body> itself is that surface (some visuals change its background, e.g. bug-bodycam's dark
+ * mode), and the masthead and footers paint their own dark backgrounds.
+ */
 import { Image } from "astro:assets";
 import PageLayout from "./PageLayout.astro";
 import { site } from "../config/site";
@@ -29,194 +36,459 @@ const {
 } = article.data;
 
 const imageAlt = featuredImageAlt(article);
+const stamp = date.toISOString().slice(0, 10).replaceAll("-", ".");
 
 // Check if is joint-department article
 const isJointDept = typeof jointDept === "string" && jointDept.trim().length > 0;
 ---
 
 <PageLayout article={articleHead(article)}>
-  <div class="article">
-    <div class="centeredItems">
-      {/* Header */}
-      <h1 class="title">{title}</h1>
-      {subhead && <h3 class="subhead">{subhead}</h3>}
-      <h5 class="date">
-        <time datetime={date.toISOString()}>{dateFormat.format(date)}</time>
-      </h5>
+  {/* Reading progress, along the command bar's bottom edge */}
+  <div class="progress" aria-hidden="true">
+    <span></span>
+  </div>
+
+  <div class="articlePage">
+    {/* Masthead */}
+    <header class="masthead">
+      <div class="mastheadInner">
+        <p class="crumbs hud-label">
+          <a href="/">Data desk</a>
+          <span class="slash">/</span>
+          <span>Story</span>
+          <span class="slash">/</span>
+          <time datetime={date.toISOString()}>{stamp}</time>
+        </p>
+        <h1 class="title">{title}</h1>
+        {subhead && <p class="subhead">{subhead}</p>}
+
+        <div class="metaRow">
+          {/* Byline, linking to each author's page (flatMap avoids whitespace between authors) */}
+          {byline.length > 0 && (
+            <div class="metaItem byline">
+              <span class="hud-label">Reporting</span>
+              <span class="bylineNames">
+                {byline.flatMap((author: string, i: number) => {
+                  const path = bylinePath(author);
+                  return [
+                    ...(i > 0 ? [i === byline.length - 1 ? " & " : ", "] : []),
+                    path ? (
+                      <a href={path} class="authorLink">
+                        {author}
+                      </a>
+                    ) : (
+                      author
+                    ),
+                  ];
+                })}
+              </span>
+            </div>
+          )}
+          <div class="metaItem">
+            <span class="hud-label">Published</span>
+            <time class="metaValue" datetime={date.toISOString()}>
+              {dateFormat.format(date)}
+            </time>
+          </div>
+          <div class="metaItem">
+            <span class="hud-label">Desk</span>
+            <span class="metaValue">{isJointDept ? `Data × ${jointDept!.trim()}` : "Data"}</span>
+          </div>
+        </div>
+      </div>
 
       {/* Featured image */}
       {!hideHeroImage && (
-        <div class="imageContainer">
-          <Image
-            src={secondaryFeaturedImage ?? featuredImage}
-            alt={imageAlt}
-            class="image"
-            layout="constrained"
-            width={640}
-            loading="eager"
-            fetchpriority="high"
-          />
-
-          {imageCaption && (
-            <div class="imageCaption">
-              <em class="caption">{imageCaption}</em>
-            </div>
+        <figure class="imageContainer">
+          <div class="imageFrame brackets">
+            <Image
+              src={secondaryFeaturedImage ?? featuredImage}
+              alt={imageAlt}
+              class="image"
+              layout="constrained"
+              width={1040}
+              loading="eager"
+              fetchpriority="high"
+            />
+          </div>
+          {(imageCaption || imageAttribution) && (
+            <figcaption>
+              {imageCaption && <span class="caption">{imageCaption}</span>}
+              {imageAttribution && <span class="imageAttribution">{imageAttribution}</span>}
+            </figcaption>
           )}
-
-          {imageAttribution && <h5 class="imageAttribution">{imageAttribution}</h5>}
-        </div>
+        </figure>
       )}
-    </div>
-
-    {/* Byline, linking to each author's page (flatMap avoids whitespace between authors) */}
-    <div class="byline">
-      <span>By </span>
-      {byline.flatMap((author: string, i: number) => {
-        const path = bylinePath(author);
-        return [
-          ...(i > 0 ? [i === byline.length - 1 ? " & " : ", "] : []),
-          path ? (
-            <a href={path} class="link">
-              {author}
-            </a>
-          ) : (
-            author
-          ),
-        ];
-      })}
-    </div>
+    </header>
 
     {/* Article */}
-    <article class="content">
-      <slot />
-    </article>
-
-    {/* About story */}
-    <div class="footerCard content">
-      <h3>About this Story</h3>
-      {isJointDept ? (
-        <p>
-          This project was developed jointly by the Data Department and the {jointDept} Department
-          at The Daily Californian.
-        </p>
-      ) : (
-        <p>This project was developed by the Data Department at The Daily Californian.</p>
-      )}
-      {aboutStory && <p>{aboutStory}</p>}
-
-      {isJointDept ? (
-        <p>
-          <a href={site.contactUrl} class="contactLink">
-            Contact the Daily Californian
-          </a>
-        </p>
-      ) : (
-        <p>
-          Questions, comments or corrections? Email{" "}
-          <a href={`mailto:${site.contactEmail}`} class="link">
-            {site.contactEmail}
-          </a>
-          . Code, data and text are open-source on{" "}
-          <a href={site.githubUrl} class="link">
-            GitHub
-          </a>
-          .
-        </p>
-      )}
+    <div class="article">
+      <article class="content">
+        <slot />
+      </article>
     </div>
 
-    <div class="footerCard content">
-      <h3>Support us</h3>
-      <p>
-        We are a nonprofit, student-run newsroom. Please consider{" "}
-        <a href={site.donateUrl} class="link">
-          donating
-        </a>{" "}
-        to support our coverage.
-      </p>
-    </div>
+    {/* About story and support */}
+    <section class="footerPanels" aria-label="About this story">
+      <div class="footerInner">
+        <div class="footerCard">
+          <h2 class="hud-label">About this story</h2>
+          {isJointDept ? (
+            <p>
+              This project was developed jointly by the Data Department and the {jointDept}{" "}
+              Department at The Daily Californian.
+            </p>
+          ) : (
+            <p>This project was developed by the Data Department at The Daily Californian.</p>
+          )}
+          {aboutStory && <p>{aboutStory}</p>}
+
+          {isJointDept ? (
+            <p>
+              <a href={site.contactUrl} class="link">
+                Contact the Daily Californian
+              </a>
+            </p>
+          ) : (
+            <p>
+              Questions, comments or corrections? Email{" "}
+              <a href={`mailto:${site.contactEmail}`} class="link">
+                {site.contactEmail}
+              </a>
+              . Code, data and text are open-source on{" "}
+              <a href={site.githubUrl} class="link">
+                GitHub
+              </a>
+              .
+            </p>
+          )}
+        </div>
+
+        <div class="footerCard support">
+          <h2 class="hud-label">Support us</h2>
+          <p>
+            We are a nonprofit, student-run newsroom. Please consider donating to support our
+            coverage.
+          </p>
+          <a href={site.donateUrl} class="donate">
+            Donate →
+          </a>
+        </div>
+      </div>
+    </section>
   </div>
 </PageLayout>
 
+<script>
+  // Reading progress: how far down the article body the reader is
+  const bar = document.querySelector<HTMLElement>(".progress span");
+  const body = document.querySelector<HTMLElement>(".articlePage .article");
+  if (bar && body) {
+    let queued = false;
+    const update = () => {
+      queued = false;
+      const { top, height } = body.getBoundingClientRect();
+      const done = Math.min(1, Math.max(0, -top / Math.max(1, height - window.innerHeight)));
+      bar.style.transform = `scaleX(${done})`;
+    };
+    const queue = () => {
+      if (!queued) {
+        queued = true;
+        requestAnimationFrame(update);
+      }
+    };
+    addEventListener("scroll", queue, { passive: true });
+    addEventListener("resize", queue);
+    update();
+  }
+</script>
+
+<style is:global>
+  /* Article pages: the <body> is the light reading surface (see the comment at the top) */
+  html body:has(.articlePage) {
+    background-color: var(--dc-paper);
+    background-image: none;
+    color: #000;
+  }
+  html.console:has(.articlePage) body::before {
+    display: none;
+  }
+</style>
+
 <style>
-  .link {
-    color: var(--palette-dark-blue);
+  .progress {
+    position: fixed;
+    top: calc(var(--dc-header-height) - 1px);
+    left: 0;
+    right: 0;
+    height: 2px;
+    z-index: 10000;
+    pointer-events: none;
   }
-  .contactLink {
-    color: gray;
-    font-size: 14px;
+  .progress span {
+    display: block;
+    height: 100%;
+    background: linear-gradient(90deg, var(--dc-accent), var(--dc-violet));
+    box-shadow: 0 0 12px var(--dc-accent-glow);
+    transform: scaleX(0);
+    transform-origin: left;
   }
-  .article {
-    display: flex;
-    flex-direction: column;
-    padding: 30px 0;
+
+  /* Masthead */
+  .masthead {
+    position: relative;
+    background-color: var(--dc-bg);
+    background-image:
+      radial-gradient(900px 420px at 85% 0%, rgba(76, 201, 255, 0.12), transparent 70%),
+      radial-gradient(700px 380px at 0% 10%, rgba(139, 123, 255, 0.1), transparent 70%);
+    border-bottom: 1px solid var(--dc-line);
+    font-family: var(--dc-font-sans);
+    color-scheme: dark;
+    overflow: hidden;
+    /* Reaches up under the command bar, so the bar is over dark, not the light body */
+    margin-top: calc(-1 * var(--dc-header-height));
+    padding-top: var(--dc-header-height);
+  }
+  /* The measurement grid, fading toward the image */
+  .masthead::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background-image:
+      linear-gradient(to right, rgba(130, 170, 230, 0.055) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(130, 170, 230, 0.055) 1px, transparent 1px);
+    background-size: 56px 56px;
+    mask-image: linear-gradient(to bottom, black 30%, transparent);
+  }
+  .mastheadInner {
+    position: relative;
+    max-width: 860px;
     margin: 0 auto;
-    max-width: 640px;
-    font-family: Georgia, sans-serif;
+    padding: 64px 20px 0;
+    box-sizing: border-box;
   }
-  /* Header */
-  .centeredItems {
-    width: 100%;
+  .crumbs {
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    gap: 10px;
+    margin: 0 0 24px;
+  }
+  .crumbs a {
+    color: var(--dc-accent);
+    text-decoration: none;
+  }
+  .crumbs a:hover {
+    text-decoration: underline;
+  }
+  .crumbs time {
+    color: var(--dc-text-dim);
+  }
+  .slash {
+    color: var(--dc-line-strong);
+  }
+  .title {
+    margin: 0;
+    font-size: clamp(34px, 5.4vw, 60px);
+    font-weight: 650;
+    line-height: 1.04;
+    letter-spacing: -0.035em;
+    color: var(--dc-text);
+    text-wrap: balance;
+  }
+  .subhead {
+    max-width: 680px;
+    margin: 20px 0 0;
+    font-size: clamp(18px, 2vw, 21px);
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--dc-text-dim);
+    text-wrap: pretty;
+  }
+  .metaRow {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 36px 0 0;
+    border-top: 1px solid var(--dc-line);
+    border-bottom: 1px solid var(--dc-line);
+  }
+  .metaItem {
     display: flex;
     flex-direction: column;
+    gap: 6px;
+    padding: 14px 24px 14px 0;
+    margin-right: 24px;
+    border-right: 1px solid var(--dc-line);
+  }
+  .metaItem:last-child {
+    border-right: none;
+  }
+  .byline {
+    flex: 1 1 260px;
+  }
+  .bylineNames,
+  .metaValue {
+    font-size: 15px;
+    color: var(--dc-text);
+  }
+  .authorLink {
+    color: var(--dc-text);
+    text-decoration: underline;
+    text-decoration-color: var(--dc-accent);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
+    transition: color 200ms;
+  }
+  .authorLink:hover {
+    color: var(--dc-accent);
+  }
+
+  .imageContainer {
+    position: relative;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 40px 20px 36px;
+    box-sizing: border-box;
+  }
+  .imageFrame {
+    padding: 6px;
+    border: 1px solid var(--dc-line);
+    background: rgba(10, 16, 27, 0.7);
+  }
+  .imageFrame::before,
+  .imageFrame::after {
+    width: 22px;
+    height: 22px;
   }
   .imageContainer .image {
+    display: block;
     width: 100%;
     height: auto;
   }
-  .imageContainer .caption,
-  .imageContainer h5 {
-    margin-top: 10px;
-  }
-  .byline {
-    font-size: 15px;
-    font-family: sans-serif;
-    margin-bottom: 25px;
-    width: 100%;
+  figcaption {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 6px 24px;
+    margin-top: 12px;
   }
   .caption {
-    font-family: var(--font-list);
-    color: var(--palette-dark-gray);
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--dc-text-dim);
   }
-  .title {
-    font-weight: 600;
-    font-size: 35px;
-    line-height: normal;
-    text-align: center;
-  }
-  .subhead {
-    font-weight: 300;
-    font-size: 24px;
-    line-height: normal;
-    margin-top: 0;
-    color: var(--palette-dark-gray);
-    font-family: var(--font-list);
-    text-align: center;
-  }
-  .date {
-    text-align: center;
-  }
-  .date,
   .imageAttribution {
-    margin: 0 0 1.45rem 0;
-    color: var(--palette-dark-gray);
-    font-family: var(--font-list);
-    font-weight: 500;
-    font-size: 0.87055rem;
-    line-height: 1.1;
+    margin-left: auto;
+    font-family: var(--dc-font-mono);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--dc-text-faint);
   }
-  /* Footer */
+  /* No image: room below the meta row */
+  .mastheadInner:last-child {
+    padding-bottom: 48px;
+  }
+
+  /* Article body, on the light surface */
+  .article {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 44px 8px 30px;
+    color-scheme: light;
+    font-family: Georgia, sans-serif;
+  }
+
+  /* Footer panels */
+  .footerPanels {
+    background: var(--dc-bg);
+    color: var(--dc-text);
+    border-top: 1px solid var(--dc-line);
+    color-scheme: dark;
+    font-family: var(--dc-font-sans);
+  }
+  .footerPanels {
+    padding-bottom: 64px;
+  }
+  .footerInner {
+    display: grid;
+    grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
+    gap: 20px;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 48px 20px 0;
+    box-sizing: border-box;
+  }
   .footerCard {
-    padding: 20px 20px 0 20px;
-    margin: 10px 0 20px 0px;
-    border: 1px solid black;
-    border-radius: 10px;
+    padding: 24px;
+    border: 1px solid var(--dc-line);
+    border-radius: 4px;
+    background: var(--dc-panel);
+  }
+  .footerCard h2 {
+    margin: 0 0 14px;
+    color: var(--dc-accent);
   }
   .footerCard p {
-    color: var(--palette-dark-gray);
-    font-family: var(--font-list);
-    font-weight: 500;
+    margin: 0 0 12px;
     font-size: 15px;
+    line-height: 1.6;
+    color: var(--dc-text-dim);
+  }
+  .link {
+    color: var(--dc-text);
+    text-decoration: underline;
+    text-decoration-color: var(--dc-accent);
+    text-underline-offset: 3px;
+  }
+  .link:hover {
+    color: var(--dc-accent);
+  }
+  .support {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .donate {
+    margin-top: auto;
+    padding: 10px 16px;
+    border: 1px solid var(--dc-accent);
+    border-radius: 4px;
+    background: var(--dc-accent-soft);
+    color: var(--dc-accent);
+    font-family: var(--dc-font-mono);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition:
+      background-color 200ms,
+      color 200ms;
+  }
+  .donate:hover {
+    background: var(--dc-accent);
+    color: var(--dc-bg);
+  }
+  @media (max-width: 720px) {
+    .mastheadInner {
+      padding-top: 40px;
+    }
+    .metaItem {
+      padding-right: 16px;
+      margin-right: 16px;
+    }
+    .byline {
+      flex-basis: 100%;
+      border-right: none;
+      border-bottom: 1px solid var(--dc-line);
+    }
+    .footerInner {
+      grid-template-columns: minmax(0, 1fr);
+    }
+    .imageContainer {
+      padding: 28px 12px 28px;
+    }
   }
 </style>

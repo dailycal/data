@@ -1,4 +1,13 @@
+/*
+ * Site-wide design tokens and base styles: the "data desk" look, a dark newsroom console (the
+ * header, homepage, staff, search and article chrome) around a light reading surface for article
+ * bodies, which keep the light page the older visuals were designed on (see ArticleLayout.astro).
+ */
+@import "@fontsource-variable/geist";
+@import "@fontsource-variable/geist-mono";
+
 :root {
+  /* The old palette, still used by article bodies and the visuals inside them */
   --palette-black: #0e141b;
   --palette-dark-gray: rgba(67, 67, 67, 1);
   --palette-gray: #949494;
@@ -10,4 +19,135 @@
   --font-list:
     "Candal", -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica", "Arial",
     sans-serif;
+
+  /* Console: surfaces, from the page back to raised panels */
+  --dc-bg: #04070d;
+  --dc-bg-raised: #0a101b;
+  --dc-panel: rgba(13, 20, 33, 0.78);
+  --dc-panel-solid: #0d1421;
+  --dc-line: rgba(130, 170, 230, 0.13);
+  --dc-line-strong: rgba(120, 190, 255, 0.34);
+
+  /* Console: text */
+  --dc-text: #e8eef8;
+  --dc-text-dim: #9aa7bc;
+  --dc-text-faint: #8794aa;
+
+  /* Console: signal colors */
+  --dc-accent: #4cc9ff;
+  --dc-accent-soft: rgba(76, 201, 255, 0.14);
+  --dc-accent-glow: rgba(76, 201, 255, 0.45);
+  --dc-violet: #8b7bff;
+  --dc-live: #ff4d5e;
+  --dc-ok: #3ef0a1;
+
+  /* Reading surface for article bodies */
+  --dc-paper: #f6f8fb;
+
+  --dc-font-sans: "Geist Variable", -apple-system, "BlinkMacSystemFont", "Segoe UI", sans-serif;
+  --dc-font-mono: "Geist Mono Variable", ui-monospace, "SFMono-Regular", "Menlo", monospace;
+
+  --dc-header-height: 56px;
+  --dc-ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* The console's pages (PageLayout), not blank article pages, which are a visual's own page */
+html.console {
+  color-scheme: dark;
+  /* Thin console scrollbars */
+  scrollbar-color: #24324a var(--dc-bg);
+}
+
+::selection {
+  background: rgba(76, 201, 255, 0.35);
+  color: #fff;
+}
+
+/* Small uppercase mono labels: "// FILED", section tags, readouts */
+.hud-label {
+  font-family: var(--dc-font-mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--dc-text-faint);
+}
+
+/* A pulsing dot, for "live" readouts */
+.pulse-dot {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--dc-live);
+  box-shadow: 0 0 0 0 rgba(255, 77, 94, 0.6);
+  animation: pulse-dot 2s infinite;
+  flex-shrink: 0;
+}
+@keyframes pulse-dot {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 77, 94, 0.55);
+  }
+  70% {
+    box-shadow: 0 0 0 8px rgba(255, 77, 94, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 77, 94, 0);
+  }
+}
+
+/* Corner brackets on a panel's top-left and bottom-right corners (its ::before and ::after) */
+.brackets {
+  position: relative;
+}
+.brackets::before,
+.brackets::after {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-color: var(--dc-accent);
+  border-style: solid;
+  pointer-events: none;
+  transition:
+    opacity 300ms var(--dc-ease-out),
+    transform 300ms var(--dc-ease-out);
+}
+.brackets::before {
+  top: -1px;
+  left: -1px;
+  border-width: 1px 0 0 1px;
+}
+.brackets::after {
+  bottom: -1px;
+  right: -1px;
+  border-width: 0 1px 1px 0;
+}
+
+/* Keyboard keys, e.g. the search shortcut */
+kbd.key {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 4px;
+  box-sizing: border-box;
+  border: 1px solid var(--dc-line-strong);
+  border-radius: 4px;
+  font-family: var(--dc-font-mono);
+  font-size: 10px;
+  color: var(--dc-text-dim);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

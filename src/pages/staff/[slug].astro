@@ -22,6 +22,14 @@ const Bio = entry && (await render(entry)).Content;
 const links = authorLinks(author);
 // A tag by an editor's name with their role on the team
 const editorRole = author.teamRole && EDITOR_ROLE_LABELS[author.teamRole];
+const firstYear = articles.at(-1)?.data.date.getUTCFullYear();
+const lastYear = articles[0]?.data.date.getUTCFullYear();
+const active =
+  firstYear === undefined
+    ? undefined
+    : firstYear === lastYear
+      ? `${firstYear}`
+      : `${firstYear}–${lastYear}`;
 const description = entry
   ? `${author.name}, ${entry.data.role} at The Daily Californian's Data Team.`
   : `Stories by ${author.name} for The Daily Californian's Data Team.`;
@@ -31,29 +39,61 @@ const description = entry
   <div class="author">
     {/* Picture with name, role and links beside it, and the bio underneath */}
     <div class="intro">
+      <p class="hud-label kicker">
+        <a href={author.teamRole ? "/staff" : "/staff/past"}>
+          {author.teamRole ? "Staff" : "Past contributors"}
+        </a>
+        <span class="sep">/</span>
+        <span>Personnel file</span>
+      </p>
       <div class="profile">
-        <AuthorPicture author={author} size={140} eager />
+        <span class="ring">
+          <AuthorPicture author={author} size={140} eager />
+        </span>
         <div class="details">
           <div class="nameRow">
             <h1>{author.name}</h1>
             {editorRole && <span class="editorTag">{editorRole}</span>}
           </div>
           {entry && <p class="role">{entry.data.role}</p>}
-          {entry && (
-            <p class="joined">
-              {author.teamRole ? "On the Data Team since" : "Joined the Data Team in"}{" "}
-              {entry.data.joined}
-            </p>
+          {links.length > 0 && (
+            <ul class="links">
+              {links.map(([label, url]) => (
+                <li>
+                  <a href={url}>{label} ↗</a>
+                </li>
+              ))}
+            </ul>
           )}
-          <ul class="links">
-            {links.map(([label, url]) => (
-              <li>
-                <a href={url}>{label}</a>
-              </li>
-            ))}
-          </ul>
         </div>
       </div>
+
+      <dl class="readout">
+        <div>
+          <dt class="hud-label">Stories</dt>
+          <dd>{String(articles.length).padStart(2, "0")}</dd>
+        </div>
+        {active && (
+          <div>
+            <dt class="hud-label">Active</dt>
+            <dd>{active}</dd>
+          </div>
+        )}
+        {entry && (
+          <div>
+            <dt class="hud-label">
+              {author.teamRole ? "On the Data Team since" : "Joined the Data Team in"}
+            </dt>
+            <dd>{entry.data.joined}</dd>
+          </div>
+        )}
+        <div>
+          <dt class="hud-label">Status</dt>
+          <dd class:list={["status", { current: author.teamRole }]}>
+            {author.teamRole ? "Current staff" : "Alumni"}
+          </dd>
+        </div>
+      </dl>
 
       {Bio && (
         <div class="bio">
@@ -63,127 +103,226 @@ const description = entry
     </div>
 
     {articles.length > 0 && (
-      <>
-        <h2>Articles</h2>
+      <section class="storiesSection" aria-labelledby="stories-heading">
+        <h2 id="stories-heading">
+          <span class="hud-label">Bylines</span>
+          <span class="rule"></span>
+          <span class="hud-label">
+            {articles.length} {articles.length === 1 ? "file" : "files"}
+          </span>
+        </h2>
         <div class="stories">
           {articles.map((article) => (
             <ArticleCard article={article} />
           ))}
         </div>
-      </>
+      </section>
     )}
-
-    <p class="back">
-      <a href={author.teamRole ? "/staff" : "/staff/past"}>
-        {author.teamRole ? "Staff" : "Past contributors"}
-      </a>
-    </p>
   </div>
 </PageLayout>
 
 <style>
   .author {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 1200px;
+    max-width: 1240px;
     margin: 0 auto;
-    padding: 32px 0 48px;
-    font-family: Georgia, sans-serif;
-    color: var(--palette-black);
+    padding: 56px 20px 0;
+    box-sizing: border-box;
+    font-family: var(--dc-font-sans);
+    color: var(--dc-text);
   }
   .intro {
-    width: 100%;
-    max-width: 760px;
-    box-sizing: border-box;
-    padding: 0 12px;
+    max-width: 820px;
+  }
+  .kicker {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 0 28px;
+  }
+  .kicker a {
+    color: var(--dc-accent);
+    text-decoration: none;
+  }
+  .kicker a:hover {
+    text-decoration: underline;
+  }
+  .sep {
+    color: var(--dc-line-strong);
   }
   .profile {
     display: flex;
     align-items: center;
-    gap: 24px;
+    gap: 28px;
+  }
+  .ring {
+    display: flex;
+    padding: 3px;
+    border-radius: 50%;
+    background: conic-gradient(
+      from 210deg,
+      var(--dc-accent),
+      var(--dc-violet),
+      transparent 70%,
+      var(--dc-accent)
+    );
+    box-shadow: 0 0 40px -6px rgba(76, 201, 255, 0.35);
+    flex-shrink: 0;
+  }
+  .ring :global(.picture) {
+    border: 4px solid var(--dc-bg);
   }
   .details {
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    gap: 8px;
     min-width: 0;
   }
   .nameRow {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 6px 12px;
+    gap: 8px 14px;
   }
   h1 {
     margin: 0;
-    font-size: 36px;
-    font-weight: 800;
-    line-height: 1.1;
+    font-size: clamp(32px, 5vw, 54px);
+    font-weight: 650;
+    line-height: 1.02;
+    letter-spacing: -0.035em;
   }
   .editorTag {
-    padding: 3px 10px;
-    border-radius: 999px;
-    background-color: var(--palette-dc-blue);
-    color: white;
-    font-size: 13px;
-    letter-spacing: 0.04em;
+    padding: 4px 9px;
+    border: 1px solid var(--dc-accent);
+    border-radius: 3px;
+    background: var(--dc-accent-soft);
+    color: var(--dc-accent);
+    font-family: var(--dc-font-mono);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
     text-transform: uppercase;
     white-space: nowrap;
   }
   .role {
     margin: 0;
     font-size: 18px;
-    color: var(--palette-dark-gray);
-  }
-  .joined {
-    margin: 0;
-    font-size: 14px;
-    color: var(--palette-gray);
+    color: var(--dc-text-dim);
   }
   .links {
     display: flex;
     flex-wrap: wrap;
-    gap: 4px 16px;
-    margin: 4px 0 0;
+    gap: 6px 18px;
+    margin: 6px 0 0;
     padding: 0;
     list-style: none;
-    font-size: 15px;
   }
-  a {
-    color: var(--palette-dark-blue);
+  .links a {
+    font-family: var(--dc-font-mono);
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--dc-accent);
+    text-decoration: none;
   }
+  .links a:hover {
+    text-decoration: underline;
+  }
+
+  /* Cells divided by 1px lines: the grid's background, showing through its gaps */
+  .readout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1px;
+    margin: 36px 0 0;
+    border: 1px solid var(--dc-line);
+    border-radius: 4px;
+    overflow: hidden;
+    background: var(--dc-line);
+  }
+  .readout div {
+    padding: 14px 18px;
+    background: var(--dc-panel-solid);
+  }
+  .readout dd {
+    margin: 8px 0 0;
+    font-family: var(--dc-font-mono);
+    font-size: 18px;
+    color: var(--dc-text);
+    font-variant-numeric: tabular-nums;
+  }
+  .status::before {
+    content: "";
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    margin-right: 8px;
+    border-radius: 50%;
+    vertical-align: middle;
+    background: var(--dc-text-faint);
+  }
+  .status.current::before {
+    background: var(--dc-ok);
+    box-shadow: 0 0 8px var(--dc-ok);
+  }
+
   .bio {
-    margin-top: 24px;
+    margin-top: 32px;
     font-size: 17px;
-    line-height: 1.6;
+    line-height: 1.7;
+    color: var(--dc-text-dim);
   }
+  .bio :global(a) {
+    color: var(--dc-text);
+    text-decoration-color: var(--dc-accent);
+    text-underline-offset: 3px;
+  }
+  .bio :global(a:hover) {
+    color: var(--dc-accent);
+  }
+
+  .storiesSection {
+    margin-top: 56px;
+  }
+  h2 {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 0 0 20px;
+    font-weight: inherit;
+  }
+  h2 .hud-label:first-child {
+    color: var(--dc-accent);
+  }
+  .rule {
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(to right, var(--dc-line-strong), var(--dc-line) 60%, transparent);
+  }
+  .stories {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
+    gap: 20px;
+  }
+
   /* A smaller picture and name, so they fit side by side on phones */
-  @media (max-width: 480px) {
+  @media (max-width: 560px) {
+    .author {
+      padding: 36px 12px 0;
+    }
     .profile {
       gap: 16px;
     }
     .profile :global(.picture) {
-      --size: 96px !important;
-    }
-    h1 {
-      font-size: 28px;
+      --size: 88px !important;
     }
     .role {
       font-size: 16px;
     }
-  }
-  h2 {
-    margin: 32px 0 0;
-    font-size: 24px;
-  }
-  .stories {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .back {
-    margin-top: 24px;
+    .readout {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .readout div:last-child:nth-child(odd) {
+      grid-column: 1 / -1;
+    }
   }
 </style>

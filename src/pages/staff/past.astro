@@ -15,8 +15,11 @@ const groups = pastTeam(await getAuthors());
   title="Past Contributors"
   description="The Daily Californian Data Team's past members and contributors."
 >
+  <Fragment slot="intro">
+    Past members and contributors of the Data Department, by the year of their first story.
+  </Fragment>
   {groups.map(({ year, authors }, g) => (
-    <AuthorGroup title={year ? String(year) : "No articles"}>
+    <AuthorGroup title={year ? String(year) : "No articles"} count={authors.length}>
       {authors.map((author, i) => (
         <AuthorCard author={author} eager={g === 0 && i < 5} />
       ))}
