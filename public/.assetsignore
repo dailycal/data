@@ -1,0 +1,6 @@
+# Files in dist/ that Cloudflare doesn't upload (gitignore syntax; see wrangler.jsonc).
+#
+# ONNX Runtime's WebAssembly, which Vite copies in for /editors/generate-headshot: at 25.6 MiB it's
+# over Workers' 25 MiB limit for one file, and the page never loads this copy, since
+# @huggingface/transformers loads ONNX Runtime from jsDelivr in the browser.
+_astro/ort-wasm-*.wasm
