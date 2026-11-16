@@ -14,12 +14,12 @@ const staff = team.filter((author) => author.teamRole === "reporter");
   <Fragment slot="intro">
     The people behind the Data Department's stories, analysis and graphics.
   </Fragment>
-  <AuthorGroup title="Editors" count={editors.length}>
+  <AuthorGroup title="Data editors" count={editors.length}>
     {editors.map((author) => (
       <AuthorCard author={author} eager />
     ))}
   </AuthorGroup>
-  <AuthorGroup title="Staff" count={staff.length}>
+  <AuthorGroup title="Data staff" count={staff.length}>
     {staff.map((author) => (
       <AuthorCard author={author} />
     ))}

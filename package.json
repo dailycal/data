@@ -12,6 +12,7 @@
     "lint": "eslint --no-error-on-unmatched-pattern \"src/**/*.{js,mjs,ts,jsx,tsx,astro,mdx,json}\" \"scripts/**/*.mjs\" \"astro.config.mjs\" \"eslint.config.js\" \"prettier.config.js\" \"*.config.js\" \"*.config.mjs\" \"*.config.ts\" && prettier --check --no-error-on-unmatched-pattern \"src/**/*.{js,mjs,ts,jsx,tsx,astro,mdx,json,css}\" \"scripts/**/*.mjs\" \"astro.config.mjs\" \"eslint.config.js\" \"prettier.config.js\" \"*.config.js\" \"*.config.mjs\" \"*.config.ts\"",
     "lint:fix": "eslint --no-error-on-unmatched-pattern \"src/**/*.{js,mjs,ts,jsx,tsx,astro,mdx,json}\" \"scripts/**/*.mjs\" \"astro.config.mjs\" \"eslint.config.js\" \"prettier.config.js\" \"*.config.js\" \"*.config.mjs\" \"*.config.ts\" --fix && prettier --write --no-error-on-unmatched-pattern \"src/**/*.{js,mjs,ts,jsx,tsx,astro,mdx,json,css}\" \"scripts/**/*.mjs\" \"astro.config.mjs\" \"eslint.config.js\" \"prettier.config.js\" \"*.config.js\" \"*.config.mjs\" \"*.config.ts\"",
     "optimize": "node scripts/optimize-image.mjs",
+    "generate-headshot": "node scripts/generate-headshot.mjs",
     "deploy": "npm run build && wrangler deploy"
   },
   "dependencies": {
@@ -25,8 +26,10 @@
     "@fontsource-variable/geist": "^5.3.0",
     "@fontsource-variable/geist-mono": "^5.3.0",
     "@gsap/react": "^2.1.2",
+    "@huggingface/transformers": "^4.3.2",
     "@jsquash/jpeg": "^1.6.0",
     "@jsquash/resize": "^2.1.1",
+    "@jsquash/webp": "^1.5.0",
     "@mui/icons-material": "^9.5.0",
     "@mui/lab": "^9.0.0-beta.10",
     "@mui/material": "^9.5.0",

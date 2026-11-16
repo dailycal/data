@@ -15,6 +15,7 @@ Source for [data.dailycal.org](https://data.dailycal.org/): investigative storie
 | `npm run lint` | Check code style with ESLint and Prettier |
 | `npm run lint:fix` | Fix ESLint and Prettier style errors |
 | `npm run optimize -- <image> [<image> ...]` | Optimize images (see [Optimizing images](#optimizing-images)) |
+| `npm run generate-headshot -- <author> <photo>` | Make an author's picture from a photo of them (see [Headshots](#headshots)) |
 | `npm run deploy` | Build and deploy the site to Cloudflare (see [Deploying](#install-build-deploy)) |
 
 Always run `npm run build` and `npm run lint` before pushing. GitHub Actions also runs both on every commit and pull request ([`.github/workflows/ci.yml`](.github/workflows/ci.yml)). The build fails on content problems (a misspelled frontmatter field, a badly named file, etc.), and says exactly what to fix.
@@ -23,9 +24,9 @@ Always run `npm run build` and `npm run lint` before pushing. GitHub Actions als
 
 **Redirects** are real HTTP 301s, listed in [`public/_redirects`](public/_redirects), which Cloudflare reads. Cloudflare allows 2,000 static rules and 100 dynamic ones (with a `*` or `:placeholder` in the source), but every rule after the first dynamic one counts as dynamic, so keep dynamic rules at the end of the file. `npm run build` reads the file the way Cloudflare does and fails, saying which lines to fix, if Cloudflare would skip any rule ([`scripts/check-redirects.mjs`](scripts/check-redirects.mjs)).
 
-**Previews:** every pull request from a branch in this repository gets its own copy of the site at `https://pr<number>.datadev.dailycal.org` (e.g. `pr131.datadev.dailycal.org`), updated on every push and deleted when the pull request is closed or merged ([`.github/workflows/preview.yml`](.github/workflows/preview.yml)). The workflow comments the address on the pull request. Previews are [Cloudflare Workers Previews](https://developers.cloudflare.com/workers/previews/) of the `data` Worker, so they're served exactly like the real site, redirects included, but kept out of search engines. Pull requests from forks aren't previewed, since GitHub doesn't give them the repository's secrets; push the branch to this repository instead. To preview a branch from your own machine: `npm run build && npx wrangler preview --name <name>`, which serves it at `https://<name>.datadev.dailycal.org`.
+**Previews:** every pull request from a branch in this repository gets its own copy of the site at `https://pr<number>.data.dailycal.org` (e.g. `pr131.data.dailycal.org`), updated on every push and deleted when the pull request is closed or merged ([`.github/workflows/preview.yml`](.github/workflows/preview.yml)). The workflow comments the address on the pull request. Previews are [Cloudflare Workers Previews](https://developers.cloudflare.com/workers/previews/) of the `data` Worker, so they're served exactly like the real site, redirects included, but kept out of search engines. Pull requests from forks aren't previewed, since GitHub doesn't give them the repository's secrets; push the branch to this repository instead. To preview a branch from your own machine: `npm run build && npx wrangler preview --name <name>`, which serves it at `https://<name>.data.dailycal.org`.
 
-Previews need a one-time setup: in Cloudflare, the `data` Worker's **Domains** tab has the custom domain `datadev.dailycal.org`, enabled for **Preview** only; and the GitHub repository has the secrets `CLOUDFLARE_ACCOUNT_ID` and `CLOUDFLARE_API_TOKEN` (an API token that can edit Workers Scripts).
+Previews need a one-time setup: in Cloudflare, the `data` Worker's **Domains** tab has the custom domain `data.dailycal.org`, enabled for both **Production** (the site itself) and **Preview**; and the GitHub repository has the secrets `CLOUDFLARE_ACCOUNT_ID` and `CLOUDFLARE_API_TOKEN` (an API token that can edit Workers Scripts).
 
 The site is always served from the root of its domain, so internal links are plain paths like `/article/...`.
 
@@ -48,7 +49,8 @@ src/
   styles/             Global and article CSS
   visuals/            Articles' visuals (React components), one folder per project, in a folder for
                       its article's year (e.g. 2026/nobel-visuals/; see "Visuals")
-scripts/              optimize-image.mjs: the command-line image optimizer; build.mjs: npm run build;
+scripts/              optimize-image.mjs: the command-line image optimizer; generate-headshot.mjs:
+                      the command-line headshot generator; build.mjs: npm run build;
                       check-redirects.mjs: checks public/_redirects before the build
 public/               Static files served as-is: the favicon, fonts, the data files visuals fetch
                       (data/<short slug>/) and interactives built elsewhere (interactive/<name>/)
@@ -66,6 +68,7 @@ public/               Static files served as-is: the favicon, fonts, the data fi
 | `/staff/<firstname-lastname>` | An author's page: their picture, role, links, bio and stories |
 | `/apply` | Where the Data Department's recruiting flyer points: the application, and a form for the flyer's puzzle (hidden from search engines) |
 | `/editors/image-optimization` | In-browser image optimizer for editors (hidden from search engines) |
+| `/editors/generate-headshot` | In-browser headshot generator for editors (hidden from search engines) |
 | `/sitemap-index.xml`, `/robots.txt` | Generated at build time from `site` in `astro.config.mjs`. Don't add a `public/robots.txt` |
 
 ## Adding an article
@@ -165,8 +168,7 @@ To give someone a picture, a role and a bio, add `src/content/authors/<firstname
 ---
 name: "Ji Yeon Woo"
 role: "Deputy Data Editor"
-joined: "Fall 2024"
-image: "../../assets/authors/ji-yeon-woo.jpg"
+image: "../../assets/authors/ji-yeon-woo.webp"
 email: "jwoo@dailycal.org"
 links:
   LinkedIn: "https://www.linkedin.com/in/..."
@@ -179,10 +181,18 @@ Ji Yeon covers campus finances and housing...
 | :-- | :-- | :-- |
 | `name` | Their name, spelled as in their bylines. | Yes |
 | `role` | Shown on their card and page, whether or not they're on the team now, e.g. `"Data Reporter"`. At most 40 characters. | Yes |
-| `joined` | The semester they joined: `"Spring 2025"`, `"Summer 2025"` or `"Fall 2025"`. | Yes |
-| `image` | A square picture in `src/assets/authors/`, named after their file: `"../../assets/authors/ji-yeon-woo.jpg"` ([optimize](#optimizing-images) it first). Without one, their initials are shown. | No |
+| `image` | A square picture in `src/assets/authors/`, named after their file: `"../../assets/authors/ji-yeon-woo.webp"` ([make it with the headshot generator](#headshots)). Without one, their initials are shown. | No |
 | `email` | Their email address, linked as "Email" on their page. | No |
 | `links` | Links shown on their page, by label, e.g. `LinkedIn: "https://..."` (`http(s)` URLs). Their Daily Californian profile is added unless one of these is on dailycal.org. | No |
+
+### Headshots
+
+Make an author's picture from any photo of them with the headshot generator. It cuts them out of the photo (with [MODNet](https://huggingface.co/Xenova/modnet), a portrait background-removal model) onto the same gray as the circles with initials, crops it square (keeping the middle of the photo: a tall one loses equal amounts off the top and bottom, a wide one off the sides) and saves it as a 280×280 WebP of a few KB (pictures are shown at most 140px wide). The settings are in `src/lib/headshot.mjs`. Either:
+
+- **In the browser:** open [data.dailycal.org/editors/generate-headshot](https://data.dailycal.org/editors/generate-headshot) (or `http://localhost:4321/editors/generate-headshot` while `npm run dev` is running) and choose a photo. Your browser makes the headshot on your own machine, without uploading the photo anywhere (the first time, it downloads the 6.6 MB model). Check it, download it, rename it after their author file (`ji-yeon-woo.webp`), put it in `src/assets/authors/` and set `image` in their author file. Or,
+- **On the command line:** `npm run generate-headshot -- "Ji Yeon Woo" path/to/photo.jpg` (their name, or their file's name, `ji-yeon-woo`) does all of that, replacing any picture they had. Their author file has to exist first.
+
+If the cutout cut off part of them or kept someone else, or the middle of the photo isn't where they are, crop the photo yourself and run it again.
 
 An author file is optional, for team members too: without one, their page has their name, their stories and their Daily Californian profile link.
 
@@ -332,6 +342,7 @@ An article's `layout` frontmatter picks how it's rendered:
 
 - **`site.ts`**: the site name, default description, contact email, GitHub/donate links, and authors' Daily Californian profile URLs.
 - **`team.json`**: who's on the team now (see [Authors and the team](#authors-and-the-team)).
+- **`author-links.json`**: the order of the links on an author's page, by label: heavier links go first, and links with any other label (weight 0) go last, in the order they're listed in the author file. `Email` and `The Daily Californian` are the labels of the links added from `email` and for their Daily Californian profile.
 
 ## Other configuration
 
