@@ -1,5 +1,5 @@
 # Deploys each pull request as a Cloudflare Workers Preview of the `data` Worker, at
-# https://pr<number>.datadev.dailycal.org, updates it on every push, and deletes it when the pull
+# https://pr<number>.data.dailycal.org, updates it on every push, and deletes it when the pull
 # request is closed or merged. See "Previews" in README.md.
 name: Preview
 
@@ -57,7 +57,7 @@ jobs:
           SHA: ${{ github.event.pull_request.head.sha }}
         run: |
           gh pr comment "$PR" --repo "$GITHUB_REPOSITORY" --edit-last --create-if-none \
-            --body "**Preview:** https://$PREVIEW.datadev.dailycal.org (updated for ${SHA:0:7}). It's deleted when this pull request is closed."
+            --body "**Preview:** https://$PREVIEW.data.dailycal.org (updated for ${SHA:0:7}). It's deleted when this pull request is closed."
 
   delete:
     if: github.event.action == 'closed' && github.event.pull_request.head.repo.full_name == github.repository

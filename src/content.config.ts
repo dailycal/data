@@ -81,11 +81,6 @@ const authors = defineCollection({
           ROLE_MAX_LENGTH,
           `role must be at most ${ROLE_MAX_LENGTH} characters, to fit on its card.`,
         ),
-      // The semester they joined the Data Team, e.g. "Fall 2024"
-      joined: z
-        .string()
-        .trim()
-        .regex(/^(Spring|Summer|Fall) \d{4}$/, 'joined must be a semester, e.g. "Fall 2024".'),
       // Their picture: a square .jpg or .webp in src/assets/authors/ named after their file, e.g.
       // "../../assets/authors/ji-yeon-woo.jpg"
       image: z

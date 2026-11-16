@@ -11,12 +11,12 @@ const staff = team.filter((author) => author.teamRole === "reporter");
 ---
 
 <StaffLayout title="Staff" description="The Daily Californian's Data Team." heading={false}>
-  <AuthorGroup title="Editors">
+  <AuthorGroup title="Data editors">
     {editors.map((author) => (
       <AuthorCard author={author} eager />
     ))}
   </AuthorGroup>
-  <AuthorGroup title="Staff">
+  <AuthorGroup title="Data staff">
     {staff.map((author) => (
       <AuthorCard author={author} />
     ))}
