@@ -210,8 +210,8 @@ const DepartmentRankBump = () => {
 
   return (
     <Figure
-      title="Most reviewed departments ranked by average quality score, 2015-16 to 2025-26"
-      subtitle="The 10 departments with the most RateMyProfessors reviews, ranked against each other by their average quality rating."
+      title="Most reviewed departments ranked by average quality score for academic years 2015-16 to 2025-26"
+      subtitle="The 10 departments with the most Rate My Professors reviews, ranked against one another by their average quality rating."
       note="Academic years last 12 months, beginning in August. Each department is ranked by the average quality score of every review associated with a professor in the department."
     >
       {/* columnRef measures the article column; the box inside can be wider than it */}

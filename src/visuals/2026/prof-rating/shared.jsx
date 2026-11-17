@@ -735,7 +735,7 @@ const RMP_URL = 'https://www.ratemyprofessors.com/search/professors/1072?q=*';
 // A link to RMP_URL that keeps the surrounding text's color.
 export const RmpLink = () => (
   <a href={RMP_URL} target="_blank" rel="noopener noreferrer" style={{ color: 'inherit' }}>
-    RateMyProfessors
+    Rate My Professors
   </a>
 );
 

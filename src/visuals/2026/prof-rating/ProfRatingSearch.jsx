@@ -43,7 +43,7 @@ const ProfRatingSearch = () => {
   return (
     <Figure
       title="Search UC Berkeley professors’ ratings"
-      subtitle={`Type a UC Berkeley professor’s name to open their report: their rating, how it has changed year by year and where they rank among all ${profs ? `${formatCount(profs.length)} ` : ''}rated professors and in their department.`}
+      subtitle={`Type a UC Berkeley professor’s name to view their rating, how it has changed by semester and where they rank among all ${profs ? `${formatCount(profs.length)} ` : ''}rated professors as well as among their department.`}
     >
       <ProfSearchBox
         profs={profs}

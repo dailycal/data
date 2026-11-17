@@ -336,7 +336,7 @@ const ProfReport = ({ articleUrl }) => {
         <>
           <h1 style={{ fontSize: 40, fontWeight: 800, margin: '1.75rem 0 0.5rem' }}>Professor ratings</h1>
           <p style={{ fontSize: 17, lineHeight: 1.45, margin: '0 0 0.5rem' }}>
-            {`Search any of ${formatCount(total)} UC Berkeley professors with RateMyProfessors reviews to see their ratings, how they’ve changed year by year and how they rank in their department.`}
+            {`Search any of ${formatCount(total)} UC Berkeley professors with Rate My Professors reviews to see their ratings, how they’ve changed year by year and how they rank in their department.`}
           </p>
           <h2 style={sectionHeading}>Highest-rated professors</h2>
           <RankTable
@@ -363,7 +363,7 @@ const ProfReport = ({ articleUrl }) => {
             {`No professor named “${result.notFound}”`}
           </h1>
           <p style={{ fontSize: 17 }}>
-            Only professors with at least one RateMyProfessors review are included. Try the search
+            Only professors with at least one Rate My Professors review are included. Try the search
             above
             {result.close.length ? ', or one of these:' : '.'}
           </p>
@@ -389,7 +389,7 @@ const ProfReport = ({ articleUrl }) => {
               rel="noopener noreferrer"
               style={{ color: theme.palette.darkBlue }}
             >
-              RateMyProfessors profile
+              Rate My Professors profile
             </a>
           </p>
 
@@ -429,7 +429,7 @@ const ProfReport = ({ articleUrl }) => {
 
           <h2 style={sectionHeading}>Where they rank</h2>
           <p style={{ fontSize: 17, lineHeight: 1.45, margin: '0 0 0.75rem' }}>
-            {`${prof.name}’s weighted rating of ${formatRating(prof.weighted)} is higher than ${pctBelow}% of rated UC Berkeley professors’.`}
+            {`${prof.name}’s weighted rating of ${formatRating(prof.weighted)} is higher than that of ${pctBelow}% of rated UC Berkeley professors’.`}
           </p>
           <Histogram
             hist={hist}
