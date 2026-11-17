@@ -1,6 +1,7 @@
 /**
  * `npm run build`: checks public/_redirects (see check-redirects.mjs), then runs `astro build`,
- * showing its output as it goes, and saves that output as a page, dist/editors/build.html, which the
+ * showing its output as it goes, then checks that no built file is too big for Cloudflare (see
+ * check-asset-sizes.mjs), and saves that output as a page, dist/editors/build.html, which the
  * site serves at /editors/build. So the deployed site shows the log of the build that made it,
  * warnings included, as it looked in the console.
  *
@@ -10,6 +11,7 @@ import { spawn } from "node:child_process";
 import { mkdirSync, writeFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { stripVTControlCharacters } from "node:util";
+import { assertAssetSizes } from "./check-asset-sizes.mjs";
 import { assertRedirects } from "./check-redirects.mjs";
 
 // Fails the build, rather than the deploy, if Cloudflare wouldn't read every redirect
@@ -41,6 +43,17 @@ astro.stderr.on("data", (chunk) => {
 });
 
 astro.on("close", (code) => {
+  // Fails the build, rather than the deploy, if any built file is too big for Cloudflare
+  if (code === 0) {
+    try {
+      assertAssetSizes("dist");
+    } catch (error) {
+      console.error(`\n${error.message}`);
+      output.push(Buffer.from(`\n${error.message}\n`));
+      code = 1;
+    }
+  }
+
   // e.g. "November 9, 2026 at 1:25:57 AM PST" (Berkeley's time, wherever it was built)
   const startTime = started.toLocaleString("en-US", {
     dateStyle: "long",

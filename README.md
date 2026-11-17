@@ -20,7 +20,7 @@ Source for [data.dailycal.org](https://data.dailycal.org/): investigative storie
 
 Always run `npm run build` and `npm run lint` before pushing. GitHub Actions also runs both on every commit and pull request ([`.github/workflows/ci.yml`](.github/workflows/ci.yml)). The build fails on content problems (a misspelled frontmatter field, a badly named file, etc.), and says exactly what to fix.
 
-**Deploying:** the site is entirely static, with nothing running on a server. It's hosted on Cloudflare as a Worker named `data` that only serves static assets (configured in [`wrangler.jsonc`](wrangler.jsonc)), so hosting it costs nothing. `npm run deploy` builds the site and uploads `dist/` with `wrangler deploy` (run `npx wrangler login` first).
+**Deploying:** the site is entirely static, with nothing running on a server. It's hosted on Cloudflare as a Worker named `data` that only serves static assets (configured in [`wrangler.jsonc`](wrangler.jsonc)), so hosting it costs nothing. `npm run deploy` builds the site and uploads `dist/` with `wrangler deploy` (run `npx wrangler login` first). Cloudflare won't upload a file over 25 MiB, so `npm run build` fails, listing them, if any built file is bigger ([`scripts/check-asset-sizes.mjs`](scripts/check-asset-sizes.mjs)).
 
 **Redirects** are real HTTP 301s, listed in [`public/_redirects`](public/_redirects), which Cloudflare reads. Cloudflare allows 2,000 static rules and 100 dynamic ones (with a `*` or `:placeholder` in the source), but every rule after the first dynamic one counts as dynamic, so keep dynamic rules at the end of the file. `npm run build` reads the file the way Cloudflare does and fails, saying which lines to fix, if Cloudflare would skip any rule ([`scripts/check-redirects.mjs`](scripts/check-redirects.mjs)).
 
@@ -51,7 +51,8 @@ src/
                       its article's year (e.g. 2026/nobel-visuals/; see "Visuals")
 scripts/              optimize-image.mjs: the command-line image optimizer; generate-headshot.mjs:
                       the command-line headshot generator; build.mjs: npm run build;
-                      check-redirects.mjs: checks public/_redirects before the build
+                      check-redirects.mjs: checks public/_redirects before the build;
+                      check-asset-sizes.mjs: checks dist/ for files too big for Cloudflare
 public/               Static files served as-is: the favicon, fonts, the data files visuals fetch
                       (data/<short slug>/) and interactives built elsewhere (interactive/<name>/)
 ```
