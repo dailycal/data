@@ -1,5 +1,6 @@
 // @ts-check
 import { defineConfig } from "astro/config";
+import { defaultClientConditions } from "vite";
 
 import react from "@astrojs/react";
 
@@ -52,6 +53,12 @@ export default defineConfig({
         JSON.stringify(process.env[key] ?? ""),
       ]),
     ),
+    resolve: {
+      // onnxruntime-web (which transformers.js runs /editors/generate-headshot's model with) builds
+      // without its WebAssembly bundled in. Otherwise its 25.6 MB .wasm would be copied into dist,
+      // over Cloudflare's 25 MiB limit per file; transformers.js loads it from jsDelivr anyway.
+      conditions: ["onnxruntime-web-use-extern-wasm", ...defaultClientConditions],
+    },
     plugins: [
       // Leaflet etc. can't be imported on the server; see src/lib/browser-only-packages.mjs
       browserOnlyPackages({ sourceGlob: "src/visuals/**/*.{js,jsx,ts,tsx}" }),
