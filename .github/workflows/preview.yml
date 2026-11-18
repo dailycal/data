@@ -42,7 +42,8 @@ jobs:
       - name: Build
         run: npm run build
 
-      # Cloudflare only adds this header to workers.dev previews, not custom-domain ones
+      # Cloudflare only adds this header to workers.dev previews, and ours are only on our own domain
+      # (wrangler.jsonc)
       - name: Keep the preview out of search engines
         run: |
           printf '/*\n  X-Robots-Tag: noindex\n' > dist/_headers

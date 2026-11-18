@@ -7,6 +7,19 @@
     "html_handling": "auto-trailing-slash",
     "not_found_handling": "404-page",
   },
+  // Serve the site, and pull request previews (https://<preview>.data.dailycal.org), only on our
+  // own domain
+  "routes": [
+    {
+      "pattern": "data.dailycal.org",
+      "custom_domain": true,
+      "previews_enabled": true,
+    },
+  ],
+  // Never on workers.dev: neither the site (data.<subdomain>.workers.dev) nor previews and versions
+  // (<preview>-data.<subdomain>.workers.dev)
+  "workers_dev": false,
+  "preview_urls": false,
   // Pull request previews (`wrangler preview`, run by .github/workflows/preview.yml) use the settings
   // above; the site has no variables or bindings for this to override
   "previews": {},
