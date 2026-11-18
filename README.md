@@ -314,7 +314,7 @@ Cloudflare reads the rules in order, and ignores all but the first 100 that come
 
 `npm run build` also writes every article as JSON, newest first, for other sites and apps to use ([`src/lib/api.ts`](src/lib/api.ts)). Like the rest of the site it's static files, so it's only as current as the last deploy.
 
-- **`/api/articles.json`**: how many pages of articles there are, without the articles: `totalPages`, `totalArticles`, `pageSize`, and `pages`, the full URL of each page in order.
+- **`/api/articles.json`**: how many pages of articles there are, without the articles: `builtAt`, when the site was built (UTC, e.g. `"2026-11-18T22:38:00.000Z"`), `totalPages`, `totalArticles`, `pageSize`, and `pages`, the full URL of each page in order. `builtAt` changes on every build, even one that changed no articles.
 - **`/api/articles/<page>.json`**: the articles, 20 at a time, from `/api/articles/1.json` (`PAGE_SIZE` in `src/lib/api.ts`), with `page`, `totalPages`, `totalArticles`, `pageSize`, and the full URLs of the `previous` and `next` pages (`null` at either end). A page past the last one is the 404 page.
 
 Each article is:
