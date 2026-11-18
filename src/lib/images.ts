@@ -1,5 +1,27 @@
 /** Build-time helpers for images imported from src/assets/. */
+import { getImage } from "astro:assets";
 import sharp from "sharp";
+
+/**
+ * An image for social previews, structured data and the API (src/lib/api.ts): at most 1200px
+ * wide, and a JPEG (or a PNG, for a WebP, which is only used for images with transparency), since
+ * not every site that shows link previews accepts WebP. Its URL is absolute, on `site`.
+ */
+export async function shareableImage(
+  src: ImageMetadata,
+  site: URL,
+): Promise<{ url: string; width: number; height: number }> {
+  const { src: path, attributes } = await getImage({
+    src,
+    width: Math.min(src.width, 1200),
+    format: src.format === "jpg" || src.format === "jpeg" ? "jpg" : "png",
+  });
+  return {
+    url: new URL(path, site).href,
+    width: Number(attributes.width),
+    height: Number(attributes.height),
+  };
+}
 
 /** The file an image was imported from, e.g. "/.../src/assets/authors/ji-yeon-woo.jpg". */
 export function imageFile(image: ImageMetadata): string {

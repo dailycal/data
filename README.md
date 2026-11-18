@@ -70,6 +70,7 @@ public/               Static files served as-is: the favicon, fonts, the data fi
 | `/apply` | Where the Data Department's recruiting flyer points: the application, and a form for the flyer's puzzle (hidden from search engines) |
 | `/editors/image-optimization` | In-browser image optimizer for editors (hidden from search engines) |
 | `/editors/generate-headshot` | In-browser headshot generator for editors (hidden from search engines) |
+| `/api/articles.json`, `/api/articles/<page>.json` | Every article as JSON, a page at a time (see "API") |
 | `/sitemap-index.xml`, `/robots.txt` | Generated at build time from `site` in `astro.config.mjs`. Don't add a `public/robots.txt` |
 
 ## Adding an article
@@ -308,6 +309,27 @@ The old site also listed articles that were hosted elsewhere (their `oldLink` fr
 The old site served every article at `/<file name>/`, including the ones whose card links elsewhere, and served a few pages (`/about/`, the gghenge map, the election results) at other URLs. [`public/_redirects`](public/_redirects) 301-redirects each of them straight to where it is now (`/article/<file name>`, or the article's `link`, e.g. its story on projects.dailycal.org), so links to them (e.g. from dailycal.org) and search results keep working. A new article never had an old URL, so it needs no redirect.
 
 Cloudflare reads the rules in order, and ignores all but the first 100 that come after a rule with a `*`, so those go at the end.
+
+## API
+
+`npm run build` also writes every article as JSON, newest first, for other sites and apps to use ([`src/lib/api.ts`](src/lib/api.ts)). Like the rest of the site it's static files, so it's only as current as the last deploy.
+
+- **`/api/articles.json`**: how many pages of articles there are, without the articles: `totalPages`, `totalArticles`, `pageSize`, and `pages`, the full URL of each page in order.
+- **`/api/articles/<page>.json`**: the articles, 20 at a time, from `/api/articles/1.json` (`PAGE_SIZE` in `src/lib/api.ts`), with `page`, `totalPages`, `totalArticles`, `pageSize`, and the full URLs of the `previous` and `next` pages (`null` at either end). A page past the last one is the 404 page.
+
+Each article is:
+
+```json
+{
+  "slug": "2026-11-13-prof-rating",
+  "title": "UC Berkeley professors are receiving their lowest ratings ever",
+  "date": "2026-11-13",
+  "url": "https://data.dailycal.org/article/2026-11-13-prof-rating",
+  "image": "https://data.dailycal.org/_astro/prof-rating-bump.tF4W-xF__xp5XI.jpg"
+}
+```
+
+`slug` is the article's file name (its page is `/article/<slug>`), `date` its publish date, `url` where it's read (its page here, or its `link`, for an interactive or an article on another site), and `image` its featured image, the same file as its social previews (a JPEG or PNG at most 1200px wide). URLs always point to `data.dailycal.org`, even in a preview. Any site's pages can read the API ([`public/_headers`](public/_headers) allows cross-origin requests), and `robots.txt` keeps search engines out of `/api/`.
 
 ## Search
 

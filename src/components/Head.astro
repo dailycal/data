@@ -8,10 +8,10 @@
  * visual's CSS to every page.
  */
 import type { ImageMetadata } from "astro";
-import { getImage } from "astro:assets";
 import logo from "../assets/site/dclogo-circle.webp";
 import { site } from "../config/site";
 import type { ArticleHead } from "../lib/articles";
+import { shareableImage } from "../lib/images";
 
 export type Props =
   | {
@@ -47,24 +47,8 @@ const siteURL = Astro.site!;
 const pagePath = Astro.url.pathname.replace(/(^|\/)index\.html$/, "$1").replace(/\.html$/, "");
 const canonicalURL = new URL(pagePath, siteURL).href;
 
-// An image for social previews and structured data: at most 1200px wide, and a JPEG (or a PNG, for
-// a WebP, which is only used for images with transparency), since not every site that shows link
-// previews accepts WebP.
-async function resolveImage(src: ImageMetadata) {
-  const { src: path, attributes } = await getImage({
-    src,
-    width: Math.min(src.width, 1200),
-    format: src.format === "jpg" || src.format === "jpeg" ? "jpg" : "png",
-  });
-  return {
-    url: new URL(path, siteURL).href,
-    width: Number(attributes.width),
-    height: Number(attributes.height),
-  };
-}
-
-const ogImage = await resolveImage(image);
-const publisherLogo = await resolveImage(logo);
+const ogImage = await shareableImage(image, siteURL);
+const publisherLogo = await shareableImage(logo, siteURL);
 
 const publisher = {
   "@type": "Organization",
