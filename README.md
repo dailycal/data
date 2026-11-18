@@ -344,7 +344,7 @@ Every page loads Google Tag Manager (container `GTM-W9R66S6S`), which loads Goog
 
 ## Layouts
 
-Every page renders into [`src/layouts/PageLayout.astro`](src/layouts/PageLayout.astro): the fixed header (the Staff link, logo and search) above the page. With `?embed` in its URL (e.g. `/article/2026-11-13-prof-rating?embed`), a page has no header, for embedding it in another site's page in an `<iframe>`. The site is static, so a script in the page's `<head>` reads the URL in the browser before the page is drawn, so the header never shows.
+Every page renders into [`src/layouts/PageLayout.astro`](src/layouts/PageLayout.astro): the fixed header (the Staff link, logo and search) above the page. An article's page (`layout: true`) has no header with `?embed` in its URL (e.g. `/article/2026-11-13-prof-rating?embed`), for embedding it in another site's page in an `<iframe>`. The site is static, so a script in the page's `<head>` reads the URL in the browser before the page is drawn, so the header never shows. Only articles' pages can be embedded (`ArticleLayout` passes `PageLayout` its `embeddable` prop), so the logo can't be taken off the homepage, staff pages, search and other pages. Articles with `layout: false` never have a header, so `?embed` changes nothing on them.
 
 An article's `layout` frontmatter picks how it's rendered:
 

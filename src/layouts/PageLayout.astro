@@ -3,15 +3,21 @@
  * The layout every page renders into: <head> (see src/components/Head.astro), the fixed
  * header (a link to the staff page, the logo, and a link to search), and the page content.
  *
- * With ?embed in its URL (e.g. /article/x?embed, for embedding it in another site's page), a page
- * has no header.
+ * An article's page (ArticleLayout, which passes `embeddable`) has no header with ?embed in its
+ * URL (e.g. /article/x?embed), for embedding it in another site's page. Other pages always have
+ * it, so the logo can't be taken off them.
  */
 import { Image } from "astro:assets";
 import wordmark from "../assets/site/dclogoblack.webp";
 import Head, { type Props as HeadProps } from "../components/Head.astro";
 import "../styles/global.css";
 
-type Props = HeadProps;
+type Props = HeadProps & {
+  /** Whether ?embed in the page's URL hides the header. Only articles' pages are. */
+  embeddable?: boolean;
+};
+
+const { embeddable = false } = Astro.props;
 ---
 
 <!doctype html>
@@ -20,11 +26,11 @@ type Props = HeadProps;
     <Head {...Astro.props} />
     {/* ?embed hides the header. The site is static, so this reads the URL in the browser, inline in
     <head> so it runs before the page is drawn and the header never shows. */}
-    <script is:inline>
+    {embeddable && <script is:inline>
       if (new URLSearchParams(location.search).has("embed")) {
         document.documentElement.dataset.embed = "";
       }
-    </script>
+    </script>}
   </head>
   <body>
     {/* Header */}
