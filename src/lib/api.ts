@@ -3,6 +3,7 @@
  * README.md). src/pages/api/articles/[page].json.ts serves them a page at a time, and
  * src/pages/api/articles.json.ts says how many pages there are.
  */
+import { DEFAULT_ACCENT_COLOR } from "./app-accent";
 import { type Article, articlePath } from "./articles";
 import { shareableImage } from "./images";
 
@@ -29,10 +30,17 @@ export interface ApiArticle {
   url: string;
   /** Its featured image (a JPEG or PNG at most 1200px wide). */
   image: string;
+  /**
+   * The mobile app's accent color for it, a six-digit hex color matching its background (its
+   * `accentColor` frontmatter; see src/lib/app-accent.ts). Left out for the default,
+   * DEFAULT_ACCENT_COLOR.
+   */
+  accentColor?: string;
 }
 
 export async function apiArticle(article: Article, site: URL): Promise<ApiArticle> {
   const { title, date, featuredImage } = article.data;
+  const accentColor = article.data.accentColor?.toLowerCase();
   return {
     slug: article.id,
     title,
@@ -40,6 +48,7 @@ export async function apiArticle(article: Article, site: URL): Promise<ApiArticl
     date: date.toISOString().slice(0, 10),
     url: new URL(articlePath(article), site).href,
     image: (await shareableImage(featuredImage, site)).url,
+    ...(accentColor && accentColor !== DEFAULT_ACCENT_COLOR ? { accentColor } : {}),
   };
 }
 

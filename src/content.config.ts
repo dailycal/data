@@ -40,13 +40,13 @@ const articles = defineCollection({
         // "/interactive/election-2026/index.html") or a URL on another site. An article with a link gets no
         // page of its own, so its body isn't shown; the old site's oldLink.
         link: z.string().trim().min(1).optional(),
-        // The mobile app's background color for the article (<meta name="mobile-accent-color">),
-        // a hex color like "#0d0d0d" that matches its background. Required for an article with
-        // layout: false (its page) or a link to an interactive on this site (the interactive's
-        // pages; see src/lib/mobile-accent-color.mjs). Other articles use the default layout's.
-        mobileAccentColor: z
+        // The mobile app's accent color for the article, a six-digit hex color like "#0d0d0d" that
+        // matches its background, given to the app by the API (see src/lib/app-accent.ts).
+        // Required for an article with layout: false (its page) or a link to an interactive on
+        // this site; other articles use the default layout's.
+        accentColor: z
           .string()
-          .regex(HEX_COLOR, 'mobileAccentColor must be a hex color, e.g. "#0d0d0d".')
+          .regex(HEX_COLOR, 'accentColor must be a six-digit hex color, e.g. "#0d0d0d".')
           .optional(),
 
         // Only used by the article layout (layout: true)
@@ -63,21 +63,21 @@ const articles = defineCollection({
         message: "byline needs at least one author.",
         path: ["byline"],
       })
-      .refine((data) => hasOwnBackground(data) === (data.mobileAccentColor !== undefined), {
+      .refine((data) => hasOwnBackground(data) === (data.accentColor !== undefined), {
         message:
-          "mobileAccentColor is needed, and only used, for an article with layout: false or a link to an interactive (/interactive/...).",
-        path: ["mobileAccentColor"],
+          "accentColor is needed, and only used, for an article with layout: false or a link to an interactive (/interactive/...).",
+        path: ["accentColor"],
       }),
 });
 
-/** A hex color: "#0d0d0d" (or "#000"). */
-const HEX_COLOR = /^#(?:[0-9a-f]{3}|[0-9a-f]{6})$/i;
+/** A six-digit hex color, e.g. "#0d0d0d": the only form the mobile app takes. */
+const HEX_COLOR = /^#[0-9a-f]{6}$/i;
 
 /**
- * Whether an article is shown on a page with its own background, which mobileAccentColor matches:
+ * Whether an article is shown on a page with its own background, which accentColor matches:
  * its own page (layout: false), or an interactive it links to.
  */
-function hasOwnBackground(data: { layout: boolean; link?: string }): boolean {
+function hasOwnBackground(data: { layout: boolean; link?: string | undefined }): boolean {
   return data.link !== undefined ? data.link.startsWith("/interactive/") : !data.layout;
 }
 

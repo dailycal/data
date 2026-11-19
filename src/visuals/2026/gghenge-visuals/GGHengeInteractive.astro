@@ -10,8 +10,6 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <!-- The mobile app's background color for the page: the map's (see src/config/site.ts) -->
-  <meta name="mobile-accent-color" content="#ece8e1" />
   <title>Golden Gate Henge</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -113,7 +111,12 @@
   </div>
 
   <script>
+    import { setAppAccent } from "../../../lib/app-accent";
     import "./map.js";
+
+    // The mobile app's accent color: the map's background. This page isn't an article, so the API
+    // doesn't have it; set it when the page is shown (including going back to it).
+    window.addEventListener("pageshow", () => setAppAccent("#ece8e1"));
   </script>
 </body>
 </html>

@@ -136,6 +136,14 @@ const imageAlt = featuredImageAlt(article);
     line-height: normal;
     text-align: center;
   }
+  /* Embedded (?embed, see src/layouts/PageLayout.astro), the app or page around the article has its
+     own header above it, so the title only needs a little room */
+  :global(html[data-embed]) .article {
+    padding-top: 12px;
+  }
+  :global(html[data-embed]) .title {
+    margin-top: 0;
+  }
   .subhead {
     font-weight: 300;
     font-size: 24px;

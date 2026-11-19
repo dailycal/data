@@ -7,11 +7,11 @@ export const site = {
   /** Appended to article titles: "<headline> | The Daily Californian". */
   articleTitleSuffix: "The Daily Californian",
   /**
-   * The mobile app's background color for a page (<meta name="mobile-accent-color">), as a hex
-   * color: the default layout's page background (--palette-light-gray in src/styles/global.css).
-   * Articles with `layout: false` set their own, `mobileAccentColor`.
+   * The mobile app's accent color for an article without its own `accentColor`: the default
+   * layout's page background (--palette-light-gray in src/styles/global.css), as a six-digit hex
+   * color. See src/lib/app-accent.ts.
    */
-  mobileAccentColor: "#f8f8f8",
+  accentColor: "#f8f8f8",
   /** Default meta description, and the tagline on the homepage. */
   description:
     "Investigative stories, data analysis and graphics by The Daily Californian's Data Team.",
