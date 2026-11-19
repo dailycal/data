@@ -82,7 +82,8 @@ export default function App() {
   return (
     <>
       {!me && <Banner />}
-      <div className="stage">
+      {/* "start": the finder's screen, with or without the banner (?embed hides it) */}
+      <div className={me ? "stage" : "stage start"}>
         <main className="column">
           {!me && (
             <>
