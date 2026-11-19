@@ -70,6 +70,7 @@ public/               Static files served as-is: the favicon, fonts, the data fi
 | `/apply` | Where the Data Department's recruiting flyer points: the application, and a form for the flyer's puzzle (hidden from search engines) |
 | `/editors/image-optimization` | In-browser image optimizer for editors (hidden from search engines) |
 | `/editors/generate-headshot` | In-browser headshot generator for editors (hidden from search engines) |
+| `/api/articles.json`, `/api/articles/<page>.json` | Every article as JSON, a page at a time (see "API") |
 | `/sitemap-index.xml`, `/robots.txt` | Generated at build time from `site` in `astro.config.mjs`. Don't add a `public/robots.txt` |
 
 ## Adding an article
@@ -97,6 +98,7 @@ Unknown fields fail the build, so a misspelled field can't be silently ignored.
 | `keywords` | `["keyword one", "keyword two"]`. Populates `<meta name="keywords">`, and is searched by the site's search. | No |
 | `layout` | `true` (the default) renders the article in the [article layout](#layouts). `false` renders the article's body alone as the whole page, for an article that's one full-page visual. | No |
 | `link` | Where the article's homepage card goes instead of its own page: an [interactive](#interactives) (e.g. `"/interactive/election-2026/index.html"`, which must exist or the build fails; link a folder by its `index.html`, since the dev server doesn't serve folders) or a URL on another site. An article with a `link` gets no page of its own, so it needs only `date`, `title` and `featuredImage`, and its body isn't shown. | No |
+| `accentColor` | The mobile app's accent color for the article, a six-digit hex color that matches its background, e.g. `"#0d0d0d"` for a dark story. The app gets it from the [API](#api). Only for an article with `layout: false` or a `link` to an interactive on this site; the build fails if one of those doesn't have it, or another article does. Every other article uses the default layout's, `#f8f8f8` (`accentColor` in `src/config/site.ts`). If the background changes as it's read, see [The mobile app's accent color](#the-mobile-apps-accent-color). | For `layout: false` or a `link` to `/interactive/` |
 
 These are only used by the article layout (`layout: true`):
 
@@ -309,6 +311,42 @@ The old site served every article at `/<file name>/`, including the ones whose c
 
 Cloudflare reads the rules in order, and ignores all but the first 100 that come after a rule with a `*`, so those go at the end.
 
+## API
+
+`npm run build` also writes every article as JSON, newest first, for other sites and apps to use ([`src/lib/api.ts`](src/lib/api.ts)). Like the rest of the site it's static files, so it's only as current as the last deploy.
+
+- **`/api/articles.json`**: how many pages of articles there are, without the articles: `builtAt`, when the site was built (UTC, e.g. `"2026-11-18T22:38:00.000Z"`), `totalPages`, `totalArticles`, `pageSize`, and `pages`, the full URL of each page in order. `builtAt` changes on every build, even one that changed no articles.
+- **`/api/articles/<page>.json`**: the articles, 20 at a time, from `/api/articles/1.json` (`PAGE_SIZE` in `src/lib/api.ts`), with `page`, `totalPages`, `totalArticles`, `pageSize`, and the full URLs of the `previous` and `next` pages (`null` at either end). A page past the last one is the 404 page.
+
+Each article is:
+
+```json
+{
+  "slug": "2026-11-13-prof-rating",
+  "title": "UC Berkeley professors are receiving their lowest ratings ever",
+  "date": "2026-11-13",
+  "url": "https://data.dailycal.org/article/2026-11-13-prof-rating",
+  "image": "https://data.dailycal.org/_astro/prof-rating-bump.tF4W-xF__xp5XI.jpg"
+}
+```
+
+An article with its own `accentColor` (see [Frontmatter](#frontmatter)) also has `"accentColor": "#0d0d0d"`, the mobile app's color for it; it's left out for the default, `#f8f8f8`.
+
+`slug` is the article's file name (its page is `/article/<slug>`), `date` its publish date, `url` where it's read (its page here, or its `link`, for an interactive or an article on another site), and `image` its featured image, the same file as its social previews (a JPEG or PNG at most 1200px wide). URLs always point to `data.dailycal.org`, even in a preview. Any site's pages can read the API ([`public/_headers`](public/_headers) allows cross-origin requests), and `robots.txt` keeps search engines out of `/api/`.
+
+## The mobile app's accent color
+
+The Daily Californian mobile app paints its own color around a page (behind the status bar, and so on), which should match the page's background. It gets an article's from the [API](#api) (its `accentColor` frontmatter, or the default, `#f8f8f8`). A visual whose background changes as it's read tells the app with `setAppAccent()` from [`src/lib/app-accent.ts`](src/lib/app-accent.ts):
+
+```js
+import { DEFAULT_ACCENT_COLOR, setAppAccent } from "../../../lib/app-accent";
+
+setAppAccent("#0d0d0d", 400); // fade to near-black over 400 ms, as the page does
+setAppAccent(DEFAULT_ACCENT_COLOR, 400); // and back to the default layout's background
+```
+
+Colors are six-digit hex colors. Outside the app it does nothing, and the app only hears about changes, so it's fine to call on every scroll. The bodycam story fades it to black around its video (`src/visuals/2026/bug-bodycam-visuals/components/video-expander.jsx`), the rent-o-meter follows each screen's shade of blue (`src/visuals/2026/rent-o-meter-visuals/app/App.tsx`), and the gghenge map, which isn't an article, sets its own when it's shown.
+
 ## Search
 
 `/search?q=<query>` searches every article's title, byline, subhead, `description`, `keywords` and text, in the browser, with [Pagefind](https://pagefind.app). `npm run build` builds the index into `dist/pagefind/` at the end (`src/lib/search-index.mjs`), so search only works in the built site: in `npm run dev` the page says so. To try it, run `npm run build` and then `npx wrangler dev`.
@@ -321,6 +359,8 @@ Cloudflare reads the rules in order, and ignores all but the first 100 that come
 Every page loads Google Tag Manager (container `GTM-W9R66S6S`), which loads Google Analytics; set up what's tracked in Tag Manager, not here. `npm run build` adds the loader to the top of each page's `<head>` once the site is built (`src/lib/analytics.mjs`), so it's in every page however its `<head>` is written, including interactives copied in prebuilt, and no layout or component needs it. It only runs on `data.dailycal.org`, so pull request previews, `npx wrangler dev` and `npm run dev` don't count as visits. It leaves out `/editors/` and the election results' Instagram Live loop (`EXCLUDE` in that file).
 
 ## Layouts
+
+Every page renders into [`src/layouts/PageLayout.astro`](src/layouts/PageLayout.astro): the fixed header (the Staff link, logo and search) above the page. With `?embed` in its URL (e.g. `/article/2026-11-13-prof-rating?embed`), a page has no header, for embedding it in another site's page in an `<iframe>` or showing it in an app. The site is static, so a script in the page's `<head>` reads the URL in the browser before the page is drawn, so the header never shows. Each page also has less room above its content: `PageLayout` sets `--embed-top` (12px) with `?embed`, and every page's top padding is `var(--embed-top, <its own>)`, so give a new page's outermost element the same. That script also adds `?embed` to the page's links to other pages on this site (an article's byline, an author's stories, search results and so on) as they're followed, so a reader stays embedded. Articles with `layout: false` never have a header, so `?embed` changes nothing on them.
 
 An article's `layout` frontmatter picks how it's rendered:
 

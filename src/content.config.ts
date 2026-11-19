@@ -40,6 +40,14 @@ const articles = defineCollection({
         // "/interactive/election-2026/index.html") or a URL on another site. An article with a link gets no
         // page of its own, so its body isn't shown; the old site's oldLink.
         link: z.string().trim().min(1).optional(),
+        // The mobile app's accent color for the article, a six-digit hex color like "#0d0d0d" that
+        // matches its background, given to the app by the API (see src/lib/app-accent.ts).
+        // Required for an article with layout: false (its page) or a link to an interactive on
+        // this site; other articles use the default layout's.
+        accentColor: z
+          .string()
+          .regex(HEX_COLOR, 'accentColor must be a six-digit hex color, e.g. "#0d0d0d".')
+          .optional(),
 
         // Only used by the article layout (layout: true)
         subhead: z.string().optional(),
@@ -54,8 +62,24 @@ const articles = defineCollection({
       .refine((data) => data.link !== undefined || data.byline.length > 0, {
         message: "byline needs at least one author.",
         path: ["byline"],
+      })
+      .refine((data) => hasOwnBackground(data) === (data.accentColor !== undefined), {
+        message:
+          "accentColor is needed, and only used, for an article with layout: false or a link to an interactive (/interactive/...).",
+        path: ["accentColor"],
       }),
 });
+
+/** A six-digit hex color, e.g. "#0d0d0d": the only form the mobile app takes. */
+const HEX_COLOR = /^#[0-9a-f]{6}$/i;
+
+/**
+ * Whether an article is shown on a page with its own background, which accentColor matches:
+ * its own page (layout: false), or an interactive it links to.
+ */
+function hasOwnBackground(data: { layout: boolean; link?: string | undefined }): boolean {
+  return data.link !== undefined ? data.link.startsWith("/interactive/") : !data.layout;
+}
 
 /** The longest an author's role can be, so it fits on one line of their card on /staff. */
 const ROLE_MAX_LENGTH = 40;

@@ -1,0 +1,6 @@
+# Response headers Cloudflare adds to static files
+# (https://developers.cloudflare.com/workers/static-assets/headers/)
+
+# The API (src/pages/api/) can be read by pages on any site
+/api/*
+  Access-Control-Allow-Origin: *

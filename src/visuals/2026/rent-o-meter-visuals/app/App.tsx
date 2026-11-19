@@ -1,4 +1,5 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
+import { setAppAccent } from "../../../../lib/app-accent";
 import type { Dataset } from "./data";
 import { loadDataset } from "./data";
 import type { Me } from "./stats";
@@ -11,6 +12,12 @@ import { storyScreens } from "./components/Screens";
 import { strings } from "./strings";
 import { fmt, rich } from "./text";
 import { Story } from "./components/Story";
+
+/** Each screen's background, for the mobile app's accent color: --ice, --white and --electric in
+ * styles/app.css, and each story screen's tone (.tone-*). */
+const ICE = "#d9e5f5";
+const WHITE = "#ffffff";
+const TONES: Record<string, string> = { electric: "#176994", white: WHITE, ice: ICE };
 
 export default function App() {
   const [ds, setDs] = useState<Dataset | null>(null);
@@ -50,6 +57,18 @@ export default function App() {
     [ds, me],
   );
 
+  // The mobile app's color around the page follows the screen's background (src/lib/app-accent.ts):
+  // the finder's ice, the map's white, or the story screen's tone, fading between story screens as
+  // their background does (.story's 0.3s transition) and changing at once otherwise
+  const inStory = !onMap && screens.length > 0;
+  const accent = onMap ? WHITE : inStory ? (TONES[screens[index]?.tone ?? ""] ?? WHITE) : ICE;
+  const wasInStory = useRef(false);
+  useEffect(() => {
+    if (onDebug) return;
+    setAppAccent(accent, inStory && wasInStory.current ? 300 : 0);
+    wasInStory.current = inStory;
+  }, [accent, inStory, onDebug]);
+
   if (onDebug) {
     if (!ds)
       return (
@@ -82,7 +101,8 @@ export default function App() {
   return (
     <>
       {!me && <Banner />}
-      <div className="stage">
+      {/* "start": the finder's screen, with or without the banner (?embed hides it) */}
+      <div className={me ? "stage" : "stage start"}>
         <main className="column">
           {!me && (
             <>

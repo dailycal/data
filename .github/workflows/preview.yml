@@ -43,10 +43,10 @@ jobs:
         run: npm run build
 
       # Cloudflare only adds this header to workers.dev previews, and ours are only on our own domain
-      # (wrangler.jsonc)
+      # (wrangler.jsonc). Added to the site's own headers (public/_headers), not replacing them
       - name: Keep the preview out of search engines
         run: |
-          printf '/*\n  X-Robots-Tag: noindex\n' > dist/_headers
+          printf '\n/*\n  X-Robots-Tag: noindex\n' >> dist/_headers
 
       - name: Deploy the preview
         run: npx wrangler preview --name "$PREVIEW" --message "${{ github.event.pull_request.head.sha }}"

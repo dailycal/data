@@ -4,6 +4,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
 import * as styles from '../styling/video-expander.module.css';
 import { DCVideoPlayer } from './dc-video-player';
+import { DEFAULT_ACCENT_COLOR, setAppAccent } from '../../../../lib/app-accent';
 
 // Init gsap
 gsap.registerPlugin(ScrollTrigger, useGSAP);
@@ -23,6 +24,8 @@ export function setBackgroundDarkMode(darkMode) {
 
   document.body.style.transition = '.2s background ease';
   document.body.style.background = darkMode ? '#0a0a0a' : '';
+  // The mobile app's color around the page fades with it (src/lib/app-accent.ts)
+  setAppAccent(darkMode ? '#0a0a0a' : DEFAULT_ACCENT_COLOR, 200);
 }
 
 export const VideoExpander = ({

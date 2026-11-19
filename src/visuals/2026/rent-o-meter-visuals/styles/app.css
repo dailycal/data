@@ -122,17 +122,20 @@ body.locked {
   border-top: 2px solid var(--navy);
 }
 
-/* under the banner, the finder starts at its hairline and fills the rest of the first screen, and its ice runs
- * out to the edges on either side of the column */
-.rom .topbar ~ .stage {
+/* on the finder's screen, its ice runs out to the edges on either side of the column, under the banner or
+ * (with ?embed, which hides the banner) from the top of the page, with no rule above it */
+.rom .stage.start {
   background: var(--ice);
+}
+
+.rom .stage.start .finder {
+  border-top: 0;
 }
 
 /* the banner and the form together are one screen, so the page doesn't scroll when the form fits */
 .rom .topbar ~ .stage,
 .rom .topbar ~ .stage .column,
 .rom .topbar ~ .stage .finder {
-  border-top: 0;
   min-height: calc(100svh - 51px);
 }
 

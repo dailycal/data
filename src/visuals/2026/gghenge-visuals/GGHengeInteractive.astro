@@ -111,7 +111,12 @@
   </div>
 
   <script>
+    import { setAppAccent } from "../../../lib/app-accent";
     import "./map.js";
+
+    // The mobile app's accent color: the map's background. This page isn't an article, so the API
+    // doesn't have it; set it when the page is shown (including going back to it).
+    window.addEventListener("pageshow", () => setAppAccent("#ece8e1"));
   </script>
 </body>
 </html>

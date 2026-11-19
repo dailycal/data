@@ -2,6 +2,10 @@
 /**
  * The layout every page renders into: <head> (see src/components/Head.astro), the fixed
  * header (a link to the staff page, the logo, and a link to search), and the page content.
+ *
+ * With ?embed in its URL (e.g. /article/x?embed, for embedding it in another site's page), a page
+ * has no header, and its links to other pages on this site keep ?embed, so a reader who follows
+ * them stays embedded.
  */
 import { Image } from "astro:assets";
 import wordmark from "../assets/site/dclogoblack.webp";
@@ -15,6 +19,45 @@ type Props = HeadProps;
 <html lang="en">
   <head>
     <Head {...Astro.props} />
+    {/* ?embed hides the header. The site is static, so this reads the URL in the browser, inline in
+    <head> so it runs before the page is drawn and the header never shows. */}
+    <script is:inline>
+      if (new URLSearchParams(location.search).has("embed")) {
+        document.documentElement.dataset.embed = "";
+
+        // Adds ?embed to a link to another page on this site (not to a part of this page, or a file
+        // to download), so following it stays embedded
+        const keepEmbed = (link) => {
+          const href = link.getAttribute("href");
+          if (!href || href.startsWith("#") || link.hasAttribute("download")) {
+            return;
+          }
+          const url = new URL(link.href);
+          if (url.origin !== location.origin || url.searchParams.has("embed")) {
+            return;
+          }
+          url.search = url.search ? `${url.search}&embed` : "?embed";
+          link.setAttribute("href", url.pathname + url.search + url.hash);
+        };
+        // The page's links once it's loaded, and any added later (e.g. search results) as they're
+        // tapped, clicked, middle-clicked or long-pressed, before the browser follows them
+        document.addEventListener("DOMContentLoaded", () => {
+          document.querySelectorAll("a[href]").forEach(keepEmbed);
+        });
+        for (const type of ["click", "auxclick", "contextmenu"]) {
+          document.addEventListener(
+            type,
+            (event) => {
+              const link = event.target instanceof Element && event.target.closest("a[href]");
+              if (link) {
+                keepEmbed(link);
+              }
+            },
+            true,
+          );
+        }
+      }
+    </script>
   </head>
   <body>
     {/* Header */}
@@ -72,6 +115,19 @@ type Props = HeadProps;
   main {
     flex: 1;
     padding: 0 8px;
+  }
+
+  /* Embedded (?embed): no header, and no room left for it. The app or page around this one has its
+     own header above it, so each page's content only needs a little room at the top: every page's
+     top padding is var(--embed-top, <its own>), so it's this with ?embed and its own otherwise. */
+  :global(html[data-embed]) {
+    --embed-top: 12px;
+  }
+  :global(html[data-embed]) body {
+    padding-top: 0;
+  }
+  :global(html[data-embed]) .header {
+    display: none;
   }
 
   /* Header: logo centered */

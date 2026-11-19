@@ -20,6 +20,16 @@
   margin-top: calc(50px - 100svh);
 }
 
+/* Embedded (?embed, see src/layouts/PageLayout.astro), the page has no masthead */
+html[data-embed] .nobel-visuals .intro-visual {
+  top: 0;
+  height: 100svh;
+}
+
+html[data-embed] .nobel-visuals .intro-scrolly__steps {
+  margin-top: -100svh;
+}
+
 .nobel-visuals figure,
 .nobel-visuals img {
   margin-bottom: 0;
