@@ -166,8 +166,12 @@ import PageLayout from "../layouts/PageLayout.astro";
 
   async function run(query: string, wait = 150) {
     const search = ++latest;
-    const url = query.trim() ? `?${new URLSearchParams({ q: query })}` : location.pathname;
-    history.replaceState(null, "", url);
+    // ?q=<query>, keeping ?embed (see src/layouts/PageLayout.astro)
+    const params = [
+      ...(query.trim() ? [`${new URLSearchParams({ q: query })}`] : []),
+      ...(new URLSearchParams(location.search).has("embed") ? ["embed"] : []),
+    ];
+    history.replaceState(null, "", params.length ? `?${params.join("&")}` : location.pathname);
 
     if (!query.trim()) {
       results = [];
