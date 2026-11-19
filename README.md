@@ -98,6 +98,7 @@ Unknown fields fail the build, so a misspelled field can't be silently ignored.
 | `keywords` | `["keyword one", "keyword two"]`. Populates `<meta name="keywords">`, and is searched by the site's search. | No |
 | `layout` | `true` (the default) renders the article in the [article layout](#layouts). `false` renders the article's body alone as the whole page, for an article that's one full-page visual. | No |
 | `link` | Where the article's homepage card goes instead of its own page: an [interactive](#interactives) (e.g. `"/interactive/election-2026/index.html"`, which must exist or the build fails; link a folder by its `index.html`, since the dev server doesn't serve folders) or a URL on another site. An article with a `link` gets no page of its own, so it needs only `date`, `title` and `featuredImage`, and its body isn't shown. | No |
+| `mobileAccentColor` | The mobile app's background color for the article (`<meta name="mobile-accent-color">`), a hex color that matches its background, e.g. `"#0d0d0d"` for a dark story. Only for an article with `layout: false` (its page) or a `link` to an interactive on this site (the interactive's pages, colored at the end of the build by [`src/lib/mobile-accent-color.mjs`](src/lib/mobile-accent-color.mjs)); the build fails if one of those doesn't have it, or another article does. Every other page has the default layout's, `#f8f8f8` (`mobileAccentColor` in `src/config/site.ts`). | For `layout: false` or a `link` to `/interactive/` |
 
 These are only used by the article layout (`layout: true`):
 
@@ -283,6 +284,8 @@ An interactive that needs a page of its own, instead of a spot in an article, li
 
 - **Built here:** the code goes in `src/visuals/<yyyy>/<project>/` like any visual, and `src/pages/interactive/<name>.astro` is a few lines that render it, only there to give it its URL (e.g. `src/pages/interactive/gghenge.astro`). Vite bundles and minifies it with the rest of the site.
 - **Built elsewhere:** an app with its own repository and build (e.g. the 2026 election results, from election-night-tracker) is copied in, as built, to `public/interactive/<name>/`, and served as it is. Copy in a new build to update it; don't edit the files here.
+
+The mobile app reads a page's background color from its `<meta name="mobile-accent-color">`. An interactive built here sets its own in its `<head>` (e.g. `src/visuals/2026/gghenge-visuals/GGHengeInteractive.astro`); one built elsewhere gets its article's `mobileAccentColor` at the end of the build (see [Frontmatter](#frontmatter)).
 
 An article can link to an interactive from its body (`[Check out the interactive map](/interactive/gghenge)`), or be nothing but a homepage card for it, with `link` set to its URL (see [Frontmatter](#frontmatter)). Either way, the build fails if the interactive doesn't exist.
 

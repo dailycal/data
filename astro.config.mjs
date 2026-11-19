@@ -14,6 +14,7 @@ import analytics from "./src/lib/analytics.mjs";
 import { articleDates } from "./src/lib/article-dates.mjs";
 import { browserOnlyPackages } from "./src/lib/browser-only-packages.mjs";
 import { keepD3SideEffects } from "./src/lib/keep-d3-side-effects.mjs";
+import mobileAccentColor from "./src/lib/mobile-accent-color.mjs";
 import searchIndex from "./src/lib/search-index.mjs";
 import { unwrapJsxParagraphs } from "./src/lib/unwrap-jsx-paragraphs.mjs";
 
@@ -88,6 +89,8 @@ export default defineConfig({
     }),
     // The /search page's index; see src/lib/search-index.mjs
     searchIndex(),
+    // The mobile app's background color on prebuilt interactives; see src/lib/mobile-accent-color.mjs
+    mobileAccentColor(),
     // Google Tag Manager on every page; see src/lib/analytics.mjs
     analytics(),
   ],

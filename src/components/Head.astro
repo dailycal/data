@@ -13,7 +13,7 @@ import { site } from "../config/site";
 import type { ArticleHead } from "../lib/articles";
 import { shareableImage } from "../lib/images";
 
-export type Props =
+export type Props = (
   | {
       article: ArticleHead;
     }
@@ -24,9 +24,13 @@ export type Props =
       description?: string;
       /** Keep the page out of search results (e.g. the 404 page). */
       noindex?: boolean;
-    };
+    }
+) & {
+  /** The mobile app's background color for the page, a hex color; the default layout's by default. */
+  mobileAccentColor?: string;
+};
 
-const { article } = Astro.props;
+const { article, mobileAccentColor = site.mobileAccentColor } = Astro.props;
 const page = article ? {} : Astro.props;
 
 // An article's title has the newspaper's name (Google's structured data guidelines flag that in
@@ -83,6 +87,7 @@ const structuredData = article
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="theme-color" content="#ffffff" />
+<meta name="mobile-accent-color" content={mobileAccentColor} />
 <meta name="generator" content={Astro.generator} />
 <link rel="icon" href="/favicon.ico" />
 <link rel="sitemap" href="/sitemap-index.xml" />

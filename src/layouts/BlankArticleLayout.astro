@@ -20,7 +20,7 @@ const { article } = Astro.props;
 <!doctype html>
 <html lang="en" class="blank-article">
   <head>
-    <Head article={articleHead(article)} />
+    <Head article={articleHead(article)} mobileAccentColor={article.data.mobileAccentColor} />
   </head>
   <body>
     <div class="page">
