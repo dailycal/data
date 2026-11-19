@@ -303,7 +303,7 @@ const ProfReport = ({ articleUrl }) => {
 
   return (
     <div style={{
-      maxWidth: 760, margin: '0 auto', padding: '28px 8px 60px', fontFamily: 'Georgia, serif', color: theme.palette.black,
+      maxWidth: 760, margin: '0 auto', padding: 'var(--embed-top, 28px) 8px 60px', fontFamily: 'Georgia, serif', color: theme.palette.black,
     }}
     >
       <a

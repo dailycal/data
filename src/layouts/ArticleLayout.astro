@@ -100,7 +100,9 @@ const imageAlt = featuredImageAlt(article);
   .article {
     display: flex;
     flex-direction: column;
-    padding: 30px 0;
+    /* The title has no top margin, so this is all the room above it (see --embed-top in
+       src/layouts/PageLayout.astro) */
+    padding: var(--embed-top, 53px) 0 30px;
     margin: 0 auto;
     max-width: 640px;
     font-family: Georgia, sans-serif;
@@ -135,13 +137,6 @@ const imageAlt = featuredImageAlt(article);
     font-size: 35px;
     line-height: normal;
     text-align: center;
-  }
-  /* Embedded (?embed, see src/layouts/PageLayout.astro), the app or page around the article has its
-     own header above it, so the title only needs a little room */
-  :global(html[data-embed]) .article {
-    padding-top: 12px;
-  }
-  :global(html[data-embed]) .title {
     margin-top: 0;
   }
   .subhead {

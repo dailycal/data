@@ -117,7 +117,12 @@ type Props = HeadProps;
     padding: 0 8px;
   }
 
-  /* Embedded (?embed): no header, and no room left for it */
+  /* Embedded (?embed): no header, and no room left for it. The app or page around this one has its
+     own header above it, so each page's content only needs a little room at the top: every page's
+     top padding is var(--embed-top, <its own>), so it's this with ?embed and its own otherwise. */
+  :global(html[data-embed]) {
+    --embed-top: 12px;
+  }
   :global(html[data-embed]) body {
     padding-top: 0;
   }
